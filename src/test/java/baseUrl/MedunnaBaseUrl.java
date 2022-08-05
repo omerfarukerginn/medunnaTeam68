@@ -9,6 +9,7 @@ public class MedunnaBaseUrl {
     public static void medunnaSetup(){
 
         spec = new RequestSpecBuilder().setBaseUri("https://medunna.com/").build();
+
     }
 
 

@@ -12,15 +12,7 @@ public class SettingsPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    /*
-    account / menu 	 //*[@id='account-menu']
-Sing in 	 //*[text()='Sign in']
-username	//*[@name='username']
-password	//*[@name='password']
-remember	//*[@name='rememberMe']
-forget password	//*[@href='/account/reset/request']
 
-     */
     @FindBy(xpath = "//*[@id='account-menu']")
     public WebElement loginButtonu;
 
@@ -39,7 +31,7 @@ forget password	//*[@href='/account/reset/request']
     @FindBy(xpath = " //*[@id='account-menu']")
     public WebElement kullaniciGiris;
 
-    @FindBy(xpath = "//*[@id=\"account-menu\"]/div/a[1]")
+    @FindBy(xpath = "//*[text()='Settings']")
     public WebElement settings;
 
     @FindBy(xpath = "//label[@for='firstName']")

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.171">
+    <testcase classname="Kullanici &quot;Password strength&quot; seviyeleri görülebilmelidir." name="Sifrede ucuncu asamanin cikmamasi" time="19.593">
+        <system-out>
+            <![CDATA[Given Kullanici Medunna anasayfasina gider..................................passed
+When Kullanici Account Menu bolumune tiklar.................................passed
+Then Kullanici registration sekmesine tiklar................................passed
+And Kullanici New Password kisminda yeni "ebrayd!" girer....................passed
+And Kullanici sifrede ucuncu asamanin gelmedigini gorur "3".................passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

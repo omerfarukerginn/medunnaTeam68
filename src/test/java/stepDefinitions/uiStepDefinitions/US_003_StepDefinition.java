@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.testng.asserts.SoftAssert;
 import pages.RegisterPage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -36,22 +37,35 @@ public class US_003_StepDefinition {
 
     }
     @Then("Kullanici parolanin gucunu dogrular {string}")
-    public void kullanici_parolanin_gucunu_dogrular(String strength) {
-        if (2==Integer.parseInt(strength)){
-            Assert.assertTrue(register.passwordIkinciRenk.isDisplayed());
-        }else if (4==Integer.parseInt(strength)){
-            Assert.assertTrue(register.passwordDorduncuRenk.isDisplayed());
-        }else if (5==Integer.parseInt(strength)){
-            Assert.assertTrue(register.passwordBesinciRenk.isDisplayed());
-        }
+    public void kullanici_parolanin_gucunu_dogrular(String level) {
 
+        SoftAssert softAssert=new SoftAssert();
+        if (2==Integer.parseInt(level)){
+            softAssert.assertTrue(register.passwordIkinciRenk.isDisplayed());
+        }else if (3==Integer.parseInt(level)){
+            softAssert.assertTrue(register.passwordUcuncuRenk.isDisplayed(), "Ucuncu Asama/Renk gorunmuyor.");
+        } else if (4==Integer.parseInt(level)){
+            softAssert.assertTrue(register.passwordDorduncuRenk.isDisplayed());
+        }else if (5==Integer.parseInt(level)){
+            softAssert.assertTrue(register.passwordBesinciRenk.isDisplayed());
+        }
+        softAssert.assertAll();
     }
 
 
     @Then("Kullanici parolanin gucunun degismedigini {string}")
-    public void kullanici_parolanin_gucunun_degismedigini(String strength) {
-        if (1==Integer.parseInt(strength)){
+    public void kullanici_parolanin_gucunun_degismedigini(String level) {
+        if (1==Integer.parseInt(level)){
             Assert.assertTrue(register.passwordIlkRenk.isDisplayed());
+        }
+    }
+
+    @Then("Kullanici sifrede ucuncu asamanin gelmedigini gorur {string}")
+    public void kullanici_sifrede_ucuncu_asamanin_gelmedigini_gorur(String level) {
+        SoftAssert softAssert=new SoftAssert();
+        if (3==Integer.parseInt(level)){
+            softAssert.assertFalse(register.passwordUcuncuRenk.isDisplayed(), "Ucuncu Asama/Renk gorunmuyor.");
+            softAssert.assertAll();
         }
     }
 

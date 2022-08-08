@@ -17,26 +17,35 @@ Feature: Kullanici "Password strength" seviyeleri görülebilmelidir.
 
     Examples: test data
       | password   | strength |
-      | qwertyU    | 2        |
-      | 123456a    | 2        |
-      | ASDFGHq    | 2        |
-      | asdfgh1    | 2        |
-      | zxcvbn?    | 2        |
-      | zxcvbn@    | 2        |
-      | asdhgsag?1 | 4        |
-      | asdfA1?    | 5        |
-      | asdfA1@    | 5        |
+      | ebraydT    | 2        |
+      | 345678a    | 2        |
+      | AYDHTMk    | 2        |
+      | ebrayd1    | 2        |
+      | ebrayd?    | 2        |
+      | ebrayd@    | 2        |
+      | ebraydxm!2 | 4        |
+      | ebrkB2!    | 5        |
+      | ebrkB2@    | 5        |
 
     @US_003_TC_001_NegativeTest
-    Scenario Outline: TC_001 Kullanici en az 7 karakterli olan sifrenin butun karakterlerini kucuk harf girer
+    Scenario Outline: TC_001 Kullanici kucuk harflerden olusan en az 7 karakterli bir sifre girer
       And Kullanici New Password kisminda yeni "<password>" girer
       And Kullanici parolanin gucunun degismedigini "<strength>"
       And Kullanici sayfayi kapatir
       Examples: password data
         | password   | strength |
-        | asdfgkdjs  | 1        |
+        | ebraydnys  | 1        |
 
 
+      @US_003_TC_004
+      Scenario Outline: Sifrede ucuncu asamanin cikmamasi
+        And Kullanici New Password kisminda yeni "<password>" girer
+        And Kullanici sifrede ucuncu asamanin gelmedigini gorur "<strength>"
+        And Kullanici sayfayi kapatir
+
+        Examples: password data
+          | password   | strength |
+          | ebrayd!    | 3        |
 
 
 

@@ -30,19 +30,19 @@ public class RegisterPage {
 
     //US_003 password
     //1.renk // 5 renk liste hali //li[@class='point']
-    @FindBy(xpath = "(//li[@class='point'])[1]")
+    @FindBy(xpath = "//li[@style='background-color: rgb(255, 0, 0);']")
     public WebElement passwordIlkRenk;
 
-    @FindBy(xpath = "(//li[@class='point'])[2]")
+    @FindBy(xpath = "//li[@style='background-color: rgb(255, 153, 0);']")
     public WebElement passwordIkinciRenk;
 
     @FindBy(xpath = "(//li[@class='point'])[3]")
     public WebElement passwordUcuncuRenk;
 
-    @FindBy(xpath = "(//li[@class='point'])[4]")
+    @FindBy(xpath = "//li[@style='background-color: rgb(153, 255, 0);']")
     public WebElement passwordDorduncuRenk;
 
-    @FindBy(xpath = "(//li[@class='point'])[5]")
+    @FindBy(xpath = "//li[@style='background-color: rgb(0, 255, 0);']")
     public WebElement passwordBesinciRenk;
 
 }

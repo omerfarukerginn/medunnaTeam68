@@ -34,23 +34,23 @@ public class DoctorPage {
 
     @FindBy (xpath = "(//*[text()='My Appointments'])[1]")
     public WebElement myAppointmentsButton;
-   /*
+
    @FindBy (xpath = "//*[text()='Appointments']")
     public WebElement appointmentsPage;
 
-    @FindBy (xpath = "//*[text()='Appointments']")
-    public WebElement appointmentsPage;
+    @FindBy (xpath = "//*[text()='ID']")
+    public WebElement idButton;
 
-    @FindBy (xpath = "//*[text()='Appointments']")
-    public WebElement appointmentsPage;
+    @FindBy (xpath = "//*[text()='Start DateTime']")
+    public WebElement startDateTimeButton;
 
-    @FindBy (xpath = "//*[text()='Appointments']")
-    public WebElement appointmentsPage;
+    @FindBy (xpath = "//*[text()='End DateTime']")
+    public WebElement endDateTimeButton;
 
-    @FindBy (xpath = "//*[text()='Appointments']")
-    public WebElement appointmentsPage;
+    @FindBy (xpath = "//*[text()='Status']")
+    public WebElement statusButton;
 
-    */
+
 
 
 

@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import pages.SettingsPage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -13,6 +14,7 @@ import utilities.ReusableMethods;
 public class US_006_UI_StepDefinition {
 
     SettingsPage us006 = new SettingsPage();
+    Actions actions = new Actions(Driver.getDriver());
 
     @Given("Kullanıci ana sayfaya gider")
     public void kullanıci_ana_sayfaya_gider() {
@@ -22,7 +24,7 @@ public class US_006_UI_StepDefinition {
 
     @Given("Kullanıcı sign in butonuna basar")
     public void kullanıcı_sign_in_butonuna_basar() {
-       us006.loginButtonu.click();
+        us006.loginButtonu.click();
         us006.singinButtonu.click();
     }
 
@@ -69,19 +71,19 @@ public class US_006_UI_StepDefinition {
     @Given("Kullanici first name guncellenebilir olmali")
     public void kullanici_first_name_guncellenebilir_olmali() {
         us006.firstNameKutusu.clear();
-        us006.firstNameKutusu.sendKeys("doktor");
+        us006.firstNameKutusu.sendKeys("cengiz");
     }
 
     @Given("Kullanici last name guncellenebilir olmali")
     public void kullanici_last_name_guncellenebilir_olmali() {
         us006.lastNameKutusu.clear();
-        us006.lastNameKutusu.sendKeys("Civan");
+        us006.lastNameKutusu.sendKeys("bey");
     }
 
     @Given("Kullanici E-mail guncellenebilir olmali")
     public void kullanici_e_mail_guncellenebilir_olmali() {
         us006.emailKutusu.clear();
-        us006.emailKutusu.sendKeys("drCivanim@gmail.com");
+        us006.emailKutusu.sendKeys("drcengiz@gmail.com");
     }
 
     @Given("Kullanici save tusuna basar")
@@ -97,12 +99,14 @@ public class US_006_UI_StepDefinition {
 
     @Then("Sayfayi kapatir")
     public void sayfayi_kapatir() {
-      //  Driver.closeDriver();
+        Driver.closeDriver();
     }
 
     @Given("Kullanici first name kisimi bos birakir")
     public void kullanici_first_name_kisimi_bos_birakir() {
         us006.firstNameKutusu.clear();
+        us006.firstNameKutusu.sendKeys(" ");
+        actions.sendKeys(Keys.TAB).build().perform();
 
     }
 
@@ -115,6 +119,8 @@ public class US_006_UI_StepDefinition {
     @Then("Kullanici last name kisimi bos birakir")
     public void kullanici_last_name_kisimi_bos_birakir() {
         us006.lastNameKutusu.clear();
+        us006.lastNameKutusu.sendKeys(" ");
+        actions.sendKeys(Keys.TAB).build().perform();
 
     }
 
@@ -126,6 +132,8 @@ public class US_006_UI_StepDefinition {
     @Then("Kullanici E-mail kisimi bos birakir")
     public void kullanici_e_mail_kisimi_bos_birakir() {
         us006.emailKutusu.clear();
+        us006.emailKutusu.sendKeys(" ");
+        actions.sendKeys(Keys.TAB).build().perform();
     }
 
     @Then("Kullanıcı, bos E-Mail girerken E-Mail gereklidir metin mesajını görmeli")
@@ -137,15 +145,13 @@ public class US_006_UI_StepDefinition {
     @Then("Kullanıcı, E-Mail girerken gecersiz E-Mail  metin mesajını görmeli")
     public void kullanıcı_e_mail_girerken_gecersiz_e_mail_metin_mesajını_görmeli() {
 
+        Assert.assertTrue(us006.gecersizEmailUYari.isDisplayed());
     }
 
-    @And("Kullanıcı, bilgiler için Kullanıcı ayarları sayfasina gider")
-    public void kullanıcıBilgilerIçinKullanıcıAyarlarıSayfasinaGider() {
-        us006.settings.clear();
-    }
 
     @And("Kullanici gecersiz bir E-mail girmeli {string}")
     public void kullaniciGecersizBirEMailGirmeli(String email) {
+        us006.emailKutusu.clear();
         us006.emailKutusu.sendKeys(email);
     }
 }

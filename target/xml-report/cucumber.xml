@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="42.552">
+    <testcase classname="US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir olmalidir." name="TC_001 Giris yapmak icin basari mesajini dogrulayan, gecerli bir kullanici adi ve sifre olmalidir." time="15.205">
+        <system-out>
+            <![CDATA[Given Kullanici ana sayfaya gider...........................................passed
+Then Kullanici login butonuna tiklar........................................passed
+And Kullanici Sing in secenegini secer......................................passed
+And Kullanici username kutusuna gecerli bir username bilgilerini girer......passed
+And Kullanici password kutusuna gecerli password bilgilerini girer..........passed
+And Kullanici Sign in butonuna tiklar.......................................passed
+And Kullanici kayit ismini gorur............................................passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir olmalidir." name="TC_002 Kullanicinin mevcut kimlik bilgilerini her zaman kullanabilecegi bir beni hatirla secenegi olmalidir" time="7.336">
+        <system-out>
+            <![CDATA[Given Kullanici ana sayfaya gider...........................................passed
+Then Kullanici login butonuna tiklar........................................passed
+And Kullanici Sing in secenegini secer......................................passed
+And Kullanici username kutusuna gecerli bir username bilgilerini girer......passed
+And Kullanici password kutusuna gecerli password bilgilerini girer..........passed
+And Kullanici Beni Hatirla secenegini secebilmeli...........................passed
+And Kullanici Sign in butonuna tiklar.......................................passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir olmalidir." name="TC_003 Eger sifre unutulursa diye Did you forget your password? secenegi olmali" time="6.295">
+        <system-out>
+            <![CDATA[Given Kullanici ana sayfaya gider...........................................passed
+Then Kullanici login butonuna tiklar........................................passed
+And Kullanici Sing in secenegini secer......................................passed
+And Kullanici Did you forget your password? secenegine tiklar...............passed
+And Kullanici sifre sifirlama sayfasini gorur...............................passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir olmalidir." name="TC_004 You don't have an account yet? Register a new account secenegi olmali" time="7.182">
+        <system-out>
+            <![CDATA[Given Kullanici ana sayfaya gider...........................................passed
+Then Kullanici login butonuna tiklar........................................passed
+And Kullanici Sing in secenegini secer......................................passed
+And Kullanici You don't have an account yet? Register a new account secenegine tiklar.passed
+And Kullanici Registration sayfasini gorur..................................passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir olmalidir." name="TC_005 Cancel secenegi olmali" time="5.601">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Kullanici ana sayfaya gider...........................................passed
+Then Kullanici login butonuna tiklar........................................passed
+And Kullanici Sing in secenegini secer......................................passed
+And Kullanici Cancel secenegine tiklar......................................passed
+And Kullanici ana sayfayi gorur.............................................undefined
+And Kullanici sayfayi kapatir...............................................skipped
+]]>
+        </failure>
+    </testcase>
+</testsuite>

@@ -14,6 +14,7 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    /*
     @FindBy(xpath = "//*[@id='account-menu']")
     public WebElement accountMenu;
 
@@ -44,6 +45,49 @@ public class LoginPage {
 
 
 
+
+    // guncellendi
+
+
+
+
+    @FindBy(xpath = "//*[text()='Reset your password']")
+    public WebElement resetPasswordPage;
+
+    @FindBy(xpath = "//*[text()='Registration']")
+    public WebElement registrationPage;
+
+     */
+
+    @FindBy(xpath = "//*[@id='account-menu']")
+    public WebElement loginPageMenuButton;
+
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
+    public WebElement loginPageSingInMenuButton;
+
+    @FindBy(xpath = "//*[@name='username']")
+    public WebElement loginPageSingInUserNameKutusu;
+
+    @FindBy(xpath = "//*[@name='password']")
+    public WebElement loginPageSingInPasswordKutusu;
+
+    @FindBy(xpath = "//*[@type='submit']")
+    public WebElement loginPageSingInSingInButton;
+
+    @FindBy(xpath = "//*[@name='rememberMe']")
+    public WebElement loginPageRememberMeCheckbox;
+
+    @FindBy(xpath = "//*[text()='Did you forget your password?']")
+    public WebElement loginPageForgetPasswordLink;
+
+    @FindBy(xpath = "//*[text()='Reset your password']")
+    public WebElement loginPageResetPasswordPage;
+
+    @FindBy(xpath = "//*[text()='Registration']")
+    public WebElement loginPageRegistrationPage;
+
+    @FindBy(xpath = "//*[text()='Cancel']")
+    public WebElement loginPageCancelButton;
 
 
 }

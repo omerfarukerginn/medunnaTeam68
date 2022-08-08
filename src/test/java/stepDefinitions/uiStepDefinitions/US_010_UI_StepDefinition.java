@@ -34,6 +34,14 @@ public class US_010_UI_StepDefinition {
     public void kullanici_dr_olarak_randevuları_gorur() {
         Assert.assertTrue(drPage.appointmentsPage.isDisplayed());
     }
+    @Then("kullanici {int} sn bekler")
+    public void kullaniciSnBekler(int istenenSaniye) {
+        try {
+            Thread.sleep(istenenSaniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Then("Kullanıcı Dr olarak patient id, start date, end date, status bilgilerini gorur")
     public void kullanıcıDrOlarakPatientIdStartDateEndDateStatusBilgileriniGorur() {

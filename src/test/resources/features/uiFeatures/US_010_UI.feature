@@ -13,6 +13,7 @@ Feature: Doktor (Physician) randevuları
     And Kullanici Dr olarak My Pages butonuna tıklar.
     And Kullanici Dr olarak My Appointments  butonuna tıklar.
     Then Kullanici Dr olarak Randevuları gorur
+    Then kullanici 3 sn bekler
     And Sayfayi kapatir
 
     Scenario: Kullanıcı "patient id, start date, end date, status" bilgilerini görebilmeli
@@ -26,6 +27,7 @@ Feature: Doktor (Physician) randevuları
       And Kullanici Dr olarak My Appointments  butonuna tıklar.
       Then Kullanici Dr olarak Randevuları gorur
       Then Kullanıcı Dr olarak patient id, start date, end date, status bilgilerini gorur
+      Then kullanici 3 sn bekler
       And Sayfayi kapatir
 
 

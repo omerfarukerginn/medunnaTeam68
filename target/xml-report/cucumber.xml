@@ -1,109 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="152.673">
-    <testcase classname="US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name="Kullanıcı, bilgiler için Kullanıcı ayarları sayfasina gider" time="25.734">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="37.747">
+    <testcase classname="Doktor (Physician) randevuları" name="Kullanıcı, Dr olarak randevu listesini ve zaman dilimlerini &quot;My Appointments&quot; sekmesinden görebilmelidir" time="19">
         <system-out>
             <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
 And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı username kutusuna gecerli bir username bilgilerini girer......passed
-And Kullanıcı password kutusuna gecerli password bilgilerini girer..........passed
+And Kullanıcı Dr olarak username kutusuna gecerli bir username bilgilerini girer.passed
+And Kullanıcı Dr olarak password kutusuna gecerli password bilgilerini girer.passed
 And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-Then Kullanici adi ile sayfaya giris yaptigini gorur........................passed
+And Kullanici Dr olarak My Pages butonuna tıklar............................passed
+And Kullanici Dr olarak My Appointments  butonuna tıklar....................passed
+Then Kullanici Dr olarak Randevuları gorur..................................passed
+Then kullanici 3 sn bekler..................................................passed
 And Sayfayi kapatir.........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name="Kullanıcı bilgileri &quot;firstname, lastname, email &quot; girerken doldurulan kullanıcı bilgileri olmalıdır." time="20.983">
+    <testcase classname="Doktor (Physician) randevuları" name="Kullanıcı &quot;patient id, start date, end date, status&quot; bilgilerini görebilmeli" time="18.29">
         <system-out>
             <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
 And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı username kutusuna gecerli bir username bilgilerini girer......passed
-And Kullanıcı password kutusuna gecerli password bilgilerini girer..........passed
+And Kullanıcı Dr olarak username kutusuna gecerli bir username bilgilerini girer.passed
+And Kullanıcı Dr olarak password kutusuna gecerli password bilgilerini girer.passed
 And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-And Kullanıcı, bilgiler için Kullanıcı ayarları sayfasini gider.............passed
-Then Sayfa için kullanıcı ayarları Ad, Soyadı ve E-posta seçeneklerini gorur.passed
-And Sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name="Positive scenario" time="23.493">
-        <system-out>
-            <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
-And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı username kutusuna gecerli bir username bilgilerini girer......passed
-And Kullanıcı password kutusuna gecerli password bilgilerini girer..........passed
-And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-And Kullanıcı, bilgiler için Kullanıcı ayarları sayfasini gider.............passed
-And Kullanici first name guncellenebilir olmali.............................passed
-And Kullanici last name guncellenebilir olmali..............................passed
-And Kullanici E-mail guncellenebilir olmali.................................passed
-And Kullanici save tusuna basar.............................................passed
-Then Sol ustte cikan mesajla yeni bilgilerin kaydedildiginini kontrol eder..passed
-And Sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name="Negative scenario-1" time="22.067">
-        <system-out>
-            <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
-And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı username kutusuna gecerli bir username bilgilerini girer......passed
-And Kullanıcı password kutusuna gecerli password bilgilerini girer..........passed
-And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-And Kullanıcı, bilgiler için Kullanıcı ayarları sayfasini gider.............passed
-And Kullanici first name kisimi bos birakir.................................passed
-Then Kullanıcı, bos first name girerken first name gereklidir metin mesajını görmeli.passed
-And Kullanici last name kisimi bos birakir..................................passed
-Then Kullanıcı, boslast name girerken last name gereklidir metin mesajını görmeli.passed
-And Kullanici E-mail kisimi bos birakir.....................................passed
-Then Kullanıcı, bos E-Mail girerken E-Mail gereklidir metin mesajını görmeli.passed
-And Sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name=":Negative scenario-2" time="21.976">
-        <system-out>
-            <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
-And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı username kutusuna gecerli bir username bilgilerini girer......passed
-And Kullanıcı password kutusuna gecerli password bilgilerini girer..........passed
-And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-And Kullanıcı, bilgiler için Kullanıcı ayarları sayfasini gider.............passed
-And Kullanici first name guncellenebilir olmali.............................passed
-And Kullanici last name guncellenebilir olmali..............................passed
-And Kullanici gecersiz bir E-mail girmeli "memoli"..........................passed
-Then Kullanıcı, E-Mail girerken gecersiz E-Mail  metin mesajını görmeli.....passed
-And Sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name=":Negative scenario-2 2" time="19.962">
-        <system-out>
-            <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
-And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı username kutusuna gecerli bir username bilgilerini girer......passed
-And Kullanıcı password kutusuna gecerli password bilgilerini girer..........passed
-And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-And Kullanıcı, bilgiler için Kullanıcı ayarları sayfasini gider.............passed
-And Kullanici first name guncellenebilir olmali.............................passed
-And Kullanici last name guncellenebilir olmali..............................passed
-And Kullanici gecersiz bir E-mail girmeli "memo@gmail"......................passed
-Then Kullanıcı, E-Mail girerken gecersiz E-Mail  metin mesajını görmeli.....passed
-And Sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır." name=":Negative scenario-2 3" time="17.69">
-        <system-out>
-            <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
-And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı username kutusuna gecerli bir username bilgilerini girer......passed
-And Kullanıcı password kutusuna gecerli password bilgilerini girer..........passed
-And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-And Kullanıcı, bilgiler için Kullanıcı ayarları sayfasini gider.............passed
-And Kullanici first name guncellenebilir olmali.............................passed
-And Kullanici last name guncellenebilir olmali..............................passed
-And Kullanici gecersiz bir E-mail girmeli "memo.com"........................passed
-Then Kullanıcı, E-Mail girerken gecersiz E-Mail  metin mesajını görmeli.....passed
+And Kullanici Dr olarak My Pages butonuna tıklar............................passed
+And Kullanici Dr olarak My Appointments  butonuna tıklar....................passed
+Then Kullanici Dr olarak Randevuları gorur..................................passed
+Then Kullanıcı Dr olarak patient id, start date, end date, status bilgilerini gorur.passed
+Then kullanici 3 sn bekler..................................................passed
 And Sayfayi kapatir.........................................................passed
 ]]>
         </system-out>

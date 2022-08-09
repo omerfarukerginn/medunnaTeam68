@@ -60,10 +60,10 @@ public class StaffPage {
     public WebElement phoneTextBox;
 
     @FindBy(xpath = "//select[@id='patient-gender']")
-    public WebElement genderTextBox;
+    public WebElement genderDropDown;
 
     @FindBy(xpath = "//select[@id='patient-bloodGroup']")
-    public WebElement bloodGroupTextBox;
+    public WebElement bloodGroupDropDown;
 
     @FindBy(xpath = "//input[@id='patient-adress']")
     public WebElement adressTextBox;
@@ -72,10 +72,10 @@ public class StaffPage {
     public WebElement descriptionTextBox;
 
     @FindBy(xpath = "//select[@id='patient-user']")
-    public WebElement userTextBox;
+    public WebElement userDropDown;
 
     @FindBy(xpath = "//select[@id='patient-country']")
-    public WebElement countryTextBox;
+    public WebElement countryDropDown;
 
     @FindBy(xpath = "//select[@id='patient-cstate']")
     public WebElement stateCityTextBox;

@@ -16,7 +16,7 @@ Feature: US009 Staff (Personel), hasta bilgilerini görebilmeli, düzenleyebilme
     Then Patients yazisi ile listenin gorunurlugunu test eder
 
   @US_009_TC_002
-  Scenario: TC_002 Kullanıcı bütün hasta bilgilerini düzenleyebilmelidir.
+  Scenario Outline: TC_002 Kullanıcı bütün hasta bilgilerini düzenleyebilmelidir.
     And MY PAGES sekmesine tiklar
     And Search Patient secenegini secer
     And Patient SSN kutusuna "<SSN>" girer
@@ -26,8 +26,8 @@ Feature: US009 Staff (Personel), hasta bilgilerini görebilmeli, düzenleyebilme
     And Dogrulama gozlemlenir
 
     Examples:
-      | SSN              |
-      | 668-83-4231      |
+      | SSN         |
+      | 668-83-4231 |
 
 
 

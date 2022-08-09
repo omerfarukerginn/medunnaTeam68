@@ -73,27 +73,18 @@ public class Driver {
         }
         return driver;
     }
-
-
-    public static void wait(int secs) {
-
-        try {
-            Thread.sleep(1000 * secs);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (TimeoutException e) {
-            e.printStackTrace();
-        } catch (NoSuchElementException e) {
-            e.printStackTrace();
-        } catch (StaleElementReferenceException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
+    public static void closeDriver() {
+        if (driver != null) {
+            driver.close();
+            driver=null;
         }
     }
 
+
+
+
     public static void selectAnItemFromDropdown(WebElement item, String selectableItem) {
-        wait(2);
+        ReusableMethods.waitFor(2);
         Select select = new Select(item);
         for (int i = 0; i < select.getOptions().size(); i++) {
             if (select.getOptions().get(i).getText().equalsIgnoreCase(selectableItem)) {
@@ -104,10 +95,5 @@ public class Driver {
 
     }
 
-    public static void closeDriver() {
-        if (driver != null) {
-            driver.close();
-            driver=null;
-        }
-    }
+
 }

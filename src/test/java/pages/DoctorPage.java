@@ -233,7 +233,7 @@ public class DoctorPage {
     @FindBy(xpath = "//select[@id='in-patient-patient']")
     public WebElement editInPatientPatient;
 
-    @FindBy(xpath = "//*[@data-icon='save']")
+    @FindBy(xpath = "//button [@type='submit']")
     public WebElement editInPatientSaveButton;
 
     @FindBy(xpath = "//*[.='InPatient status can not be changed with this type of status']")

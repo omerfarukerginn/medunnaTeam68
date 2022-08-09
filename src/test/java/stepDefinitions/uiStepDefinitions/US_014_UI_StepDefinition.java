@@ -152,7 +152,7 @@ public class US_014_UI_StepDefinition {
     @Then("Kullanici save butonunu tiklar")
     public void kullaniciSaveButonunuTiklar() {
         ReusableMethods.waitFor(4);
-        us014.editInPatientSaveButton.click();
+       us014.editInPatientSaveButton.sendKeys(Keys.ENTER);
 
     }
 

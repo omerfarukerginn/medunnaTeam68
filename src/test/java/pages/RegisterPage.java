@@ -8,6 +8,64 @@ import utilities.Driver;
 
 public class RegisterPage {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public RegisterPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

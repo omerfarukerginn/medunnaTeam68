@@ -15,6 +15,7 @@ import utilities.ReusableMethods;
 public class US_003_StepDefinition {
 
     RegisterPage register=new RegisterPage();
+    SoftAssert softAssert=new SoftAssert();
 
     @Given("Kullanici Medunna anasayfasina gider")
     public void kullanici_medunna_anasayfasina_gider() {
@@ -38,12 +39,10 @@ public class US_003_StepDefinition {
     }
     @Then("Kullanici parolanin gucunu dogrular {string}")
     public void kullanici_parolanin_gucunu_dogrular(String level) {
-
-        SoftAssert softAssert=new SoftAssert();
         if (2==Integer.parseInt(level)){
             softAssert.assertTrue(register.passwordIkinciRenk.isDisplayed());
         }else if (3==Integer.parseInt(level)){
-            softAssert.assertTrue(register.passwordUcuncuRenk.isDisplayed(), "Ucuncu Asama/Renk gorunmuyor.");
+            softAssert.assertFalse(register.passwordUcuncuRenk.isDisplayed(), "Ucuncu Asama/Renk gorunmuyor.");
         } else if (4==Integer.parseInt(level)){
             softAssert.assertTrue(register.passwordDorduncuRenk.isDisplayed());
         }else if (5==Integer.parseInt(level)){
@@ -62,7 +61,6 @@ public class US_003_StepDefinition {
 
     @Then("Kullanici sifrede ucuncu asamanin gelmedigini gorur {string}")
     public void kullanici_sifrede_ucuncu_asamanin_gelmedigini_gorur(String level) {
-        SoftAssert softAssert=new SoftAssert();
         if (3==Integer.parseInt(level)){
             softAssert.assertFalse(register.passwordUcuncuRenk.isDisplayed(), "Ucuncu Asama/Renk gorunmuyor.");
             softAssert.assertAll();

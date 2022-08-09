@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.testng.asserts.SoftAssert;
+import pages.LoginPage;
 import pages.RegisterPage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -15,19 +16,20 @@ import utilities.ReusableMethods;
 public class US_003_StepDefinition {
 
     RegisterPage register=new RegisterPage();
+    LoginPage logIn=new LoginPage();
     SoftAssert softAssert=new SoftAssert();
 
-    @Given("Kullanici Medunna anasayfasina gider")
-    public void kullanici_medunna_anasayfasina_gider() {
+    @Given("Eb Kullanici Medunna anasayfasina gider")
+    public void eb_kullanici_medunna_anasayfasina_gider() {
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
     }
-    @When("Kullanici Account Menu bolumune tiklar")
-    public void kullanici_account_menu_bolumune_tiklar() {
-        register.accountMenu.click();
+    @When("Eb Kullanici Account Menu bolumune tiklar")
+    public void eb_kullanici_account_menu_bolumune_tiklar() {
+        logIn.loginPageMenuButton.click();
         ReusableMethods.waitFor(2);
     }
-    @Then("Kullanici registration sekmesine tiklar")
-    public void kullanici_registration_sekmesine_tiklar() {
+    @Then("Eb Kullanici registration sekmesine tiklar")
+    public void eb_kullanici_registration_sekmesine_tiklar() {
         register.accountMenuRegisterButton.click();
         ReusableMethods.waitFor(2);
     }
@@ -41,8 +43,6 @@ public class US_003_StepDefinition {
     public void kullanici_parolanin_gucunu_dogrular(String level) {
         if (2==Integer.parseInt(level)){
             softAssert.assertTrue(register.passwordIkinciRenk.isDisplayed());
-        }else if (3==Integer.parseInt(level)){
-            softAssert.assertFalse(register.passwordUcuncuRenk.isDisplayed(), "Ucuncu Asama/Renk gorunmuyor.");
         } else if (4==Integer.parseInt(level)){
             softAssert.assertTrue(register.passwordDorduncuRenk.isDisplayed());
         }else if (5==Integer.parseInt(level)){
@@ -59,18 +59,12 @@ public class US_003_StepDefinition {
         }
     }
 
-    @Then("Kullanici sifrede ucuncu asamanin gelmedigini gorur {string}")
-    public void kullanici_sifrede_ucuncu_asamanin_gelmedigini_gorur(String level) {
-        if (3==Integer.parseInt(level)){
-            softAssert.assertFalse(register.passwordUcuncuRenk.isDisplayed(), "Ucuncu Asama/Renk gorunmuyor.");
-            softAssert.assertAll();
-        }
-    }
 
-    @Then("Kullanici sayfayi kapatir")
-    public void kullanici_sayfayi_kapatir() {
+    @Then("Eb Kullanici sayfayi kapatir")
+    public void eb_kullanici_sayfayi_kapatir() {
         Driver.closeDriver();
     }
+
 
 
 }

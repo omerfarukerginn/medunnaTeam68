@@ -63,9 +63,8 @@ public class RegisterPage {
 
 
 
-    //account_Menu
-    @FindBy(xpath = "//li[@id='account-menu']")
-    public WebElement accountMenu;
+
+
 
     //registerButton
     @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
@@ -74,10 +73,6 @@ public class RegisterPage {
     //newPassword section
     @FindBy(xpath = "//input[@name='firstPassword']")
     public WebElement newPasswordSec;
-
-    //newPasswordConfirmation section
-    @FindBy(xpath = "//input[@name='secondPassword']")
-    public WebElement newPasswordConfirmationSec;
 
     //US_003 password
     //1.renk // 5 renk liste hali //li[@class='point']

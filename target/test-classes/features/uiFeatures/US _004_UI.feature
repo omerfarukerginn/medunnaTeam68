@@ -36,6 +36,13 @@ Feature: US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir
 
   Scenario: TC_005 Cancel secenegi olmali
 
+<<<<<<< HEAD
   And Kullanici Cancel secenegini gorur
   And Kullanici sayfayi kapatir
 
+=======
+  And Kullanici Cancel secenegine tiklar
+  And Kullanici ana sayfaya gider
+  Then Kullanici ana sayfayi gorur
+  And Kullanici sayfayi kapatir
+>>>>>>> main

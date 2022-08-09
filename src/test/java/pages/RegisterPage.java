@@ -91,4 +91,5 @@ public class RegisterPage {
     @FindBy(xpath = "//li[@style='background-color: rgb(0, 255, 0);']")
     public WebElement passwordBesinciRenk;
 
+
 }

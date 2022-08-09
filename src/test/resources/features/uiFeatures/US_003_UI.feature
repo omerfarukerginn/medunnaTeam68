@@ -6,6 +6,7 @@ Feature: Kullanici "Password strength" seviyeleri görülebilmelidir.
     When Eb Kullanici Account Menu bolumune tiklar
     Then Eb Kullanici registration sekmesine tiklar
 
+
   @US_003_TC_001,TC_002,TC_003,TC_004,TC_005
   Scenario Outline: Kullanici en az 7 karakterli icerisinde en az 1 kucuk harf, 1 rakam, 1 ozel karakter olan sifreleri
   girer

@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import pages.LoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import static org.openqa.selenium.Keys.TAB;
 
@@ -32,12 +33,12 @@ public class US_004_UI_StepDefinition {
 
     @Then("Kullanici username kutusuna gecerli bir username bilgilerini girer")
     public void kullanici_username_kutusuna_gecerli_bir_username_bilgilerini_girer() {
-        us004.loginPageSingInUserNameKutusu.sendKeys("team68");
+        us004.loginPageSingInUserNameKutusu.sendKeys(ConfigReader.getProperty("AdminUserName"));
     }
 
     @Then("Kullanici password kutusuna gecerli password bilgilerini girer")
     public void kullanici_password_kutusuna_gecerli_password_bilgilerini_girer() {
-        us004.loginPageSingInPasswordKutusu.sendKeys("HealthTeam68!");
+        us004.loginPageSingInPasswordKutusu.sendKeys(ConfigReader.getProperty("AdminPassword"));
     }
 
     @Then("Kullanici Sign in butonuna tiklar.")
@@ -46,9 +47,9 @@ public class US_004_UI_StepDefinition {
     }
 
     @Then("Kullanici kayit ismini gorur")
-    public void kullanici_kayit_ismini_gorur() throws InterruptedException {
-        Thread.sleep(3000);
-        Assert.assertTrue(us004.loginPageMenuButton.getText().contains("team68"));
+    public void kullanici_kayit_ismini_gorur()  {
+        Assert.assertTrue(us004.loginPageMenuButton.isDisplayed());
+        //Assert.assertTrue(us004.loginPageMenuButton.getText().equals("team68"));
         //Assert.assertTrue(us004.loginPageSingInUserNameKutusu.getText().contains("team68"));
     }
 
@@ -97,4 +98,16 @@ public class US_004_UI_StepDefinition {
     }
 
 
+    @Then("Kullanici ana sayfayi gorur")
+    public void kullaniciAnaSayfayiGorur() {
+        String expectedUrl = "https://www.medunna.com/";
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        Assert.assertEquals(expectedUrl,actualUrl);
+    }
+
+    @And("Kullanici Cancel secenegini gorur")
+    public void kullaniciCancelSeceneginiGorur() {
+        ReusableMethods.waitFor(2);
+        Assert.assertTrue(us004.loginPageCancelButton.isDisplayed());
+    }
 }

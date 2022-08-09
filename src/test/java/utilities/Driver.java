@@ -1,14 +1,19 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
 public class Driver {
     /*
@@ -67,6 +72,36 @@ public class Driver {
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         }
         return driver;
+    }
+
+
+    public static void wait(int secs) {
+
+        try {
+            Thread.sleep(1000 * secs);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (StaleElementReferenceException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void selectAnItemFromDropdown(WebElement item, String selectableItem) {
+        wait(2);
+        Select select = new Select(item);
+        for (int i = 0; i < select.getOptions().size(); i++) {
+            if (select.getOptions().get(i).getText().equalsIgnoreCase(selectableItem)) {
+                select.getOptions().get(i).click();
+                break;
+            }
+        }
+
     }
 
     public static void closeDriver() {

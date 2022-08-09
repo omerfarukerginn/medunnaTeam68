@@ -6,13 +6,53 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
   (My Appointments / View / Edit Impatients)
 
 
-  Background: Ortak Adimlar
-    Given Kullanıci Ana Sayfaya gider
-    And Kullanıcı Sign In butonuna basar
-    And Kullanıcı Username kutusuna gecerli bir username bilgilerini girer
-    And Kullanıcı Password kutusuna gecerli Password bilgilerini girer
-    And Kullanıcı, sağ altta bulunan Sign In düğmesine tıklamalıdır
-    And Kullanici Sayfayi kapatir
 
 
+  @US014_TC001
+  Scenario:Doktor hasta bilgilerini görüntülüyebilmeli
+    Given Kullanici Medunna  adresine erisebilmeli
+    And Kullanici account  butonu tiklar
+    And Kullanici registration sekmesine tiklar
+    And Kullanici gecerli bir username ve password girer
+    And Kullanici My pages sekmesini tiklar
+    And Kullanici My Inpatients secenegini tiklar
+    And Kullanici Hasta sayfasında olduğunu doğrular
+    And Kullanici  hasta bilgilerini görüntüler
+    And Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar
+    And Kullanici in patient creat or edt page oldugunu kontrol eder
+    And Kullanici başlangıç tarihi bölümünü güncelleyebilir
+    And Kullanici  bitiş tarihi bölümünü güncelleyebilir
+    And Kullanici açıklama bölümünü güncelleyebilir
+    And Kullanici oluşturulan tarih bölümünü güncelleyebilir
+    And Kullanici randevu bölümünü güncelleyebilir
+    And Kullanici save butonunu tiklar
 
+
+  @US014_TC002
+  Scenario:Status doktor tarafından "UNAPPROVED, DISCHARGED, STILL STAYING veya CANCELLED" olarak güncellenebilmeli
+    Given Kullanici Medunna  adresine erisebilmeli
+    And Kullanici account  butonu tiklar
+    And Kullanici registration sekmesine tiklar
+    And Kullanici gecerli bir username ve password girer
+    And Kullanici My pages sekmesini tiklar
+    And Kullanici My Inpatients secenegini tiklar
+    And Kullanici Hasta sayfasında olduğunu doğrular
+    And Kullanici  hasta bilgilerini görüntüler
+    And Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar
+    And Kullanici in patient creat or edt page oldugunu kontrol eder
+    And Kullanici yatarak tedavi durumunu güncelleyebilmelidir
+
+
+  @US014_TC003
+  Scenario:Status doktor tarafından "UNAPPROVED, DISCHARGED, STILL STAYING veya CANCELLED" olarak güncellenebilmeli
+    Given Kullanici Medunna  adresine erisebilmeli
+    And Kullanici account  butonu tiklar
+    And Kullanici registration sekmesine tiklar
+    And Kullanici gecerli bir username ve password girer
+    And Kullanici My pages sekmesini tiklar
+    And Kullanici My Inpatients secenegini tiklar
+    And Kullanici Hasta sayfasında olduğunu doğrular
+    And Kullanici  hasta bilgilerini görüntüler
+    And Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar
+    And Kullanici in patient creat or edt page oldugunu kontrol eder
+    And Doktor yatarak tedavi odasını güncelleyebilmelidir

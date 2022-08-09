@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 
 public class DoctorPage {
     public DoctorPage() {
@@ -80,6 +82,96 @@ public class DoctorPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
+    public WebElement welcomeToMedunnaYazisi;
+
+    @FindBy(xpath = "//*[text()='Edit']")
+    public WebElement hastaBilalEditButonu;
+
+    @FindBy(xpath = "//*[text()='Request A Test']")
+    public WebElement requestATestButonu;
+
+    @FindBy(xpath = "//tr//td[2]") // hangi sutunda oldugunu buldum
+    public List<WebElement> testIsimListesi;
+
+    @FindBy(xpath = "//input[@type='checkbox']")
+    public List<WebElement> testSecmeButonuListesi;
+
+    @FindBy(xpath = "//*[text()='Save']")
+    public WebElement saveButonu;
+
+    @FindBy(xpath = "//div[text()='A new Test is created with identifier 165847']")
+    public WebElement kayitSonrasiGorunurluk;
 
 
 

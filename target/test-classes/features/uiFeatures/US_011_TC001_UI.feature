@@ -8,10 +8,11 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     When Doktor Account-menu butonuna tiklar
     Then Doktor sign in butonuna tiklar
     And Doktor gecerli bir kullanici adı ve sifre girer
+    And Doktor ikinci sign in butonuna tiklar
     And Doktor MY PAGES butonuna tiklar
     And DoktorMy Appointments butonuna tıklar
 
-@Create
+
   Scenario: Kullanici "Create a New Appointment or Edit " islemlerini yapabilmelidir.
     And Doktor Edit butonuna tiklar
     And Doktor hastanin Status alanini belirler

@@ -55,6 +55,21 @@ public class DoctorPage {
     @FindBy(xpath = "//*[text()='Edit']")
     public WebElement editButton;
 
+    @FindBy(xpath = "//textarea[@name='anamnesis']")
+    public WebElement anamnesisKutusu;
+
+    @FindBy(xpath = "//textarea[@name='treatment']")
+    public WebElement treatmentKutusu;
+
+    @FindBy(xpath = "//textarea[@name='diagnosis']")
+    public WebElement diagnosisKutusu;
+
+    @FindBy(xpath = "//textarea[@name='prescription']")
+    public WebElement prescriptionKutusu;
+
+    @FindBy(xpath = "//textarea[@name='description']")
+    public WebElement descriptionKutusu;
+
     @FindBy(xpath = "//*[text()='Save']")
     public WebElement saveButton;
 

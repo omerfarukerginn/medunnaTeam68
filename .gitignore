@@ -3,3 +3,8 @@
 *.iml
 *.ipr
 ./target
+target/
+target
+/target
+/.idea
+/.idea/

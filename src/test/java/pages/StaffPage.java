@@ -42,7 +42,7 @@ public class StaffPage {
     // Hasta bilgileri Edit Elementleri
 
     @FindBy(xpath = "//input[@name='id']")
-    public WebElement IdTextBox;
+    public WebElement idTextBox;
 
     @FindBy(xpath = "//input[@id='patient-firstName']")
     public WebElement firstNameTextBox;
@@ -85,6 +85,16 @@ public class StaffPage {
 
     @FindBy(xpath = "//div[@role='alert']")
     public WebElement guncellendiYaziElementi;
+
+    @FindBy(xpath = "//td[text()='668-83-4231']")
+    public WebElement ssnHastaBilgisiElementi;
+
+    @FindBy(xpath = "//div[text()='This field is required.']")
+    public WebElement hataYaziElementi;
+
+
+
+
 
 
 

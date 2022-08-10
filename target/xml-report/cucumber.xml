@@ -1,54 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="60.03">
-    <testcase classname="US_014 Physician (Doctor) &quot;Edit Inpatient&quot; (Yatılı Tedavi) işlemleri yapabilmeli" name="Doktor hasta bilgilerini görüntülüyebilmeli" time="28.547">
-        <system-out>
-            <![CDATA[Given Kullanici Medunna  adresine erisebilmeli..............................passed
-And Kullanici account  butonu tiklar........................................passed
-And Kullanici registration sekmesine tiklar.................................passed
-And Kullanici gecerli bir username ve password girer........................passed
-And Kullanici My pages sekmesini tiklar.....................................passed
-And Kullanici My Inpatients secenegini tiklar...............................passed
-Then Kullanici Hasta sayfasında olduğunu doğrular...........................passed
-And Kullanici  hasta bilgilerini görüntüler.................................passed
-And Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar.passed
-And Kullanici in patient creat or edt page oldugunu kontrol eder............passed
-And Kullanici başlangıç tarihi bölümünü güncelleyebilir.....................passed
-And Kullanici  bitiş tarihi bölümünü güncelleyebilir........................passed
-And Kullanici açıklama bölümünü güncelleyebilir.............................passed
-And Kullanici oluşturulan tarih bölümünü güncelleyebilir....................passed
-And Kullanici randevu bölümünü güncelleyebilir..............................passed
-And Kullanici save butonunu tiklar..........................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_014 Physician (Doctor) &quot;Edit Inpatient&quot; (Yatılı Tedavi) işlemleri yapabilmeli" name="Status doktor tarafından &quot;UNAPPROVED, DISCHARGED, STILL STAYING veya CANCELLED&quot; olarak güncellenebilmeli" time="15.527">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Sign in']&quot;}&#10;  (Session info: chrome=103.0.5060.134)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'LAPTOP-KBMCT73T', ip: '192.168.0.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [16524a77f8fc6c615e90bc4e34ac4eec, findElement {using=xpath, value=//*[text()='Sign in']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Mehmet\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59209/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 16524a77f8fc6c615e90bc4e34ac4eec" type="org.openqa.selenium.NoSuchElementException">
-            <![CDATA[Given Kullanici Medunna  adresine erisebilmeli..............................passed
-And Kullanici account  butonu tiklar........................................failed
-And Kullanici registration sekmesine tiklar.................................skipped
-And Kullanici gecerli bir username ve password girer........................skipped
-And Kullanici My pages sekmesini tiklar.....................................skipped
-And Kullanici My Inpatients secenegini tiklar...............................skipped
-Then Kullanici Hasta sayfasında olduğunu doğrular...........................skipped
-And Kullanici  hasta bilgilerini görüntüler.................................skipped
-And Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar.skipped
-And Kullanici in patient creat or edt page oldugunu kontrol eder............skipped
-And Kullanici yatarak tedavi durumunu güncelleyebilmelidir..................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.869">
+    <testcase classname="US009 Staff (Personel), hasta bilgilerini görebilmeli, düzenleyebilmeli ve silebilmelidir." name="TC_06 Staff hasta bilgilerini silebilmeli" time="11.425">
+        <failure message="element click intercepted: Element is not clickable at point (364, 974)&#10;  (Session info: chrome=104.0.5112.81)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'RIDONE', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f6bbc0283fec1ffc496127bbaec4ba73, clickElement {id=027680a0-21f0-4733-a302-a729b2715c6c}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\w\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:55966}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55966/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (f6bbc0283fec1ffc496127bbaec4ba73)] -&gt; xpath: //span[text()='Save']]&#10;Session ID: f6bbc0283fec1ffc496127bbaec4ba73" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given Kullanici "medunna_url" adresine gider................................passed
+Then Insan figurune tiklar..................................................passed
+And Sign in secenegini secer................................................passed
+And Staff olarak username ve password girer.................................passed
+Then Sign in butonuna tiklar................................................passed
+And MY PAGES sekmesine tiklar...............................................passed
+And Search Patient secenegini secer.........................................passed
+And Patient SSN kutusuna "668-83-4231" girer................................passed
+And Edit butonuna tiklar....................................................passed
+Then Herhangi bir hasta bilgisini silemedigini test eder....................failed
+Then Sayfayi kapatir........................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Sign in']"}
-  (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (364, 974)
+  (Session info: chrome=104.0.5112.81)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'LAPTOP-KBMCT73T', ip: '192.168.0.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+System info: host: 'RIDONE', ip: '192.168.0.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [16524a77f8fc6c615e90bc4e34ac4eec, findElement {using=xpath, value=//*[text()='Sign in']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Mehmet\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59209/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 16524a77f8fc6c615e90bc4e34ac4eec
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+Command: [f6bbc0283fec1ffc496127bbaec4ba73, clickElement {id=027680a0-21f0-4733-a302-a729b2715c6c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\w\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:55966}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55966/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6bbc0283fec1ffc496127bbaec4ba73)] -> xpath: //span[text()='Save']]
+Session ID: f6bbc0283fec1ffc496127bbaec4ba73
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -56,63 +33,14 @@ Session ID: 16524a77f8fc6c615e90bc4e34ac4eec
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
-	at stepDefinitions.uiStepDefinitions.US_014_UI_StepDefinition.kullaniciAccountButonuTiklar(US_014_UI_StepDefinition.java:62)
-	at ✽.Kullanici account  butonu tiklar(file:///C:/Users/Mehmet/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_014_UI.feature:8)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="US_014 Physician (Doctor) &quot;Edit Inpatient&quot; (Yatılı Tedavi) işlemleri yapabilmeli" name="Status doktor tarafından &quot;UNAPPROVED, DISCHARGED, STILL STAYING veya CANCELLED&quot; olarak güncellenebilmeli 2" time="15.665">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Sign in']&quot;}&#10;  (Session info: chrome=103.0.5060.134)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'LAPTOP-KBMCT73T', ip: '192.168.0.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [16524a77f8fc6c615e90bc4e34ac4eec, findElement {using=xpath, value=//*[text()='Sign in']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Mehmet\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59209/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 16524a77f8fc6c615e90bc4e34ac4eec" type="org.openqa.selenium.NoSuchElementException">
-            <![CDATA[Given Kullanici Medunna  adresine erisebilmeli..............................passed
-And Kullanici account  butonu tiklar........................................failed
-And Kullanici registration sekmesine tiklar.................................skipped
-And Kullanici gecerli bir username ve password girer........................skipped
-And Kullanici My pages sekmesini tiklar.....................................skipped
-And Kullanici My Inpatients secenegini tiklar...............................skipped
-Then Kullanici Hasta sayfasında olduğunu doğrular...........................skipped
-And Kullanici  hasta bilgilerini görüntüler.................................skipped
-And Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar.skipped
-And Kullanici in patient creat or edt page oldugunu kontrol eder............skipped
-And Doktor yatarak tedavi odasını güncelleyebilmelidir......................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Sign in']"}
-  (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'LAPTOP-KBMCT73T', ip: '192.168.0.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [16524a77f8fc6c615e90bc4e34ac4eec, findElement {using=xpath, value=//*[text()='Sign in']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Mehmet\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59209}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59209/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 16524a77f8fc6c615e90bc4e34ac4eec
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
-	at stepDefinitions.uiStepDefinitions.US_014_UI_StepDefinition.kullaniciAccountButonuTiklar(US_014_UI_StepDefinition.java:62)
-	at ✽.Kullanici account  butonu tiklar(file:///C:/Users/Mehmet/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_014_UI.feature:8)
-]]>
-        </failure>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at stepDefinitions.uiStepDefinitions.US_009_UI_StepDefinition.herhangiBirHastaBilgisiniSilemediginiTestEder(US_009_UI_StepDefinition.java:150)
+	at ✽.Herhangi bir hasta bilgisini silemedigini test eder(file:///C:/Users/w/Desktop/projelerim_yedek_01.02.22/medunnaTeam68/src/test/resources/features/uiFeatures/US_009_UI.feature:74)
+]]></failure>
     </testcase>
 </testsuite>

@@ -1,34 +1,133 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="37.747">
-    <testcase classname="Doktor (Physician) randevuları" name="Kullanıcı, Dr olarak randevu listesini ve zaman dilimlerini &quot;My Appointments&quot; sekmesinden görebilmelidir" time="19">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="9.469">
+    <testcase classname="US_002 registerpage" name="US002_TC001" time="5.948">
         <system-out>
-            <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
-And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı Dr olarak username kutusuna gecerli bir username bilgilerini girer.passed
-And Kullanıcı Dr olarak password kutusuna gecerli password bilgilerini girer.passed
-And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-And Kullanici Dr olarak My Pages butonuna tıklar............................passed
-And Kullanici Dr olarak My Appointments  butonuna tıklar....................passed
-Then Kullanici Dr olarak Randevuları gorur..................................passed
-Then kullanici 3 sn bekler..................................................passed
-And Sayfayi kapatir.........................................................passed
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"ab.".passed
+Then Kullanici Your username is required mesajini görmemeli.................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Doktor (Physician) randevuları" name="Kullanıcı &quot;patient id, start date, end date, status&quot; bilgilerini görebilmeli" time="18.29">
+    <testcase classname="US_002 registerpage" name="US002_TC001_2" time="0.278">
         <system-out>
-            <![CDATA[Given Kullanıci ana sayfaya gider...........................................passed
-And Kullanıcı sign in butonuna basar........................................passed
-And Kullanıcı Dr olarak username kutusuna gecerli bir username bilgilerini girer.passed
-And Kullanıcı Dr olarak password kutusuna gecerli password bilgilerini girer.passed
-And Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır.............passed
-And Kullanici Dr olarak My Pages butonuna tıklar............................passed
-And Kullanici Dr olarak My Appointments  butonuna tıklar....................passed
-Then Kullanici Dr olarak Randevuları gorur..................................passed
-Then Kullanıcı Dr olarak patient id, start date, end date, status bilgilerini gorur.passed
-Then kullanici 3 sn bekler..................................................passed
-And Sayfayi kapatir.........................................................passed
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"kjef".passed
+Then Kullanici Your username is required mesajini görmemeli.................passed
 ]]>
         </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="US002_TC001_3" time="0.286">
+        <system-out>
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"@".passed
+Then Kullanici Your username is required mesajini görmemeli.................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="US002_TC001_4" time="0.244">
+        <system-out>
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"1267".passed
+Then Kullanici Your username is required mesajini görmemeli.................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="US002_TC001_5" time="0.265">
+        <system-out>
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"masnb.7".passed
+Then Kullanici Your username is required mesajini görmemeli.................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="US002_TC002" time="0.501">
+        <system-out>
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+Given kullanci gecerli bir ssn numaraasi girer "123-99-2323"................passed
+And kullanci gecerli bir first name girer "bayramx".........................passed
+And kullanci gecerli bir last name girer "hzl"..............................passed
+And kullanci username bos birakir...........................................passed
+And kullanci bir pasword girer "byRm!12"....................................passed
+And kullanci girilen passwordu dogrular "byRm!12"...........................passed
+When kullanici register tusuna basar........................................passed
+Then kullanci your username is required mesaji alir.........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="US002_TC004" time="0.251">
+        <system-out>
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+And Kullanici email kutusunu tiklamali ve gecerli bir email girmeli "bay@g.k".passed
+Then Kullanici Kullanici " The field is invalid" mesaji görmemeli...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="US002_TC004_2" time="0.248">
+        <system-out>
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+And Kullanici email kutusunu tiklamali ve gecerli bir email girmeli "bayr@com.tr".passed
+Then Kullanici Kullanici " The field is invalid" mesaji görmemeli...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="US002_TC005" time="0.304">
+        <system-out>
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+And Kullanici email kutusunu tiklamali ve “@“ kullanarak ANCAK “.“ kullanmadan  email girmeli "bay@msn".passed
+Then Kullanici Kullanici " The field is invalid" mesaji görmeli.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="US002_TC005_2" time="0.289">
+        <system-out>
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+And Kullanici email kutusunu tiklamali ve “@“ kullanarak ANCAK “.“ kullanmadan  email girmeli "bayr@com".passed
+Then Kullanici Kullanici " The field is invalid" mesaji görmeli.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="S002_TC006" time="0.299">
+        <failure message="The following asserts failed:&#10;&#9;This field is invalid expected [false] but found [true]" type="java.lang.AssertionError">
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+And Kullanici email kutusunu tiklamali ve “.“ isareti kullandiktan sonra “@“ ile devam ederk mail adresi yazmali  email girmeli "bay.hiz@msn".passed
+Then Kullanici Kullanici The field is invalid mesaji görmemeli..............failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	This field is invalid expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.uiStepDefinitions.US_002_UI_StepDefinitions.kullaniciKullaniciTheFieldIsInvalidMesajiGörmemeli(US_002_UI_StepDefinitions.java:125)
+	at ✽.Kullanici Kullanici The field is invalid mesaji görmemeli(file:///Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_002_UI.feature:47)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US_002 registerpage" name="S002_TC006_2" time="0.323">
+        <failure message="The following asserts failed:&#10;&#9;This field is invalid expected [false] but found [true]" type="java.lang.AssertionError">
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
+And kullanici registration sayfasina gider(navigate)........................passed
+And Kullanici email kutusunu tiklamali ve “.“ isareti kullandiktan sonra “@“ ile devam ederk mail adresi yazmali  email girmeli "bayr.hak@comtnsa".passed
+Then Kullanici Kullanici The field is invalid mesaji görmemeli..............failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	This field is invalid expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepDefinitions.uiStepDefinitions.US_002_UI_StepDefinitions.kullaniciKullaniciTheFieldIsInvalidMesajiGörmemeli(US_002_UI_StepDefinitions.java:125)
+	at ✽.Kullanici Kullanici The field is invalid mesaji görmemeli(file:///Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_002_UI.feature:47)
+]]>
+        </failure>
     </testcase>
 </testsuite>

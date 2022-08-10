@@ -38,6 +38,6 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
 
   @US014_TC003
   Scenario:Status doktor tarafından "UNAPPROVED, DISCHARGED, STILL STAYING veya CANCELLED" olarak güncellenebilmeli
-   
+
     And Kullanici in patient creat or edt page oldugunu kontrol eder
     And Doktor yatarak tedavi odasını güncelleyebilmelidir

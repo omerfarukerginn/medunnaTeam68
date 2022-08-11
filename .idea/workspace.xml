@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17d45320-066e-4299-b511-51c08f222c1f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/StaffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/StaffPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/baseUrl/MedunnaBaseUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/baseUrl/MedunnaBaseUrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_001_API.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_001_API.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_010_API.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_010_API.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_009_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_009_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_014_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_014_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/StaffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/StaffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Registrant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojos/Registrant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team68Medunna.iml" beforeDir="false" afterPath="$PROJECT_DIR$/team68Medunna.iml" afterDir="false" />
-    </list>
+    <list default="true" id="17d45320-066e-4299-b511-51c08f222c1f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,9 +29,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/pages/StaffPage.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JQLSearcherProjectManager">
     <selected>-1</selected>
@@ -187,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: TC_06 Staff hasta bilgilerini silebilmeli" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: TC_06 Staff hasta bilgilerini silebilmeli" />
         <item itemvalue="Cucumber Java.Scenario: TC_05 Staff hastaları silememeli." />
-        <item itemvalue="Cucumber Java.Scenario: TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." />
         <item itemvalue="Cucumber Java.Scenario: TC_04 Staff, hastaları SSN kimliklerine göre arayabilir." />
+        <item itemvalue="Cucumber Java.Scenario: TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." />
       </list>
     </recent_temporary>
   </component>
@@ -216,5 +201,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

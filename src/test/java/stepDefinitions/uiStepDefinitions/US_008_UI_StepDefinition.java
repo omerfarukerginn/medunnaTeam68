@@ -61,10 +61,12 @@ public class US_008_UI_StepDefinition {
 
     @Given("ofe Save butonuna tiklar")
     public void ofe_save_butonuna_tiklar() {
+        passwordPage.passwordPageSaveButton.click();
     }
 
     @And("ofe Password changed! uyarisinin goruldugunu onaylar")
     public void ofePasswordChangedUyarisininGoruldugunuOnaylar() {
+
     }
 
 

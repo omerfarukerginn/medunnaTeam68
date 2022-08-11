@@ -12,42 +12,15 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+import java.io.File;
+import java.io.IOException;
+
+import static org.testng.reporters.jq.BasePanel.C;
+
 public class US_014_UI_StepDefinition {
 
     DoctorPage us014 = new DoctorPage();
     Actions actions = new Actions(Driver.getDriver());
-
-    /*  @Given("Kullanıci Ana Sayfaya gider")
-    public void kullanıci_Ana_Sayfaya_gider() {
-        Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
-
-    }
-
-    @Given("Kullanıcı Sign In butonuna basar")
-    public void kullanıcı_Sign_In_butonuna_basar() {
-        us014.humanButton.click();
-        us014.singInButtonu.click();
-    }
-
-    @Given("Kullanıcı Username kutusuna gecerli bir username bilgilerini girer")
-    public void kullanıcı_Username_kutusuna_gecerli_bir_username_bilgilerini_girer() {
-        us014.userName.sendKeys(ConfigReader.getProperty("doktorUserName"));
-    }
-
-    @Given("Kullanıcı Password kutusuna gecerli Password bilgilerini girer")
-    public void kullanıcı_Password_kutusuna_gecerli_Password_bilgilerini_girer() {
-        us014.password.sendKeys(ConfigReader.getProperty("doktorPassword"));
-
-    }
-
-
-    @And("Kullanıcı, sağ altta bulunan Sign In düğmesine tıklamalıdır")
-    public void kullanıcıSağAlttaBulunanSignInDüğmesineTıklamalıdır() {
-        ReusableMethods.waitFor(3);
-        us014.girisSonrasiSingIn.click();
-
-    }*/
-
 
 
 
@@ -82,7 +55,7 @@ public class US_014_UI_StepDefinition {
 
     @And("Kullanici My Inpatients secenegini tiklar")
     public void kullaniciMyInpatientsSeceneginiTiklar() {
-       us014.myInpatientsButton.click();
+        us014.myInpatientsButton.click();
 
     }
 
@@ -107,26 +80,28 @@ public class US_014_UI_StepDefinition {
 
 
     }
+
     @And("Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar")
     public void kullaniciInPatientsSayfasindaGüncellenmesiIstenenHastaninEditButonuTiklar() {
-        ReusableMethods.clickWithTimeOut(us014.inPatientsEditButton2,3);
+        ReusableMethods.clickWithTimeOut(us014.inPatientsEditButton2, 3);
         ReusableMethods.waitFor(3);
     }
 
 
     @And("Kullanici in patient creat or edt page oldugunu kontrol eder")
     public void kullaniciInPatientCreatOrEdtPageOldugunuKontrolEder() {
-        String expectedResult="Create or edit a In Patient";
-        String actualResult= us014.inPatientEditPageText.getText();
-       ReusableMethods.waitFor(5);
-        Assert.assertEquals(expectedResult,actualResult);
+        String expectedResult = "Create or edit a In Patient";
+        String actualResult = us014.inPatientEditPageText.getText();
+        ReusableMethods.waitFor(5);
+        Assert.assertEquals(expectedResult, actualResult);
 
     }
 
-    @And("Kullanici başlangıç tarihi bölümünü güncelleyebilir")
-    public void kullaniciBaşlangıçTarihiBölümünüGüncelleyebilir() {
-        Assert.assertFalse( us014.editInPatientStartDate.isSelected());
+    @And("Kullanici baslangıc tarihi bölümünü güncelleyebilir")
+    public void kullaniciBaslangıcTarihiBölümünüGüncelleyebilir() {
+        Assert.assertFalse(us014.editInPatientStartDate.isSelected());
     }
+
     @And("Kullanici  bitiş tarihi bölümünü güncelleyebilir")
     public void kullaniciBitişTarihiBölümünüGüncelleyebilir() {
         Assert.assertFalse(us014.editInPatientEndDate.isSelected());
@@ -134,9 +109,9 @@ public class US_014_UI_StepDefinition {
 
     @And("Kullanici açıklama bölümünü güncelleyebilir")
     public void kullaniciAçıklamaBölümünüGüncelleyebilir() {
-       ReusableMethods.clickWithTimeOut(us014.editInPatientDescription,3);
+        ReusableMethods.clickWithTimeOut(us014.editInPatientDescription, 3);
         us014.editInPatientDescription.clear();
-        us014.editInPatientDescription.sendKeys("halsizlik söz konusu");
+        us014.editInPatientDescription.sendKeys("halsiz");
     }
 
     @And("Kullanici oluşturulan tarih bölümünü güncelleyebilir")
@@ -144,49 +119,37 @@ public class US_014_UI_StepDefinition {
         us014.editInPatientCreatedDate.clear();
         us014.editInPatientCreatedDate.sendKeys("05092333001112");
     }
+
     @And("Kullanici randevu bölümünü güncelleyebilir")
-    public void kullaniciRandevuBölümünüGüncelleyebilir() {
+    public void kullaniciRandevuBölümünüGüncelleyebilir() throws IOException {
         Assert.assertFalse(us014.editInPatientAppointment.isSelected());
 
+
     }
+
     @Then("Kullanici save butonunu tiklar")
     public void kullaniciSaveButonunuTiklar() {
         ReusableMethods.waitFor(4);
-       us014.editInPatientSaveButton.sendKeys(Keys.ENTER);
+        us014.editInPatientSaveButton.sendKeys(Keys.ENTER);
 
     }
 
+
     @And("Kullanici yatarak tedavi durumunu güncelleyebilmelidir")
     public void kullaniciYatarakTedaviDurumunuGüncelleyebilmelidir() {
-        Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown,"UNAPPROVED");
-        Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown,"STAYING");
-        Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown,"DISCHARGED");
-        Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown,"CANCELLED");
+        Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown, "UNAPPROVED");
+        Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown, "STAYING");
+        Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown, "DISCHARGED");
+        Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown, "CANCELLED");
     }
 
     @And("Doktor yatarak tedavi odasını güncelleyebilmelidir")
     public void doktorYatarakTedaviOdasınıGüncelleyebilmelidir() {
-        Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown,"3626:DAYCARE FULL-UNAVAILABLE");
-        Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown,"2042:TWIN FULL-UNAVAILABLE");
-        Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown,"151:DELUXE FULL-UNAVAILABLE");
+        Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown, "2979009:SUITE FULL-UNAVAILABLE");
+        Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown, "2042:TWIN FULL-UNAVAILABLE");
+        Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown, "117:DELUXE FULL-UNAVAILABLE");
 
     }
-
-
-
-
-
-
-   /* @Then("Kullanici ekrana cikan mesaji doğrulamalıdır")
-    public void kullaniciEkranaCikanMesajiDoğrulamalıdır() {
-        Assert.assertTrue(us014.editInPatientEkranaCikanMesaj.isDisplayed());
-    }*/
-
-    /* @And("Kullanici Sayfayi kapatir")
-    public void kullaniciSayfayiKapatir() {
-        Driver.closeDriver();
-    }
-*/
 
 
 }

@@ -21,12 +21,13 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
   Scenario:Doktor hasta bilgilerini görüntülüyebilmeli
 
 
-    And Kullanici başlangıç tarihi bölümünü güncelleyebilir
+    And Kullanici baslangıc tarihi bölümünü güncelleyebilir
     And Kullanici  bitiş tarihi bölümünü güncelleyebilir
     And Kullanici açıklama bölümünü güncelleyebilir
     And Kullanici oluşturulan tarih bölümünü güncelleyebilir
     And Kullanici randevu bölümünü güncelleyebilir
     And Kullanici save butonunu tiklar
+    And Sayfayi kapatir
 
 
   @US014_TC002
@@ -34,10 +35,13 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
 
 
     And Kullanici yatarak tedavi durumunu güncelleyebilmelidir
+    And Sayfayi kapatir
+
 
 
   @US014_TC003
-  Scenario:Status doktor tarafından "UNAPPROVED, DISCHARGED, STILL STAYING veya CANCELLED" olarak güncellenebilmeli
+  Scenario:Doktor rezerve edilmiş odayı güncelleyebilmeli
 
 
     And Doktor yatarak tedavi odasını güncelleyebilmelidir
+    And Sayfayi kapatir

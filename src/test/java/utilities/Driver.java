@@ -83,7 +83,7 @@ public class Driver {
 
 
 
-
+// Select ve dropdown varsa bu method kullanilabilir
     public static void selectAnItemFromDropdown(WebElement item, String selectableItem) {
         ReusableMethods.waitFor(2);
         Select select = new Select(item);

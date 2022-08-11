@@ -1,7 +1,7 @@
-
+@api07
 Feature: Appointment Api Test
 
-  @ApiAppointment
+
   Scenario: Appointment Api Testing
 
     Given Eb user set path params

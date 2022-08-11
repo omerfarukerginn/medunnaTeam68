@@ -11,6 +11,7 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor ikinci sign in butonuna tiklar
     And Doktor MY PAGES butonuna tiklar
     And DoktorMy Appointments butonuna tıklar
+    And Sayfayi kapatir
 
 
   Scenario: Kullanici "Create a New Appointment or Edit " islemlerini yapabilmelidir.

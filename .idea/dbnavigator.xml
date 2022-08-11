@@ -17,8 +17,13 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
+<<<<<<< HEAD
       <charset value="windows-1254" />
       <charset value="windows-1254" />
+=======
+      <charset value="UTF-8" />
+      <charset value="UTF-8" />
+>>>>>>> e58927281bb3fc9051bf89bb92bd8e264e8a8dce
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -99,6 +104,7 @@
         <object-type name="FUNCTİON" sorting-type="NAME" />
         <object-type name="PROCEDURE" sorting-type="NAME" />
         <object-type name="ARGUMENT" sorting-type="POSITION" />
+        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
       </sorting>
       <default-editors>
         <object-type name="VİEW" editor-type="SELECTION" />

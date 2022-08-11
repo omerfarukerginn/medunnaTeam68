@@ -93,42 +93,4 @@ public class RegisterPage {
 
 
 
-    /*
-    @FindBy(xpath = "//li[@id='entity-menu']")
-    public WebElement myPages(Patient);
-
-    @FindBy(xpath = "//a[@class='dropdown-item active']")
-    public WebElement makeAnAppointment;
-
-     @FindBy(xpath = "(//a[@class='dropdown-item'])[1]")
-    public WebElement myAppointments;
-
-
-    @FindBy(xpath = "//input[@name='firstName']")
-    public WebElement firstName;
-
-    @FindBy(xpath = "//input[@name='lastName']")
-    public WebElement lastName;
-
-
-@FindBy(xpath = "//input[@name='ssn']")
-    public WebElement ssnSection;
-
-
-@FindBy(xpath = "//input[@name='email']")
-    public WebElement emailSection;
-
-@FindBy(xpath = "//input[@name='phone']")
-    public WebElement phoneSection;
-
-@FindBy(xpath = "//input[@name='appoDate']")
-    public WebElement dateSection;
-
-
-    @FindBy(xpath = "//button[@type='submit']")
-    public WebElement sendAnAppointmentRequest;
-
-
-     */
-
 }

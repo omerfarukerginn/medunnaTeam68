@@ -51,11 +51,14 @@ public class DoctorPage {
     @FindBy(xpath = "//*[text()='End DateTime']")
     public WebElement endDateTimeButton;
 
-    @FindBy(xpath = "//*[text()='Status']")
+    @FindBy(xpath = "//select[@name='status']")
     public WebElement statusButton;
 
     @FindBy(xpath = "//*[text()='Edit']")
     public WebElement editButton;
+
+   /* @FindBy(xpath = "//option[@value='PENDING']")
+    public WebElement pendingSecenegi;*/
 
     @FindBy(xpath = "//textarea[@name='anamnesis']")
     public WebElement anamnesisKutusu;
@@ -72,10 +75,10 @@ public class DoctorPage {
     @FindBy(xpath = "//textarea[@name='description']")
     public WebElement descriptionKutusu;
 
-    @FindBy(xpath = "//*[text()='Save']")
+    @FindBy(xpath = "//button [@type='submit']")
     public WebElement saveButton;
 
-    @FindBy(xpath = "//*[text()='The Appointment is updated with identifier 160060']")
+    @FindBy(xpath = "//div [@role='alert']")
     public WebElement appointmentBasariliYazisi;
 
 

@@ -4,18 +4,18 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
 
   Background:Ortak adimlar
 
-    Given Kullanıci ana sayfaya gider
+    Given Kullanici anasayfaya gider
     When Doktor Account-menu butonuna tiklar
     Then Doktor sign in butonuna tiklar
     And Doktor gecerli bir kullanici adı ve sifre girer
     And Doktor ikinci sign in butonuna tiklar
-    And Doktor MY PAGES butonuna tiklar
-    And DoktorMy Appointments butonuna tıklar
-    And Sayfayi kapatir
+    And Doktor MYPAGES butonuna tiklar
+    And Doktor My Appointments butonuna tıklar
+
 
 
   Scenario: Kullanici "Create a New Appointment or Edit " islemlerini yapabilmelidir.
-    And Doktor Edit butonuna tiklar
+    And Doktor Edit butonuna tiklar.
     And Doktor hastanin Status alanini belirler
     And Doktor hastanin Anemnesis bilgilerini doldurur
     And Doktor hastanin Treatment  bilgilerini doldurur
@@ -24,7 +24,7 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor hastanin Description bilgilerini doldurur
     And Doktor save butonuna tiklar
     And Doktor "The Appointment is updated with identifier"mesajini gorur.
-    Then Sayfayi kapatir
+    Then Sayfayi kapatir.
 
   Scenario:Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir.
   "id, start and end date, Status, physician and patient"

@@ -27,13 +27,10 @@ public class US_001_UI_StepDefinitions {
 
     @Given("kullanici registration sayfasina gider\\(navigate)")
     public void kullanici_registration_sayfasina_gider_navigate() {
-<<<<<<< HEAD
-      // loginPage.accountMenu.click();
-       //loginPage.register.click();
-=======
+
        loginPage.loginPageMenuButton.click();
        registerPage.homeRegisterButton.click();
->>>>>>> main
+
     }
 
     @Given("kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer {string}")

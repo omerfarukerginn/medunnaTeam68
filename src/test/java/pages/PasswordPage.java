@@ -20,10 +20,10 @@ public class PasswordPage {
     public WebElement newPasswordTextArea;
 
     @FindBy(xpath = "//li[@class='point'][2]")
-    public WebElement passwordStrengtLevel2;
+    public WebElement passwordStrengthLevel2;
 
     @FindBy(name = "ConfirmPassword")
-    public WebElement confirmPassordTextArea;
+    public WebElement confirmPasswordTextArea;
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement passwordPageSaveButton;

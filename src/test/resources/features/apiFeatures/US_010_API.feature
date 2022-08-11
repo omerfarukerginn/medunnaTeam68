@@ -1,7 +1,7 @@
 @api10
-Feature: US010_ApiTest
+Feature:US010_ApiTest
 
-  Scenario Outline : doktor randevu listesini api'de görebilmeli
+  Scenario Outline:doktor randevu listesini api'de görebilmeli
 
     When Doctor set Medunna base url "<id>"
     And Doctor send the GET request and GET the response

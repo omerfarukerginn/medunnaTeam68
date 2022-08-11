@@ -45,9 +45,9 @@ public class PatientPage {
     public WebElement signinPasswordKutusu;
     @FindBy (xpath = "(//span[text()='Sign in'])[3]")
     public WebElement ikinciSigninButton;
-    @FindBy (xpath = "//span[text()='MY PAGES(PATIENT)']")
+    @FindBy (xpath = "//span[text()='MY PAGES(PATIENT)']") //li[@id='entity-menu']
     public WebElement myPagesPatientButton;
-    @FindBy (xpath = "//span[text()='My Appointments']")
+    @FindBy (xpath = "//span[text()='My Appointments']") //a[@class='dropdown-item active']
     public WebElement myAppointmentsButton;
     @FindBy (xpath = "(//div[@class='invalid-feedback'])[1]")
     public WebElement bosFirstNameMesaji;

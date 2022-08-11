@@ -19,5 +19,7 @@ public class Registrant {
     private String email;
     private String password;
     private String ssn;
+    private int id;
+
 
 }

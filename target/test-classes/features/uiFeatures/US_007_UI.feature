@@ -11,7 +11,7 @@ Feature: US_007_TC_001 Kullanıcı geçerli tarih girmelidir ve randevusunu gorm
     And Eb Kullanici MyPages sekmesine tiklar
 
   @TEST_MED-140
-  Scenario: Eb Kullanici guncel veya gelecekten bir tarih secer
+  Scenario: Eb Kullanici guncel veya gelelcekten bir tarih secer
     And Eb Kullanici Make An Appointment sekmesine tiklar
     And Eb Kullanici FirstName bolumune ismini girer
     And Eb Kullanici LastName bolumune soy ismini girer

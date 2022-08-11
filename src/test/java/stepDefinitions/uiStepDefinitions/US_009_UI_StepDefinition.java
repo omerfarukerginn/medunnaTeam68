@@ -141,15 +141,16 @@ public class US_009_UI_StepDefinition {
     }
 
     @Then("Herhangi bir hasta bilgisini silemedigini test eder")
-    public void herhangiBirHastaBilgisiniSilemediginiTestEder() {
+    public void herhangiBirHastaBilgisiniSilemediginiTestEder() throws InterruptedException {
+
         staffPage.firstNameTextBox.clear();
-        staffPage.lastNameTextBox.clear();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        actions.sendKeys(Keys.DOWN).perform();
+        Thread.sleep(1000);
         staffPage.saveButton.click();
         actions.sendKeys(Keys.PAGE_UP).perform();
         actions.sendKeys(Keys.PAGE_UP).perform();
+        Thread.sleep(1000);
 
         Assert.assertTrue(staffPage.hataYaziElementi.isDisplayed());
 

@@ -76,7 +76,7 @@ Feature: US009 Staff (Personel), hasta bilgilerini görebilmeli, düzenleyebilme
 
     Examples:
       | SSN         |
-      | 668-83-4231 |
+      | 134-56-8697 |
 
 
 

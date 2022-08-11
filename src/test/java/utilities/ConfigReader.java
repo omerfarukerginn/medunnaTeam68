@@ -23,7 +23,7 @@ public class ConfigReader {
         }
     }
 
-    public static java.lang.CharSequence getProperty(String key){
+    public static String getProperty(String key){
         /*
         test method'undan yolladigimiz string key degerini alip
         Properties class'indan getProperty() method'unu kullanarak

@@ -12,7 +12,8 @@ public class RegisterPage {
     //homebutton ve registerbutton locate icin LoginPage sayfasindan obje create edip account menu ve register diyerek call edilmeli
     @FindBy(id = "ssn")
     public WebElement ssnRegisterPage;
-
+    @FindBy(xpath = "//*[text()='Register']")
+    public WebElement homePageRegisterButton;
 
     @FindBy(xpath = "//div[text()='Your SSN is invalid']")
     public WebElement invalidSsnMessageRegisterPage;

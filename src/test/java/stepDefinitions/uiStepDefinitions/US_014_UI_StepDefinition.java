@@ -109,7 +109,7 @@ public class US_014_UI_StepDefinition {
     }
     @And("Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar")
     public void kullaniciInPatientsSayfasindaGüncellenmesiIstenenHastaninEditButonuTiklar() {
-        ReusableMethods.clickWithTimeOut(us014.inPatientsEditButton2,3);
+
         ReusableMethods.waitFor(3);
     }
 
@@ -134,7 +134,7 @@ public class US_014_UI_StepDefinition {
 
     @And("Kullanici açıklama bölümünü güncelleyebilir")
     public void kullaniciAçıklamaBölümünüGüncelleyebilir() {
-       ReusableMethods.clickWithTimeOut(us014.editInPatientDescription,3);
+
         us014.editInPatientDescription.clear();
         us014.editInPatientDescription.sendKeys("halsizlik söz konusu");
     }

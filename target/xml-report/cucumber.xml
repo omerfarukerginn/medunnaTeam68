@@ -1,132 +1,156 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="9.469">
-    <testcase classname="US_002 registerpage" name="US002_TC001" time="5.948">
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="22.81">
+    <testcase classname="US_001 registerpage" name="US001_TC001" time="20.93">
         <system-out>
             <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
 And kullanici registration sayfasina gider(navigate)........................passed
-When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"ab.".passed
-Then Kullanici Your username is required mesajini görmemeli.................passed
+Given kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer "123-34-4567".passed
+Then Kullanici uyari mesaji görmemeli ""....................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC001_2" time="0.278">
+    <testcase classname="US_001 registerpage" name="US001_TC001_2" time="1.45">
         <system-out>
             <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
 And kullanici registration sayfasina gider(navigate)........................passed
-When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"kjef".passed
-Then Kullanici Your username is required mesajini görmemeli.................passed
+Given kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer "906-12-5436".passed
+Then Kullanici uyari mesaji görmemeli ""....................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC001_3" time="0.286">
-        <system-out>
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"@".passed
-Then Kullanici Your username is required mesajini görmemeli.................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC001_4" time="0.244">
-        <system-out>
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"1267".passed
-Then Kullanici Your username is required mesajini görmemeli.................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC001_5" time="0.265">
-        <system-out>
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"masnb.7".passed
-Then Kullanici Your username is required mesajini görmemeli.................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC002" time="0.501">
-        <system-out>
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-Given kullanci gecerli bir ssn numaraasi girer "123-99-2323"................passed
-And kullanci gecerli bir first name girer "bayramx".........................passed
-And kullanci gecerli bir last name girer "hzl"..............................passed
-And kullanci username bos birakir...........................................passed
-And kullanci bir pasword girer "byRm!12"....................................passed
-And kullanci girilen passwordu dogrular "byRm!12"...........................passed
-When kullanici register tusuna basar........................................passed
-Then kullanci your username is required mesaji alir.........................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC004" time="0.251">
-        <system-out>
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-And Kullanici email kutusunu tiklamali ve gecerli bir email girmeli "bay@g.k".passed
-Then Kullanici Kullanici " The field is invalid" mesaji görmemeli...........passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC004_2" time="0.248">
-        <system-out>
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-And Kullanici email kutusunu tiklamali ve gecerli bir email girmeli "bayr@com.tr".passed
-Then Kullanici Kullanici " The field is invalid" mesaji görmemeli...........passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC005" time="0.304">
-        <system-out>
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-And Kullanici email kutusunu tiklamali ve “@“ kullanarak ANCAK “.“ kullanmadan  email girmeli "bay@msn".passed
-Then Kullanici Kullanici " The field is invalid" mesaji görmeli.............passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_002 registerpage" name="US002_TC005_2" time="0.289">
-        <system-out>
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-And Kullanici email kutusunu tiklamali ve “@“ kullanarak ANCAK “.“ kullanmadan  email girmeli "bayr@com".passed
-Then Kullanici Kullanici " The field is invalid" mesaji görmeli.............passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US_002 registerpage" name="S002_TC006" time="0.299">
-        <failure message="The following asserts failed:&#10;&#9;This field is invalid expected [false] but found [true]" type="java.lang.AssertionError">
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-And Kullanici email kutusunu tiklamali ve “.“ isareti kullandiktan sonra “@“ ile devam ederk mail adresi yazmali  email girmeli "bay.hiz@msn".passed
-Then Kullanici Kullanici The field is invalid mesaji görmemeli..............failed
+    <testcase classname="US_001 registerpage" name="US001_TC001_3" time="0.071">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=104.0.5112.79)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'Bayrams-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [78d6cb8d7381660f4a4889a00b00d484, get {url=https://medunna.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/mh/_9r_sgv5343...}, goog:chromeOptions: {debuggerAddress: localhost:54181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54181/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 78d6cb8d7381660f4a4889a00b00d484" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................failed
+And kullanici registration sayfasina gider(navigate)........................skipped
+Given kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer "867-11-2348".skipped
+Then Kullanici uyari mesaji görmemeli ""....................................skipped
 
 StackTrace:
-java.lang.AssertionError: The following asserts failed:
-	This field is invalid expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.uiStepDefinitions.US_002_UI_StepDefinitions.kullaniciKullaniciTheFieldIsInvalidMesajiGörmemeli(US_002_UI_StepDefinitions.java:125)
-	at ✽.Kullanici Kullanici The field is invalid mesaji görmemeli(file:///Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_002_UI.feature:47)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.79)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'Bayrams-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78d6cb8d7381660f4a4889a00b00d484, get {url=https://medunna.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/mh/_9r_sgv5343...}, goog:chromeOptions: {debuggerAddress: localhost:54181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54181/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78d6cb8d7381660f4a4889a00b00d484
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepDefinitions.uiStepDefinitions.US_001_UI_StepDefinitions.kullanıci_medunna_anasayfasina_gider(US_001_UI_StepDefinitions.java:26)
+	at ✽.Kullanıci medunna anasayfasina gider(file:///Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_001_UI.feature:4)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="US_002 registerpage" name="S002_TC006_2" time="0.323">
-        <failure message="The following asserts failed:&#10;&#9;This field is invalid expected [false] but found [true]" type="java.lang.AssertionError">
-            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................passed
-And kullanici registration sayfasina gider(navigate)........................passed
-And Kullanici email kutusunu tiklamali ve “.“ isareti kullandiktan sonra “@“ ile devam ederk mail adresi yazmali  email girmeli "bayr.hak@comtnsa".passed
-Then Kullanici Kullanici The field is invalid mesaji görmemeli..............failed
+    <testcase classname="US_001 registerpage" name="US001_TC001_4" time="0.005">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=104.0.5112.79)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'Bayrams-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [78d6cb8d7381660f4a4889a00b00d484, get {url=https://medunna.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/mh/_9r_sgv5343...}, goog:chromeOptions: {debuggerAddress: localhost:54181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54181/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 78d6cb8d7381660f4a4889a00b00d484" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................failed
+And kullanici registration sayfasina gider(navigate)........................skipped
+Given kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer "123-34-4567".skipped
+Then Kullanici uyari mesaji görmemeli ""....................................skipped
 
 StackTrace:
-java.lang.AssertionError: The following asserts failed:
-	This field is invalid expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepDefinitions.uiStepDefinitions.US_002_UI_StepDefinitions.kullaniciKullaniciTheFieldIsInvalidMesajiGörmemeli(US_002_UI_StepDefinitions.java:125)
-	at ✽.Kullanici Kullanici The field is invalid mesaji görmemeli(file:///Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_002_UI.feature:47)
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.79)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'Bayrams-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78d6cb8d7381660f4a4889a00b00d484, get {url=https://medunna.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/mh/_9r_sgv5343...}, goog:chromeOptions: {debuggerAddress: localhost:54181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54181/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78d6cb8d7381660f4a4889a00b00d484
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepDefinitions.uiStepDefinitions.US_001_UI_StepDefinitions.kullanıci_medunna_anasayfasina_gider(US_001_UI_StepDefinitions.java:26)
+	at ✽.Kullanıci medunna anasayfasina gider(file:///Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_001_UI.feature:4)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US_001 registerpage" name="US001_TC001_5" time="0.004">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=104.0.5112.79)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'Bayrams-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [78d6cb8d7381660f4a4889a00b00d484, get {url=https://medunna.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/mh/_9r_sgv5343...}, goog:chromeOptions: {debuggerAddress: localhost:54181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54181/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 78d6cb8d7381660f4a4889a00b00d484" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................failed
+And kullanici registration sayfasina gider(navigate)........................skipped
+Given kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer "806-12-5436".skipped
+Then Kullanici uyari mesaji görmemeli ""....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.79)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'Bayrams-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78d6cb8d7381660f4a4889a00b00d484, get {url=https://medunna.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/mh/_9r_sgv5343...}, goog:chromeOptions: {debuggerAddress: localhost:54181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54181/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78d6cb8d7381660f4a4889a00b00d484
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepDefinitions.uiStepDefinitions.US_001_UI_StepDefinitions.kullanıci_medunna_anasayfasina_gider(US_001_UI_StepDefinitions.java:26)
+	at ✽.Kullanıci medunna anasayfasina gider(file:///Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_001_UI.feature:4)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US_001 registerpage" name="US001_TC001_6" time="0.004">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=104.0.5112.79)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'Bayrams-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [78d6cb8d7381660f4a4889a00b00d484, get {url=https://medunna.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/mh/_9r_sgv5343...}, goog:chromeOptions: {debuggerAddress: localhost:54181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54181/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 78d6cb8d7381660f4a4889a00b00d484" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given Kullanıci medunna anasayfasina gider..................................failed
+And kullanici registration sayfasina gider(navigate)........................skipped
+Given kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer "867-11-2348".skipped
+Then Kullanici uyari mesaji görmemeli ""....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.79)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'Bayrams-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78d6cb8d7381660f4a4889a00b00d484, get {url=https://medunna.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/mh/_9r_sgv5343...}, goog:chromeOptions: {debuggerAddress: localhost:54181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54181/devtoo..., se:cdpVersion: 104.0.5112.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78d6cb8d7381660f4a4889a00b00d484
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepDefinitions.uiStepDefinitions.US_001_UI_StepDefinitions.kullanıci_medunna_anasayfasina_gider(US_001_UI_StepDefinitions.java:26)
+	at ✽.Kullanıci medunna anasayfasina gider(file:///Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_001_UI.feature:4)
 ]]>
         </failure>
     </testcase>

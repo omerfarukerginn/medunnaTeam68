@@ -248,4 +248,6 @@ public class ReusableMethods {
         jse.executeScript("arguments[0].scrollIntoView()", element);
         jse.executeScript("arguments[0].click();", element);
     }
+
+
 }

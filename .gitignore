@@ -3,5 +3,10 @@
 *.iml
 *.ipr
 ./target
+<<<<<<< HEAD
+.taget
+/target
+=======
 .target
 /target
+>>>>>>> main

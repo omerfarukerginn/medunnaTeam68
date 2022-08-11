@@ -12,26 +12,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-<<<<<<< HEAD
-        tags = "@US_005_TC_009",
-=======
-<<<<<<< HEAD
-
-        tags = "@US_011",
-
-=======
-<<<<<<< HEAD
-        tags = "@api10",
-=======
-<<<<<<< HEAD
-        tags = "@US_011",
-=======
-        tags = "@US_014",
->>>>>>> main
->>>>>>> main
->>>>>>> main
->>>>>>> main
-        dryRun = false
+        tags = "@US_008",
+        dryRun = true
 )
 
 public class TestRunner {

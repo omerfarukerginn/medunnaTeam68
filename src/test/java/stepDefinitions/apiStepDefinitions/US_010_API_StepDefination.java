@@ -16,25 +16,23 @@ import pojos.Appointment;
 import utilities.ConfigReader;
 import utilities.ReusableMethods;
 
-import java.util.List;
 
-import static baseUrl.MedunnaBaseUrl.spec;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertTrue;
 import static utilities.ApiUtils.getRequest;
 import static utilities.Authentication.generateToken;
 
-public class US_010_API_StepDefination {
+public class US_010_API_StepDefination extends MedunnaBaseUrl{
 
     static Appointment appointment = new Appointment();
     static Response response;
     static Appointment actualAppointment;
 
-    public static void main(String[] args) throws JsonProcessingException {
-        MedunnaBaseUrl.spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
-        MedunnaBaseUrl.spec.pathParams("1", "api", "2", "appointments");
+    public  void main(String[] args) throws JsonProcessingException {
+       // MedunnaBaseUrl.spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+      spec.pathParams("1", "api", "2", "appointments");
 
-        response = given().spec(MedunnaBaseUrl.spec).header("Authorization", "Bearer " +
+        response = given().spec(spec).header("Authorization", "Bearer " +
                         generateToken("doktorMahmut", "doktorMahmut8"))
                 .contentType(ContentType.JSON)
                 .when()

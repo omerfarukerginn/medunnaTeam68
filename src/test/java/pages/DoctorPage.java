@@ -8,13 +8,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
+
+
 
 public class DoctorPage {
     public DoctorPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
+    @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
 
     @FindBy(xpath = "//*[text()='Sign in']")
@@ -32,24 +36,50 @@ public class DoctorPage {
     @FindBy(xpath = "//*[text()='MY PAGES']")
     public WebElement myPagesButton;
 
-    @FindBy (xpath = "(//*[text()='My Appointments'])[1]")
+    @FindBy(xpath = "(//*[text()='My Appointments'])[1]")
     public WebElement myAppointmentsButton;
 
-   @FindBy (xpath = "//*[text()='Appointments']")
+    @FindBy(xpath = "//*[text()='Appointments']")
     public WebElement appointmentsPage;
 
-    @FindBy (xpath = "//*[text()='ID']")
+    @FindBy(xpath = "//*[text()='ID']")
     public WebElement idButton;
 
-    @FindBy (xpath = "//*[text()='Start DateTime']")
+    @FindBy(xpath = "//*[text()='Start DateTime']")
     public WebElement startDateTimeButton;
 
-    @FindBy (xpath = "//*[text()='End DateTime']")
+    @FindBy(xpath = "//*[text()='End DateTime']")
     public WebElement endDateTimeButton;
 
-    @FindBy (xpath = "//*[text()='Status']")
+    @FindBy(xpath = "//select[@name='status']")
     public WebElement statusButton;
 
+    @FindBy(xpath = "//*[text()='Edit']")
+    public WebElement editButton;
+
+   /* @FindBy(xpath = "//option[@value='PENDING']")
+    public WebElement pendingSecenegi;*/
+
+    @FindBy(xpath = "//textarea[@name='anamnesis']")
+    public WebElement anamnesisKutusu;
+
+    @FindBy(xpath = "//textarea[@name='treatment']")
+    public WebElement treatmentKutusu;
+
+    @FindBy(xpath = "//textarea[@name='diagnosis']")
+    public WebElement diagnosisKutusu;
+
+    @FindBy(xpath = "//textarea[@name='prescription']")
+    public WebElement prescriptionKutusu;
+
+    @FindBy(xpath = "//textarea[@name='description']")
+    public WebElement descriptionKutusu;
+
+    @FindBy(xpath = "//button [@type='submit']")
+    public WebElement saveButton;
+
+    @FindBy(xpath = "//div [@role='alert']")
+    public WebElement appointmentBasariliYazisi;
 
 
 
@@ -80,6 +110,59 @@ public class DoctorPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
+    public WebElement welcomeToMedunnaYazisi;
+
+    @FindBy(xpath = "//*[text()='Edit']")
+    public WebElement hastaBilalEditButonu;
+
+    @FindBy(xpath = "//*[text()='Request A Test']")
+    public WebElement requestATestButonu;
+
+    @FindBy(xpath = "//tr//td[2]") // hangi sutunda oldugunu buldum
+    public List<WebElement> testIsimListesi;
+
+    @FindBy(xpath = "//input[@type='checkbox']")
+    public List<WebElement> testSecmeButonuListesi;
+
+    @FindBy(xpath = "//*[text()='Save']")
+    public WebElement saveButonu;
+
+    @FindBy(xpath = "//div[text()='A new Test is created with identifier 165847']")
+    public WebElement kayitSonrasiGorunurluk;
 
 
 

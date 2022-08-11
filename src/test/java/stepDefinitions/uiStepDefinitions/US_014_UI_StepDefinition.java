@@ -90,6 +90,8 @@ public class US_014_UI_StepDefinition {
 
     @And("Kullanici in patient creat or edt page oldugunu kontrol eder")
     public void kullaniciInPatientCreatOrEdtPageOldugunuKontrolEder() {
+
+
         String expectedResult = "Create or edit a In Patient";
         String actualResult = us014.inPatientEditPageText.getText();
         ReusableMethods.waitFor(5);
@@ -121,7 +123,7 @@ public class US_014_UI_StepDefinition {
     }
 
     @And("Kullanici randevu bölümünü güncelleyebilir")
-    public void kullaniciRandevuBölümünüGüncelleyebilir() throws IOException {
+    public void kullaniciRandevuBölümünüGüncelleyebilir()  {
         Assert.assertFalse(us014.editInPatientAppointment.isSelected());
 
 

@@ -16,8 +16,9 @@ import pojos.Appointment;
 import pojos.AppointmentRequest;
 import utilities.ConfigReader;
 
-import static baseUrl.MedunnaBaseUrl.spec;
 import static io.restassured.RestAssured.given;
+import static utilities.Authentication.generateToken;
+import static utilities.WriteToTxt.saveAppointData;
 
 public class US_007_ApiAppointment {
 /*
@@ -35,13 +36,108 @@ public class US_007_ApiAppointment {
 } */
 
     static Faker faker = new Faker();
-    static AppointmentRequest appointmentRequest = new AppointmentRequest();
-    static Response response;
-    static Appointment appointment;
+    AppointmentRequest appointmentRequest = new AppointmentRequest();
+    Response response;
+    Appointment appointment;
+    RequestSpecification spec;
 
-    public static void main(String[] args) throws JsonProcessingException {
+    @Given("Eb user set path params")
+    public void eb_user_set_path_params() {
 
-        spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+        ///api/appointments/request
+        //api/appointments/request
+        spec = new RequestSpecBuilder().setBaseUri("https://medunna.com").build();
+        spec.pathParams("1","api", "2", "appointments", "3", "request");
+
+    }
+
+    @Given("Eb user enter expected data FirstName LastName SSN Email Phone Date")
+    public void eb_user_enter_expected_data_first_name_last_name_ssn_email_phone_date() {
+
+        //String appoSpecialitySetData = "Bilmiyorum";
+        String birthDateSetData = "2022-04-16T12:52:30.875Z";
+        String emailSetData = "ina.greenfelder@gmail.com";
+        String firstName = "Andrea";
+        String gender = "male";
+        String lastName = "Raynor";;
+        String phone = "05678995678";
+        //String snumber = "123456";
+        String ssn = "239-19-9883";;
+        String startDate = "2023-01-07T00:00:00Z";
+
+        appointmentRequest.setFirstName(firstName);
+        appointmentRequest.setLastName(lastName);
+        appointmentRequest.setAppoSpeciality("string");
+        appointmentRequest.setSsn(ssn);
+        appointmentRequest.setEmail(emailSetData);
+        appointmentRequest.setPhone(phone);
+        appointmentRequest.setStartDate(startDate);
+        appointmentRequest.setAppoSpeciality("string");
+        appointmentRequest.setBirthDate(birthDateSetData);
+        appointmentRequest.setGender(gender);
+        appointmentRequest.setSnumber("string");
+
+
+    }
+
+    @Given("Eb user send request and get response")
+    public void eb_user_send_request_and_get_response() {
+        spec.pathParams("1","api", "2", "appointments", "3", "request");
+        response = given().headers(
+                        "Authorization",
+                        "Bearer " + generateToken(),
+                        "Content-Type",
+                        ContentType.JSON,
+                        "Accept",
+                        ContentType.JSON)
+                .spec(spec)
+                .body(appointmentRequest).when().post("/{1}/{2}/{3}");
+        response.prettyPrint();
+        // response.then().statusCode(201);
+
+    }
+
+    @Then("Eb user save api data to file")
+    public void eb_user_save_api_data_to_file() {
+        /*
+        try {
+            response.then().statusCode(201);
+            saveAppointData(appointmentCreate);
+            System.out.println(appointmentCreate.toString());
+        } catch (Exception e) {
+
+        }
+
+         */
+
+    }
+
+    @Then("Eb user verify  api data")
+    public void eb_user_verify_api_data() throws JsonProcessingException {
+
+
+
+        ObjectMapper obj = new ObjectMapper();
+        //bunu import ettigimiz yer ile POJO classinda @JasonIgnore nereden
+        //import edildi ise oradan almak gerekir.
+
+
+        appointment = obj.readValue(response.asString(), Appointment.class);
+
+        Assert.assertEquals(appointmentRequest.getFirstName(), appointment.getPatient().getFirstName());
+        Assert.assertEquals(appointmentRequest.getLastName(), appointment.getPatient().getLastName());
+        Assert.assertEquals(appointmentRequest.getEmail(), appointment.getPatient().getEmail());
+        Assert.assertEquals(appointmentRequest.getPhone(), appointment.getPatient().getPhone());
+        Assert.assertEquals(appointmentRequest.getStartDate(), appointment.getStartDate());
+    }
+
+
+}
+
+/*
+ public static void main(String[] args) throws JsonProcessingException {
+        medunnaSetup();
+        //spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
         spec.pathParams("1", "api", "2", "appointments", "3", "request");
 
         ///api/appointments/request
@@ -70,7 +166,7 @@ public class US_007_ApiAppointment {
 
         response = given().spec(spec).contentType(ContentType.JSON)
                 .body(appointmentRequest).when().post("/{1}/{2}/{3}");
-        // response.prettyPrint();
+        response.prettyPrint();
 
         ObjectMapper obj=new ObjectMapper();
         //bunu import ettigimiz yer ile POJO classinda @JasonIgnore nereden
@@ -96,58 +192,5 @@ public class US_007_ApiAppointment {
                         ContentType.JSON).body(appointmentRequest).
                 when().post(ConfigReader.getProperty("us_007_post_appointment_api"));
 
-         */
-    }
 
-    @Given("Eb user set path params")
-    public void eb_user_set_path_params() {
-        spec.pathParams("first", "api", "second", "appointments", "third", "request");
-
-    }
-
-    @Given("Eb user enter expected data FirstName LastName SSN Email Phone Date")
-    public void eb_user_enter_expected_data_first_name_last_name_ssn_email_phone_date() {
-
-        String appoSpecialitySetData = "Bilmiyorum";
-        String birthDateSetData = "2000-08-10";
-        String emailSetData = "aliAta99@gmail.com";
-        String firstName = "Nail";
-        String gender = "male";
-        String lastName = "Kocaman";
-        String phone = "05678995678";
-        String snumber = "123456";
-        String ssn = "134-56-8799";
-        String startDate = "2022-08-10";
-
-        appointmentRequest.setAppoSpeciality(appoSpecialitySetData);
-        appointmentRequest.setBirthDate(birthDateSetData);
-        appointmentRequest.setEmail(emailSetData);
-        appointmentRequest.setFirstName(firstName);
-        appointmentRequest.setGender(gender);
-        appointmentRequest.setLastName(lastName);
-        appointmentRequest.setPhone(phone);
-        appointmentRequest.setSnumber(snumber);
-        appointmentRequest.setSsn(ssn);
-        appointmentRequest.setStartDate(startDate);
-
-    }
-
-    @Given("Eb user send request and get response")
-    public void eb_user_send_request_and_get_response() {
-        response = given().spec(spec).contentType(ContentType.JSON)
-                .body(appointmentRequest).when().post("/{first}/{second}/{third}");
-        response.prettyPrint();
-        response.then().statusCode(201);
-    }
-
-    @Then("Eb user save api data to file")
-    public void eb_user_save_api_data_to_file() {
-
-    }
-
-    @Then("Eb user verify  api data")
-    public void eb_user_verify_api_data() {
-
-    }
-
-}
+ */

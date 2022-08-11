@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.62">
-    <testcase classname="US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebilir olmalıdır." name="US_008_TC_007 Eski şifre kullanılmamalıdır." time="12.411">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.942">
+    <testcase classname="US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebilir olmalıdır." name="US_008_TC_007 Eski şifre kullanılmamalıdır." time="11.686">
+        <failure message="" type="java.lang.AssertionError">
             <![CDATA[Given ofe Kullanici test sayfasina gider....................................passed
 And ofe Kullanici Sign in butonuna tiklar...................................passed
 And ofe Kullanici kullanici ismini girer....................................passed
@@ -15,8 +15,18 @@ And ofe New password kismina "hastakaan1" eski sifresini girer..............pass
 And ofe New password confirmation kismina eski "hastakaan1" sifresini tekrar girer.passed
 And ofe Save butonuna tiklar................................................passed
 And kullanici 2 sn bekler...................................................passed
-And ofe Sayfayi kapatir.....................................................passed
+And ofe Password changed! uyarisinin gorulmedigini onaylar..................failed
+And ofe Sayfayi kapatir.....................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepDefinitions.uiStepDefinitions.US_008_UI_StepDefinition.ofePasswordChangedUyarisininGorulmediginiOnaylar(US_008_UI_StepDefinition.java:108)
+	at ✽.ofe Password changed! uyarisinin gorulmedigini onaylar(file:///C:/Users/omerf/IdeaProjects/medunnaTeam68/src/test/resources/features/uiFeatures/US_008_UI.feature:136)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

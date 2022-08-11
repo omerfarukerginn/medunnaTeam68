@@ -133,6 +133,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
     And ofe New password confirmation kismina eski "hastakaan1" sifresini tekrar girer
     And ofe Save butonuna tiklar
     And kullanici 2 sn bekler
+    And ofe Password changed! uyarisinin gorulmedigini onaylar
     And ofe Sayfayi kapatir
 
 

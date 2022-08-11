@@ -102,4 +102,9 @@ public class US_008_UI_StepDefinition {
         passwordPage.confirmPasswordTextArea.sendKeys(oldPassword2);
 
     }
+
+    @And("ofe Password changed! uyarisinin gorulmedigini onaylar")
+    public void ofePasswordChangedUyarisininGorulmediginiOnaylar() {
+        Assert.assertFalse(passwordPage.passwordChangedAlert.isDisplayed());
+    }
 }

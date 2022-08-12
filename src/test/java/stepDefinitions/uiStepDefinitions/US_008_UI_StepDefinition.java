@@ -24,9 +24,9 @@ public class US_008_UI_StepDefinition {
         loginPage.loginPageSingInMenuButton.click();
     }
 
-    @And("ofe Kullanici kullanici ismini girer")
-    public void ofeKullaniciKullaniciIsminiGirer() {
-        loginPage.loginPageSingInUserNameKutusu.sendKeys("hastakaan1");
+    @And("ofe Kullanici kullanici ismini {string} girer")
+    public void ofeKullaniciKullaniciIsminiGirer(String userName) {
+        loginPage.loginPageSingInUserNameKutusu.sendKeys(userName);
     }
 
     @And("ofe Kullanici password kısmına {string} girer")
@@ -107,4 +107,6 @@ public class US_008_UI_StepDefinition {
     public void ofePasswordChangedUyarisininGorulmediginiOnaylar() {
         Assert.assertFalse(passwordPage.passwordChangedAlert.isDisplayed());
     }
+
+
 }

@@ -187,9 +187,9 @@
       <list>
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: US_008_TC_007 Eski şifre kullanılmamalıdır." />
+        <item itemvalue="Cucumber Java.Scenario: US_008_TC_001 &quot;New password confirmation&quot; onaylanabilmelidir." />
         <item itemvalue="Cucumber Java.Scenario: US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır." />
         <item itemvalue="Cucumber Java.Scenario: US_008_TC_002 Daha güçlü şifre için en az 1 küçük harf olmalı ve &quot;Password strength:&quot;" />
-        <item itemvalue="Cucumber Java.Scenario: US_008_TC_001 &quot;New password confirmation&quot; onaylanabilmelidir." />
       </list>
     </recent_temporary>
   </component>

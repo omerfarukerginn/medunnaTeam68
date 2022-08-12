@@ -1,4 +1,4 @@
-@Api09
+@Api_009
 Feature: US_009_ApiTest
 
   Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular

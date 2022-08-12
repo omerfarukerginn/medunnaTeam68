@@ -29,9 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="e97f5191-4018-48ae-85c6-a64534123adb">
-      <console name="Medunna" type="STANDARD" schema="" session="Main"><![CDATA[select * from public.patient
-
-select * from public.patient where id=159071]]></console>
+      <console name="Medunna" type="STANDARD" schema="" session="Main"><![CDATA[select * from public.patient where id=159071]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

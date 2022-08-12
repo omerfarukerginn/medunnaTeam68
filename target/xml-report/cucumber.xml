@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.374">
-    <testcase classname="US_009_ApiTest" name="Kullanici, API kullanarak tum hasta bilgilerini dogrular" time="0.078">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Kullanici set the Base Url............................................undefined
-And Send the GET request and get the response...............................skipped
-And Set the expected data...................................................skipped
-Then Make validation........................................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.51">
+    <testcase classname="US_009_DbTest" name="Kullanici DB kullanarak hasta bilgilerini dogrular" time="0.095">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user connects to database.............................................undefined
+When user gets the "*" from "patient" table with the "ID" of "159071".......skipped
+Then the "FIRST_NAME" of the person should be "hastaMahmut".................skipped
+And close the database connection...........................................skipped
 ]]></failure>
     </testcase>
 </testsuite>

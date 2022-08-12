@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17d45320-066e-4299-b511-51c08f222c1f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_009_API_StepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_009_API.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/StaffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/StaffPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ApiRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ApiRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +68,19 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../medunna_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api2022-main" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: TC_06 Staff hasta bilgilerini silebilmeli">
-    <configuration name="Scenario: TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular">
+    <configuration name="Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" />
-      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_009_API.feature" />
+      <option name="GLUE" value="stepDefinitions.apiStepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." />
+      <option name="NAME_FILTER" value="^Kullanici\, API kullanarak hasta bilgilerini dogrular$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici\, API kullanarak hasta bilgilerini dogrular$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -87,35 +92,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC_04 Staff, hastaları SSN kimliklerine göre arayabilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Kullanici, API kullanarak tum hasta bilgilerini dogrular" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" />
-      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_009_API.feature" />
+      <option name="GLUE" value="stepDefinitions.apiStepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^TC_04 Staff\, hastaları SSN kimliklerine göre arayabilir\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_04 Staff\, hastaları SSN kimliklerine göre arayabilir\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_04 Staff, hastaları SSN kimliklerine göre arayabilir." />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: TC_05 Staff hastaları silememeli." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" />
-      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^TC_05 Staff hastaları silememeli\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_05 Staff hastaları silememeli\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_05 Staff hastaları silememeli." />
+      <option name="NAME_FILTER" value="^Kullanici\, API kullanarak tum hasta bilgilerini dogrular$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici\, API kullanarak tum hasta bilgilerini dogrular$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Kullanici, API kullanarak tum hasta bilgilerini dogrular" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -143,6 +128,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="team68Medunna" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.ApiRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular" />
+        <item itemvalue="Cucumber Java.Scenario: Kullanici, API kullanarak tum hasta bilgilerini dogrular" />
+        <item itemvalue="JUnit.ApiRunner" />
         <item itemvalue="Cucumber Java.Scenario: TC_06 Staff hasta bilgilerini silebilmeli" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: TC_05 Staff hastaları silememeli." />
-        <item itemvalue="Cucumber Java.Scenario: TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." />
-        <item itemvalue="Cucumber Java.Scenario: TC_04 Staff, hastaları SSN kimliklerine göre arayabilir." />
       </list>
     </recent_temporary>
   </component>

@@ -92,8 +92,6 @@ public class StaffPage {
     @FindBy(xpath = "//div[text()='This field is required.']")
     public WebElement hataYaziElementi;
 
-    @FindBy(xpath = "//button[@id='save-entity']")
-    public WebElement saveButton2;
 
 
 

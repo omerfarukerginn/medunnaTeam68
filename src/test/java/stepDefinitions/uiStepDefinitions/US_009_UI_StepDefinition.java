@@ -140,8 +140,8 @@ public class US_009_UI_StepDefinition {
     public void hastaIdSininSilinemediginiTestEder() {Assert.assertFalse(staffPage.idTextBox.isSelected());
     }
 
-    @Then("Herhangi bir hasta bilgisini silemedigini test eder")
-    public void herhangiBirHastaBilgisiniSilemediginiTestEder() throws InterruptedException {
+    @Then("Herhangi bir hasta bilgisini silebildigini test eder")
+    public void herhangiBirHastaBilgisiniSilebildiginiTestEder() throws InterruptedException {
 
         staffPage.firstNameTextBox.clear();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
@@ -152,7 +152,7 @@ public class US_009_UI_StepDefinition {
         actions.sendKeys(Keys.PAGE_UP).perform();
         Thread.sleep(1000);
 
-        Assert.assertTrue(staffPage.hataYaziElementi.isDisplayed());
+        Assert.assertFalse(staffPage.hataYaziElementi.isDisplayed());
 
     }
 }

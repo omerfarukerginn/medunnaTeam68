@@ -12,10 +12,11 @@ public class RegisterPage {
     //homebutton ve registerbutton locate icin LoginPage sayfasindan obje create edip account menu ve register diyerek call edilmeli
     @FindBy(id = "ssn")
     public WebElement ssnRegisterPage;
+    @FindBy(xpath = "//*[text()='Register']")
+    public WebElement homeRegisterButton;
 
     @FindBy(xpath = "//div[text()='Your SSN is invalid']")
     public WebElement invalidSsnMessageRegisterPage;
-
     @FindBy(name = "firstName")
     public WebElement firstNameRegisterPage;
     @FindBy(xpath = "//div[text()='Your FirstName is required.']")
@@ -90,6 +91,7 @@ public class RegisterPage {
 
     @FindBy(xpath = "//li[@style='background-color: rgb(0, 255, 0);']")
     public WebElement passwordBesinciRenk;
+
 
 
 }

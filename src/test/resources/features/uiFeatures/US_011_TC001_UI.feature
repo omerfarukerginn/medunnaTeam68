@@ -7,10 +7,10 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     Given Kullanici anasayfaya gider
     When Doktor Account-menu butonuna tiklar
     Then Doktor sign in butonuna tiklar
-    And Doktor gecerli bir kullanici adi ve sifre girer
+    And Doktor gecerli bir kullanici adı ve sifre girer
     And Doktor ikinci sign in butonuna tiklar
     And Doktor MYPAGES butonuna tiklar
-    And Doktor My Appointments butonuna tiklar
+    And Doktor My Appointments butonuna tıklar
 
 
 
@@ -61,7 +61,6 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor save butonuna tiklar
     And Doktor "The Appointment is updated with identifier"mesajini gorur.
     Then Sayfayi kapatir
-
 
 
 

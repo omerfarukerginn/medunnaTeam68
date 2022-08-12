@@ -71,7 +71,11 @@ Feature: US009 Staff (Personel), hasta bilgilerini görebilmeli, düzenleyebilme
     And Search Patient secenegini secer
     And Patient SSN kutusuna "<SSN>" girer
     And Edit butonuna tiklar
+<<<<<<< HEAD
     Then Herhangi bir hasta bilgisini silebildigini test eder
+=======
+    Then Herhangi bir hasta bilgisini silemedigini test eder
+>>>>>>> main
     Then Sayfayi kapatir
 
     Examples:

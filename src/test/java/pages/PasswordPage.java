@@ -22,10 +22,19 @@ public class PasswordPage {
     @FindBy(xpath = "//li[@class='point'][2]")
     public WebElement passwordStrengthLevel2;
 
-    @FindBy(name = "ConfirmPassword")
+    @FindBy(xpath = "//input[@name='confirmPassword']")
     public WebElement confirmPasswordTextArea;
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement passwordPageSaveButton;
+
+    @FindBy(xpath = "//strong[text()='Password changed!']")
+    public WebElement passwordChangedAlert;
+
+    @FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
+    public WebElement homePageDropdown;
+
+    @FindBy(xpath = "//li[@style='background-color: rgb(153, 255, 0);'][4]")
+    public WebElement getPasswordStrengthLevel4;
 
 }

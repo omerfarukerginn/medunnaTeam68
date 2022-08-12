@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="1.109">
+    <testcase classname="Physician(Doktor) Test Results islemleri yapabilmeli" name="Physician (Doktor) &quot;Test Results&quot; işlemleri yapabilmeli" time="0.171">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Doktor Medunna ana sayfasina gider....................................passed
+And Doktor humain giris butonuna basar ve sign in'i tiklar..................passed
+And Doktor gecerli username ve password girer...............................passed
+And Doktor basarili giris yapar ve Welcome to Medunna yazisini gorur........passed
+Then Doktor MY PAGES butonuna tiklar........................................passed
+And DoktorMy Appointments butonuna tıklar...................................passed
+And Doktor Edit butonuna tiklar.............................................passed
+Given Request A Test butonuna tiklar........................................passed
+And Doktor Glucose, urea, creatinine, Sodium, Potassium,Total protein, Albumin, Hemoglobin testlerini secer.undefined
+And Save butonuna tiklar....................................................skipped
+And Show Test Results butonuna tiklar.......................................skipped
+And View Results butonunu tiklar............................................skipped
+And Doktor  id, name, default max value, default min value, test, description and the date bilgilerini gorur..skipped
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Physician(Doktor) Test Results islemleri yapabilmeli" name="Doktor &quot;Request Impatient&quot; (hastanın yatılı tedavi görmesi) isteğinde bulunabilmeli" time="0">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Doktor Medunna ana sayfasina gider....................................passed
+And Doktor humain giris butonuna basar ve sign in'i tiklar..................passed
+And Doktor gecerli username ve password girer...............................passed
+And Doktor basarili giris yapar ve Welcome to Medunna yazisini gorur........passed
+Then Doktor MY PAGES butonuna tiklar........................................passed
+And DoktorMy Appointments butonuna tıklar...................................passed
+And Doktor Edit butonuna tiklar.............................................passed
+Given Request Inpatient butonuna tiklar.....................................undefined
+]]>
+        </failure>
+    </testcase>
+</testsuite>

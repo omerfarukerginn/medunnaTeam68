@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class PatientPage {
 
     public  PatientPage (){
@@ -70,7 +72,28 @@ public class PatientPage {
 
 
 
+    //bende calismayan kodlari yeniden burada olusturdum Ebru
+    @FindBy(xpath="(//a[@class='dropdown-item'])[1]")
+    public WebElement myAppointments;
 
+    @FindBy (xpath="(//a[@class='dropdown-item'])[2]")
+    public WebElement makeAnAppointmentSection;
+
+    @FindBy (xpath="//*[contains(text(), 'Appointment registration saved!')]")
+    public WebElement appointmentRegistrationSavedText; ////div[@role='alert']
+
+    @FindBy (xpath="//input[@id='appoDate']")
+    public WebElement appointmentDateSection;
+
+    @FindBy (xpath="//button[@type='submit']")
+    public WebElement sendAnAppointmentRequestButton;
+
+
+    @FindBy (xpath = "//tbody//tr//td[3]")
+    public List<WebElement> gecerliTarihlerListesi;
+
+    @FindBy (xpath = "//*[text()='Appointment date can not be past date!']")
+    public WebElement appointmentDateCanNotBePaseDate;
 
 
 

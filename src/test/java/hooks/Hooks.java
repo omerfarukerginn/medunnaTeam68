@@ -25,7 +25,7 @@ public class Hooks {
      @After method'u kullanacagiz
      */
 
-    @After
+   /* @After
     public void tearDown(Scenario scenario){
         final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
         if (scenario.isFailed()) {
@@ -33,4 +33,6 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
+
+    */
 }

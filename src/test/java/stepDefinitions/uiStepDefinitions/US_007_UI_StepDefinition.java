@@ -1,15 +1,23 @@
 package stepDefinitions.uiStepDefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 import org.testng.asserts.SoftAssert;
 import pages.LoginPage;
 import pages.PatientPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class US_007_UI_StepDefinition {
 
 
+    Faker faker = new Faker();
     LoginPage logIn = new LoginPage();
     SoftAssert softAssert = new SoftAssert();
     PatientPage patient = new PatientPage();
@@ -28,7 +36,7 @@ public class US_007_UI_StepDefinition {
     @Then("Eb Kullanici Sign in sekmesine tiklar")
     public void eb_kullanici_sign_in_sekmesine_tiklar() {
 
-        logIn.loginPageSingInMenuButton.click();
+        ReusableMethods.hooverByJS(logIn.loginPageSingInMenuButton);
     }
 
     @Then("Eb Kullanici username bolumune UserName yazar")
@@ -56,75 +64,95 @@ public class US_007_UI_StepDefinition {
     @Then("Eb Kullanici Make An Appointment sekmesine tiklar")
     public void eb_kullanici_make_an_appointment_sekmesine_tiklar() {
 
-        patient.makeAnAppointmentButton.click();
+        patient.makeAnAppointmentSection.click();
     }
 
     @Then("Eb Kullanici FirstName bolumune ismini girer")
     public void eb_kullanici_first_name_bolumune_ismini_girer() {
-        patient.firstNameKutusu.sendKeys("Pam");
+        patient.firstNameKutusu.clear();
+        //String firstName=faker.name().firstName();
+        patient.firstNameKutusu.sendKeys(ConfigReader.getProperty("hastaFirstName"));
     }
 
     @Then("Eb Kullanici LastName bolumune soy ismini girer")
     public void eb_kullanici_last_name_bolumune_soy_ismini_girer() {
-
-        patient.lastNameKutusu.sendKeys("Jim");
+        patient.lastNameKutusu.clear();
+        //String lastName=faker.name().lastName();
+        patient.lastNameKutusu.sendKeys(ConfigReader.getProperty("hastaLastName"));
     }
 
     @Then("Eb Kullanici SSN bolumune gecerli bir SSN girer")
     public void eb_kullanici_ssn_bolumune_gecerli_bir_ssn_girer() {
-
-        patient.ssnKutusu.sendKeys("234-67-750");
+        patient.ssnKutusu.clear();
+        //String ssnNumber=faker.idNumber().ssnValid();
+        patient.ssnKutusu.sendKeys(ConfigReader.getProperty("hastaSSN"));
     }
 
     @Then("Eb Kullanici email bolumune email girer")
     public void eb_kullanici_email_bolumune_email_girer() {
-
-        patient.emailKutusu.sendKeys("pamjim@gmail.com");
+        patient.emailKutusu.clear();
+        //String email=faker.internet().emailAddress();
+        patient.emailKutusu.sendKeys(ConfigReader.getProperty("hastaEmail"));
     }
 
     @Then("Eb Kullanici Phone bolumune gecerli bir tel nosu girer")
     public void eb_kullanici_phone_bolumune_gecerli_bir_tel_nosu_girer() {
-
-        patient.phoneKutusu.sendKeys("76-958-0057");
+        patient.phoneKutusu.clear();
+        String phoneNumber = "076-958-0054";
+        patient.phoneKutusu.sendKeys(phoneNumber);
     }
 
     @Then("Eb Kullanici date bolumunde guncel veya gelecekten bir tarih secer")
     public void eb_kullanici_date_bolumunde_guncel_veya_gelecekten_bir_tarih_secer() {
 
-        patient.appoDateTimeKutusu.sendKeys("12/08/2022");
+        /*
+        Date = "12.12.2022";
+        Driver.waitAndSendText(aP.AppointmentDateTimeTextBox, Date);
+         */
+        patient.appointmentDateSection.sendKeys("20.12.2022");
     }
 
     @Then("Eb Kullanici Send an Appointment Request butonuna tiklar")
     public void eb_kullanici_send_an_appointment_request_butonuna_tiklar() {
-        patient.sendAnAppoRequestButton.click();
+        ReusableMethods.hooverByJS(patient.sendAnAppointmentRequestButton);
+
     }
 
     @Then("Eb Kullanici Randevu tarihi olusturuldugunu kontrol eder \\(Appoinment registration saved yazisi gorunur olmali)")
     public void eb_kullanici_randevu_tarihi_olusturuldugunu_kontrol_eder_appoinment_registration_saved_yazisi_gorunur_olmali() {
-
+        ReusableMethods.waitForVisibility(patient.appointmentRegistrationSavedText, 3);
+        Assert.assertTrue(patient.appointmentRegistrationSavedText.isDisplayed());
     }
 
     @Then("Eb Kullanici MyAppointment secenegini secer")
     public void eb_kullanici_my_appointment_secenegini_secer() {
 
-        patient.myAppointmentsButton.click();
+        patient.myAppointments.click();
     }
 
     @Then("Eb Kullanici tarihin {string} seklinde oldugunu dogrular")
-    public void eb_kullanici_tarihin_seklinde_oldugunu_dogrular(String string) {
+    public void eb_kullanici_tarihin_seklinde_oldugunu_dogrular(String date) {
 
+        date = "18/08/22";
+
+        List<String> gecerlitarihlerinListesi=new ArrayList<>();
+
+        for (int i = 0; i < patient.gecerliTarihlerListesi.size(); i++) {
+            gecerlitarihlerinListesi.add(patient.gecerliTarihlerListesi.get(i).getText());
+            Assert.assertTrue(gecerlitarihlerinListesi.contains(date));
+        }
 
     }
 
     @Then("Eb Kullanici date bolumunde gecmis tarih secer")
     public void eb_kullanici_date_bolumunde_gecmis_tarih_secer() {
 
-        patient.appoDateTimeKutusu.sendKeys("05/08/2022");
+        patient.appointmentDateSection.sendKeys("08.06.2022");
     }
 
     @Then("Eb Kullanici gecmis tarihten gun secemedigini dogrular")
     public void eb_kullanici_gecmis_tarihten_gun_secemedigini_dogrular() {
-
+        Assert.assertTrue(patient.appointmentDateCanNotBePaseDate.isDisplayed());
 
     }
 

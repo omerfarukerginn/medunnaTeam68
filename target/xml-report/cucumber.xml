@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="34.681">
+    <testcase classname="US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebilir olmalıdır." name="US_008_TC_007_Test01 Eski şifre kullanılmamalıdır." time="12.131">
+        <system-out>
+            <![CDATA[Given ofe Kullanici test sayfasina gider....................................passed
+And ofe Kullanici Sign in butonuna tiklar...................................passed
+And ofe Kullanici kullanici ismini "hastakaan1" girer.......................passed
+And ofe Kullanici password kısmına "hastakaan1" girer.......................passed
+And ofe Kullanici giris yapmak icin sign in butonuna tiklar.................passed
+And ofe Kullanici sayfanin sag ust tarafinda bulunan ismine tiklar..........passed
+And ofe Acilan dropdown sekmesinden Password butonuna tiklar................passed
+And kullanici 2 sn bekler...................................................passed
+And ofe Acilan sayfadaki Current password kismina "hastakaan1" mevcut sifresini girer.passed
+And ofe New password kismina "hastakaan1" eski sifresini girer..............passed
+And ofe New password confirmation kismina eski "hastakaan1" sifresini tekrar girer.passed
+And ofe Save butonuna tiklar................................................passed
+And kullanici 2 sn bekler...................................................passed
+And ofe Password changed! uyarisinin gorulmedigini onaylar..................passed
+And ofe Sayfayi kapatir.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebilir olmalıdır." name="US_008_TC_007_Test02 Eski şifre kullanılmamalıdır." time="10.865">
+        <system-out>
+            <![CDATA[Given ofe Kullanici test sayfasina gider....................................passed
+And ofe Kullanici Sign in butonuna tiklar...................................passed
+And ofe Kullanici kullanici ismini "doktorkamil" girer......................passed
+And ofe Kullanici password kısmına "doktorkamil1" girer.....................passed
+And ofe Kullanici giris yapmak icin sign in butonuna tiklar.................passed
+And ofe Kullanici sayfanin sag ust tarafinda bulunan ismine tiklar..........passed
+And ofe Acilan dropdown sekmesinden Password butonuna tiklar................passed
+And kullanici 2 sn bekler...................................................passed
+And ofe Acilan sayfadaki Current password kismina "doktorkamil1" mevcut sifresini girer.passed
+And ofe New password kismina "doktorkamil1" eski sifresini girer............passed
+And ofe New password confirmation kismina eski "doktorkamil1" sifresini tekrar girer.passed
+And ofe Save butonuna tiklar................................................passed
+And kullanici 2 sn bekler...................................................passed
+And ofe Password changed! uyarisinin gorulmedigini onaylar..................passed
+And ofe Sayfayi kapatir.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebilir olmalıdır." name="US_008_TC_007_Test03 Eski şifre kullanılmamalıdır." time="11.083">
+        <system-out>
+            <![CDATA[Given ofe Kullanici test sayfasina gider....................................passed
+And ofe Kullanici Sign in butonuna tiklar...................................passed
+And ofe Kullanici kullanici ismini "staffnecmi" girer.......................passed
+And ofe Kullanici password kısmına "staffnecmi1" girer......................passed
+And ofe Kullanici giris yapmak icin sign in butonuna tiklar.................passed
+And ofe Kullanici sayfanin sag ust tarafinda bulunan ismine tiklar..........passed
+And ofe Acilan dropdown sekmesinden Password butonuna tiklar................passed
+And kullanici 2 sn bekler...................................................passed
+And ofe Acilan sayfadaki Current password kismina "staffnecmi1" mevcut sifresini girer.passed
+And ofe New password kismina "staffnecmi1" eski sifresini girer.............passed
+And ofe New password confirmation kismina eski "staffnecmi1" sifresini tekrar girer.passed
+And ofe Save butonuna tiklar................................................passed
+And kullanici 2 sn bekler...................................................passed
+And ofe Password changed! uyarisinin gorulmedigini onaylar..................passed
+And ofe Sayfayi kapatir.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

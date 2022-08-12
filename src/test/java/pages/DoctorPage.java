@@ -322,6 +322,9 @@ public class DoctorPage {
     @FindBy(xpath = "//*[.='InPatient status can not be changed with this type of status']")
     public WebElement editInPatientEkranaCikanMesaj;
 
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container'")
+    public WebElement editInPatientEkranaCikanMesajj;
+
 
 
 

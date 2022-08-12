@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="17d45320-066e-4299-b511-51c08f222c1f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_009_DB.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="6c681201-360f-41fe-a85c-cf4472b6fd31" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_009_API.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_009_API.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_009_API.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_009_API.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_009_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_009_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/StaffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/StaffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
-=======
-    <list default="true" id="17d45320-066e-4299-b511-51c08f222c1f" name="Changes" comment="" />
->>>>>>> main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,31 +68,19 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api2022-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../medunna_project" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Cucumber Java.Scenario: Kullanici DB kullanarak hasta bilgilerini dogrular">
-    <configuration name="Scenario: Kullanici DB kullanarak hasta bilgilerini dogrular" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular">
+    <configuration name="Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_009_DB.feature" />
-      <option name="GLUE" value="hooks stepDefinitions.dataBaseStepDefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_009_API.feature" />
+      <option name="GLUE" value="stepDefinitions.apiStepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^Kullanici DB kullanarak hasta bilgilerini dogrular$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici DB kullanarak hasta bilgilerini dogrular$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Kullanici DB kullanarak hasta bilgilerini dogrular" />
-=======
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration name="Scenario: US_008_TC_001 &quot;New password confirmation&quot; onaylanabilmelidir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^US_008_TC_001 \&quot;New password confirmation\&quot; onaylanabilmelidir\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US_008_TC_001 \&quot;New password confirmation\&quot; onaylanabilmelidir\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US_008_TC_001 &quot;New password confirmation&quot; onaylanabilmelidir." />
->>>>>>> main
+      <option name="NAME_FILTER" value="^Kullanici\, API kullanarak hasta bilgilerini dogrular$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici\, API kullanarak hasta bilgilerini dogrular$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -122,15 +92,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" />
       <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır." />
+      <option name="NAME_FILTER" value="^TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -142,15 +112,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US_008_TC_007 Eski şifre kullanılmamalıdır." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_04 Staff, hastaları SSN kimliklerine göre arayabilir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" />
       <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^US_008_TC_007 Eski şifre kullanılmamalıdır\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US_008_TC_007 Eski şifre kullanılmamalıdır\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US_008_TC_007 Eski şifre kullanılmamalıdır." />
+      <option name="NAME_FILTER" value="^TC_04 Staff\, hastaları SSN kimliklerine göre arayabilir\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_04 Staff\, hastaları SSN kimliklerine göre arayabilir\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_04 Staff, hastaları SSN kimliklerine göre arayabilir." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -162,15 +132,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US_008_TC_007_Test01 Eski şifre kullanılmamalıdır." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_05 Staff hastaları silememeli." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" />
       <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^US_008_TC_007_Test01 Eski şifre kullanılmamalıdır\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US_008_TC_007_Test01 Eski şifre kullanılmamalıdır\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US_008_TC_007_Test01 Eski şifre kullanılmamalıdır." />
+      <option name="NAME_FILTER" value="^TC_05 Staff hastaları silememeli\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_05 Staff hastaları silememeli\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_05 Staff hastaları silememeli." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -182,17 +152,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_06 Staff hasta bilgilerini silebilmeli" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" />
+      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
+      <option name="NAME_FILTER" value="^TC_06 Staff hasta bilgilerini silebilmeli$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_06 Staff hasta bilgilerini silebilmeli$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_06 Staff hasta bilgilerini silebilmeli" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runners.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,19 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
-        <item itemvalue="Cucumber Java.Scenario: Kullanici DB kullanarak hasta bilgilerini dogrular" />
-        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular" />
         <item itemvalue="Cucumber Java.Scenario: TC_06 Staff hasta bilgilerini silebilmeli" />
         <item itemvalue="Cucumber Java.Scenario: TC_05 Staff hastaları silememeli." />
         <item itemvalue="Cucumber Java.Scenario: TC_04 Staff, hastaları SSN kimliklerine göre arayabilir." />
-=======
-        <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: US_008_TC_007_Test01 Eski şifre kullanılmamalıdır." />
-        <item itemvalue="Cucumber Java.Scenario: US_008_TC_007 Eski şifre kullanılmamalıdır." />
-        <item itemvalue="Cucumber Java.Scenario: US_008_TC_001 &quot;New password confirmation&quot; onaylanabilmelidir." />
-        <item itemvalue="Cucumber Java.Scenario: US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır." />
->>>>>>> main
+        <item itemvalue="Cucumber Java.Scenario: TC_03 Staff hastanin tüm kayıt bilgilerinin doldurulduğunu görebilmelidir." />
       </list>
     </recent_temporary>
   </component>

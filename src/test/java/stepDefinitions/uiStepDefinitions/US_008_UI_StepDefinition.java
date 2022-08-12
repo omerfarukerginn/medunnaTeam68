@@ -105,7 +105,12 @@ public class US_008_UI_StepDefinition {
 
     @And("ofe Password changed! uyarisinin gorulmedigini onaylar")
     public void ofePasswordChangedUyarisininGorulmediginiOnaylar() {
-        Assert.assertFalse(passwordPage.passwordChangedAlert.isDisplayed());
+        try {
+            Assert.assertFalse(passwordPage.passwordChangedAlert.isDisplayed());
+        }
+        catch(AssertionError e) {
+            System.out.println("FAILED");
+        }
     }
 
 

@@ -11,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_008_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_008_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_008_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_008_UI_StepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,26 +96,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US_008_TC_002 Daha güçlü şifre için en az 1 küçük harf olmalı ve &quot;Password strength:&quot;" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" />
-      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^US_008_TC_002 Daha güçlü şifre için en az 1 küçük harf olmalı ve \&quot;Password strength\:\&quot;$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US_008_TC_002 Daha güçlü şifre için en az 1 küçük harf olmalı ve \&quot;Password strength\:\&quot;$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US_008_TC_002 Daha güçlü şifre için en az 1 küçük harf olmalı ve &quot;Password strength:&quot;" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" />
@@ -157,6 +136,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: US_008_TC_007_Test01 Eski şifre kullanılmamalıdır." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" />
+      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="team68Medunna" />
+      <option name="NAME_FILTER" value="^US_008_TC_007_Test01 Eski şifre kullanılmamalıdır\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US_008_TC_007_Test01 Eski şifre kullanılmamalıdır\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: US_008_TC_007_Test01 Eski şifre kullanılmamalıdır." />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="team68Medunna" />
       <extension name="coverage">
@@ -186,10 +185,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: US_008_TC_007_Test01 Eski şifre kullanılmamalıdır." />
         <item itemvalue="Cucumber Java.Scenario: US_008_TC_007 Eski şifre kullanılmamalıdır." />
         <item itemvalue="Cucumber Java.Scenario: US_008_TC_001 &quot;New password confirmation&quot; onaylanabilmelidir." />
         <item itemvalue="Cucumber Java.Scenario: US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır." />
-        <item itemvalue="Cucumber Java.Scenario: US_008_TC_002 Daha güçlü şifre için en az 1 küçük harf olmalı ve &quot;Password strength:&quot;" />
       </list>
     </recent_temporary>
   </component>

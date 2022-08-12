@@ -159,9 +159,9 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
     And ofe Kullanici sayfanin sag ust tarafinda bulunan ismine tiklar
     And ofe Acilan dropdown sekmesinden Password butonuna tiklar
     And kullanici 2 sn bekler
-    And ofe Acilan sayfadaki Current password kismina "hastakaan1" mevcut sifresini girer
-    And ofe New password kismina "hastakaan1" eski sifresini girer
-    And ofe New password confirmation kismina eski "hastakaan1" sifresini tekrar girer
+    And ofe Acilan sayfadaki Current password kismina "<currentPassword>" mevcut sifresini girer
+    And ofe New password kismina "<currentPassword>" eski sifresini girer
+    And ofe New password confirmation kismina eski "<currentPassword>" sifresini tekrar girer
     And ofe Save butonuna tiklar
     And kullanici 2 sn bekler
     And ofe Password changed! uyarisinin gorulmedigini onaylar
@@ -183,9 +183,9 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
     And ofe Kullanici sayfanin sag ust tarafinda bulunan ismine tiklar
     And ofe Acilan dropdown sekmesinden Password butonuna tiklar
     And kullanici 2 sn bekler
-    And ofe Acilan sayfadaki Current password kismina "hastakaan1" mevcut sifresini girer
-    And ofe New password kismina "hastakaan1" eski sifresini girer
-    And ofe New password confirmation kismina eski "hastakaan1" sifresini tekrar girer
+    And ofe Acilan sayfadaki Current password kismina "<currentPassword>" mevcut sifresini girer
+    And ofe New password kismina "<currentPassword>" eski sifresini girer
+    And ofe New password confirmation kismina eski "<currentPassword>" sifresini tekrar girer
     And ofe Save butonuna tiklar
     And kullanici 2 sn bekler
     And ofe Password changed! uyarisinin gorulmedigini onaylar
@@ -207,9 +207,9 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
     And ofe Kullanici sayfanin sag ust tarafinda bulunan ismine tiklar
     And ofe Acilan dropdown sekmesinden Password butonuna tiklar
     And kullanici 2 sn bekler
-    And ofe Acilan sayfadaki Current password kismina "hastakaan1" mevcut sifresini girer
-    And ofe New password kismina "hastakaan1" eski sifresini girer
-    And ofe New password confirmation kismina eski "hastakaan1" sifresini tekrar girer
+    And ofe Acilan sayfadaki Current password kismina "<currentPassword>" mevcut sifresini girer
+    And ofe New password kismina "<currentPassword>" eski sifresini girer
+    And ofe New password confirmation kismina eski "<currentPassword>" sifresini tekrar girer
     And ofe Save butonuna tiklar
     And kullanici 2 sn bekler
     And ofe Password changed! uyarisinin gorulmedigini onaylar

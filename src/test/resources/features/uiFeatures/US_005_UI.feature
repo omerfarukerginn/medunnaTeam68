@@ -94,6 +94,3 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
     And  (su)Sayfa kapatilir
 
 
-
-
-

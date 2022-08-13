@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.23"/>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.236">
+    <testcase classname="US_010 Kullanici doktor olarak DB ile randevulari dogrulamali" name="Kullanici DB ile randevu bilgilerini almali ve dorulamali" time="4.756">
+        <system-out><![CDATA[Given Kullanici database ile baglanti kurar.................................passed
+And Kullanici query tanimlar................................................passed
+And Kullanici randevu bilgilerine ulasir ve kaydeder........................passed
+Then Kullanici DB ile randevu bilgilerini "<patientId>", "<start_date>","<end_date>","<status>" dogrular.passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -109,7 +109,7 @@ public class US_007_UI_StepDefinition {
         Date = "12.12.2022";
         Driver.waitAndSendText(aP.AppointmentDateTimeTextBox, Date);
          */
-        patient.appointmentDateSection.sendKeys("13.08.2022");
+        patient.appointmentDateSection.sendKeys("14.08.2022");
     }
 
     @Then("Eb Kullanici Send an Appointment Request butonuna tiklar")

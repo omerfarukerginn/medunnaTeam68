@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16c34b46-b86c-4c74-a916-478715afb8a6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/AppointmentAdminStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/AppointmentAdminStaff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/AppointmentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/AppointmentRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/InPatients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/InPatients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Physician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Physician.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Registrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Registrant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_007_ApiAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_007_ApiAppointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_007_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_007_UI_StepDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +31,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2DJjNHT6YUKTw54ymA6YhSS8wim" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -63,16 +58,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DBRunner">
-    <configuration name="Feature: US_010_DB" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: US_007_UI">
+    <configuration name="Feature: US_007_UI" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_010_DB.feature" />
-      <option name="GLUE" value="hooks stepDefinitions.dataBaseStepDefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_007_UI.feature" />
+      <option name="GLUE" value="stepDefinitions.uiStepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Feature: US_010_DB" />
+      <option name="SUGGESTED_NAME" value="Feature: US_007_UI" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +76,6 @@
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="MakeProject" enabled="true" />
-        <option name="MakeNoErrorCheck" enabled="true" />
       </method>
     </configuration>
     <configuration name="Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
@@ -155,13 +147,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" />
+      <item itemvalue="Cucumber Java.Feature: US_007_UI" />
+      <item itemvalue="JUnit.DBRunner" />
+      <item itemvalue="JUnit.US_010_DataBase_StepDefination.test" />
+      <item itemvalue="JUnit.TestRunner" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: US_007_UI" />
         <item itemvalue="JUnit.US_010_DataBase_StepDefination.test" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="JUnit.DBRunner" />
         <item itemvalue="Cucumber Java.Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" />
-        <item itemvalue="Cucumber Java.Feature: US_010_DB" />
       </list>
     </recent_temporary>
   </component>

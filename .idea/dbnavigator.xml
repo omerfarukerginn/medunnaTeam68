@@ -29,12 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="206d35af-86de-478c-b244-13f7472ed8fe">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from pg_catalog.pg_tables
-select * from public.physician
-select * from public.physician where first_name='doktorMahmut'
-select * from public.physician where id=159230
-select *from public.appointment
-select *from public.appointment where id=160060]]></console>
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

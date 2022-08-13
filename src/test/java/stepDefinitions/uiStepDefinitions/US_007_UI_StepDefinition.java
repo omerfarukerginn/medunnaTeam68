@@ -41,12 +41,12 @@ public class US_007_UI_StepDefinition {
 
     @Then("Eb Kullanici username bolumune UserName yazar")
     public void eb_kullanici_username_bolumune_user_name_yazar() {
-        logIn.loginPageSingInUserNameKutusu.sendKeys(ConfigReader.getProperty("hastaUserName"));
+        logIn.loginPageSingInUserNameKutusu.sendKeys(ConfigReader.getProperty("yeniHastaUserName"));
     }
 
     @Then("Eb Kullanici Password kismina Password girer")
     public void eb_kullanici_password_kismina_password_girer() {
-        logIn.loginPageSingInPasswordKutusu.sendKeys(ConfigReader.getProperty("hastaPassword"));
+        logIn.loginPageSingInPasswordKutusu.sendKeys(ConfigReader.getProperty("yeniHastapassword"));
     }
 
     @Then("Eb Kullanici Sign in butonuna tiklar")
@@ -71,28 +71,28 @@ public class US_007_UI_StepDefinition {
     public void eb_kullanici_first_name_bolumune_ismini_girer() {
         patient.firstNameKutusu.clear();
         //String firstName=faker.name().firstName();
-        patient.firstNameKutusu.sendKeys(ConfigReader.getProperty("hastaFirstName"));
+        patient.firstNameKutusu.sendKeys(ConfigReader.getProperty("yeniHastaFirstName"));
     }
 
     @Then("Eb Kullanici LastName bolumune soy ismini girer")
     public void eb_kullanici_last_name_bolumune_soy_ismini_girer() {
         patient.lastNameKutusu.clear();
         //String lastName=faker.name().lastName();
-        patient.lastNameKutusu.sendKeys(ConfigReader.getProperty("hastaLastName"));
+        patient.lastNameKutusu.sendKeys(ConfigReader.getProperty("yeniHastaLastName"));
     }
 
     @Then("Eb Kullanici SSN bolumune gecerli bir SSN girer")
     public void eb_kullanici_ssn_bolumune_gecerli_bir_ssn_girer() {
         patient.ssnKutusu.clear();
         //String ssnNumber=faker.idNumber().ssnValid();
-        patient.ssnKutusu.sendKeys(ConfigReader.getProperty("hastaSSN"));
+        patient.ssnKutusu.sendKeys(ConfigReader.getProperty("yeniHastaSSN"));
     }
 
     @Then("Eb Kullanici email bolumune email girer")
     public void eb_kullanici_email_bolumune_email_girer() {
         patient.emailKutusu.clear();
         //String email=faker.internet().emailAddress();
-        patient.emailKutusu.sendKeys(ConfigReader.getProperty("hastaEmail"));
+        patient.emailKutusu.sendKeys(ConfigReader.getProperty("yeniHastaemail"));
     }
 
     @Then("Eb Kullanici Phone bolumune gecerli bir tel nosu girer")
@@ -109,11 +109,12 @@ public class US_007_UI_StepDefinition {
         Date = "12.12.2022";
         Driver.waitAndSendText(aP.AppointmentDateTimeTextBox, Date);
          */
-        patient.appointmentDateSection.sendKeys("20.12.2022");
+        patient.appointmentDateSection.sendKeys("13.08.2022");
     }
 
     @Then("Eb Kullanici Send an Appointment Request butonuna tiklar")
     public void eb_kullanici_send_an_appointment_request_butonuna_tiklar() {
+        ReusableMethods.waitFor(3);
         ReusableMethods.hooverByJS(patient.sendAnAppointmentRequestButton);
 
     }
@@ -133,7 +134,7 @@ public class US_007_UI_StepDefinition {
     @Then("Eb Kullanici tarihin {string} seklinde oldugunu dogrular")
     public void eb_kullanici_tarihin_seklinde_oldugunu_dogrular(String date) {
 
-        date = "18/08/22";
+        date = "13/08/22 02:00";
 
         List<String> gecerlitarihlerinListesi=new ArrayList<>();
 

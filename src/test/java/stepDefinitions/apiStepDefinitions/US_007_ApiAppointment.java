@@ -99,16 +99,14 @@ public class US_007_ApiAppointment {
 
     @Then("Eb user save api data to file")
     public void eb_user_save_api_data_to_file() {
-        /*
+
         try {
             response.then().statusCode(201);
-            saveAppointData(appointmentCreate);
-            System.out.println(appointmentCreate.toString());
+            saveAppointData(appointment);
+            System.out.println(appointment.toString());
         } catch (Exception e) {
 
         }
-
-         */
 
     }
 

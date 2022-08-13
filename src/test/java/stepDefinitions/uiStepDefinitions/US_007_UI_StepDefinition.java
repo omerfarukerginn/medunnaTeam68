@@ -134,12 +134,12 @@ public class US_007_UI_StepDefinition {
     @Then("Eb Kullanici tarihin {string} seklinde oldugunu dogrular")
     public void eb_kullanici_tarihin_seklinde_oldugunu_dogrular(String date) {
 
-        date = "13/08/22 02:00";
+        date = "13/08/22";
 
         List<String> gecerlitarihlerinListesi=new ArrayList<>();
 
         for (int i = 0; i < patient.gecerliTarihlerListesi.size(); i++) {
-            gecerlitarihlerinListesi.add(patient.gecerliTarihlerListesi.get(i).getText());
+            gecerlitarihlerinListesi.add(patient.gecerliTarihlerListesi.get(i).getText().substring(0,8));
             Assert.assertTrue(gecerlitarihlerinListesi.contains(date));
         }
 

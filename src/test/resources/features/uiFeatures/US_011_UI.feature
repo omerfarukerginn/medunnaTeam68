@@ -12,7 +12,6 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor MYPAGES butonuna tiklar
     And Doktor My Appointments butonuna tıklar
 
-
   Scenario: Kullanici "Create a New Appointment or Edit " islemlerini yapabilmelidir.
     And Doktor Edit butonuna tiklar.
     And Doktor hastanin Status alanini belirler
@@ -25,7 +24,7 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor "The Appointment is updated with identifier"mesajini gorur.
     Then Sayfayi kapatir.
 
-  @US_011_TC_002
+
   Scenario:Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir.
   "id, start and end date, Status, physician and patient"
     And Doktor hastanin id bilgisini gorunur oldugunu test eder

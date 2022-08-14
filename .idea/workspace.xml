@@ -4,6 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="883b572d-aec5-4e17-b4b1-16b4d2a6b028" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
     <list default="true" id="1d11120a-852f-4958-a8d9-0b4a2b82e3c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -79,6 +83,7 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/WriteToTxt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/WriteToTxt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +96,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+
+  <component name="ProjectId" id="2DH6GwahfOEyP2OdVU4DBfYi1No" />
+
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -105,6 +113,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.TestRunner">
+    <configuration name="Scenario: TC_009 Kullanıcı negatif durumlari test eder." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_005_UI.feature" />
+      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="team68Medunna" />
+      <option name="NAME_FILTER" value="^TC_009 Kullanıcı negatif durumlari test eder\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_009 Kullanıcı negatif durumlari test eder\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_009 Kullanıcı negatif durumlari test eder." />
+
   </component>
   <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Scenario: Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
@@ -176,6 +198,7 @@
       <option name="NAME_FILTER" value="^\&quot;prescription ve description\&quot; alanlarini doldurmak isteğe bağlı olmalıdır\.$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^\&quot;prescription ve description\&quot; alanlarini doldurmak isteğe bağlı olmalıdır\.$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: &quot;prescription ve description&quot; alanlarini doldurmak isteğe bağlı olmalıdır." />
+
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -205,16 +228,30 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
+
+        <item itemvalue="Cucumber Java.Scenario: TC_009 Kullanıcı negatif durumlari test eder." />
+
         <item itemvalue="Cucumber Java.Scenario: &quot;Status&quot; doktor tarafından &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak seçilebilmeli." />
         <item itemvalue="Cucumber Java.Scenario: &quot;prescription ve description&quot; alanlarini doldurmak isteğe bağlı olmalıdır." />
         <item itemvalue="Cucumber Java.Scenario: Doktor  &quot;Anamnesis, Treatment ve Diagnosis&quot; alanlarini doldurmak zorundadir." />
         <item itemvalue="Cucumber Java.Scenario: Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir." />
+
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+
+      <changelist id="883b572d-aec5-4e17-b4b1-16b4d2a6b028" name="Changes" comment="" />
+      <created>1660343578205</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660343578205</updated>
+    </task>
+    <servers />
+  </component>
+
       <changelist id="1d11120a-852f-4958-a8d9-0b4a2b82e3c5" name="Changes" comment="" />
       <created>1660489278047</created>
       <option name="number" value="Default" />
@@ -234,4 +271,5 @@
       </map>
     </option>
   </component>
+
 </project>

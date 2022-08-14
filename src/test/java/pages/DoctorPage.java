@@ -11,6 +11,8 @@ import utilities.Driver;
 import java.util.List;
 
 
+
+
 public class DoctorPage {
     public DoctorPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -55,6 +57,9 @@ public class DoctorPage {
     @FindBy(xpath = "//*[text()='Edit']")
     public WebElement editButton;
 
+   /* @FindBy(xpath = "//option[@value='PENDING']")
+    public WebElement pendingSecenegi;*/
+
     @FindBy(xpath = "//textarea[@name='anamnesis']")
     public WebElement anamnesisKutusu;
 
@@ -70,41 +75,78 @@ public class DoctorPage {
     @FindBy(xpath = "//textarea[@name='description']")
     public WebElement descriptionKutusu;
 
-
-    @FindBy(xpath="//button[@id='save-entity']")
-   //@FindBy(xpath = "//button[@type='submit']")
-  // @FindBy(xpath = "//*[text()='Save']")
+    @FindBy(xpath = "//button [@type='submit']")
     public WebElement saveButton;
 
-    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
-    public WebElement alertBoxForm;
+    @FindBy(xpath = "//div [@role='alert']")
+    public WebElement appointmentBasariliYazisi;
 
-    @FindBy(xpath = "//*[text()='Physician']")
-    public WebElement physicanBolumu;
 
-    @FindBy(xpath = "//*[text()='Patient']")
-    public WebElement patientBolumu;
 
-    @FindBy(xpath = "//th//*[text()='Status']")
-    public WebElement ikinicStatusBolumu;
 
-    @FindBy(xpath = "//*[text()='This field is required.']")
-    public WebElement zorunluAlanUyariYazisi;
 
-    @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
-    public WebElement amensisUyariYazisi;
 
-    @FindBy(xpath = "(//div[@class='invalid-feedback'])[2]")
-    public WebElement treatmentUyariYazisi;
 
-    @FindBy(xpath = "(//div[@class='invalid-feedback'])[3]")
-    public WebElement diagnosisUyariYazisi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
     public WebElement welcomeToMedunnaYazisi;
 
-    @FindBy(xpath = "(//div[@class='btn-group flex-btn-group-container'])[2]")
-    //@FindBy(xpath = "//*[text()='Edit']")
+    @FindBy(xpath = "//*[text()='Edit']")
     public WebElement hastaBilalEditButonu;
 
     @FindBy(xpath = "//*[text()='Request A Test']")
@@ -121,6 +163,86 @@ public class DoctorPage {
 
     @FindBy(xpath = "//div[text()='A new Test is created with identifier 165847']")
     public WebElement kayitSonrasiGorunurluk;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //US014 location
@@ -161,7 +283,7 @@ public class DoctorPage {
     @FindBy(css = ".btn-primary")
     public WebElement inPatientsEditButton;
 
-    @FindBy(xpath = "(//*[text()='Edit'])[2]")
+    @FindBy(xpath= "(//*[text()='Edit'])[2]")
     public WebElement inPatientsEditButton2;
 
     @FindBy(xpath = "(//*[.='Create or edit a In Patient'])[4]")
@@ -200,8 +322,25 @@ public class DoctorPage {
     @FindBy(xpath = "//*[.='InPatient status can not be changed with this type of status']")
     public WebElement editInPatientEkranaCikanMesaj;
 
-@FindBy(xpath="//div[@class='Toastify__toast-body']")
-    public WebElement basariliSaveYazisi;
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container'")
+    public WebElement editInPatientEkranaCikanMesajj;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

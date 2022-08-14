@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.236">
-    <testcase classname="US_010 Kullanici doktor olarak DB ile randevulari dogrulamali" name="Kullanici DB ile randevu bilgilerini almali ve dorulamali" time="4.756">
-        <system-out><![CDATA[Given Kullanici database ile baglanti kurar.................................passed
-And Kullanici query tanimlar................................................passed
-And Kullanici randevu bilgilerine ulasir ve kaydeder........................passed
-Then Kullanici DB ile randevu bilgilerini "<patientId>", "<start_date>","<end_date>","<status>" dogrular.passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.531">
+    <testcase classname="US_010 Kullanici doktor olarak DB ile randevulari dogrulamali" name="Kullanici DB ile randevu bilgilerini almali ve dorulamali" time="0.328">
+        <failure message="Cannot invoke &quot;java.sql.Connection.createStatement(int, int)&quot; because &quot;utilities.DBUtils.connection&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given Kullanici database ile baglanti kurar.................................passed
+And Kullanici query tanimlar................................................failed
+And Kullanici randevu bilgilerine ulasir ve kaydeder........................skipped
+Then Kullanici DB ile randevu bilgilerini "<patientId>", "<start_date>","<end_date>","<status>" dogrular.skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement(int, int)" because "utilities.DBUtils.connection" is null
+	at utilities.DBUtils.executeQuery(DBUtils.java:36)
+	at utilities.DBUtils.getColumnNames(DBUtils.java:202)
+	at stepDefinitions.dataBaseStepDefinitions.US_010_DataBase_StepDefination.kullanici_query_tanimlar(US_010_DataBase_StepDefination.java:81)
+	at ✽.Kullanici query tanimlar(file:///C:/Users/w/Desktop/projelerim_yedek_01.02.22/medunnaTeam68/src/test/resources/features/dataBaseFeatures/US_010_DB.feature:6)
+]]></failure>
     </testcase>
 </testsuite>

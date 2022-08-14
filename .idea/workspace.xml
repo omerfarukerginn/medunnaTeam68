@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="16c34b46-b86c-4c74-a916-478715afb8a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" afterDir="false" />
-=======
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Appointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/AppointmentAdminStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/AppointmentAdminStaff.java" afterDir="false" />
@@ -25,7 +24,17 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/User.java" afterDir="false" />
->>>>>>> main
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DatabaseUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DatabaseUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_009_DB.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_009_DB.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PasswordPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PasswordPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/StaffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/StaffPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/ApiRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/ApiRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/DBRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/DBRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DatabaseUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/DatabaseUtility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +68,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Cucumber Java.Scenario: TC_06 Staff hasta bilgilerini silebilmeli">
-    <configuration name="Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-=======
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\IdeaProjects\medunnaTeam68\src\test\java" />
@@ -72,16 +77,16 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.DBRunner">
-    <configuration name="Feature: US_010_DB" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
->>>>>>> main
+    <configuration name="Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_010_DB.feature" />
       <option name="GLUE" value="hooks stepDefinitions.dataBaseStepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="NAME_FILTER" value="^Kullanici DB ile randevu bilgilerini almali ve dorulamali$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici DB ile randevu bilgilerini almali ve dorulamali$&quot;" />
       <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Feature: US_010_DB" />
+      <option name="SUGGESTED_NAME" value="Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -95,26 +100,15 @@
         <option name="MakeNoErrorCheck" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="Scenario: TC_002 Kullanıcı bütün hasta bilgilerini düzenleyebilmelidir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
->>>>>>> main
+    <configuration name="Scenario: Kullanici DB kullanarak hasta bilgilerini dogrular" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_010_DB.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_009_DB.feature" />
       <option name="GLUE" value="hooks stepDefinitions.dataBaseStepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-<<<<<<< HEAD
-      <option name="NAME_FILTER" value="^TC_002 Kullanıcı bütün hasta bilgilerini düzenleyebilmelidir\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 Kullanıcı bütün hasta bilgilerini düzenleyebilmelidir\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_002 Kullanıcı bütün hasta bilgilerini düzenleyebilmelidir." />
-=======
-      <option name="NAME_FILTER" value="^Kullanici DB ile randevu bilgilerini almali ve dorulamali$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici DB ile randevu bilgilerini almali ve dorulamali$&quot;" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" />
->>>>>>> main
+      <option name="NAME_FILTER" value="^Kullanici DB kullanarak hasta bilgilerini dogrular$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici DB kullanarak hasta bilgilerini dogrular$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Kullanici DB kullanarak hasta bilgilerini dogrular" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +118,6 @@
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="MakeProject" enabled="true" />
-        <option name="MakeNoErrorCheck" enabled="true" />
       </method>
     </configuration>
     <configuration name="DBRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -176,32 +168,19 @@
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
-        <item itemvalue="Cucumber Java.Scenario: TC_06 Staff hasta bilgilerini silebilmeli" />
-        <item itemvalue="Cucumber Java.Scenario: TC_002 Kullanıcı bütün hasta bilgilerini düzenleyebilmelidir." />
-        <item itemvalue="Cucumber Java.Scenario: Kullanici, API kullanarak hasta bilgilerini dogrular" />
-        <item itemvalue="Cucumber Java.Scenario: TC_05 Staff hastaları silememeli." />
-        <item itemvalue="Cucumber Java.Scenario: TC_04 Staff, hastaları SSN kimliklerine göre arayabilir." />
-=======
+        <item itemvalue="JUnit.DBRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Kullanici DB kullanarak hasta bilgilerini dogrular" />
         <item itemvalue="JUnit.US_010_DataBase_StepDefination.test" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="JUnit.DBRunner" />
         <item itemvalue="Cucumber Java.Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" />
-        <item itemvalue="Cucumber Java.Feature: US_010_DB" />
->>>>>>> main
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="6c681201-360f-41fe-a85c-cf4472b6fd31" name="Changes" comment="" />
-      <created>1659645159571</created>
-=======
       <changelist id="16c34b46-b86c-4c74-a916-478715afb8a6" name="Changes" comment="" />
       <created>1660424040534</created>
->>>>>>> main
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660424040534</updated>

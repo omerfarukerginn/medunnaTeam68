@@ -172,4 +172,15 @@ public class DatabaseUtility {
             e.printStackTrace();
         }
     }
+
+    //Use this to get the ResutSet object
+    public static ResultSet getResultset() {
+        try {
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return resultSet;
+    }
 }

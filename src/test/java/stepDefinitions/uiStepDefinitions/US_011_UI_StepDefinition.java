@@ -79,32 +79,32 @@ public class US_011_UI_StepDefinition {
 
     @Then("Doktor hastanin Anemnesis bilgilerini doldurur")
     public void doktor_hastanin_anemnesis_bilgilerini_doldurur() {
-        us_011.anamnesisKutusu.sendKeys("Diabet");
+        us_011.anamnesisKutusu.sendKeys("kanser");
 
     }
 
     @Then("Doktor hastanin Treatment  bilgilerini doldurur")
     public void doktor_hastanin_treatment_bilgilerini_doldurur() {
-        us_011.treatmentKutusu.sendKeys("Ilac tedavisi");
+        us_011.treatmentKutusu.sendKeys("Kemo");
 
     }
 
     @Then("Doktor hastanin Diagnosis bilgilerini doldurur")
     public void doktor_hastanin_diagnosis_bilgilerini_doldurur() {
-        us_011.diagnosisKutusu.sendKeys("verem etti bizi ");
+        us_011.diagnosisKutusu.sendKeys("caresiz ");
 
     }
 
     @Then("Doktor hastanin Prescription bilgilerini doldurur")
     public void doktor_hastanin_prescription_bilgilerini_doldurur() {
-        us_011.prescriptionKutusu.sendKeys("gunde 3 kez ilac alinacak");
+        us_011.prescriptionKutusu.sendKeys("son gunlerini iyi yasasin");
 
 
     }
 
     @Then("Doktor hastanin Description bilgilerini doldurur")
     public void doktor_hastanin_description_bilgilerini_doldurur() {
-        us_011.descriptionKutusu.sendKeys("bol spor yap");
+        us_011.descriptionKutusu.sendKeys("bol dua et");
 
     }
 
@@ -117,10 +117,10 @@ public class US_011_UI_StepDefinition {
 
     @Then("Doktor \"The Appointment is updated with identifier\"mesajini gorur.")
     public void doktor_the_appointment_is_updated_with_identifier_mesajini_gorur() {
-        Driver.getDriver().switchTo().alert().accept();
-        String expectedResult="The Appointment is updated with identifier";
-        String actualResult=us_011.appointmentBasariliYazisi.getText();
-        Assert.assertEquals(expectedResult,actualResult);
+
+       // String expectedResult="The Appointment is updated with identifier";
+      //  String actualResult=us_011.appointmentBasariliYazisi.getText();
+        Assert.assertTrue(us_011.appointmentBasariliYazisi.isDisplayed());
 
     }
 
@@ -128,5 +128,114 @@ public class US_011_UI_StepDefinition {
     public void sayfayi_kapatir() {
         Driver.closeDriver();
 
+    }
+    @Then("Doktor hastanin id bilgisini gorunur oldugunu test eder")
+    public void doktor_hastanin_id_bilgisini_gorunur_oldugunu_test_eder() {
+        Assert.assertTrue(us_011.idButton.isDisplayed());
+
+    }
+
+    @Then("Doktor hastanin start and end date bilgisinin gorunur oldugunu test eder gorur")
+    public void doktor_hastanin_start_and_end_date_bilgisinin_gorunur_oldugunu_test_eder_gorur() {
+        Assert.assertTrue(us_011.startDateTimeButton.isDisplayed());
+
+
+    }
+
+    @Then("Doktor hastanin status bilgisinin gorunur oldugunu test eder")
+    public void doktor_hastanin_status_bilgisinin_gorunur_oldugunu_test_eder() {
+        Assert.assertTrue(us_011.ikinicStatusBolumu.isDisplayed());
+
+    }
+
+    @Then("Doktor hastanin physician bilgisinin gorunur oldugunu test  eder")
+    public void doktor_hastanin_physician_bilgisinin_gorunur_oldugunu_test_eder() {
+        Assert.assertTrue(us_011.physicanBolumu.isDisplayed());
+
+    }
+
+    @Then("Doktor hastanin patient bilgisinin gorunur oldugunu test  eder")
+    public void doktor_hastanin_patient_bilgisinin_gorunur_oldugunu_test_eder() {
+        Assert.assertTrue(us_011.patientBolumu.isDisplayed());
+
+    }
+
+
+    @Then("Doktor Edit i tiklar")
+    public void doktor_edit_i_tiklar() {
+        ReusableMethods.hooverByJS( us_011.hastaBilalEditButonu);
+
+
+
+    }
+
+
+    @Then("Doktor Anemnasis alani icin {string} uyarisi verdigini dogrular")
+    public void doktor_anemnasis_alani_icin_uyarisi_verdigini_dogrular(String string) {
+        ReusableMethods.waitFor(2);
+        Assert.assertTrue(us_011.amensisUyariYazisi.isDisplayed());
+
+
+    }
+
+    @Then("Doktor Treatment alani icin {string} uyarisi verdigini dogrular")
+    public void doktor_treatment_alani_icin_uyarisi_verdigini_dogrular(String string) {
+        ReusableMethods.waitFor(2);
+        Assert.assertTrue(us_011.treatmentUyariYazisi.isDisplayed());
+
+    }
+
+    @Then("Doktor Diagnosis alani icin {string} uyarisi verdigini dogrular")
+    public void doktor_diagnosis_alani_icin_uyarisi_verdigini_dogrular(String string) {
+        ReusableMethods.waitFor(2);
+        Assert.assertTrue(us_011.diagnosisUyariYazisi.isDisplayed());
+
+    }
+
+    @And("Doktor Statusu Pending olarak secer")
+    public void doktorStatusuPendingOlarakSecer() {
+        Driver.selectAnItemFromDropdown(us_011.statusButton,"PENDING");
+    }
+
+
+    @And("Doktor Statusu Completed olarak secer")
+    public void doktorStatusuCompletedOlarakSecer() {
+        Driver.selectAnItemFromDropdown(us_011.statusButton,"COMPLETED");
+
+    }
+
+    @And("Doktor Statusu Cancelled olarak secer")
+    public void doktorStatusuCancelledOlarakSecer() {
+        Driver.selectAnItemFromDropdown(us_011.statusButton,"CANCELLED");
+
+    }
+
+
+    @And("Doktor Prescription alani icin -This field is required- uyarisi vermedigini dogrular")
+    public void doktorPrescriptionAlaniIcinThisFieldIsRequiredUyarisiVermediginiDogrular() {
+        ReusableMethods.waitFor(2);
+        Assert.assertFalse(us_011.zorunluAlanUyariYazisi.isDisplayed());
+    }
+
+    @And("Doktor Description  alani icin -This field is required- uyarisi vermedigini dogrular")
+    public void doktorDescriptionAlaniIcinThisFieldIsRequiredUyarisiVermediginiDogrular() {
+        ReusableMethods.waitFor(2);
+        Assert.assertFalse(us_011.zorunluAlanUyariYazisi.isDisplayed());
+
+    }
+
+    @And("Doktor -Anamnesis,Treatment ve Diagnosis- alanlarini bosaltir")
+    public void doktorAnamnesisTreatmentVeDiagnosisAlanlariniBosaltir() {
+        ReusableMethods.hooverByJS(us_011.anamnesisKutusu);
+        us_011.anamnesisKutusu.clear();
+        us_011.treatmentKutusu.clear();
+        us_011.diagnosisKutusu.clear();
+    }
+
+
+    @And("Doktor -Prescription ve Description- alanlarini bosaltir")
+    public void doktorPrescriptionVeDescriptionAlanlariniBosaltir() {
+        us_011.prescriptionKutusu.clear();
+        us_011.descriptionKutusu.clear();
     }
 }

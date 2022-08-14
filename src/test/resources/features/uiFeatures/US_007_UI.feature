@@ -26,7 +26,7 @@ Feature: US_007_TC_001 Kullanıcı geçerli tarih girmelidir ve randevusunu gorm
   @TEST_MED-141
   Scenario: Eb Kullanici tarih formatini dogrular
     And Eb Kullanici MyAppointment secenegini secer
-    And Eb Kullanici tarihin "<gun/ay/yil>" seklinde oldugunu dogrular
+      And Eb Kullanici tarihin "<gun/ay/yil>" seklinde oldugunu dogrular
     Then Kullanici sayfayi kapatir
 
 

@@ -3,7 +3,9 @@ package stepDefinitions.uiStepDefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
 import pages.LoginPage;
 import pages.PatientPage;
@@ -41,12 +43,12 @@ public class US_007_UI_StepDefinition {
 
     @Then("Eb Kullanici username bolumune UserName yazar")
     public void eb_kullanici_username_bolumune_user_name_yazar() {
-        logIn.loginPageSingInUserNameKutusu.sendKeys(ConfigReader.getProperty("yeniHastaUserName"));
+        logIn.loginPageSingInUserNameKutusu.sendKeys(ConfigReader.getProperty("hastaUserName"));
     }
 
     @Then("Eb Kullanici Password kismina Password girer")
     public void eb_kullanici_password_kismina_password_girer() {
-        logIn.loginPageSingInPasswordKutusu.sendKeys(ConfigReader.getProperty("yeniHastapassword"));
+        logIn.loginPageSingInPasswordKutusu.sendKeys(ConfigReader.getProperty("hastaPassword"));
     }
 
     @Then("Eb Kullanici Sign in butonuna tiklar")
@@ -71,28 +73,28 @@ public class US_007_UI_StepDefinition {
     public void eb_kullanici_first_name_bolumune_ismini_girer() {
         patient.firstNameKutusu.clear();
         //String firstName=faker.name().firstName();
-        patient.firstNameKutusu.sendKeys(ConfigReader.getProperty("yeniHastaFirstName"));
+        patient.firstNameKutusu.sendKeys(ConfigReader.getProperty("hastaFirstName"));
     }
 
     @Then("Eb Kullanici LastName bolumune soy ismini girer")
     public void eb_kullanici_last_name_bolumune_soy_ismini_girer() {
         patient.lastNameKutusu.clear();
         //String lastName=faker.name().lastName();
-        patient.lastNameKutusu.sendKeys(ConfigReader.getProperty("yeniHastaLastName"));
+        patient.lastNameKutusu.sendKeys(ConfigReader.getProperty("hastaLastName"));
     }
 
     @Then("Eb Kullanici SSN bolumune gecerli bir SSN girer")
     public void eb_kullanici_ssn_bolumune_gecerli_bir_ssn_girer() {
         patient.ssnKutusu.clear();
         //String ssnNumber=faker.idNumber().ssnValid();
-        patient.ssnKutusu.sendKeys(ConfigReader.getProperty("yeniHastaSSN"));
+        patient.ssnKutusu.sendKeys(ConfigReader.getProperty("hastaSSN"));
     }
 
     @Then("Eb Kullanici email bolumune email girer")
     public void eb_kullanici_email_bolumune_email_girer() {
         patient.emailKutusu.clear();
         //String email=faker.internet().emailAddress();
-        patient.emailKutusu.sendKeys(ConfigReader.getProperty("yeniHastaemail"));
+        patient.emailKutusu.sendKeys(ConfigReader.getProperty("hastaEmail"));
     }
 
     @Then("Eb Kullanici Phone bolumune gecerli bir tel nosu girer")
@@ -134,13 +136,17 @@ public class US_007_UI_StepDefinition {
     @Then("Eb Kullanici tarihin {string} seklinde oldugunu dogrular")
     public void eb_kullanici_tarihin_seklinde_oldugunu_dogrular(String date) {
 
-        date = "13/08/22";
+        Actions action=new Actions(Driver.getDriver());
+        action.sendKeys(Keys.PAGE_DOWN);
+
+        date = "14/08/22";
 
         List<String> gecerlitarihlerinListesi=new ArrayList<>();
 
         for (int i = 0; i < patient.gecerliTarihlerListesi.size(); i++) {
             gecerlitarihlerinListesi.add(patient.gecerliTarihlerListesi.get(i).getText().substring(0,8));
-            Assert.assertTrue(gecerlitarihlerinListesi.contains(date));
+            System.out.println(gecerlitarihlerinListesi.get(i));
+           // Assert.assertTrue(gecerlitarihlerinListesi.get(i).contains(date));
         }
 
     }

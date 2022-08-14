@@ -1,10 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.236">
-    <testcase classname="US_010 Kullanici doktor olarak DB ile randevulari dogrulamali" name="Kullanici DB ile randevu bilgilerini almali ve dorulamali" time="4.756">
-        <system-out><![CDATA[Given Kullanici database ile baglanti kurar.................................passed
-And Kullanici query tanimlar................................................passed
-And Kullanici randevu bilgilerine ulasir ve kaydeder........................passed
-Then Kullanici DB ile randevu bilgilerini "<patientId>", "<start_date>","<end_date>","<status>" dogrular.passed
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="39.732">
+    <testcase classname="US_007_TC_001 Kullanıcı geçerli tarih girmelidir ve randevusunu gormelidir." name="Eb Kullanici guncel veya gelecekten bir tarih secer" time="15.76">
+        <system-out><![CDATA[Given Eb Kullanici Medunna adresine gider...................................passed
+When Eb Kullanici Account Menu ikonuna tiklar...............................passed
+Then Eb Kullanici Sign in sekmesine tiklar..................................passed
+And Eb Kullanici username bolumune UserName yazar...........................passed
+And Eb Kullanici Password kismina Password girer............................passed
+And Eb Kullanici Sign in butonuna tiklar....................................passed
+And Eb Kullanici MyPages sekmesine tiklar...................................passed
+And Eb Kullanici Make An Appointment sekmesine tiklar.......................passed
+And Eb Kullanici FirstName bolumune ismini girer............................passed
+And Eb Kullanici LastName bolumune soy ismini girer.........................passed
+And Eb Kullanici SSN bolumune gecerli bir SSN girer.........................passed
+And Eb Kullanici email bolumune email girer.................................passed
+And Eb Kullanici Phone bolumune gecerli bir tel nosu girer..................passed
+And Eb Kullanici date bolumunde guncel veya gelecekten bir tarih secer......passed
+And Eb Kullanici Send an Appointment Request butonuna tiklar................passed
+And Eb Kullanici Randevu tarihi olusturuldugunu kontrol eder (Appoinment registration saved yazisi gorunur olmali).passed
+Then Kullanici sayfayi kapatir..............................................passed
 ]]></system-out>
+    </testcase>
+    <testcase classname="US_007_TC_001 Kullanıcı geçerli tarih girmelidir ve randevusunu gormelidir." name="Eb Kullanici tarih formatini dogrular" time="7.2">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given Eb Kullanici Medunna adresine gider...................................passed
+When Eb Kullanici Account Menu ikonuna tiklar...............................passed
+Then Eb Kullanici Sign in sekmesine tiklar..................................passed
+And Eb Kullanici username bolumune UserName yazar...........................passed
+And Eb Kullanici Password kismina Password girer............................passed
+And Eb Kullanici Sign in butonuna tiklar....................................passed
+And Eb Kullanici MyPages sekmesine tiklar...................................passed
+And Eb Kullanici MyAppointment secenegini secer.............................passed
+And Eb Kullanici tarihin "<gun/ay/yil>" seklinde oldugunu dogrular..........failed
+Then Kullanici sayfayi kapatir..............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.uiStepDefinitions.US_007_UI_StepDefinition.eb_kullanici_tarihin_seklinde_oldugunu_dogrular(US_007_UI_StepDefinition.java:143)
+	at ✽.Eb Kullanici tarihin "<gun/ay/yil>" seklinde oldugunu dogrular(file:///C:/Users/aydnn/medunnaTeam68/src/test/resources/features/uiFeatures/US_007_UI.feature:29)
+]]></failure>
+    </testcase>
+    <testcase classname="US_007_TC_001 Kullanıcı geçerli tarih girmelidir ve randevusunu gormelidir." name="Eb Kullanici gecmis tarihli bir gun secer" time="15.601">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@name='username']&quot;}&#10;  (Session info: chrome=104.0.5112.81)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-59VL7U7', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d061e5aa07488b6b545ac7b3dbae1b5b, findElement {using=xpath, value=//*[@name='username']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\aydnn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58812}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58812/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d061e5aa07488b6b545ac7b3dbae1b5b" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Eb Kullanici Medunna adresine gider...................................passed
+When Eb Kullanici Account Menu ikonuna tiklar...............................passed
+Then Eb Kullanici Sign in sekmesine tiklar..................................passed
+And Eb Kullanici username bolumune UserName yazar...........................failed
+And Eb Kullanici Password kismina Password girer............................skipped
+And Eb Kullanici Sign in butonuna tiklar....................................skipped
+And Eb Kullanici MyPages sekmesine tiklar...................................skipped
+And Eb Kullanici Make An Appointment sekmesine tiklar.......................skipped
+And Eb Kullanici FirstName bolumune ismini girer............................skipped
+And Eb Kullanici LastName bolumune soy ismini girer.........................skipped
+And Eb Kullanici SSN bolumune gecerli bir SSN girer.........................skipped
+And Eb Kullanici email bolumune email girer.................................skipped
+And Eb Kullanici Phone bolumune gecerli bir tel nosu girer..................skipped
+And Eb Kullanici date bolumunde gecmis tarih secer..........................skipped
+And Eb Kullanici gecmis tarihten gun secemedigini dogrular..................skipped
+Then Kullanici sayfayi kapatir..............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@name='username']"}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-59VL7U7', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d061e5aa07488b6b545ac7b3dbae1b5b, findElement {using=xpath, value=//*[@name='username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\aydnn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58812}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58812/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d061e5aa07488b6b545ac7b3dbae1b5b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)
+	at stepDefinitions.uiStepDefinitions.US_007_UI_StepDefinition.eb_kullanici_username_bolumune_user_name_yazar(US_007_UI_StepDefinition.java:44)
+	at ✽.Eb Kullanici username bolumune UserName yazar(file:///C:/Users/aydnn/medunnaTeam68/src/test/resources/features/uiFeatures/US_007_UI.feature:8)
+]]></failure>
     </testcase>
 </testsuite>

@@ -146,7 +146,7 @@ public class DoctorPage {
     @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
     public WebElement welcomeToMedunnaYazisi;
 
-    @FindBy(xpath = "//*[text()='Edit']")
+    @FindBy(xpath = " //*[@id='app-view-container']/div/div/div/div/div/table/tbody/tr[1]/td[13]/div/a")
     public WebElement hastaBilalEditButonu;
 
     @FindBy(xpath = "//*[text()='Request A Test']")
@@ -158,11 +158,39 @@ public class DoctorPage {
     @FindBy(xpath = "//input[@type='checkbox']")
     public List<WebElement> testSecmeButonuListesi;
 
-    @FindBy(xpath = "//*[text()='Save']")
+    @FindBy(xpath ="//button[@type='submit']")
     public WebElement saveButonu;
 
-    @FindBy(xpath = "//div[text()='A new Test is created with identifier 165847']")
-    public WebElement kayitSonrasiGorunurluk;
+    @FindBy(xpath = "//*[text()='Show Test Results']")
+    public WebElement showTestResultsButonu;
+
+    @FindBy(xpath = "//*[text()='View Results']")
+    public WebElement viewResultsButonu;
+    @FindBy(xpath = "//*[text()='ID']")
+    public WebElement idGorunurluk;
+
+    @FindBy(xpath = "//*[text()='Name']")
+    public WebElement nameGorunurluk;
+
+    @FindBy(xpath = "//*[text()='Default Min. Value']")
+    public WebElement defaultMinValueGorunurluk;
+
+    @FindBy(xpath = "//*[text()='Default Max. Value']")
+    public WebElement defaultMaxValueGorunurluk;
+
+    @FindBy(xpath = "//*[text()='Test']")
+    public WebElement testGorunurluk;
+
+    @FindBy(xpath = "//*[text()='Description']")
+    public WebElement descriptionGorunurluk;
+
+    @FindBy(xpath = "//*[text()='Date']")
+    public WebElement dateGorunurluk;
+
+    @FindBy(xpath = "//*[text()='Request Inpatient']")
+    public WebElement requestInPatientButonu;
+
+    //*[@id="save-entity"]
 
 
 

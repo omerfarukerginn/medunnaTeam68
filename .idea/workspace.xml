@@ -106,16 +106,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration name="Scenario: Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: US_010_DB">
+    <configuration name="Feature: US_010_DB" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_011_UI.feature" />
-      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_010_DB.feature" />
+      <option name="GLUE" value="hooks stepDefinitions.dataBaseStepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^Bir randevu güncellendiğinde\; kullanıcı \(doktor\)\, hastanın aşağıdaki bilgilerini görmelidir\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Bir randevu güncellendiğinde\; kullanıcı \(doktor\)\, hastanın aşağıdaki bilgilerini görmelidir\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir." />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US_010_DB" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -204,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: US_010_DB" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: &quot;Status&quot; doktor tarafından &quot;PENDING, COMPLETED veya CANCELLED&quot; olarak seçilebilmeli." />
         <item itemvalue="Cucumber Java.Scenario: &quot;prescription ve description&quot; alanlarini doldurmak isteğe bağlı olmalıdır." />
         <item itemvalue="Cucumber Java.Scenario: Doktor  &quot;Anamnesis, Treatment ve Diagnosis&quot; alanlarini doldurmak zorundadir." />
-        <item itemvalue="Cucumber Java.Scenario: Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir." />
       </list>
     </recent_temporary>
   </component>

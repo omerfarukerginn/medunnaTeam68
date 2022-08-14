@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="883b572d-aec5-4e17-b4b1-16b4d2a6b028" name="Changes" comment="">
+    <list default="true" id="16c34b46-b86c-4c74-a916-478715afb8a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/AppointmentAdminStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/AppointmentAdminStaff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/AppointmentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/AppointmentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/InPatients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/InPatients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Physician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Physician.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Registrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Registrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pojos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,30 +29,50 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JiraServerManager">
+    <selected>-1</selected>
+    <servers />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2DH6GwahfOEyP2OdVU4DBfYi1No" />
+  <component name="ProjectId" id="2DJjNHT6YUKTw54ymA6YhSS8wim" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration name="Scenario: TC_009 Kullanıcı negatif durumlari test eder." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProjects\medunnaTeam68\src\test\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DBRunner">
+    <configuration name="Feature: US_010_DB" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_005_UI.feature" />
-      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_010_DB.feature" />
+      <option name="GLUE" value="hooks stepDefinitions.dataBaseStepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^TC_009 Kullanıcı negatif durumlari test eder\.$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_009 Kullanıcı negatif durumlari test eder\.$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC_009 Kullanıcı negatif durumlari test eder." />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Feature: US_010_DB" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -44,6 +80,46 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_010_DB.feature" />
+      <option name="GLUE" value="hooks stepDefinitions.dataBaseStepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="team68Medunna" />
+      <option name="NAME_FILTER" value="^Kullanici DB ile randevu bilgilerini almali ve dorulamali$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici DB ile randevu bilgilerini almali ve dorulamali$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DBRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="team68Medunna" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.DBRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,22 +139,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="US_010_DataBase_StepDefination.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="team68Medunna" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stepDefinitions.dataBaseStepDefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stepDefinitions.dataBaseStepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="stepDefinitions.dataBaseStepDefinitions.US_010_DataBase_StepDefination" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.US_010_DataBase_StepDefination.test" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: TC_009 Kullanıcı negatif durumlari test eder." />
+        <item itemvalue="JUnit.DBRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Kullanici DB ile randevu bilgilerini almali ve dorulamali" />
+        <item itemvalue="Cucumber Java.Feature: US_010_DB" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="883b572d-aec5-4e17-b4b1-16b4d2a6b028" name="Changes" comment="" />
-      <created>1660343578205</created>
+      <changelist id="16c34b46-b86c-4c74-a916-478715afb8a6" name="Changes" comment="" />
+      <created>1660424040534</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1660343578205</updated>
+      <updated>1660424040534</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

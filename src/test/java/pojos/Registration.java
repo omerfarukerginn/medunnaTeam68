@@ -1,4 +1,4 @@
-package stepDefinitions.pojos;
+package pojos;
 
 public class Registration {
     public Registration(){

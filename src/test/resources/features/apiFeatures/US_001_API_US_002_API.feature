@@ -1,4 +1,4 @@
-@US01_API
+P@US01_API
 Feature: US_001 API
   @US001_TC013
   Scenario:US001_TC013

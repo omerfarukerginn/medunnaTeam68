@@ -30,6 +30,7 @@ public class US_001_UI_StepDefinitions {
     public void kullanici_registration_sayfasina_gider_navigate() {
 
        registerPage.homePageRegisterButton.click();
+        System.out.println("ne olacak böyle");
 
     }
 

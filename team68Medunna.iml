@@ -156,5 +156,14 @@
     <orderEntry type="library" name="Maven: com.microsoft.sqlserver:mssql-jdbc:8.2.2.jre8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.projectlombok:lombok:1.18.24" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.itextpdf:itextpdf:5.4.2" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../postgresql-42.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

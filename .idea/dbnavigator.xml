@@ -35,12 +35,10 @@
       <console name="Connection 1" type="STANDARD" schema="" session="Main" />
     </connection>
     <connection id="0a1d0163-b787-450a-b993-faf76780ca81">
-      <console name="Medunna" type="STANDARD" schema="public" session="Main"><![CDATA[select * from jhi_users;]]></console>
+      <console name="Medunna" type="STANDARD" schema="" session="Main" />
     </connection>
     <connection id="87d93f47-8b63-4b60-9627-8d5f6dd94a37">
-      <console name="medeunna2" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM jhi_user where email='anonymous@localhost';
-SELECT email FROM jhi_user where email='anonymous@localhost' ;
-SELECT email From jhi_user;]]></console>
+      <console name="medeunna2" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

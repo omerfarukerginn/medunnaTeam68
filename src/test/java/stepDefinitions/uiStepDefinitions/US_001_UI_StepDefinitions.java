@@ -12,6 +12,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+import static utilities.ConfigReader.*;
 
 
 public class US_001_UI_StepDefinitions {
@@ -22,13 +23,14 @@ public class US_001_UI_StepDefinitions {
 
     @Given("Kullanıci medunna anasayfasina gider")
     public void kullanıci_medunna_anasayfasina_gider() {
-        Driver.getDriver().get(ConfigReader.getProperty( "medunna_url" ) );
+       Driver.getDriver().get( ConfigReader.getProperty( "medunna_url" ) );
     }
 
     @Given("kullanici registration sayfasina gider\\(navigate)")
     public void kullanici_registration_sayfasina_gider_navigate() {
-       loginPage.loginPageMenuButton.click();
-       registerPage.homeRegisterButton.click();
+
+       registerPage.homePageRegisterButton.click();
+
     }
 
     @Given("kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer {string}")

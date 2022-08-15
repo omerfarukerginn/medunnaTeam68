@@ -19,7 +19,6 @@ public class Room {
             "roomNumber": 14725,
             "roomType": "TWIN",
             "status": true,
-            "price": 120.00,
             "description": "with TV"
     }*/
 

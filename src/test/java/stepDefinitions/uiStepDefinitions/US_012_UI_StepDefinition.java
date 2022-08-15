@@ -52,6 +52,7 @@ public class US_012_UI_StepDefinition {
 
     @Then("Doktor Edit butonuna tiklar")
     public void doktor_edit_butonuna_tiklar() {
+        ReusableMethods.waitFor(3);
         drPage.hastaBilalEditButonu.click();
     }
 

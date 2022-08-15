@@ -21,39 +21,56 @@ public class US_009_UI_StepDefinition {
 
 
     @Given("Kullanici {string} adresine gider")
-    public void kullanici_adresine_gider(String string) {Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));}
+    public void kullanici_adresine_gider(String string) {
+        Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
+    }
 
     @Then("Insan figurune tiklar")
-    public void insan_figurune_tiklar() {staffPage.insanFiguru.click();}
+    public void insan_figurune_tiklar() {
+        staffPage.insanFiguru.click();
+    }
 
     @Then("Sign in secenegini secer")
-    public void sign_in_secenegini_secer() {staffPage.ilkSingin.click();}
+    public void sign_in_secenegini_secer() {
+        staffPage.ilkSingin.click();
+    }
 
     @Then("Staff olarak username ve password girer")
     public void staff_olarak_username_ve_password_girer() {
-    staffPage.loginUsernameTextBox.sendKeys(ConfigReader.getProperty("staffUserName"));
-    staffPage.loginPasswordTextBox.sendKeys(ConfigReader.getProperty("staffPassword"));}
+        staffPage.loginUsernameTextBox.sendKeys(ConfigReader.getProperty("staffUserName"));
+        staffPage.loginPasswordTextBox.sendKeys(ConfigReader.getProperty("staffPassword"));
+    }
 
     @Then("Sign in butonuna tiklar")
-    public void sign_in_butonuna_tiklar() {staffPage.singinButton.click();}
+    public void sign_in_butonuna_tiklar() {
+        staffPage.singinButton.click();
+    }
 
     @And("MY PAGES sekmesine tiklar")
-    public void myPAGESSekmesineTiklar() {staffPage.myPagesButton.click();}
+    public void myPAGESSekmesineTiklar() {
+        staffPage.myPagesButton.click();
+    }
 
     @Then("Search Patient secenegini secer")
-    public void search_patient_secenegini_secer() { staffPage.dropDownSearchPatientButton.click();}
+    public void search_patient_secenegini_secer() {
+        staffPage.dropDownSearchPatientButton.click();
+    }
 
     @Then("Patients yazisi ile listenin gorunurlugunu test eder")
     public void patients_yazisi_ile_listenin_gorunurlugunu_test_eder() {
-        Assert.assertTrue(staffPage.patientsYaziElementi.isDisplayed());}
+        Assert.assertTrue(staffPage.patientsYaziElementi.isDisplayed());
+    }
 
     @And("Patient SSN kutusuna {string} girer")
-    public void patientSSNKutusunaGirer(String ssn) {staffPage.patientSsnSearchTextBox.sendKeys(ssn);}
+    public void patientSSNKutusunaGirer(String ssn) {
+        staffPage.patientSsnSearchTextBox.sendKeys(ssn);
+    }
 
     @And("Edit butonuna tiklar")
     public void editButonunaTiklar() {
         actions.sendKeys(Keys.ARROW_RIGHT).perform();
-        staffPage.editButton.click();}
+        staffPage.editButton.click();
+    }
 
     @And("Staff hasta bilgilerinde duzenleme yapar")
     public void staffHastaBilgilerindeDuzenlemeYapar() {
@@ -93,6 +110,49 @@ public class US_009_UI_StepDefinition {
 
     @And("Dogrulama gozlemlenir")
     public void dogrulamaGozlemlenir() {
-        ReusableMethods.waitForVisibility(staffPage.guncellendiYaziElementi,3).isDisplayed();
-        }
+        ReusableMethods.waitForVisibility(staffPage.guncellendiYaziElementi, 3).isDisplayed();
+    }
+
+    @And("Hasta bilgilerinin dolduruldugunu dogrular")
+    public void hastaBilgilerininDolguruldugunuDogrular() {
+        Assert.assertFalse(staffPage.firstNameTextBox.getAttribute("value").isEmpty());
+        Assert.assertFalse(staffPage.lastNameTextBox.getAttribute("value").isEmpty());
+        Assert.assertFalse(staffPage.birthDateTextBox.getAttribute("value").isEmpty());
+        Assert.assertFalse(staffPage.emailTextBox.getAttribute("value").isEmpty());
+        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
+        Assert.assertFalse(staffPage.phoneTextBox.getAttribute("value").isEmpty());
+        Assert.assertFalse(staffPage.genderDropDown.getAttribute("value").isEmpty());
+        Assert.assertFalse(staffPage.bloodGroupDropDown.getAttribute("value").isEmpty());
+        //Assert.assertFalse(staffPage.adressTextBox.getAttribute("value").isEmpty());
+        //Assert.assertFalse(staffPage.descriptionTextBox.getAttribute("value").isEmpty());
+        //Assert.assertFalse(staffPage.userDropDown.getAttribute("value").isEmpty());
+        //Assert.assertFalse(staffPage.countryDropDown.getAttribute("value").isEmpty());
+        //Assert.assertFalse("State box bos",staffPage.stateButton.getAttribute("value").length()==0);
+
+    }
+
+    @Then("Kullanici ilgili hastanin goruldugunu test eder")
+    public void kullaniciIlgiliHastaninGoruldugunuTestEder() {
+        Assert.assertTrue(staffPage.ssnHastaBilgisiElementi.isDisplayed());
+    }
+
+    @Then("Hasta id'sinin silinemedigini test eder")
+    public void hastaIdSininSilinemediginiTestEder() {Assert.assertFalse(staffPage.idTextBox.isSelected());
+    }
+
+    @Then("Herhangi bir hasta bilgisini silebildigini test eder")
+    public void herhangiBirHastaBilgisiniSilebildiginiTestEder() throws InterruptedException {
+
+        staffPage.firstNameTextBox.clear();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        Thread.sleep(1000);
+        staffPage.saveButton.click();
+        actions.sendKeys(Keys.PAGE_UP).perform();
+        actions.sendKeys(Keys.PAGE_UP).perform();
+        Thread.sleep(1000);
+
+        Assert.assertFalse(staffPage.hataYaziElementi.isDisplayed());
+
+    }
 }

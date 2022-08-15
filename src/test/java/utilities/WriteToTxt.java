@@ -6,6 +6,7 @@ import pojos.Registrant;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 public class WriteToTxt {
@@ -104,4 +105,67 @@ public class WriteToTxt {
         }
 
 
-    }}
+    }
+
+    public static void saveAppointmentId(String fileName, List<Object> id) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < id.size(); i++)
+
+                writer.append(id.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+    public static void saveAppointmentStartDate(String fileName, List<Object> StartDate) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < StartDate.size(); i++)
+
+                writer.append(StartDate.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+    public static void saveAppointmentEndDate(String fileName, List<Object> EndDate) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < EndDate.size(); i++)
+
+                writer.append(EndDate.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+    public static void saveAppointmentStatus(String fileName, List<Object> Status) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < Status.size(); i++)
+
+                writer.append(Status.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+
+
+}
+
+
+

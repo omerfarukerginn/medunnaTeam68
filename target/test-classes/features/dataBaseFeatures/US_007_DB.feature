@@ -1,8 +1,10 @@
 
 @DB_007
-Feature: Kullanici hasta olarak DB ile randevulari dogrulayabilmeli
-  Scenario: Eb Kullanici DB ile randevu bilgilerini almali ve dorulamali
+Feature: Eb Kullanici hasta olarak DB ile randevulari dogrulayabilmeli
+
+  Scenario: Eb Kullanici DB ile randevu bilgilerini almali ve dogrulamali
     Given Eb Kullanici database ile baglanti kurar
     And Eb Kullanici query tanimlar
     And Eb Kullanici randevu bilgilerine ulasir ve kaydeder
-    Then Eb Kullanici DB ile randevu bilgilerini "<patientId>", "<Name>","<start_date>","<status>" dogrular
+    And Eb Kullanici DB ile randevu bilgilerini dogrular
+

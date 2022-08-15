@@ -23,6 +23,7 @@ public class US_007_UI_StepDefinition {
     LoginPage logIn = new LoginPage();
     SoftAssert softAssert = new SoftAssert();
     PatientPage patient = new PatientPage();
+    String date;
 
     @Given("Eb Kullanici Medunna adresine gider")
     public void eb_kullanici_medunna_adresine_gider() {
@@ -59,7 +60,7 @@ public class US_007_UI_StepDefinition {
 
     @Then("Eb Kullanici MyPages sekmesine tiklar")
     public void eb_kullanici_my_pages_sekmesine_tiklar() {
-        patient.myPagesPatientButton.click();
+        patient.myPagesPatientButtonEb.click();
 
     }
 
@@ -104,15 +105,21 @@ public class US_007_UI_StepDefinition {
         patient.phoneKutusu.sendKeys(phoneNumber);
     }
 
-    @Then("Eb Kullanici date bolumunde guncel veya gelecekten bir tarih secer")
-    public void eb_kullanici_date_bolumunde_guncel_veya_gelecekten_bir_tarih_secer() {
+    @Then("Eb Kullanici date bolumunde guncel bir tarih secer")
+    public void eb_kullanici_date_bolumunde_guncel_bir_tarih_secer() {
 
         /*
         Date = "12.12.2022";
         Driver.waitAndSendText(aP.AppointmentDateTimeTextBox, Date);
          */
-        patient.appointmentDateSection.sendKeys("14.08.2022");
+        patient.appointmentDateSection.sendKeys("15.08.2022");
     }
+
+    @Then("Eb Kullanici date bolumunde gelecek tarihli bir gun secer")
+    public void eb_kullanici_date_bolumunde_gelecek_tarihli_bir_gun_secer() {
+        patient.appointmentDateSection.sendKeys("20.08.2022");
+    }
+
 
     @Then("Eb Kullanici Send an Appointment Request butonuna tiklar")
     public void eb_kullanici_send_an_appointment_request_butonuna_tiklar() {
@@ -133,22 +140,28 @@ public class US_007_UI_StepDefinition {
         patient.myAppointments.click();
     }
 
-    @Then("Eb Kullanici tarihin {string} seklinde oldugunu dogrular")
-    public void eb_kullanici_tarihin_seklinde_oldugunu_dogrular(String date) {
+    @Then("Eb Kullanici tarihin formatini dogrular")
+    public void eb_kullanici_tarihin_formatini_dogrular() {
 
-        Actions action=new Actions(Driver.getDriver());
-        action.sendKeys(Keys.PAGE_DOWN);
+        Actions action = new Actions(Driver.getDriver());
 
-        date = "14/08/22";
-
-        List<String> gecerlitarihlerinListesi=new ArrayList<>();
-
-        for (int i = 0; i < patient.gecerliTarihlerListesi.size(); i++) {
-            gecerlitarihlerinListesi.add(patient.gecerliTarihlerListesi.get(i).getText().substring(0,8));
-            System.out.println(gecerlitarihlerinListesi.get(i));
-           // Assert.assertTrue(gecerlitarihlerinListesi.get(i).contains(date));
+        for (int i = 0; i < 3; i++) {
+            action.sendKeys(Keys.PAGE_DOWN);
         }
 
+        String guncelDate = "15/08/22";
+        String gelecekDate = "20/08/22";
+
+        List<String> gecerlitarihlerinListesi = new ArrayList<>();
+
+        for (int i = 0; i < patient.gecerliTarihlerListesi.size(); i++) {
+            gecerlitarihlerinListesi.add(patient.gecerliTarihlerListesi.get(i).getText().substring(0, 8));
+            ReusableMethods.waitFor(1);
+            System.out.println(gecerlitarihlerinListesi.get(i));
+
+        }
+        Assert.assertTrue(gecerlitarihlerinListesi.contains(guncelDate));
+        Assert.assertTrue(gecerlitarihlerinListesi.contains(gelecekDate));
     }
 
     @Then("Eb Kullanici date bolumunde gecmis tarih secer")

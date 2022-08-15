@@ -73,6 +73,9 @@ public class PatientPage {
 
 
     //bende calismayan kodlari yeniden burada olusturdum Ebru
+
+    @FindBy (xpath = "//li[@id='entity-menu']")  //span'siz
+    public WebElement myPagesPatientButtonEb;
     @FindBy(xpath="(//a[@class='dropdown-item'])[1]")
     public WebElement myAppointments;
 

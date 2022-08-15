@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c566753-0ad5-45b2-a59b-9b18aa9efce8" name="Changes" comment="">
+    <list default="true" id="531261b7-9f3b-4e3f-b3ef-8a99db866af2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_010_DataBase_StepDefination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_010_DataBase_StepDefination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_006_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_006_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_006_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_006_UI.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -30,9 +30,8 @@ public class DBUtils {
     }
     /**
      * DBUtils.executeQuery(String query); -> Execute the query and store is the result set object
-     * @return
      */
-    public static Map<String, Object> executeQuery(String query) {
+    public static void executeQuery(String query) {
         try {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         } catch (SQLException e) {
@@ -46,23 +45,6 @@ public class DBUtils {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return null;
-    }
-    public static String executeQuerys(String query) {
-        try {
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        try {
-            resultSet = statement.executeQuery(query);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return query;
     }
     //    used to close the connectivity
     public static void closeConnection() {

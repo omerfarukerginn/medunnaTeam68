@@ -1,6 +1,5 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -11,20 +10,10 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features = "src/test/resources/features/dataBaseFeatures",
-        glue = "stepDefinitions/dataBaseStepDefinitions",
-<<<<<<< HEAD
-        tags = "@US002_TC09",
-=======
-        tags = "@DB_009",
->>>>>>> main
-        dryRun = false
+        features = "src/test/resources/features/apiFeatures",
+        glue = "stepDefinitions/apiStepDefinitions",
+        tags = "@Api09",
+        dryRun = true
 )
-public class DBRunner {
-
-
-<<<<<<< HEAD
+public class ApiRunner {
 }
-=======
-}
->>>>>>> main

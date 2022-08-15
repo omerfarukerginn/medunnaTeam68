@@ -1,6 +1,7 @@
 package stepDefinitions.apiStepDefinitions;
 
 
+import baseUrl.MedunnaBaseUrl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
@@ -10,6 +11,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 import pojos.Account;
@@ -20,7 +22,7 @@ import utilities.ConfigReader;
 import java.io.File;
 
 
-import static baseUrl.MedunnaBaseUrl.spec;
+
 
 import static io.restassured.RestAssured.given;
 
@@ -34,6 +36,7 @@ public class US_001_API_StepDefinition {
     File file=new File( "api_all_registrant_data" );
     Faker faker=new Faker();
     Registrant registrant = new Registrant();
+    RequestSpecification spec;
     @When("kullanici gecerli bir endpointle kayit bilgilerini almali")
     public void kullaniciGecerliBirEndpointleKayitBilgileriniAlmali() {
         response=given().headers( "Authorization",
@@ -70,7 +73,7 @@ public class US_001_API_StepDefinition {
     }
     @When("kullanici gecerli bir endpointle kayitli kisiler olusturur")
     public void kullanici_gecerli_bir_endpointle_kayitli_kisiler_olusturur() throws JsonProcessingException {
-        spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+        spec= new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
         spec.pathParams("1", "api", "2", "register");
         String firstname = faker.name().firstName();
         String lastname=faker.name().lastName();

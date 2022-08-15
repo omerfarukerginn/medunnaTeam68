@@ -29,8 +29,13 @@ public class US_001_UI_StepDefinitions {
     @Given("kullanici registration sayfasina gider\\(navigate)")
     public void kullanici_registration_sayfasina_gider_navigate() {
 
+
        registerPage.homePageRegisterButton.click();
         System.out.println("ne olacak böyle");
+
+       loginPage.loginPageMenuButton.click();
+       registerPage.homeRegisterButton.click();
+
 
     }
 

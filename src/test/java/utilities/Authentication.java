@@ -5,7 +5,6 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import java.util.HashMap;
 import java.util.Map;
-import static baseUrl.MedunnaBaseUrl.spec;
 import static io.restassured.RestAssured.given;
 
 public class Authentication {

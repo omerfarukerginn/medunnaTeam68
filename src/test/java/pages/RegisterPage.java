@@ -13,11 +13,11 @@ public class RegisterPage {
     @FindBy(id = "ssn")
     public WebElement ssnRegisterPage;
     @FindBy(xpath = "//*[text()='Register']")
-<<<<<<< HEAD
+
     public WebElement homePageRegisterButton;
-=======
+
     public WebElement homeRegisterButton;
->>>>>>> e58927281bb3fc9051bf89bb92bd8e264e8a8dce
+
 
     @FindBy(xpath = "//div[text()='Your SSN is invalid']")
     public WebElement invalidSsnMessageRegisterPage;

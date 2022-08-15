@@ -1,7 +1,11 @@
+<<<<<<< HEAD
+package runners;
+=======
  package runners;
 
 <<<<<<< HEAD
 
+>>>>>>> main
 
  import io.cucumber.junit.Cucumber;
  import io.cucumber.junit.CucumberOptions;
@@ -38,6 +42,9 @@
 
       */
  }
+<<<<<<< HEAD
+
+=======
 =======
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -75,3 +82,4 @@ public class TestRunner {
      */
 }
 >>>>>>> refs/remotes/origin/main
+>>>>>>> main

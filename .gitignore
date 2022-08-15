@@ -2,8 +2,16 @@
 *.iws
 *.iml
 *.ipr
+<<<<<<< HEAD
+<<<<<<< HEAD
+.target
+=======
+./target
+>>>>>>> main
+=======
 
 ./target
 
 ./target
 
+>>>>>>> main

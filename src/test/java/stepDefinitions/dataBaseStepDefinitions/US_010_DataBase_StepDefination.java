@@ -17,50 +17,11 @@ import java.util.List;
 import static utilities.DBUtils.getColumnData;
 
 public class US_010_DataBase_StepDefination {
-/*
-    @Test
-    public void test() {
-        DBUtils.createConnection();
-        String query = "select * from appointment where id=159230";
-        System.out.println(DBUtils.getColumnNames(query));
 
-        List<Object> statusList = getColumnData(query, "status");
-        System.out.println(statusList);
 
-        String fileName1 = "src/test/resources/testData/AppointmentGenel.txt";
-        WriteToTxt.saveAppointmentStatus(fileName1, statusList);
-        List<Object> actualAppointmentStatus = ReadTxt.returnAppointmentStatusList(fileName1);
-        List<Object> expectedAppointmentStatus= new ArrayList<>();
-        expectedAppointmentStatus.add("PENDING");
-        Assert.assertTrue("STATUS Kodlar uyusmuyor", actualAppointmentStatus.containsAll(expectedAppointmentStatus));
 
-        List<Object> startDateList = getColumnData(query, "start_date");
-        System.out.println(startDateList);
-
-        String fileName2 = "src/test/resources/testData/AppointmentGenel.txt";
-        WriteToTxt.saveAppointmentStartDate(fileName2, startDateList);
-        List<Object> actualAppointmentStartDate = ReadTxt.returnAppointmentStartDateList(fileName1);
-        List<Object> expectedAppointmentStartDate= new ArrayList<>();
-        expectedAppointmentStartDate.add("2022-08-05T00:00:00Z");
-        Assert.assertTrue("STARTDATE Kodlar uyusmuyor", actualAppointmentStartDate.containsAll(expectedAppointmentStartDate));
-
-        List<Object> endDateList = getColumnData(query, "end_date");
-        System.out.println(endDateList);
-
-        String fileName3 = "src/test/resources/testData/AppointmentGenel.txt";
-        WriteToTxt.saveAppointmentEndDate(fileName3, startDateList);
-        List<Object> actualAppointmentEndDate = ReadTxt.returnAppointmentEndDateList(fileName1);
-        List<Object> expectedAppointmentEndDate= new ArrayList<>();
-        expectedAppointmentEndDate.add("2022-08-05T01:00:00Z");
-        Assert.assertTrue("ENDDATE Kodlar uyusmuyor", actualAppointmentEndDate.containsAll(expectedAppointmentEndDate));
-    }
-
-*/
-
-    //List<Object> dbAppoint;
 
     String query = "select * from appointment";
-   // String query = "select *from public.appointment";
     String fileName1 = "src/test/resources/testdata/AppointmentId.txt";
     String fileName2 = "src/test/resources/testdata/AppointmentSD.txt";
     String fileName3 = "src/test/resources/testdata/AppointmentED.txt";
@@ -109,12 +70,7 @@ public class US_010_DataBase_StepDefination {
         WriteToTxt.saveAppointmentStatus(fileName4, statusList);
 
 
-
         // Randevu datalarini dogrula
-
-
-
-
 
         List<Object> actualAppointmentIDs = ReadTxt.returnAppointmentIDsList(fileName1);
         List<Object> expectedAppointmentIDs = new ArrayList<>();
@@ -152,16 +108,7 @@ public class US_010_DataBase_StepDefination {
     public void kullaniciDBIleRandevuBilgileriniDogrular(String patientId, String start_date, String end_date, String status) {
 
 
-      //  dbAppoint=DBUtils.getColumnData(query,patientId);
-        /*
-        dbAppoint=DBUtils.getColumnData(query,start_date);
-        dbAppoint=DBUtils.getColumnData(query,end_date);
-        dbAppoint = DBUtils.getColumnData(query, status);
 
-        Assert.assertTrue(dbAppoint.contains(start_date));
-        Assert.assertTrue(dbAppoint.contains(end_date));
-        Assert.assertTrue(dbAppoint.contains(status));
-         */
 
     }
 }

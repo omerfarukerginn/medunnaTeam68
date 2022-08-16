@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+Feature: US_001 Database
+=======
 @US002_DB
   Feature: US_002 DB
   @US002_TC09
@@ -6,3 +9,4 @@
     When Kullanici database baglanir
     And kullanici daha önce olusturan emailin veri biriminde olup olmadigini dogrular
 
+>>>>>>> main

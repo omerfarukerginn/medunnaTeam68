@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -21,8 +20,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.function.Function;
 
+
 public class ReusableMethods {
-    public static int timeout = 5;
 
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication
@@ -48,32 +47,6 @@ public class ReusableMethods {
             }
         }
         Driver.getDriver().switchTo().window(origin);
-    }
-    public static void waitAndSendTextWithDefaultTime(WebElement element, String text) {
-        for (int i = 0; i < timeout; i++) {
-            try {
-                element.sendKeys(text);
-                return;
-            } catch (WebDriverException e) {
-                wait(1);
-            }
-        }
-    }
-    public static void wait(int secs) {
-
-        try {
-            Thread.sleep(1000 * secs);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (TimeoutException e) {
-            e.printStackTrace();
-        } catch (NoSuchElementException e) {
-            e.printStackTrace();
-        } catch (StaleElementReferenceException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     //========Hover Over=====//
@@ -137,7 +110,7 @@ public class ReusableMethods {
     }
 
 
-    public static void clickWith(WebElement element, int timeout) {
+    public static void clickWithTimeOut(WebElement element, int timeout) {
         for (int i = 0; i < timeout; i++) {
             try {
                 element.click();
@@ -180,53 +153,53 @@ public class ReusableMethods {
         return element;
     }
 
-        public static String setTheDate (String format,int atMostDay, int atMostMonth, int atMostYear)
-        {
-            // verilen gun ay yıl kadar oncesine gidip tarih olusturur
-            // verilen gun ay yıl kadar sonrasına gidip tarih olusturur
-            // Date date = new Date();
-            // DateFormat tarih = new SimpleDateFormat("dd-MM-yyy");
-            // hangi class'i kullanarak formatlama yaparsan yap, formatlanan date Stringe donusur
-            LocalDate date = LocalDate.now();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
-            date = date.plusYears(atMostYear).plusMonths(atMostMonth).plusDays(atMostDay);
-            String dateF = formatter.format(date);
+    public static String setTheDate (String format,int atMostDay, int atMostMonth, int atMostYear)
+    {
+        // verilen gun ay yıl kadar oncesine gidip tarih olusturur
+        // verilen gun ay yıl kadar sonrasına gidip tarih olusturur
+        // Date date = new Date();
+        // DateFormat tarih = new SimpleDateFormat("dd-MM-yyy");
+        // hangi class'i kullanarak formatlama yaparsan yap, formatlanan date Stringe donusur
+        LocalDate date = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
+        date = date.plusYears(atMostYear).plusMonths(atMostMonth).plusDays(atMostDay);
+        String dateF = formatter.format(date);
 
-            return dateF;
+        return dateF;
+    }
+
+    public static String setTheDateByRandom (String format,int atMostYear, String direction)
+    {
+
+        int day = (int) (Math.random() * 366 + 1);
+        int month = (int) (Math.random() * 13 + 1);
+        int year = (int) (Math.random() * atMostYear + 1);
+
+        LocalDate date = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
+
+        direction = direction.toUpperCase(Locale.ROOT);
+        String dateF;
+
+        switch (direction) {
+            case "FEATURE":
+                date = date.plusYears(year).plusMonths(month).plusDays(day);
+                dateF = formatter.format(date);
+                return dateF;
+
+            case "PAST":
+                date = date.minusYears(year).minusMonths(month).minusDays(day);
+                dateF = formatter.format(date);
+                return dateF;
+
+            default:
+                dateF = formatter.format(date);
+                return dateF;
+
         }
-
-        public static String setTheDateByRandom (String format,int atMostYear, String direction)
-        {
-
-            int day = (int) (Math.random() * 366 + 1);
-            int month = (int) (Math.random() * 13 + 1);
-            int year = (int) (Math.random() * atMostYear + 1);
-
-            LocalDate date = LocalDate.now();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
-
-            direction = direction.toUpperCase(Locale.ROOT);
-            String dateF;
-
-            switch (direction) {
-                case "FEATURE":
-                    date = date.plusYears(year).plusMonths(month).plusDays(day);
-                    dateF = formatter.format(date);
-                    return dateF;
-
-                case "PAST":
-                    date = date.minusYears(year).minusMonths(month).minusDays(day);
-                    dateF = formatter.format(date);
-                    return dateF;
-
-                default:
-                    dateF = formatter.format(date);
-                    return dateF;
-
-            }
-        }
-        public static String setTheDateByRandomWithTime (String format,int atMostYear, String direction)
-        {
+    }
+    public static String setTheDateByRandomWithTime (String format,int atMostYear, String direction)
+    {
 
         int day = (int) (Math.random() * 366 + 1);
         int month = (int) (Math.random() * 13 + 1);
@@ -256,20 +229,20 @@ public class ReusableMethods {
         }
     }
 
-        public static String stringDateFormat (String date)
-        {
-            String day = date.substring(0, 2);
-            String month = date.substring(3, 5);
-            String year = date.substring(6);
+    public static String stringDateFormat (String date)
+    {
+        String day = date.substring(0, 2);
+        String month = date.substring(3, 5);
+        String year = date.substring(6);
 
-            String formatDateString = year + "-" + month + "-" + day;
+        String formatDateString = year + "-" + month + "-" + day;
 
-            return formatDateString;
+        return formatDateString;
 
-            // buraya gelen  gun ay yil gg.aa.yyyy
-            // 2030-01-01  yıl ay gun olmalı
+        // buraya gelen  gun ay yil gg.aa.yyyy
+        // 2030-01-01  yıl ay gun olmalı
 
-        }
+    }
     public static void hooverByJS(WebElement element) {
         JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
         jse.executeScript("arguments[0].scrollIntoView()", element);

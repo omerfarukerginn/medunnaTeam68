@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.772">
+    <testcase classname="Eb Kullanici hasta olarak DB ile randevulari dogrulayabilmeli" name="Eb Kullanici DB ile randevu bilgilerini almali ve dogrulamali" time="2.363">
+        <system-out>
+            <![CDATA[Given Eb Kullanici database ile baglanti kurar..............................passed
+And Eb Kullanici query tanimlar.............................................passed
+And Eb Kullanici randevu bilgilerine ulasir ve kaydeder.....................passed
+And Eb Kullanici DB ile randevu bilgilerini dogrular........................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

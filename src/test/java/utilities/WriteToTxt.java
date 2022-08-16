@@ -127,7 +127,7 @@ public class WriteToTxt {
 
 
     }
-<<<<<<< HEAD
+
     public static boolean saveRegistrantDataUI(Registrant [] registrants){
         try{
             //src/resources/testdata/Registrantdata.txt
@@ -151,8 +151,8 @@ public class WriteToTxt {
 
 
         return false;
-    }}
-=======
+    }
+
 
     public static void saveAppointmentId(String fileName, List<Object> id) {
         try {
@@ -215,5 +215,4 @@ public class WriteToTxt {
 }
 
 
->>>>>>> main
 

@@ -13,10 +13,18 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/dataBaseFeatures",
         glue = "stepDefinitions/dataBaseStepDefinitions",
-        tags = "@DB_010",
+<<<<<<< HEAD
+        tags = "@US002_TC09",
+=======
+        tags = "@DB_009",
+>>>>>>> main
         dryRun = false
 )
 public class DBRunner {
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main

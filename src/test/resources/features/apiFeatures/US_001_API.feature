@@ -1,5 +1,5 @@
 @US01_API
-Feature: US_001 API
+
 @US001_TC013
  Scenario:US001_TC013
    When  kullanici gecerli bir endpointle kayit bilgilerini almali

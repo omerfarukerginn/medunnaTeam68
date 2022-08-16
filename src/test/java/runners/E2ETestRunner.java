@@ -10,12 +10,10 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features = "src/test/resources/features/uiFeatures",
-        glue = "stepDefinitions/uiStepDefinitions",
-        tags = "@SmokeTestt",
+        features = "src/test/resources/features/apiFeatures",
+        glue = "stepDefinitions/apiStepDefinitions",
+        tags = "@E2E",
         dryRun = false
 )
-
-public class SmokeTestRunner {
-
+public class E2ETestRunner {
 }

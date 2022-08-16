@@ -1,4 +1,4 @@
-
+@E2E
 @DB_007
 Feature: Eb Kullanici hasta olarak DB ile randevulari dogrulayabilmeli
 

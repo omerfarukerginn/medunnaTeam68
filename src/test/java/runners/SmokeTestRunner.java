@@ -11,10 +11,11 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"
         },
         features = "src/test/resources/features/uiFeatures",
-        glue = "stepDefinitions",
+        glue = "src/test/java/stepDefinitions/uiStepDefinitions",
         tags = "@SmokeTest",
         dryRun = false
 )
 
 public class SmokeTestRunner {
+
 }

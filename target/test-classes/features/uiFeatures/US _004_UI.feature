@@ -8,7 +8,11 @@ Feature: US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
   @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario: TC_001 Giris yapmak icin basari mesajini dogrulayan, gecerli bir kullanici adi ve sifre olmalidir.
 
@@ -20,7 +24,11 @@ Feature: US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
   @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario: TC_002 Kullanicinin mevcut kimlik bilgilerini her zaman kullanabilecegi bir beni hatirla secenegi olmalidir
 
@@ -32,7 +40,11 @@ Feature: US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
   @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario: TC_003 Eger sifre unutulursa diye Did you forget your password? secenegi olmali
 
@@ -42,7 +54,11 @@ Feature: US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
   @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario: TC_004 You don't have an account yet? Register a new account secenegi olmali
 
@@ -52,7 +68,11 @@ Feature: US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
   @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario: TC_005 Cancel secenegi olmali
 

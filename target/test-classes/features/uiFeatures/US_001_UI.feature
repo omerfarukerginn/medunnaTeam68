@@ -6,7 +6,11 @@ Feature: US_001 registerpage
 <<<<<<< HEAD
   @US001_TC001
 =======
+<<<<<<< HEAD
+  @US001_TC001
+=======
   @US001_TC001 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario Outline: US001_TC001
     Given kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer "<SSN>"
@@ -22,7 +26,11 @@ Feature: US_001 registerpage
 <<<<<<< HEAD
   @US001_TC002,3
 =======
+<<<<<<< HEAD
+  @US001_TC002,3
+=======
   @US001_TC002,3 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario Outline:US001_TC002,US001_TC003
     Given kullanici ssn kutusunu tiklar ve  ucuncu ve besinci haneden sonra herahngi bir isaret KOYMADAN DOKUZ haneli snn numaralarini girer "<SSN>"
@@ -37,17 +45,23 @@ Feature: US_001 registerpage
       |906125436||123-34-78998|
       |867112348||123-34-471|
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
   @US001_TC003
   Scenario:US001_TC004
     When kullanci ssn kutusunu bos birakmali
     Then kullanci your ssn is invalid mesaji almali
   @US001_TC005
+<<<<<<< HEAD
+=======
 =======
   @US001_TC003 @SmokeTest
   Scenario:US001_TC004
     When kullanci ssn kutusunu bos birakmali
     Then kullanci your ssn is invalid mesaji almali
   @US001_TC005 @SmokeTest
+>>>>>>> main
 >>>>>>> main
 
   Scenario Outline: US001_TC005
@@ -63,7 +77,11 @@ Feature: US_001 registerpage
 <<<<<<< HEAD
   @US001_TC006,7
 =======
+<<<<<<< HEAD
+  @US001_TC006,7
+=======
   @US001_TC006,7 @SmokeTest
+>>>>>>> main
 >>>>>>> main
 
   Scenario Outline: US001_TC006,US001_TC007
@@ -81,7 +99,11 @@ Feature: US_001 registerpage
 <<<<<<< HEAD
   @US001_TC008
 =======
+<<<<<<< HEAD
+  @US001_TC008
+=======
   @US001_TC008 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario: US001_TC008
     When  kullanici first name kutusunu bos birakmali
@@ -90,7 +112,11 @@ Feature: US_001 registerpage
 <<<<<<< HEAD
   @US001_TC009,10,11
 =======
+<<<<<<< HEAD
+  @US001_TC009,10,11
+=======
   @US001_TC009,10,11 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario Outline: US001_TC009,US001_TC010,US001_TC011
    Given kullanici hrhangi bir karakter iceren ancak BASTA bosluk birakarak bir last name girer "<LastName>"
@@ -106,7 +132,11 @@ Feature: US_001 registerpage
 <<<<<<< HEAD
   @US001_TC012
 =======
+<<<<<<< HEAD
+  @US001_TC012
+=======
   @US001_TC012 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario Outline: US001_TC012
 

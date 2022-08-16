@@ -1,6 +1,10 @@
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
 >>>>>>> main
 @US_006
 Feature:US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır.
@@ -61,5 +65,10 @@ Feature:US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir
       | memo.com   |
 
 =======
+<<<<<<< HEAD
       | memo.com   |
+
+=======
+      | memo.com   |
+>>>>>>> main
 >>>>>>> main

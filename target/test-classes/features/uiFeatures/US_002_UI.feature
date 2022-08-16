@@ -6,7 +6,11 @@ And kullanici registration sayfasina gider(navigate)
 <<<<<<< HEAD
   @US002_TC001
 =======
+<<<<<<< HEAD
+  @US002_TC001
+=======
   @US002_TC001 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario Outline: US002_TC001
     When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"<Username>"
@@ -21,7 +25,11 @@ And kullanici registration sayfasina gider(navigate)
 <<<<<<< HEAD
   @US002_TC002
 =======
+<<<<<<< HEAD
+  @US002_TC002
+=======
   @US002_TC002 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario:US002_TC002
          Given kullanci gecerli bir ssn numaraasi girer "123-99-2323"
@@ -36,7 +44,11 @@ And kullanici registration sayfasina gider(navigate)
 <<<<<<< HEAD
   @US002_TC04
 =======
+<<<<<<< HEAD
+  @US002_TC04
+=======
   @US002_TC04 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario Outline:US002_TC004
     And Kullanici email kutusunu tiklamali ve gecerli bir email girmeli "<email>"
@@ -48,7 +60,11 @@ And kullanici registration sayfasina gider(navigate)
 <<<<<<< HEAD
   @US002_TC005
 =======
+<<<<<<< HEAD
+  @US002_TC005
+=======
   @US002_TC005 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario Outline:US002_TC005
     And Kullanici email kutusunu tiklamali ve “@“ kullanarak ANCAK “.“ kullanmadan  email girmeli "<email>"
@@ -60,7 +76,11 @@ And kullanici registration sayfasina gider(navigate)
 <<<<<<< HEAD
   @US002_TC006
 =======
+<<<<<<< HEAD
+  @US002_TC006
+=======
   @US002_TC006 @SmokeTest
+>>>>>>> main
 >>>>>>> main
   Scenario Outline:S002_TC006
     And Kullanici email kutusunu tiklamali ve “.“ isareti kullandiktan sonra “@“ ile devam ederk mail adresi yazmali  email girmeli "<email>"

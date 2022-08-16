@@ -68,7 +68,11 @@ Feature: US009 Staff (Personel), hasta bilgilerini görebilmeli, düzenleyebilme
 <<<<<<< HEAD
   @US_009_TC_006
 =======
+<<<<<<< HEAD
+  @US_009_TC_006
+=======
   @US_009_TC_006 @Bug
+>>>>>>> main
 >>>>>>> main
   Scenario Outline: TC_06 Staff hasta bilgilerini silebilmeli
     And MY PAGES sekmesine tiklar
@@ -76,9 +80,13 @@ Feature: US009 Staff (Personel), hasta bilgilerini görebilmeli, düzenleyebilme
     And Patient SSN kutusuna "<SSN>" girer
     And Edit butonuna tiklar
 <<<<<<< HEAD
+    Then Herhangi bir hasta bilgisini silebildigini test eder
+=======
+<<<<<<< HEAD
     Then Herhangi bir hasta bilgisini silemedigini test eder
 =======
     Then Herhangi bir hasta bilgisini silebildigini test eder
+>>>>>>> main
 >>>>>>> main
     Then Sayfayi kapatir
 

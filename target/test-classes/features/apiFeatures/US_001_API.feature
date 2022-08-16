@@ -1,5 +1,9 @@
 @US01_API
+<<<<<<< HEAD
 Feature: US_001 API
+=======
+
+>>>>>>> main
 @US001_TC013
  Scenario:US001_TC013
    When  kullanici gecerli bir endpointle kayit bilgilerini almali

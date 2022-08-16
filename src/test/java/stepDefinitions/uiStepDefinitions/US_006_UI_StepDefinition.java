@@ -154,4 +154,5 @@ public class US_006_UI_StepDefinition {
         us006.emailKutusu.clear();
         us006.emailKutusu.sendKeys(email);
     }
+
 }

@@ -1,4 +1,4 @@
-@US02_UI
+@US02_UI @SmokeTest
 Feature: US_002 registerpage
   Background:
 Given Kullanıci medunna anasayfasina gider

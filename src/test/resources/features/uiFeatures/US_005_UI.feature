@@ -1,4 +1,4 @@
-@US_005
+@US_005 @SmokeTest
 Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluşturabilmelidir.
 
   @US_005_TC_001

@@ -1,23 +1,21 @@
 package stepDefinitions.apiStepDefinitions;
 
-import baseUrl.MedunnaBaseUrl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+
+
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import pojos.Appointment;
-
-import java.util.List;
-
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertTrue;
 import static utilities.Authentication.generateToken;
 
 
@@ -68,31 +66,3 @@ public class US_010_API_StepDefination{
         Assert.assertEquals(status, actualAppointment.getStatus());
     }
 }
-/*
-  public static void main(String[] args) throws JsonProcessingException {
-
-        spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
-        spec.pathParams("1", "api", "2", "appointments", "3", "160060"); //hasta id
-
-
-        response = given().spec(MedunnaBaseUrl.spec).header("Authorization", "Bearer " +
-                        generateToken("doktorMahmut", "doktorMahmut8"))
-                .contentType(ContentType.JSON)
-                .when()
-                .get("/{1}/{2}/{3}/");
-        response.prettyPrint();
-        response.then().statusCode(200);
-
-
-        ObjectMapper obj = new ObjectMapper();
-        actualAppointment = obj.readValue(response.asString(), Appointment.class);
-
-
-        System.out.println("Actual Data: " + actualAppointment);
-        Assert.assertEquals(160153, actualAppointment.getPatient().getId());
-        // creat ettikten sonra post man de asagi tafar id
-        Assert.assertEquals("2022-08-05T00:00:00Z", actualAppointment.getStartDate());
-        Assert.assertEquals("2022-08-05T01:00:00Z", actualAppointment.getEndDate());
-        Assert.assertEquals("COMPLETED", actualAppointment.getStatus());
-    }
- */

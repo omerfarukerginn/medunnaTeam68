@@ -65,13 +65,13 @@ Feature: US009 Staff (Personel), hasta bilgilerini görebilmeli, düzenleyebilme
       | SSN         |
       | 668-83-4231 |
 
-  @US_009_TC_006
+  @US_009_TC_006 @Bug
   Scenario Outline: TC_06 Staff hasta bilgilerini silebilmeli
     And MY PAGES sekmesine tiklar
     And Search Patient secenegini secer
     And Patient SSN kutusuna "<SSN>" girer
     And Edit butonuna tiklar
-    Then Herhangi bir hasta bilgisini silemedigini test eder
+    Then Herhangi bir hasta bilgisini silebildigini test eder
     Then Sayfayi kapatir
 
     Examples:

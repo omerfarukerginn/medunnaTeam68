@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.212">
+    <testcase classname="US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluşturabilmelidir." name="TC_009 Kullanıcı negatif durumlari test eder." time="13.48">
+        <system-out>
+            <![CDATA[Given medunna.com sayfasina gidilir.........................................passed
+And 'Make an appointment' butonuna tiklanir.................................passed
+Then First name kutusuna tiklanir, bos birakilirsa Your Firstname is required. yazisinin ciktigi dogrulanir.passed
+And Last name kutusuna tiklanir, bos birakilirsa Your Lastname is required. yazisinin ciktigi dogrulanir.passed
+And SSN kutusuna tiklanir, bos birakilirsa Your SSN is required. yazisinin ciktigi dogrulanir.passed
+And Email kutusuna tiklanir, bos birakilirsa Your email is required. yazisinin ciktigi dogrulanir.passed
+And Phone kutusuna tiklanir, bos birakilirsa Phone number is required. yazisinin ciktigi dogrulanir.passed
+And (su)Sayfa kapatilir.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

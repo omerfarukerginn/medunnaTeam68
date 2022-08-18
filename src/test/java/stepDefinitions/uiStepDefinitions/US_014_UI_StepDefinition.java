@@ -105,19 +105,19 @@ public class US_014_UI_StepDefinition {
     }
 
     @And("Kullanici  bitis tarihi bölümünü güncelleyebilir")
-    public void kullaniciBitişTarihiBölümünüGüncelleyebilir() {
+    public void kullaniciBitisTarihiBölümünüGüncelleyebilir() {
         Assert.assertFalse(us014.editInPatientEndDate.isSelected());
     }
 
     @And("Kullanici acıklama bölümünü güncelleyebilir")
-    public void kullaniciAçıklamaBölümünüGüncelleyebilir() {
+    public void kullaniciAcıklamaBölümünüGüncelleyebilir() {
         ReusableMethods.clickWithTimeOut(us014.editInPatientDescription, 3);
         us014.editInPatientDescription.clear();
         us014.editInPatientDescription.sendKeys("halsiz");
     }
 
     @And("Kullanici olusturulan tarih bölümünü güncelleyebilir")
-    public void kullaniciOluşturulanTarihBölümünüGüncelleyebilir() {
+    public void kullaniciOlusturulanTarihBölümünüGüncelleyebilir() {
         us014.editInPatientCreatedDate.clear();
         us014.editInPatientCreatedDate.sendKeys("05092333001112");
     }

@@ -10,6 +10,17 @@ import io.cucumber.junit.Cucumber;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
+
+     //   features = "src/test/resources/features",
+     //   glue = "stepDefinitions",
+
+        features = "src/test/resources/features/uiFeatures",
+        glue = "stepDefinitions/uiStepDefinitions",
+
+
+        tags = "@US_014",
+
+
         features = "src/test/resources/features/uiFeatures",
         glue = "stepDefinitions/uiStepDefinitions",
         tags = "@US_007",

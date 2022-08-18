@@ -58,6 +58,7 @@ public class US_014_UI_StepDefinition {
         us014.myInpatientsButton.click();
     }
 
+  
 
     @And("Kullanici Hasta sayfasında olduğunu doğrular")
     public void kullaniciHastaSayfasındaOlduğunuDoğrular() {
@@ -104,19 +105,19 @@ public class US_014_UI_StepDefinition {
         Assert.assertFalse(us014.editInPatientStartDate.isSelected());
     }
 
-    @And("Kullanici  bitiş tarihi bölümünü güncelleyebilir")
+    @And("Kullanici  bitis tarihi bölümünü güncelleyebilir")
     public void kullaniciBitişTarihiBölümünüGüncelleyebilir() {
         Assert.assertFalse(us014.editInPatientEndDate.isSelected());
     }
 
-    @And("Kullanici açıklama bölümünü güncelleyebilir")
+    @And("Kullanici acıklama bölümünü güncelleyebilir")
     public void kullaniciAçıklamaBölümünüGüncelleyebilir() {
         ReusableMethods.clickWithTimeOut(us014.editInPatientDescription, 3);
         us014.editInPatientDescription.clear();
         us014.editInPatientDescription.sendKeys("halsiz");
     }
 
-    @And("Kullanici oluşturulan tarih bölümünü güncelleyebilir")
+    @And("Kullanici olusturulan tarih bölümünü güncelleyebilir")
     public void kullaniciOluşturulanTarihBölümünüGüncelleyebilir() {
         us014.editInPatientCreatedDate.clear();
         us014.editInPatientCreatedDate.sendKeys("05092333001112");

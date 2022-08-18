@@ -10,7 +10,7 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
     And Kullanici gecerli bir username ve password girer
     And Kullanici My pages sekmesini tiklar
     And Kullanici My Inpatients secenegini tiklar
-    Then Kullanici Hasta sayfasında olduğunu doğrular
+    Then Kullanici Hasta sayfasında oldugunu dogrular
     And Kullanici  hasta bilgilerini görüntüler
     And Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar
     And Kullanici in patient creat or edt page oldugunu kontrol eder
@@ -22,9 +22,9 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
 
 
     And Kullanici baslangıc tarihi bölümünü güncelleyebilir
-    And Kullanici  bitiş tarihi bölümünü güncelleyebilir
-    And Kullanici açıklama bölümünü güncelleyebilir
-    And Kullanici oluşturulan tarih bölümünü güncelleyebilir
+    And Kullanici  bitis tarihi bölümünü güncelleyebilir
+    And Kullanici acıklama bölümünü güncelleyebilir
+    And Kullanici olusturulan tarih bölümünü güncelleyebilir
     And Kullanici randevu bölümünü güncelleyebilir
     And Kullanici save butonunu tiklar
     And Sayfayi kapatir
@@ -40,7 +40,7 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
 
 
   @US014_TC003
-  Scenario:Doktor rezerve edilmiş odayı güncelleyebilmeli
+  Scenario:Doktor rezerve edilmis odayı güncelleyebilmeli
 
 
     And Doktor yatarak tedavi odasını güncelleyebilmelidir

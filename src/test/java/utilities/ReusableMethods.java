@@ -66,6 +66,7 @@ public class ReusableMethods {
         return elemTexts;
     }
 
+
     //========Returns the Text of the element given an element locator==//
     public static List<String> getElementsText(By locator) {
         List<WebElement> elems = Driver.getDriver().findElements(locator);

@@ -115,7 +115,9 @@ ReusableMethods.waitFor(2);
 
    }
 
+
    @Then("Doktor \"The Appointment is updated with identifier\"mesajini gorur.")
+
    public void doktor_the_appointment_is_updated_with_identifier_mesajini_gorur() {
     Driver.getDriver().switchTo().alert().accept();
     String expectedResult="The Appointment is updated with identifier";
@@ -126,6 +128,7 @@ ReusableMethods.waitFor(2);
 
    @Then("Sayfayi kapatir.")
    public void sayfayi_kapatir() {
+
       Driver.closeDriver();
 
    }

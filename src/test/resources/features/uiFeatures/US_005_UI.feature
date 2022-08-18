@@ -1,4 +1,4 @@
-@US_005
+@US_005 @SmokeTest
 Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluşturabilmelidir.
 
   @US_005_TC_001
@@ -86,14 +86,11 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
   Scenario:TC_009 Kullanıcı negatif durumlari test eder.
     Given medunna.com sayfasina gidilir
     And  'Make an appointment' butonuna tiklanir
-    Then First name kutusuna tiklanir, bos birakilirsa Your Firstname is required yazisinin ciktigi dogrulanir
-    And  Last name kutusuna tiklanir, bos birakilirsa Your Lastname is required yazisinin ciktigi dogrulanir
-    And  SSN kutusuna tiklanir, bos birakilirsa Your SSN is required yazisinin ciktigi dogrulanir
-    And  Email kutusuna tiklanir, bos birakilirsa Your email is required yazisinin ciktigi dogrulanir
-    And  Phone kutusuna tiklanir, bos birakilirsa Phone number is required yazisinin ciktigi dogrulanir
+    Then First name kutusuna tiklanir, bos birakilirsa Your Firstname is required. yazisinin ciktigi dogrulanir
+    And  Last name kutusuna tiklanir, bos birakilirsa Your Lastname is required. yazisinin ciktigi dogrulanir
+    And  SSN kutusuna tiklanir, bos birakilirsa Your SSN is required. yazisinin ciktigi dogrulanir
+    And  Email kutusuna tiklanir, bos birakilirsa Your email is required. yazisinin ciktigi dogrulanir
+    And  Phone kutusuna tiklanir, bos birakilirsa Phone number is required. yazisinin ciktigi dogrulanir
     And  (su)Sayfa kapatilir
-
-
-
 
 

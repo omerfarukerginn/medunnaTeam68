@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import pages.DoctorPage;
-import pages.SettingsPage;
+
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -118,8 +118,8 @@ public class US_011_UI_StepDefinition {
     @Then("Doktor \"The Appointment is updated with identifier\"mesajini gorur.")
     public void doktor_the_appointment_is_updated_with_identifier_mesajini_gorur() {
 
-       // String expectedResult="The Appointment is updated with identifier";
-      //  String actualResult=us_011.appointmentBasariliYazisi.getText();
+        // String expectedResult="The Appointment is updated with identifier";
+        //  String actualResult=us_011.appointmentBasariliYazisi.getText();
         Assert.assertTrue(us_011.appointmentBasariliYazisi.isDisplayed());
 
     }

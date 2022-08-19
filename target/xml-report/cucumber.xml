@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.339">
     <testcase classname="US_011 &quot;My Appointments&quot; Physician (Doctor) tarafından düzenlenebilmeli" name="&quot;prescription ve description&quot; alanlarini doldurmak isteğe bağlı olmalıdır." time="14.784">
         <system-out>
@@ -16,6 +17,16 @@ And Doktor -Prescription ve Description- alanlarini bosaltir................pass
 And Doktor save butonuna tiklar.............................................passed
 And Doktor "The Appointment is updated with identifier"mesajini gorur.......passed
 Then Sayfayi kapatir........................................................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.697">
+    <testcase classname="Appointment Api Test" name="Appointment Api Testing" time="7.378">
+        <system-out>
+            <![CDATA[Given Eb user set path params...............................................passed
+Given Eb user enter expected data FirstName LastName SSN Email Phone Date...passed
+And Eb user send request and get response...................................passed
+Then Eb user save api data to file..........................................passed
+And Eb user verify  api data................................................passed
+>>>>>>> main
 ]]>
         </system-out>
     </testcase>

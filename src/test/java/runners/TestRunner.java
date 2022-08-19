@@ -1,8 +1,8 @@
- package runners;
+package runners;
 
 import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
+ import io.cucumber.junit.CucumberOptions;
+ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -12,9 +12,12 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/uiFeatures",
         glue = "stepDefinitions/uiStepDefinitions",
+<<<<<<< HEAD
         tags = "@TC04_Us11",
+=======
+        tags = "@US_007",
+>>>>>>> main
         dryRun = false
-
 )
 
 public class TestRunner {

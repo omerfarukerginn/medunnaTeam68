@@ -1,4 +1,4 @@
-@US_003
+@US_003 @SmokeTest
 Feature: Kullanici "Password strength" seviyeleri görülebilmelidir.
 
   Background: Eb Kullanici Medunna anasayfasina girer

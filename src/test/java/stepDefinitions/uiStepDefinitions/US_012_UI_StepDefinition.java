@@ -48,13 +48,11 @@ public class US_012_UI_StepDefinition {
         drPage.myPagesButton.click();
     }
 
-    @Then("DoktorMy Appointments butonuna tıklar")
-    public void doktor_my_appointments_butonuna_tıklar() {
-        drPage.myAppointmentsButton.click();
-    }
+
 
     @Then("Doktor Edit butonuna tiklar")
     public void doktor_edit_butonuna_tiklar() {
+        ReusableMethods.waitFor(3);
         drPage.hastaBilalEditButonu.click();
     }
 

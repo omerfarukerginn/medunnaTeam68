@@ -1,6 +1,5 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -11,15 +10,10 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features = "src/test/resources/features/dataBaseFeatures",
-        glue = "stepDefinitions/dataBaseStepDefinitions",
-        tags = "@DB_007",
+        features = "src/test/resources/features/apiFeatures",
+        glue = "stepDefinitions/apiStepDefinitions",
+        tags = "@E2E",
         dryRun = false
 )
-public class DBRunner {
-
-
+public class E2ETestRunner {
 }
-
-
-

@@ -160,51 +160,46 @@ public class US_005_UI_StepDefinition {
         Assert.assertTrue(us005.id.isDisplayed());
     }
 
-    @Then("First name kutusuna tiklanir, bos birakilirsa Your Firstname is required yazisinin ciktigi dogrulanir")
-    public void first_name_kutusuna_tiklanir_bos_birakilirsa_yazisinin_ciktigi_dogrulanir() {
-        actions.click(us005.firstNameKutusu).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).perform();
 
+    @And("\\(su)Sayfa kapatilir")
+    public void suSayfaKapatilir() {
+        Driver.closeDriver();
     }
-    @Then("Last name kutusuna tiklanir, bos birakilirsa Your Lastname is required yazisinin ciktigi dogrulanir")
-    public void last_name_kutusuna_tiklanir_bos_birakilirsa_yazisinin_ciktigi_dogrulanir() {
+
+    @Then("First name kutusuna tiklanir, bos birakilirsa Your Firstname is required. yazisinin ciktigi dogrulanir")
+    public void firstNameKutusunaTiklanirBosBirakilirsaYourFirstnameIsRequiredYazisininCiktigiDogrulanir() {
+        actions.click(us005.firstNameKutusu).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).perform();
+    }
+
+    @And("Last name kutusuna tiklanir, bos birakilirsa Your Lastname is required. yazisinin ciktigi dogrulanir")
+    public void lastNameKutusunaTiklanirBosBirakilirsaYourLastnameIsRequiredYazisininCiktigiDogrulanir() {
         actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).perform();
         Assert.assertTrue(us005.bosFirstNameMesaji.isDisplayed());
-
-
-
-
+        
     }
-    @Then("SSN kutusuna tiklanir, bos birakilirsa Your SSN is required yazisinin ciktigi dogrulanir")
-    public void ssn_kutusuna_tiklanir_bos_birakilirsa_yazisinin_ciktigi_dogrulanir() {
+
+    @And("SSN kutusuna tiklanir, bos birakilirsa Your SSN is required. yazisinin ciktigi dogrulanir")
+    public void ssnKutusunaTiklanirBosBirakilirsaYourSSNIsRequiredYazisininCiktigiDogrulanir() {
         actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).perform();
         Assert.assertTrue(us005.bosLastNameMesaji.isDisplayed());
-
-
-
-
+        
     }
-    @Then("Email kutusuna tiklanir, bos birakilirsa Your email is required yazisinin ciktigi dogrulanir")
-    public void email_kutusuna_tiklanir_bos_birakilirsa_yazisinin_ciktigi_dogrulanir(String string) {
+
+    @And("Email kutusuna tiklanir, bos birakilirsa Your email is required. yazisinin ciktigi dogrulanir")
+    public void emailKutusunaTiklanirBosBirakilirsaYourEmailIsRequiredYazisininCiktigiDogrulanir() {
         actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).perform();
         Assert.assertTrue(us005.bosSSNMesaji.isDisplayed());
 
 
     }
 
-
-
-    @Then("Phone kutusuna tiklanir, bos birakilirsa Phone number is required yazisinin ciktigi dogrulanir")
-    public void phone_kutusuna_tiklanir_bos_birakilirsa_yazisinin_ciktigi_dogrulanir(String string) {
+    @And("Phone kutusuna tiklanir, bos birakilirsa Phone number is required. yazisinin ciktigi dogrulanir")
+    public void phoneKutusunaTiklanirBosBirakilirsaPhoneNumberIsRequiredYazisininCiktigiDogrulanir() {
         actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).perform();
         Assert.assertTrue(us005.bosEmailMesaji.isDisplayed());
         actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).perform();
         Assert.assertTrue(us005.bosPhoneMesaji.isDisplayed());
 
 
-    }
-
-    @And("\\(su)Sayfa kapatilir")
-    public void suSayfaKapatilir() {
-        Driver.closeDriver();
     }
 }

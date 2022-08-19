@@ -37,8 +37,8 @@ public class US_014_UI_StepDefinition {
 
     @And("Kullanici registration sekmesine tiklar")
     public void kullaniciRegistrationSekmesineTiklar() {
-
     }
+
 
     @And("Kullanici gecerli bir username ve password girer")
     public void kullaniciGecerliBirUsernameVePasswordGirer() {
@@ -56,17 +56,20 @@ public class US_014_UI_StepDefinition {
     @And("Kullanici My Inpatients secenegini tiklar")
     public void kullaniciMyInpatientsSeceneginiTiklar() {
         us014.myInpatientsButton.click();
-
     }
 
-    @And("Kullanici Hasta sayfasında olduğunu doğrular")
-    public void kullaniciHastaSayfasındaOlduğunuDoğrular() {
+
+    @And("Kullanici Hasta sayfasında oldugunu dogrular")
+    public void kullaniciHastaSayfasindaOldugunuDogrular() {
+
         Assert.assertTrue(us014.inPatientsText.isDisplayed());
         ReusableMethods.waitFor(3);
+
+
     }
 
-    @And("Kullanici  hasta bilgilerini görüntüler")
-    public void kullaniciHastaBilgileriniGörüntüler() throws InterruptedException {
+    @And("Kullanici  hasta bilgilerini goruntuler")
+    public void kullaniciHastaBilgileriniGoruntuler() throws InterruptedException {
         Thread.sleep(2000);
         Assert.assertTrue(us014.inPatientsID.isDisplayed());
         Assert.assertTrue(us014.inPatientsStartDate.isDisplayed());
@@ -77,81 +80,83 @@ public class US_014_UI_StepDefinition {
         Assert.assertTrue(us014.inPatientsRoom.isDisplayed());
         Assert.assertTrue(us014.inPatientsAppointment.isDisplayed());
         Assert.assertTrue(us014.inPatientsPatient.isDisplayed());
-
-
     }
 
-    @And("Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar")
-    public void kullaniciInPatientsSayfasindaGüncellenmesiIstenenHastaninEditButonuTiklar() {
+
+    @And("Kullanici inPatients sayfasinda guncellenmesi istenen hastanin edit butonu tiklar")
+    public void kullaniciInPatientsSayfasindaGuncellenmesiIstenenHastaninEditButonuTiklar() {
+
         ReusableMethods.clickWithTimeOut(us014.inPatientsEditButton2, 3);
         ReusableMethods.waitFor(3);
+
     }
 
 
     @And("Kullanici in patient creat or edt page oldugunu kontrol eder")
     public void kullaniciInPatientCreatOrEdtPageOldugunuKontrolEder() {
-
-
         String expectedResult = "Create or edit a In Patient";
         String actualResult = us014.inPatientEditPageText.getText();
         ReusableMethods.waitFor(5);
         Assert.assertEquals(expectedResult, actualResult);
+    }
+
+
+    @And("Kullanici baslangıc tarihi bolumunu guncelleyebilir")
+    public void kullaniciBaslangicTarihiBolumunuGuncelleyebilir() {
+
+                Assert.assertFalse(us014.editInPatientStartDate.isSelected());
+
+
 
     }
 
-    @And("Kullanici baslangıc tarihi bölümünü güncelleyebilir")
-    public void kullaniciBaslangıcTarihiBölümünüGüncelleyebilir() {
-        Assert.assertFalse(us014.editInPatientStartDate.isSelected());
-    }
-
-    @And("Kullanici  bitiş tarihi bölümünü güncelleyebilir")
-    public void kullaniciBitişTarihiBölümünüGüncelleyebilir() {
+    @And("Kullanici  bitis tarihi bolumunu guncelleyebilir")
+    public void kullaniciBitisTarihiBolumunuGuncelleyebilir() {
         Assert.assertFalse(us014.editInPatientEndDate.isSelected());
     }
 
-    @And("Kullanici açıklama bölümünü güncelleyebilir")
-    public void kullaniciAçıklamaBölümünüGüncelleyebilir() {
+    @And("Kullanici acıklama bolumunu guncelleyebilir")
+    public void kullaniciAciklamaBolumunuGuncelleyebilir() {
         ReusableMethods.clickWithTimeOut(us014.editInPatientDescription, 3);
         us014.editInPatientDescription.clear();
         us014.editInPatientDescription.sendKeys("halsiz");
     }
 
-    @And("Kullanici oluşturulan tarih bölümünü güncelleyebilir")
-    public void kullaniciOluşturulanTarihBölümünüGüncelleyebilir() {
+    @And("Kullanici olusturulan tarih bolumunu guncelleyebilir")
+    public void kullaniciOlusturulanTarihBolumunuGuncelleyebilir() {
         us014.editInPatientCreatedDate.clear();
         us014.editInPatientCreatedDate.sendKeys("05092333001112");
     }
 
-    @And("Kullanici randevu bölümünü güncelleyebilir")
-    public void kullaniciRandevuBölümünüGüncelleyebilir()  {
+    @And("Kullanici randevu bölümünü guncelleyebilir")
+    public void kullaniciRandevuBolumunuGuncelleyebilir()  {
         Assert.assertFalse(us014.editInPatientAppointment.isSelected());
-
-
     }
+
+
 
     @Then("Kullanici save butonunu tiklar")
     public void kullaniciSaveButonunuTiklar() {
         ReusableMethods.waitFor(4);
         us014.editInPatientSaveButton.sendKeys(Keys.ENTER);
-
     }
 
 
-    @And("Kullanici yatarak tedavi durumunu güncelleyebilmelidir")
-    public void kullaniciYatarakTedaviDurumunuGüncelleyebilmelidir() {
+
+    @And("Kullanici yatarak tedavi durumunu guncelleyebilmelidir")
+    public void kullaniciYatarakTedaviDurumunuGuncelleyebilmelidir() {
         Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown, "UNAPPROVED");
         Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown, "STAYING");
         Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown, "DISCHARGED");
         Driver.selectAnItemFromDropdown(us014.editInPatientStatusDropDown, "CANCELLED");
+
+
     }
 
-    @And("Doktor yatarak tedavi odasını güncelleyebilmelidir")
-    public void doktorYatarakTedaviOdasınıGüncelleyebilmelidir() {
+    @And("Doktor yatarak tedavi odasını guncelleyebilmelidir")
+    public void doktorYatarakTedaviOdasiniGuncelleyebilmelidir() {
         Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown, "2979009:SUITE FULL-UNAVAILABLE");
         Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown, "2042:TWIN FULL-UNAVAILABLE");
         Driver.selectAnItemFromDropdown(us014.editInPatientRoomDropDown, "117:DELUXE FULL-UNAVAILABLE");
-
     }
-
-
 }

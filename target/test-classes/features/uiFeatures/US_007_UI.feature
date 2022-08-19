@@ -10,27 +10,40 @@ Feature: US_007_TC_001 Kullanıcı geçerli tarih girmelidir ve randevusunu gorm
     And Eb Kullanici Sign in butonuna tiklar
     And Eb Kullanici MyPages sekmesine tiklar
 
-  @TEST_MED-140
-  Scenario: Eb Kullanici guncel veya gelecekten bir tarih secer
+  @TC001 @GuncelTarih
+  Scenario: Eb Kullanici guncel bir tarih secer
     And Eb Kullanici Make An Appointment sekmesine tiklar
     And Eb Kullanici FirstName bolumune ismini girer
     And Eb Kullanici LastName bolumune soy ismini girer
     And Eb Kullanici SSN bolumune gecerli bir SSN girer
     And Eb Kullanici email bolumune email girer
     And Eb Kullanici Phone bolumune gecerli bir tel nosu girer
-    And Eb Kullanici date bolumunde guncel veya gelecekten bir tarih secer
+    And Eb Kullanici date bolumunde guncel bir tarih secer
     And Eb Kullanici Send an Appointment Request butonuna tiklar
     And Eb Kullanici Randevu tarihi olusturuldugunu kontrol eder (Appoinment registration saved yazisi gorunur olmali)
     Then Kullanici sayfayi kapatir
 
-  @TEST_MED-141
+  @TC002 @GelecekTarih
+  Scenario: Eb Kullanici gelecek bir tarih secer
+    And Eb Kullanici Make An Appointment sekmesine tiklar
+    And Eb Kullanici FirstName bolumune ismini girer
+    And Eb Kullanici LastName bolumune soy ismini girer
+    And Eb Kullanici SSN bolumune gecerli bir SSN girer
+    And Eb Kullanici email bolumune email girer
+    And Eb Kullanici Phone bolumune gecerli bir tel nosu girer
+    And Eb Kullanici date bolumunde gelecek tarihli bir gun secer
+    And Eb Kullanici Send an Appointment Request butonuna tiklar
+    And Eb Kullanici Randevu tarihi olusturuldugunu kontrol eder (Appoinment registration saved yazisi gorunur olmali)
+    Then Kullanici sayfayi kapatir
+
+  @TC003
   Scenario: Eb Kullanici tarih formatini dogrular
     And Eb Kullanici MyAppointment secenegini secer
-    And Eb Kullanici tarihin "<gun/ay/yil>" seklinde oldugunu dogrular
+    And Eb Kullanici tarihin formatini dogrular
     Then Kullanici sayfayi kapatir
 
 
-  @TEST_MED-142
+  @TC004
   Scenario: Eb Kullanici gecmis tarihli bir gun secer
     And Eb Kullanici Make An Appointment sekmesine tiklar
     And Eb Kullanici FirstName bolumune ismini girer

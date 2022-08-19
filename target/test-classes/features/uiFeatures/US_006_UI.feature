@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 @US_006
 Feature:US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir olmalıdır.
 
@@ -57,9 +53,4 @@ Feature:US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir
       | email      |
       | memoli       |
       | memo@gmail |
-<<<<<<< HEAD
       | memo.com   |
-
-=======
-      | memo.com   |
->>>>>>> main

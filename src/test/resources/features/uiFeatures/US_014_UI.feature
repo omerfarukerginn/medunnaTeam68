@@ -11,8 +11,8 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
     And Kullanici My pages sekmesini tiklar
     And Kullanici My Inpatients secenegini tiklar
     Then Kullanici Hasta sayfasında oldugunu dogrular
-    And Kullanici  hasta bilgilerini görüntüler
-    And Kullanici inPatients sayfasinda güncellenmesi istenen hastanin edit butonu tiklar
+    And Kullanici  hasta bilgilerini goruntuler
+    And Kullanici inPatients sayfasinda guncellenmesi istenen hastanin edit butonu tiklar
     And Kullanici in patient creat or edt page oldugunu kontrol eder
 
 
@@ -21,11 +21,11 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
   Scenario:Doktor hasta bilgilerini görüntülüyebilmeli
 
 
-    And Kullanici baslangıc tarihi bölümünü güncelleyebilir
-    And Kullanici  bitis tarihi bölümünü güncelleyebilir
-    And Kullanici acıklama bölümünü güncelleyebilir
-    And Kullanici olusturulan tarih bölümünü güncelleyebilir
-    And Kullanici randevu bölümünü güncelleyebilir
+    And Kullanici baslangıc tarihi bolumunu guncelleyebilir
+    And Kullanici  bitis tarihi bolumunu guncelleyebilir
+    And Kullanici acıklama bolumunu guncelleyebilir
+    And Kullanici olusturulan tarih bolumunu guncelleyebilir
+    And Kullanici randevu bölümünü guncelleyebilir
     And Kullanici save butonunu tiklar
     And Sayfayi kapatir
 
@@ -34,7 +34,7 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
   Scenario:Status doktor tarafından "UNAPPROVED, DISCHARGED, STILL STAYING veya CANCELLED" olarak güncellenebilmeli
 
 
-    And Kullanici yatarak tedavi durumunu güncelleyebilmelidir
+    And Kullanici yatarak tedavi durumunu guncelleyebilmelidir
     And Sayfayi kapatir
 
 
@@ -43,5 +43,5 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
   Scenario:Doktor rezerve edilmis odayı güncelleyebilmeli
 
 
-    And Doktor yatarak tedavi odasını güncelleyebilmelidir
+    And Doktor yatarak tedavi odasını guncelleyebilmelidir
     And Sayfayi kapatir

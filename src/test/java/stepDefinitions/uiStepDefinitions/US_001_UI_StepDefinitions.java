@@ -1,3 +1,4 @@
+
 package stepDefinitions.uiStepDefinitions;
 
 import io.cucumber.java.en.Given;
@@ -11,9 +12,6 @@ import pages.LoginPage;
 import pages.RegisterPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
-
-import static utilities.ConfigReader.*;
 
 
 public class US_001_UI_StepDefinitions {

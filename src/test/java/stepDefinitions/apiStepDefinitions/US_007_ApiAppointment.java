@@ -1,7 +1,7 @@
 package stepDefinitions.apiStepDefinitions;
 
 
-import baseUrl.MedunnaBaseUrl;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;

@@ -18,7 +18,7 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
 
 
   @US014_TC001
-  Scenario:Doktor hasta bilgilerini görüntülüyebilmeli
+  Scenario:Doktor hasta bilgilerini goruntuluyebilmeli
 
 
     And Kullanici baslangıc tarihi bolumunu guncelleyebilir
@@ -40,7 +40,7 @@ Feature:US_014 Physician (Doctor) "Edit Inpatient" (Yatılı Tedavi) işlemleri 
 
 
   @US014_TC003
-  Scenario:Doktor rezerve edilmis odayı güncelleyebilmeli
+  Scenario:Doktor rezerve edilmis odayı guncelleyebilmeli
 
 
     And Doktor yatarak tedavi odasını guncelleyebilmelidir

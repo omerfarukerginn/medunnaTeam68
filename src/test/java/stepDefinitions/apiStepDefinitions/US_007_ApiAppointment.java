@@ -99,16 +99,8 @@ public class US_007_ApiAppointment {
 
     @Then("Eb user save api data to file")
     public void eb_user_save_api_data_to_file() {
-        /*
-        try {
-            response.then().statusCode(201);
-            saveAppointData(appointmentCreate);
-            System.out.println(appointmentCreate.toString());
-        } catch (Exception e) {
 
-        }
-
-         */
+        //save appoinment
 
     }
 
@@ -134,63 +126,5 @@ public class US_007_ApiAppointment {
 
 }
 
-/*
- public static void main(String[] args) throws JsonProcessingException {
-        medunnaSetup();
-        //spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
-        spec.pathParams("1", "api", "2", "appointments", "3", "request");
-
-        ///api/appointments/request
-        String appoSpecialitySetData = "string";
-        String birthDateSetData = "2022-04-16T12:52:30.875Z";
-        String emailSetData = faker.internet().emailAddress();
-        String firstName = "Nail";
-        String gender = "male";
-        String lastName = "Kocaman";
-        String phone = "857-265-8343";
-        String snumber = "string";
-        String ssn = faker.idNumber().ssnValid();
-        String startDate = "2023-01-07T00:00:00Z";
-
-        appointmentRequest.setAppoSpeciality(appoSpecialitySetData);
-        appointmentRequest.setBirthDate(birthDateSetData);
-        appointmentRequest.setEmail(emailSetData);
-        appointmentRequest.setFirstName(firstName);
-        appointmentRequest.setGender(gender);
-        appointmentRequest.setLastName(lastName);
-        appointmentRequest.setPhone(phone);
-        appointmentRequest.setSnumber(snumber);
-        appointmentRequest.setSsn(ssn);
-        appointmentRequest.setStartDate(startDate);
 
 
-        response = given().spec(spec).contentType(ContentType.JSON)
-                .body(appointmentRequest).when().post("/{1}/{2}/{3}");
-        response.prettyPrint();
-
-        ObjectMapper obj=new ObjectMapper();
-        //bunu import ettigimiz yer ile POJO classinda @JasonIgnore nereden
-        //import edildi ise oradan almak gerekir.
-
-        appointment=obj.readValue(response.asString(), Appointment.class);
-
-        Assert.assertEquals(appointmentRequest.getFirstName(),appointment.getPatient().getFirstName());
-        Assert.assertEquals(appointmentRequest.getLastName(), appointment.getPatient().getLastName());
-        Assert.assertEquals(appointmentRequest.getEmail(),appointment.getPatient().getEmail());
-        Assert.assertEquals(appointmentRequest.getPhone(), appointment.getPatient().getPhone());
-        Assert.assertEquals(appointmentRequest.getStartDate(), appointment.getStartDate());
-
-
-
-         /*
-        response = given().headers(
-                        "Authorization",
-                        "Bearer " + generateToken(),
-                        "Content-Type",
-                        ContentType.JSON,
-                        "Accept",
-                        ContentType.JSON).body(appointmentRequest).
-                when().post(ConfigReader.getProperty("us_007_post_appointment_api"));
-
-
- */

@@ -1,4 +1,4 @@
-@api07
+@api07 @E2E
 Feature: Appointment Api Test
 
 

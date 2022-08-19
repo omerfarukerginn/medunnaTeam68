@@ -16,31 +16,31 @@ public class US_006_UI_StepDefinition {
     SettingsPage us006 = new SettingsPage();
     Actions actions = new Actions(Driver.getDriver());
 
-    @Given("Kullanıci ana sayfaya gider")
-    public void kullanıci_ana_sayfaya_gider() {
-        Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
 
+    @Given("Kullanici dr ana sayfaya gider")
+    public void kullaniciDrAnaSayfayaGider() {
+        Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
     }
 
-    @Given("Kullanıcı sign in butonuna basar")
-    public void kullanıcı_sign_in_butonuna_basar() {
+    @And("Kullanici sign in butonuna basar")
+    public void kullaniciSignInButonunaBasar() {
         us006.loginButtonu.click();
         us006.singinButtonu.click();
+
     }
 
-    @Given("Kullanıcı username kutusuna gecerli bir username bilgilerini girer")
-    public void kullanıcı_username_kutusuna_gecerli_bir_username_bilgilerini_girer() {
+    @And("Kullanici dr username kutusuna gecerli bir username bilgilerini girer")
+    public void kullaniciDrUsernameKutusunaGecerliBirUsernameBilgileriniGirer() {
         us006.userName.sendKeys("drAkif");
     }
 
-    @Given("Kullanıcı password kutusuna gecerli password bilgilerini girer")
-    public void kullanıcı_password_kutusuna_gecerli_password_bilgilerini_girer() {
+    @And("Kullanici dr password kutusuna gecerli password bilgilerini girer")
+    public void kullaniciDrPasswordKutusunaGecerliPasswordBilgileriniGirer() {
         us006.password.sendKeys("227785Nc.");
-
     }
 
-    @Given("Kullanıcı, sağ altta bulunan Sign in düğmesine tıklamalıdır")
-    public void kullanıcı_sağ_altta_bulunan_sign_in_düğmesine_tıklamalıdır() {
+    @And("Kullanici, sag altta bulunan Sign in dugmesine tiklamalidir")
+    public void kullaniciSagAlttaBulunanSignInDugmesineTiklamalidir() {
         ReusableMethods.waitFor(3);
         us006.girisSonrasiSingin.sendKeys(Keys.ENTER);
     }
@@ -52,21 +52,25 @@ public class US_006_UI_StepDefinition {
 
     }
 
-    @And("Kullanıcı, bilgiler için Kullanıcı ayarları sayfasini gider")
-    public void kullanıcıBilgilerIçinKullanıcıAyarlarıSayfasiniGider() {
+
+
+    @And("Kullanici, bilgiler icin Kullanici ayarlari sayfasina gider")
+    public void kullaniciBilgilerIcinKullaniciAyarlariSayfasinaGider() {
         ReusableMethods.waitFor(3);
         us006.kullaniciGiris.click();
         us006.settings.click();
 
+
     }
 
-    @Then("Sayfa için kullanıcı ayarları Ad, Soyadı ve E-posta seçeneklerini gorur")
-    public void sayfaIçinKullanıcıAyarlarıAdSoyadıVeEPostaSeçenekleriniGorur() {
-
+    @Then("Sayfa icin kullanici ayarlari Ad, soayadi ve E-posta secenekleri gorur")
+    public void sayfaIcinKullaniciAyarlariAdSoayadiVeEPostaSecenekleriGorur() {
         Assert.assertTrue(us006.firstName.isDisplayed());
         Assert.assertTrue(us006.lastName.isDisplayed());
         Assert.assertTrue(us006.email.isDisplayed());
     }
+
+
 
     @Given("Kullanici first name guncellenebilir olmali")
     public void kullanici_first_name_guncellenebilir_olmali() {
@@ -91,16 +95,13 @@ public class US_006_UI_StepDefinition {
         us006.saveButonu.click();
     }
 
-    @Then("Sol ustte cikan mesajla yeni bilgilerin kaydedildiginini kontrol eder")
-    public void sol_ustte_cikan_mesajla_yeni_bilgilerin_kaydedildiginini_kontrol_eder() {
+    @Then("Sol ustte cikan mesajla yeni bilgilerin kaydedildigini kontrol eder")
+    public void solUstteCikanMesajlaYeniBilgilerinKaydedildiginiKontrolEder() {
+
         Assert.assertTrue(ReusableMethods.waitForVisibility(us006.settingSaved, 3).isDisplayed());
 
     }
 
-    @Then("Sayfayi kapatir")
-    public void sayfayi_kapatir() {
-        Driver.closeDriver();
-    }
 
     @Given("Kullanici first name kisimi bos birakir")
     public void kullanici_first_name_kisimi_bos_birakir() {
@@ -109,12 +110,17 @@ public class US_006_UI_StepDefinition {
         actions.sendKeys(Keys.TAB).build().perform();
 
     }
+    @Then("Sayfayi kapatir")
+    public void sayfayi_kapatir() {
+        Driver.closeDriver();
+    }
 
-    @Then("Kullanıcı, bos first name girerken first name gereklidir metin mesajını görmeli")
-    public void kullanıcı_bos_first_name_girerken_first_name_gereklidir_metin_mesajını_görmeli() {
+    @Then("Kullanici, bos first name girerken first name gereklidir metin mesajini gormeli")
+    public void kullaniciBosFirstNameGirerkenFirstNameGereklidirMetinMesajiniGormeli() {
         Assert.assertTrue(us006.firstNameBosUyari.isDisplayed());
 
     }
+
 
     @Then("Kullanici last name kisimi bos birakir")
     public void kullanici_last_name_kisimi_bos_birakir() {
@@ -124,8 +130,8 @@ public class US_006_UI_StepDefinition {
 
     }
 
-    @Then("Kullanıcı, boslast name girerken last name gereklidir metin mesajını görmeli")
-    public void kullanıcı_boslast_name_girerken_last_name_gereklidir_metin_mesajını_görmeli() {
+    @Then("Kullanici, bos last name girerken last name gereklidir metin mesajini gormeli")
+    public void kullaniciBosLastNameGirerkenLastNameGereklidirMetinMesajiniGormeli() {
         Assert.assertTrue(us006.lastNameBosUyari.isDisplayed());
     }
 
@@ -136,15 +142,14 @@ public class US_006_UI_StepDefinition {
         actions.sendKeys(Keys.TAB).build().perform();
     }
 
-    @Then("Kullanıcı, bos E-Mail girerken E-Mail gereklidir metin mesajını görmeli")
-    public void kullanıcı_bos_e_mail_girerken_e_mail_gereklidir_metin_mesajını_görmeli() {
+    @Then("Kullanici, bos E-Mail girerken E-Mail gereklidir metin mesajini gormeli")
+    public void kullaniciBosEMailGirerkenEMailGereklidirMetinMesajiniGormeli() {
         Assert.assertTrue(us006.emailBosUYari.isDisplayed());
     }
 
 
-    @Then("Kullanıcı, E-Mail girerken gecersiz E-Mail  metin mesajını görmeli")
-    public void kullanıcı_e_mail_girerken_gecersiz_e_mail_metin_mesajını_görmeli() {
-
+    @Then("Kullanici, E-Mail girerken gecersiz E-Mail  metin mesajini gormeli")
+    public void kullaniciEMailGirerkenGecersizEMailMetinMesajiniGormeli() {
         Assert.assertTrue(us006.gecersizEmailUYari.isDisplayed());
     }
 
@@ -154,5 +159,6 @@ public class US_006_UI_StepDefinition {
         us006.emailKutusu.clear();
         us006.emailKutusu.sendKeys(email);
     }
+
 
 }

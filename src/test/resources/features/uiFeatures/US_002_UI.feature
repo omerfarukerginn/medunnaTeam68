@@ -6,7 +6,7 @@ And kullanici registration sayfasina gider(navigate)
   @US002_TC001
   Scenario Outline: US002_TC001
     When kullanci User Username kutusuna tiklamali ve herhangi bir karakter iceren (username) adi girer"<Username>"
-    Then Kullanici Your username is required mesajini görmemeli
+    Then Kullanici Your username is required mesajini gormemeli
     Examples: Data text username
       |Username|
       |ab.|
@@ -28,7 +28,7 @@ And kullanici registration sayfasina gider(navigate)
   @US002_TC04
   Scenario Outline:US002_TC004
     And Kullanici email kutusunu tiklamali ve gecerli bir email girmeli "<email>"
-    Then Kullanici Kullanici " The field is invalid" mesaji görmemeli
+    Then Kullanici Kullanici " The field is invalid" mesaji gormemeli
     Examples: Data mail
       |email|
       |bay@g.k|
@@ -36,7 +36,7 @@ And kullanici registration sayfasina gider(navigate)
   @US002_TC005
   Scenario Outline:US002_TC005
     And Kullanici email kutusunu tiklamali ve “@“ kullanarak ANCAK “.“ kullanmadan  email girmeli "<email>"
-    Then Kullanici Kullanici " The field is invalid" mesaji görmeli
+    Then Kullanici Kullanici " The field is invalid" mesaji gormeli
     Examples: Data mail
       |email|
       |bay@msn|
@@ -44,7 +44,7 @@ And kullanici registration sayfasina gider(navigate)
   @US002_TC006
   Scenario Outline:S002_TC006
     And Kullanici email kutusunu tiklamali ve “.“ isareti kullandiktan sonra “@“ ile devam ederk mail adresi yazmali  email girmeli "<email>"
-    Then Kullanici Kullanici The field is invalid mesaji görmemeli
+    Then Kullanici Kullanici The field is invalid mesaji gormemeli
     Examples: Data mail
       |email|
       |bay.hiz@msn|

@@ -115,7 +115,7 @@ public class US_011_UI_StepDefinition {
 
     }
 
-    @Then("Doktor \"The Appointment is updated with identifier\"mesajini gorur.")
+    @Then("Doktor The Appointment is updated with identifier mesajini gorur.")
     public void doktor_the_appointment_is_updated_with_identifier_mesajini_gorur() {
 
         // String expectedResult="The Appointment is updated with identifier";
@@ -224,7 +224,18 @@ public class US_011_UI_StepDefinition {
 
     }
 
-    @And("Doktor -Anamnesis,Treatment ve Diagnosis- alanlarini bosaltir")
+
+    @And("Doktor The Appointment is updated with identifier mesajinini gorur.")
+    public void doktorTheAppointmentIsUpdatedWithIdentifierMesajininiGorur() {
+        Driver.getDriver().switchTo().alert().accept();
+        String expectedResult = "The Appointment is updated with identifier";
+        String actualResult = us_011.appointmentBasariliYazisi.getText();
+        Assert.assertEquals(expectedResult, actualResult);
+
+    }
+
+
+    @And("Doktor Anamnesis,Treatment ve Diagnosis alanlarini bosaltir")
     public void doktorAnamnesisTreatmentVeDiagnosisAlanlariniBosaltir() {
         ReusableMethods.hooverByJS(us_011.anamnesisKutusu);
         us_011.anamnesisKutusu.clear();
@@ -233,9 +244,15 @@ public class US_011_UI_StepDefinition {
     }
 
 
-    @And("Doktor -Prescription ve Description- alanlarini bosaltir")
+
+
+    @And("Doktor Prescription ve Description alanlarini bosaltir")
     public void doktorPrescriptionVeDescriptionAlanlariniBosaltir() {
         us_011.prescriptionKutusu.clear();
         us_011.descriptionKutusu.clear();
     }
+
+
+
 }
+

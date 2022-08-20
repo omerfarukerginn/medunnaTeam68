@@ -51,7 +51,7 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor hastanin Description bilgilerini doldurur
     And Doktor Prescription ve Description alanlarini bosaltir
     And Doktor save butonuna tiklar
-    And Doktor "The Appointment is updated with identifier"mesajini gorur.
+    And Doktor The Appointment is updated with identifier mesajini gorur.
     Then Sayfayi kapatir.
 
   @TC005

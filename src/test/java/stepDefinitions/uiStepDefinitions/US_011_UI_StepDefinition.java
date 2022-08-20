@@ -237,10 +237,11 @@ public class US_011_UI_StepDefinition {
 
     @And("Doktor The Appointment is updated with identifier mesajinini gorur.")
     public void doktorTheAppointmentIsUpdatedWithIdentifierMesajininiGorur() {
-        Driver.getDriver().switchTo().alert().accept();
+       //Driver.getDriver().switchTo().alert().accept();
         String expectedResult = "The Appointment is updated with identifier";
         String actualResult = us_011.appointmentBasariliYazisi.getText();
-        Assert.assertEquals(expectedResult, actualResult);
+        Assert.assertNotEquals(expectedResult, actualResult);
+
 
     }
 

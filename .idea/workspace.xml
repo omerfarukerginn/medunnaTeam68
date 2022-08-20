@@ -5,171 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6dc68f3-548b-4be3-b886-88695fd2f9ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/CTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/TestResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/E2ETestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_007_DataBase_StepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_007_DB.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData/AppointmentData.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData/AppointmentName.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData/AppointmentStartDate.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData/RegistrantUIData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/medunnaTeam68.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DoctorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DoctorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PatientPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PatientPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/CTestItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ApiRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ApiRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_001_API_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_001_API_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_007_ApiAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_007_ApiAppointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_010_API_StepDefination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/apiStepDefinitions/US_010_API_StepDefination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_001_DataBase_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_001_DataBase_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_010_DataBase_StepDefination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/dataBaseStepDefinitions/US_010_DataBase_StepDefination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_001_UI_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_001_UI_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_002_UI_StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_002_UI_StepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_005_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_005_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_006_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_006_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_007_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_007_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_011_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_011_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_012_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_012_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_013_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_013_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/PDFGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReadTxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReadTxt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/WriteToTxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/WriteToTxt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_001_API.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_007_ApiAppointment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/apiFeatures/US_007_ApiAppointment.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_001_DB.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_001_DB.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_009_DB.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/dataBaseFeatures/US_009_DB.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US _004_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US _004_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_001_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_001_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_002_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_002_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_003_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_003_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_005_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_005_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_006_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_006_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_007_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_007_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_009_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_010_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_010_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_011_TC001_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_011_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_013_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_013_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_014_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_014_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/AppointmentED.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/AppointmentED.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/AppointmentId.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/AppointmentId.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/AppointmentS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/AppointmentS.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/AppointmentSD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/AppointmentSD.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/baseUrl/MedunnaBaseUrl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_001_API.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_002_API.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_007_ApiAppointment.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_009_API.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_010_API.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/dataBaseFeatures/US_001_DB.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/dataBaseFeatures/US_009_DB.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/dataBaseFeatures/US_010_DB.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US _004_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_001_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_002_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_003_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_005_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_006_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_007_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_008_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_009_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_010_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_011_TC001_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_012_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_013_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_014_UI.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/DoctorPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PasswordPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PatientPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/RegisterPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/SettingsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/StaffPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Appointment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/AppointmentAdminStaff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/AppointmentRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/InPatients.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Messages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Patient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Physician.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Registrant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Registration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Room.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Staff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/ApiRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/DBRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_001_API_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_007_ApiAppointment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_009_API_StepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_010_API_StepDefination.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_001_DataBase_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_010_DataBase_StepDefination.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_001_UI_StepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_002_UI_StepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_003_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_004_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_005_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_006_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_007_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_008_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_011_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_012_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_013_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testData/AppointmentED.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testData/AppointmentGenel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testData/AppointmentId.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testData/AppointmentS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testData/AppointmentSD.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testData/testDatalari.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ApiUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Authentication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DatabaseUtility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/PDFGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReadTxt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/WriteToTxt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team68Medunna.iml" beforeDir="false" afterPath="$PROJECT_DIR$/team68Medunna.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,15 +13,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectId" id="2DcHQpH65TYvtC0px7SkoEmtgGR" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Kullanici, bilgiler için kullanici ayarlari sayfasina gider">
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: US_010_UI">
     <configuration name="Feature: US_006_UI" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_006_UI.feature" />
@@ -194,6 +68,25 @@
       <module name="team68Medunna" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: US_006_UI" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: US_010_UI" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_010_UI.feature" />
+      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="team68Medunna" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US_010_UI" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -227,12 +120,22 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Kullanici, bilgiler için kullanici ayarlari sayfasina gider" />
-        <item itemvalue="Cucumber Java.Feature: US_006_UI" />
+        <item itemvalue="Cucumber Java.Feature: US_010_UI" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Dell\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6dc68f3-548b-4be3-b886-88695fd2f9ea" name="Changes" comment="" />
+      <created>1660991447584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660991447584</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,5 +148,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

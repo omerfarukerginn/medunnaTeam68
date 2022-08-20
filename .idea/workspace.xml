@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="e6dc68f3-548b-4be3-b886-88695fd2f9ea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -33,6 +34,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -103,17 +105,18 @@
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_006_UI.feature" />
       <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+  <component name="RunManager">
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="team68Medunna" />
-      <option name="NAME_FILTER" value="^Kullanici\, bilgiler için kullanici ayarlari sayfasina gider$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanici\, bilgiler için kullanici ayarlari sayfasina gider$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Kullanici, bilgiler için kullanici ayarlari sayfasina gider" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +124,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: US_010_UI" />
+        <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
   </component>

@@ -10,9 +10,10 @@ import io.cucumber.junit.Cucumber;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
+
         features = "src/test/resources/features/uiFeatures",
         glue = "stepDefinitions/uiStepDefinitions",
-        tags = "@US_011_TC_002",
+        tags = "@US_011",
         dryRun = false
 )
 

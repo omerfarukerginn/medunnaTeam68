@@ -12,11 +12,7 @@ import io.cucumber.junit.Cucumber;
         },
         features = "src/test/resources/features/uiFeatures",
         glue = "stepDefinitions/uiStepDefinitions",
-<<<<<<< HEAD
-        tags = "@TC04_Us11",
-=======
-        tags = "@US_007",
->>>>>>> main
+        tags = "@US_011_TC_002",
         dryRun = false
 )
 

@@ -1,4 +1,4 @@
-@US_003
+@US_003 @SmokeTest
 Feature: Kullanici "Password strength" seviyeleri görülebilmelidir.
 
   Background: Eb Kullanici Medunna anasayfasina girer
@@ -6,19 +6,7 @@ Feature: Kullanici "Password strength" seviyeleri görülebilmelidir.
     When Eb Kullanici Account Menu bolumune tiklar
     Then Eb Kullanici registration sekmesine tiklar
 
-<<<<<<< HEAD
   @US_003_TC_001,TC_002,TC_003,TC_004,TC_005
-=======
-<<<<<<< HEAD
-  @US_003_TC_001,TC_002,TC_003,TC_004,TC_005
-=======
-<<<<<<< HEAD
-  @US_003_TC_001,TC_002,TC_003,TC_004,TC_005
-=======
-  @US_003_TC_001,TC_002,TC_003,TC_004,TC_005 @SmokeTest
->>>>>>> main
->>>>>>> main
->>>>>>> main
   Scenario Outline: Kullanici en az 7 karakterli icerisinde en az 1 kucuk harf, 1 rakam, 1 ozel karakter olan sifreleri
   girer
     And Kullanici New Password kisminda yeni "<password>" girer

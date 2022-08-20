@@ -24,8 +24,8 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor The Appointment is updated with identifier mesajini gorur.
     Then Sayfayi kapatir.
 
-
-  Scenario:Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir.
+@US_011_TC_002
+  Scenario: Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir.
   "id, start and end date, Status, physician and patient"
     And Doktor hastanin id bilgisini gorunur oldugunu test eder
     And Doktor hastanin start and end date bilgisinin gorunur oldugunu test eder gorur
@@ -51,6 +51,7 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor hastanin Description bilgilerini doldurur
     And Doktor Prescription ve Description alanlarini bosaltir
     And Doktor save butonuna tiklar
+    And Doktor "The Appointment is updated with identifier"mesajini gorur.
     Then Sayfayi kapatir.
 
   @TC005

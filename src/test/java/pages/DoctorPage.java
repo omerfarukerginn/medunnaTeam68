@@ -161,7 +161,8 @@ public class DoctorPage {
 
 
 
-
+    @FindBy(xpath = "(//*[text()='My Appointments'])[1]")
+    public WebElement myAppointmentsButonu;
 
     @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
     public WebElement welcomeToMedunnaYazisi;

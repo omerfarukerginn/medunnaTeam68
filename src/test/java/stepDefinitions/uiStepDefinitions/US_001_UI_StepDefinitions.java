@@ -28,7 +28,11 @@ public class US_001_UI_StepDefinitions {
     @Given("kullanici registration sayfasina gider\\(navigate)")
     public void kullanici_registration_sayfasina_gider_navigate() {
 
+<<<<<<< HEAD
+        loginPage.loginPageMenuButton.click();
+=======
         dr.humanButton.click();
+>>>>>>> main
         registerPage.homePageRegisterButton.click();
         System.out.println("ne olacak böyle");
 

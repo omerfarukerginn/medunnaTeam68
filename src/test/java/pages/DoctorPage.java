@@ -22,16 +22,16 @@ public class DoctorPage {
     public WebElement humanButton;
 
 
-    @FindBy(xpath = "//span[normalize-space()='Sign in']")
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
     public WebElement singInButtonu;
 
-    @FindBy(xpath = "(//input[@name='username'])[1]")
+    @FindBy(xpath = "//input[@name='username']")
     public WebElement userName;
 
-    @FindBy(xpath = "(//input[@name='password'])[1]")
+    @FindBy(xpath = "//input[@name='password']")
     public WebElement password;
 
-    @FindBy(xpath = "(//*[text()='Sign in'])[3]")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement girisSonrasiSingIn;
 
     @FindBy(xpath = "//*[text()='MY PAGES']")

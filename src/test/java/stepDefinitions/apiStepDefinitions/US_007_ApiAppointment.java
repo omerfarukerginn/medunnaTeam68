@@ -1,7 +1,7 @@
 package stepDefinitions.apiStepDefinitions;
 
 
-import baseUrl.MedunnaBaseUrl;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
@@ -51,7 +51,7 @@ public class US_007_ApiAppointment {
 
     }
 
-    @Given("Eb user enter expected data FirstName LastName SSN Email Phone Date")
+    @Given("Eb user enter expected data FirstName LastName SSN Email Phone Date") //appointmentRequest hasta create ediyorum
     public void eb_user_enter_expected_data_first_name_last_name_ssn_email_phone_date() {
 
         //String appoSpecialitySetData = "Bilmiyorum";
@@ -72,7 +72,7 @@ public class US_007_ApiAppointment {
         appointmentRequest.setEmail(emailSetData);
         appointmentRequest.setPhone(phone);
         appointmentRequest.setStartDate(startDate);
-        appointmentRequest.setAppoSpeciality("string");
+       // appointmentRequest.setAppoSpeciality("string");
         appointmentRequest.setBirthDate(birthDateSetData);
         appointmentRequest.setGender(gender);
         appointmentRequest.setSnumber("string");

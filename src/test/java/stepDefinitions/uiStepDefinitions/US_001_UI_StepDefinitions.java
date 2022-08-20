@@ -1,3 +1,4 @@
+
 package stepDefinitions.uiStepDefinitions;
 
 import io.cucumber.java.en.Given;
@@ -6,20 +7,18 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.asserts.SoftAssert;
+import pages.DoctorPage;
 import pages.LoginPage;
 import pages.RegisterPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
-
-import static utilities.ConfigReader.*;
 
 
 public class US_001_UI_StepDefinitions {
     LoginPage loginPage = new LoginPage();
     RegisterPage registerPage = new RegisterPage();
     SoftAssert softAssert = new SoftAssert();
-
+    DoctorPage dr = new DoctorPage();
 
     @Given("Kullanıci medunna anasayfasina gider")
     public void kullanıci_medunna_anasayfasina_gider() {
@@ -29,7 +28,11 @@ public class US_001_UI_StepDefinitions {
     @Given("kullanici registration sayfasina gider\\(navigate)")
     public void kullanici_registration_sayfasina_gider_navigate() {
 
+<<<<<<< HEAD
         loginPage.loginPageMenuButton.click();
+=======
+        dr.humanButton.click();
+>>>>>>> main
         registerPage.homePageRegisterButton.click();
         System.out.println("ne olacak böyle");
 

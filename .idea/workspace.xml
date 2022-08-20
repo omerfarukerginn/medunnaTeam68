@@ -24,7 +24,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_010_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_010_UI.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_011_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_011_UI.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_014_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_014_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_001_API.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_001_API.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_007_ApiAppointment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/apiFeatures/US_007_ApiAppointment.feature" afterDir="false" />
@@ -44,7 +44,7 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_011_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_011_UI.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_013_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_013_UI.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_014_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/uiFeatures/US_014_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/DoctorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/DoctorPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/DoctorPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PasswordPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PatientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PatientPage.class" afterDir="false" />
@@ -53,25 +53,25 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Appointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojos/Appointment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Room.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pojos/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/ApiRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/ApiRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/DBRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/DBRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/ApiRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/DBRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_001_API_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_001_API_StepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_007_ApiAppointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_007_ApiAppointment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_009_API_StepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_010_API_StepDefination.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_010_API_StepDefination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/apiStepDefinitions/US_010_API_StepDefination.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_001_DataBase_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_001_DataBase_StepDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_010_DataBase_StepDefination.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_010_DataBase_StepDefination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_009_DB_StepDefinition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/dataBaseStepDefinitions/US_010_DataBase_StepDefination.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_001_UI_StepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_001_UI_StepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_005_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_005_UI_StepDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_005_UI_StepDefinition.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_006_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_006_UI_StepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_007_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_007_UI_StepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_008_UI_StepDefinition.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_009_UI_StepDefinition.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_011_UI_StepDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_012_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_012_UI_StepDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_012_UI_StepDefinition.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_013_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_013_UI_StepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testData/AppointmentED.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testData/AppointmentED.txt" afterDir="false" />
@@ -81,12 +81,12 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DBUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DatabaseUtility.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/PDFGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReadTxt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReadTxt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReadTxt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/WriteToTxt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/WriteToTxt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/WriteToTxt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

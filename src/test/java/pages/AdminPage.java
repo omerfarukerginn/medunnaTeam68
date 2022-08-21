@@ -308,7 +308,10 @@ public class AdminPage {
 
 
 
+// NAIL BASLAMA NOKTASI
 
+    @FindBy(xpath = "(//*[@href='/physician'])[1]")
+    public WebElement physicianSekmesi;
 
 
 
@@ -404,10 +407,7 @@ public class AdminPage {
 
 
 
-
-
-
-
+    // NAIL BITIS NOKTASI
 
 
 

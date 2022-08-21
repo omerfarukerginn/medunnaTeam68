@@ -1,12 +1,12 @@
 @US01_UI @SmokeTest
 Feature: US_001 registerpage
   Background:
-    Given Kullanıci medunna anasayfasina gider
+    Given Kullanici medunna anasayfasina gider
     And kullanici registration sayfasina gider(navigate)
   @US001_TC001
   Scenario Outline: US001_TC001
     Given kullanici ssn kutusunu tiklar ve  kullanci gecerli snn numaralarini girer "<SSN>"
-    Then Kullanici uyari mesaji görmemeli "<message>"
+    Then Kullanici uyari mesaji gormemeli "<message>"
     Examples: Data text SSN
       |SSN|message|
       |123-34-4567||
@@ -19,7 +19,7 @@ Feature: US_001 registerpage
   Scenario Outline:US001_TC002,US001_TC003
     Given kullanici ssn kutusunu tiklar ve  ucuncu ve besinci haneden sonra herahngi bir isaret KOYMADAN DOKUZ haneli snn numaralarini girer "<SSN>"
     Given kullanici ssn kutusunu tiklar ve  ucuncu ve besinci haneden sonra gerekli isareti koyduktundan sonra sekiz ve on haneli ssn girer "<SSN>"
-    Then Kullanici Your SSN is invalid mesajini görmeli
+    Then Kullanici Your SSN is invalid mesajini gormeli
     Examples: Data text SSN
       |SSN||SSN          |
       |123344567||123-34-472|
@@ -37,7 +37,7 @@ Feature: US_001 registerpage
   Scenario Outline: US001_TC005
 
     Given kullanici herhangi bir karakter iceren ve bos birakilmayan gecerli bir first name girmelidir"<First Name>"
-    Then Kullanici uyari mesaji görmemeli
+    Then Kullanici uyari mesaji gormemeli
     Examples: Data text Fisrt Name
     |First Name|
     |bayram|
@@ -49,8 +49,8 @@ Feature: US_001 registerpage
   Scenario Outline: US001_TC006,US001_TC007
 
     Given kullanici herhangi bir karakter iceren ve basta bos birakilan bir first name girmelidir "<FirstName>"
-    Given kullanci herhangi bir karakter iceren ve ilkharf yazildiktan ve son harf yazilmadan önce herhangi bir yerde bosluk birakarak first name girmelidir"<First Name>"
-    Then Kullanici your firstname is required uyari mesajini görmeli
+    Given kullanci herhangi bir karakter iceren ve ilkharf yazildiktan ve son harf yazilmadan once herhangi bir yerde bosluk birakarak first name girmelidir"<First Name>"
+    Then Kullanici your firstname is required uyari mesajini gormeli
     Examples: Data text First Name
       |FirstName|First Name|
       | bayram|              ak if         |
@@ -67,7 +67,7 @@ Feature: US_001 registerpage
   Scenario Outline: US001_TC009,US001_TC010,US001_TC011
    Given kullanici hrhangi bir karakter iceren ancak BASTA bosluk birakarak bir last name girer "<LastName>"
     Given kullanici hrhangi bir karakter iceren ancak ORTADA bosluk birakarak bir last name girer "<Last Name>"
-    Then  kullanci your last name is required mesajini görmeli
+    Then  kullanci your last name is required mesajini gormeli
     Examples:
 
       |LastName|Last Name|
@@ -79,7 +79,7 @@ Feature: US_001 registerpage
   Scenario Outline: US001_TC012
 
     Given kullanici herhangi bir karakter iceren ve bos birakilmayan gecerli bir last name girmelidir"<Last Name>"
-    Then Kullanici your last name is required mesaji görmemeli
+    Then Kullanici your last name is required mesaji gormemeli
     Examples: Data text Last Name
       |Last Name|
       |heuser|

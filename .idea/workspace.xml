@@ -134,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Kullanici giris yapar" />
         <item itemvalue="Cucumber Java.Scenario: akielakik" />
         <item itemvalue="Cucumber Java.Feature: US_021_UI" />
-        <item itemvalue="Cucumber Java.Scenario: Kullanici giris yapar" />
         <item itemvalue="Cucumber Java.Feature: LoginScenario" />
-        <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
   </component>

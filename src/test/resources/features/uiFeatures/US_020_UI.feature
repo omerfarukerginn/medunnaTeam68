@@ -1,5 +1,5 @@
 @US_020
-Feature: Admin, kayıtlı kişilerin "firstname, lastname, email... Gibi bilgilerini görebilmeli.
+Feature: Admin, kayıtlı kişilerin "firstname, lastname, email... Gibi bilgilerini gorebilmeli.
 
   Background: Kullanilacak ortak adimlar
     Given Eb Kullanici Medunna adresine gider

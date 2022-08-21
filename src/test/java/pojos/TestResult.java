@@ -26,7 +26,7 @@ result	string
     private String createdBy;
     private String createDate;
     //private Object ctest;
-    private CTestItem[] cTestItem;
+    private CTestItem[] cTestItem; //array degil neden array aldik?
     private String date;
     private String description;
     private Integer id;

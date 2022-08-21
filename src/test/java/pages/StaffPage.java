@@ -92,6 +92,10 @@ public class StaffPage {
     @FindBy(xpath = "//div[text()='This field is required.']")
     public WebElement hataYaziElementi;
 
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
+    public WebElement silmeIslemiBasariliYazisi;
+
+
 
 
 

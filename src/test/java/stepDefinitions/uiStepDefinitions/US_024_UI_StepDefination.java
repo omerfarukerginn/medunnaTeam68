@@ -25,12 +25,12 @@ public class US_024_UI_StepDefination {
 
     @And("hasta my pages buttonunu tiklar")
     public void hastaMyPagesButtonunuTiklar() {
-        dr24.myPagesButton.click();
+        ptnt24.myPagesPatienAFButton.click();
     }
 
     @Given("hasta my appointment buttonunu tiklar")
     public void hasta_my_appointment_buttonunu_tiklar() {
-        Driver.waitAndClick(dr24.myAppointmentsButton);
+        ptnt24.myAppointments.click();
 
     }
 

@@ -14,8 +14,8 @@ public class LoginPageStepDefinition {
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
     }
 
-    @Then("Kullanici admin olarak giriş yapar")
-    public void kullaniciAdminOlarakGirişYapar() {
+    @Then("Kullanici admin olarak giris yapar")
+    public void kullaniciAdminOlarakGirisYapar() {
         loginPage.loginPageMenuButton.click();
         loginPage.loginPageSingInMenuButton.click();
         loginPage.loginPageSingInUserNameKutusu.sendKeys("team68");
@@ -23,8 +23,8 @@ public class LoginPageStepDefinition {
         loginPage.loginPageSingInSingInButton.click();
     }
 
-    @Then("Kullanici staff mahmut olarak giriş yapar")
-    public void kullaniciStaffMahmutOlarakGirişYapar() {
+    @Then("Kullanici staff mahmut olarak giris yapar")
+    public void kullaniciStaffMahmutOlarakGirisYapar() {
         loginPage.loginPageMenuButton.click();
         loginPage.loginPageSingInMenuButton.click();
         loginPage.loginPageSingInUserNameKutusu.sendKeys("staffMahmut");
@@ -32,8 +32,8 @@ public class LoginPageStepDefinition {
         loginPage.loginPageSingInSingInButton.click();
     }
 
-    @Then("Kullanici doktor mahmut olarak giriş yapar")
-    public void kullaniciDoktorMahmutOlarakGirişYapar() {
+    @Then("Kullanici doktor mahmut olarak giris yapar")
+    public void kullaniciDoktorMahmutOlarakGirisYapar() {
         loginPage.loginPageMenuButton.click();
         loginPage.loginPageSingInMenuButton.click();
         loginPage.loginPageSingInUserNameKutusu.sendKeys("doktorMahmut");

@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4d497e5-f7cb-4bb6-a62d-5b49e15834f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_008_UI.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_021_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_021_UI.feature" afterDir="false" />
-    </list>
+    <list default="true" id="e545217b-f716-4aa0-978a-9ab357244def" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Kullanici giris yapar" />
         <item itemvalue="Cucumber Java.Scenario: akielakik" />
         <item itemvalue="Cucumber Java.Feature: US_021_UI" />
-        <item itemvalue="Cucumber Java.Scenario: Kullanici giris yapar" />
         <item itemvalue="Cucumber Java.Feature: LoginScenario" />
-        <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
   </component>

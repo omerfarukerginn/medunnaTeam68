@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="57123b8b-f00c-495c-9171-53004cecba8d" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_024_UI_StepDefination.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_024_UI.feature" afterDir="false" />
@@ -15,12 +16,18 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PatientPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PatientPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/uiStepDefinitions/US_010_UI_StepDefinition.class" afterDir="false" />
+
+    <list default="true" id="7a98e132-8f09-416a-8a09-220c68cdc8a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team68Medunna.iml" beforeDir="false" afterPath="$PROJECT_DIR$/team68Medunna.iml" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -35,12 +42,19 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DeiHWegltBnEt9gFoBo7yRZHrR" />
+
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2DfY7mk5oRzluTIugP35STNU74d" />
+
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -109,6 +123,10 @@
       <option name="presentableId" value="Default" />
       <updated>1661065866985</updated>
     </task>
+
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+
     <servers />
   </component>
 </project>

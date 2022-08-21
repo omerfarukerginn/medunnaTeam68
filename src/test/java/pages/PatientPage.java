@@ -101,4 +101,52 @@ public class PatientPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']")
+    public WebElement showTestButton;
+
+    @FindBy(xpath = "(//*[text()='View Results'])[1]")
+    public WebElement viewResultsButton;
+
+    @FindBy(xpath = "(//*[@class='hand'])[1]")
+    public WebElement idSekmesi;
+
+    @FindBy(xpath = "(//*[@class='hand'])[2]")
+    public WebElement nameSekmesi;
+
+    @FindBy(xpath = "(//*[@class='hand'])[4]")
+    public WebElement defaultMinValueSekmesi;
+
+    @FindBy(xpath = "(//*[@class='hand'])[5]")
+    public WebElement defaultMaxValueSekmesi;
+
+    @FindBy(xpath = "(//*[@class='hand'])[7]")
+    public WebElement dateSekmesi;
+
+    @FindBy(xpath = "(//*[@class='hand'])[6]")
+    public WebElement descriptionSekmesi;
+
+    @FindBy(xpath = "//a[@class='btn btn-warning btn-sm']")
+    public WebElement showInivoiceButton;
+
+    @FindBy(xpath = "//*[text()='INVOICE']")
+    public WebElement faturaBilgileri;
+
+
+
 }

@@ -34,10 +34,10 @@ public class DoctorPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement girisSonrasiSingIn;
 
-    @FindBy(xpath = "//*[text()='MY PAGES']")
+    @FindBy(xpath = "(//a[@class='d-flex align-items-center dropdown-toggle nav-link'])[1]")
     public WebElement myPagesButton;
 
-    @FindBy(xpath = "(//*[text()='My Appointments'])[1]")
+    @FindBy(xpath = "//*[@id=\"entity-menu\"]/div/a[1]/span")
     public WebElement myAppointmentsButton;
 
     @FindBy(xpath = "//*[text()='Appointments']")

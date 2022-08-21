@@ -68,6 +68,7 @@ public class US_028_UI_StepDefinition {
     @Then("Kullanici Save butonunu tiklar")
     public void kullanici_save_butonunu_tiklar() {
         adminPage.saveButonu.click();
+        // github beni bitirdi
 
     }
     @Given("Kullanici State City butonunu secer")

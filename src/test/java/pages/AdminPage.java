@@ -646,6 +646,109 @@ public class AdminPage {
 
     @FindBy(xpath = "//*[text()='Save']")
     public WebElement saveButonu;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// US19 location
+
+    @FindBy(xpath = "//a[@aria-haspopup='true']")
+    public WebElement AccountButton;
+
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
+    public WebElement singInButton;
+
+    @FindBy(xpath = "//input[@name='username']")
+    public WebElement userrName;
+
+    @FindBy(xpath = "//input[@name='password']")
+    public WebElement passwordd;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement girisSonrasiSingInn;
+
+    @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
+    public WebElement welcomeToMedunnaYazisisi;
+
+    @FindBy(xpath = "//*[text()='Items&Titles']")
+    public WebElement itemsTitlesButon;
+
+    @FindBy(xpath = "//a[@class='dropdown-item active']")
+    public WebElement staffButon;
+
+    @FindBy(xpath = "//*[text()='Create a new Staff']")
+    public WebElement CreateANewButonu;
+
+    @FindBy(xpath = "//*[@name='useSSNSearch']")
+    public WebElement userSearchBox;
+
+
+
+
+
+
+
+
+
 }
 
 

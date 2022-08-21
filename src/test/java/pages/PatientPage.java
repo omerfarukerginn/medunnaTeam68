@@ -117,7 +117,11 @@ public class PatientPage {
 
 
 
-    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']")
+
+    @FindBy(xpath = "(//a[@class='d-flex align-items-center dropdown-toggle nav-link'])[1]")
+    public WebElement myPagesPatienAFButton;
+
+    @FindBy(xpath = "//*[text()='Show Tests']")
     public WebElement showTestButton;
 
     @FindBy(xpath = "(//*[text()='View Results'])[1]")

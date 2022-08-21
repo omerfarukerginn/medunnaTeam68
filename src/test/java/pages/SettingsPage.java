@@ -16,7 +16,7 @@ public class SettingsPage {
     @FindBy(xpath = "//*[@id='account-menu']")
     public WebElement loginButtonu;
 
-    @FindBy(xpath = "//*[text()='Sign in']")
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[1]")
     public WebElement singinButtonu;
 
     @FindBy(xpath = "(//input[@name='username'])[1]")

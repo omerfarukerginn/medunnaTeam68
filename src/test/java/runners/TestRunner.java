@@ -11,12 +11,9 @@ import io.cucumber.junit.Cucumber;
                 "junit:target/xml-report/cucumber.xml"
         },
 
-     //   features = "src/test/resources/features",
-     //   glue = "stepDefinitions",
-
         features = "src/test/resources/features/uiFeatures",
         glue = "stepDefinitions/uiStepDefinitions",
-        tags = "@US_014",
+        tags = "@US_024",
         dryRun = false
 )
 

@@ -23,8 +23,8 @@ public class US_002_UI_StepDefinitions {
 
     }
 
-    @Then("Kullanici Your username is required mesajini görmemeli")
-    public void kullaniciYourUsernameIsRequiredMesajiniGörmemeli() {
+    @Then("Kullanici Your username is required mesajini gormemeli")
+    public void kullaniciYourUsernameIsRequiredMesajiniGormemeli() {
         boolean flag=false;
 
         try {
@@ -85,8 +85,8 @@ public class US_002_UI_StepDefinitions {
     }
 
 
-    @Then("Kullanici Kullanici {string} mesaji görmemeli")
-    public void kullaniciKullaniciMesajiGörmemeli(String messages) {
+    @Then("Kullanici Kullanici {string} mesaji gormemeli")
+    public void kullaniciKullaniciMesajiGormemeli(String messages) {
         boolean flag=false;
         try {
             registerPage.emailRegisterPage.isDisplayed();
@@ -104,8 +104,8 @@ public class US_002_UI_StepDefinitions {
 
     }
 
-    @Then("Kullanici Kullanici {string} mesaji görmeli")
-    public void kullaniciKullaniciMesajiGörmeli(String email) {
+    @Then("Kullanici Kullanici {string} mesaji gormeli")
+    public void kullaniciKullaniciMesajiGormeli(String email) {
         softAssert.assertTrue( registerPage.invalidEmailMessageRegisterPage.isDisplayed() );
         softAssert.assertAll();
 
@@ -116,8 +116,8 @@ public class US_002_UI_StepDefinitions {
         registerPage.emailRegisterPage.sendKeys( mail );
     }
 
-    @Then("Kullanici Kullanici The field is invalid mesaji görmemeli")
-    public void kullaniciKullaniciTheFieldIsInvalidMesajiGörmemeli() {
+    @Then("Kullanici Kullanici The field is invalid mesaji gormemeli")
+    public void kullaniciKullaniciTheFieldIsInvalidMesajiGormemeli() {
         registerPage.newPassWordRegisterPage.click();
         String actual=registerPage.invalidEmailMessageRegisterPage.getText();
         boolean expected=registerPage.invalidEmailMessageRegisterPage.isDisplayed();

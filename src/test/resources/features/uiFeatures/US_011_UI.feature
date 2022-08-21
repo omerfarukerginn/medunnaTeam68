@@ -21,11 +21,11 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor hastanin Prescription bilgilerini doldurur
     And Doktor hastanin Description bilgilerini doldurur
     And Doktor save butonuna tiklar
-    And Doktor "The Appointment is updated with identifier"mesajini gorur.
+    And Doktor The Appointment is updated with identifier mesajini gorur.
     Then Sayfayi kapatir.
 
-
-  Scenario:Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir.
+@US_011_TC_002
+  Scenario: Bir randevu güncellendiğinde; kullanıcı (doktor), hastanın aşağıdaki bilgilerini görmelidir.
   "id, start and end date, Status, physician and patient"
     And Doktor hastanin id bilgisini gorunur oldugunu test eder
     And Doktor hastanin start and end date bilgisinin gorunur oldugunu test eder gorur
@@ -37,7 +37,7 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
   @US_011_TC_003
   Scenario:Doktor  "Anamnesis, Treatment ve Diagnosis" alanlarini doldurmak zorundadir.
     And  Doktor Edit i tiklar
-    And Doktor -Anamnesis,Treatment ve Diagnosis- alanlarini bosaltir
+    And Doktor Anamnesis,Treatment ve Diagnosis alanlarini bosaltir
     And Doktor save butonuna tiklar
     And Doktor Anemnasis alani icin "This field is required" uyarisi verdigini dogrular
     And Doktor Treatment alani icin "This field is required" uyarisi verdigini dogrular
@@ -49,8 +49,9 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor Edit i tiklar
     And Doktor hastanin Prescription bilgilerini doldurur
     And Doktor hastanin Description bilgilerini doldurur
-    And Doktor -Prescription ve Description- alanlarini bosaltir
+    And Doktor Prescription ve Description alanlarini bosaltir
     And Doktor save butonuna tiklar
+    And Doktor The Appointment is updated with identifier mesajini gorur.
     Then Sayfayi kapatir.
 
   @TC005
@@ -60,7 +61,7 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor Statusu Completed olarak secer
     And Doktor Statusu Cancelled olarak secer
     And Doktor save butonuna tiklar
-    And Doktor "The Appointment is updated with identifier"mesajini gorur.
+    And Doktor The Appointment is updated with identifier mesajinini gorur.
     Then Sayfayi kapatir.
 
 

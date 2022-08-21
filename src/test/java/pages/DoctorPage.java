@@ -22,22 +22,22 @@ public class DoctorPage {
     public WebElement humanButton;
 
 
-    @FindBy(xpath = "//span[normalize-space()='Sign in']")
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
     public WebElement singInButtonu;
 
-    @FindBy(xpath = "(//input[@name='username'])[1]")
+    @FindBy(xpath = "//input[@name='username']")
     public WebElement userName;
 
-    @FindBy(xpath = "(//input[@name='password'])[1]")
+    @FindBy(xpath = "//input[@name='password']")
     public WebElement password;
 
-    @FindBy(xpath = "(//*[text()='Sign in'])[3]")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement girisSonrasiSingIn;
 
-    @FindBy(xpath = "//*[text()='MY PAGES']")
+    @FindBy(xpath = "(//a[@class='d-flex align-items-center dropdown-toggle nav-link'])[1]")
     public WebElement myPagesButton;
 
-    @FindBy(xpath = "(//*[text()='My Appointments'])[1]")
+    @FindBy(xpath = "//*[@id=\"entity-menu\"]/div/a[1]/span")
     public WebElement myAppointmentsButton;
 
     @FindBy(xpath = "//*[text()='Appointments']")
@@ -161,7 +161,8 @@ public class DoctorPage {
 
 
 
-
+    @FindBy(xpath = "(//*[text()='My Appointments'])[1]")
+    public WebElement myAppointmentsButonu;
 
     @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
     public WebElement welcomeToMedunnaYazisi;

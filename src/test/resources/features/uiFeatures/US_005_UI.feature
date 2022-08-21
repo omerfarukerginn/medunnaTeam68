@@ -1,17 +1,17 @@
 @US_005 @SmokeTest
-Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluşturabilmelidir.
+Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) olusturabilmelidir.
 
   @US_005_TC_001
-  Scenario: TC_001 Kullanıcının herhangi bir karakter içeren "First Name" yazması gerekir
-            ve boş bırakılamaz.
+  Scenario: TC_001 Kullanicinin herhangi bir karakter iceren "First Name" yazmasi gerekir
+            ve bos birakilamaz.
     Given medunna.com sayfasina gidilir
     And   'Make an appointment' butonuna tiklanir
     Then  'First Name' kutusuna tiklanir
-    And   Herhangi bir karakter içeren first name gonderilir
+    And   Herhangi bir karakter iceren first name gonderilir
     And   2 saniye beklenir
     And   (su)Sayfa kapatilir
   @US_005_TC_002
-  Scenario:TC_002 Kullanıcı SSN numarası girmeli (kayıtlı SSN) boş bırakılamaz.
+  Scenario:TC_002 Kullanici SSN numarasi girmeli (kayıtlı SSN) bos birakilamaz.
     Given medunna.com sayfasina gidilir
     And 'Make an appointment' butonuna tiklanir
     Then 'SSN' kutusuna tiklanir
@@ -19,7 +19,7 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
     And 2 saniye beklenir
     And (su)Sayfa kapatilir
   @US_005_TC_003
-  Scenario:TC_003 Kullanıcı, herhangi bir karakter içeren "Last Name" yazması gerekir, boş bırakılamaz.
+  Scenario:TC_003 Kullanici, herhangi bir karakter iceren "Last Name" yazmasi gerekir, bos birakilamaz.
     Given medunna.com sayfasina gidilir
     And 'Make an appointment' butonuna tiklanir
     Then 'Last Name' kutusuna tiklanir
@@ -27,7 +27,7 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
     And 2 saniye beklenir
     And (su)Sayfa kapatilir
   @US_005_TC_004
-  Scenario:TC_004 Kullanıcı "." ve "@" içeren e-mail adresi girmeli, boş bırakılamaz.
+  Scenario:TC_004 Kullanici "." ve "@" iceren e-mail adresi girmeli, bos birakilamaz.
     Given medunna.com sayfasina gidilir
     And 'Make an appointment' butonuna tiklanir
     Then 'Email' kutusuna tiklanir
@@ -35,8 +35,8 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
     And 2 saniye beklenir
     And (su)Sayfa kapatilir
   @US_005_TC_005
-  Scenario:TC_005 Kullanıcı, 3. ve 6. rakamdan sonra "-" olan 10 rakamlı telefon numarasını girmeli,
-           boş bırakılamaz.
+  Scenario:TC_005 Kullanici, 3. ve 6. rakamdan sonra "-" olan 10 rakamli telefon numarasini girmeli,
+           bos birakilamaz.
     Given medunna.com sayfasina gidilir
     And 'Make an appointment' butonuna tiklanir
     Then 'Phone' kutusuna tiklanir
@@ -44,10 +44,10 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
     And 2 saniye beklenir
     And (su)Sayfa kapatilir
   @US_005_TC_006
-  Scenario:TC_006 Kullanıcı randevu alıp kaydolabilir.
+  Scenario:TC_006 Kullanici randevu alip kaydolabilir.
     Given medunna.com sayfasina gidilir
     And 'Make an appointment' butonuna tiklanir
-    Then Herhangi bir karakter içeren first name gonderilir
+    Then Herhangi bir karakter iceren first name gonderilir
     And  Last Name kutusuna soyisim gonderilir
     And  SSN kutusuna kayitli SSN numarasi gonderilir
     And  Email kutusuna gecerli e-mail adresi gonderilir
@@ -57,12 +57,12 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
     And 'Send an Appointment Request' butonuna tiklanir
     And (su)Sayfa kapatilir
   @US_005_TC_007
-  Scenario:TC_007 Kullanıcı randevu alıp kaydolduğunda, uygulamada oturum açabilir.
+  Scenario:TC_007 Kullanici randevu alip kaydoldugunda, uygulamada oturum acabilir.
     Given medunna.com sayfasina gidilir
     And  Giris butonuna tiklanir
     Then Birinci register butonuna tiklanir
     And  SSN kutusuna kayitli SSN numarasi gonderilir
-    And  Herhangi bir karakter içeren first name gonderilir
+    And  Herhangi bir karakter iceren first name gonderilir
     And  Last Name kutusuna soyisim gonderilir
     And  Username kutusuna gecerli username gonderilir
     And  Email kutusuna gecerli e-mail adresi gonderilir
@@ -71,7 +71,7 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
     And Ikinci register butonuna tiklanir
     And (su)Sayfa kapatilir
   @US_005_TC_008
-  Scenario:TC_008 Kullanıcı randevu alıp kaydolduğunda,uygulamada oturum açabilir ve profilini gorebilir.
+  Scenario:TC_008 Kullanici randevu alip kaydoldugunda,uygulamada oturum acabilir ve profilini gorebilir.
     Given medunna.com sayfasina gidilir
     And  Giris butonuna tiklanir
     Then Birinci sign in butonuna tiklanir
@@ -83,7 +83,7 @@ Feature:US_005 Hastalar (patients), hastahaneden randevu (Appointment) oluştura
     And  Alinan randevunun gorunurlugu test edilir
     And  (su)Sayfa kapatilir
   @US_005_TC_009
-  Scenario:TC_009 Kullanıcı negatif durumlari test eder.
+  Scenario:TC_009 Kullanici negatif durumlari test eder.
     Given medunna.com sayfasina gidilir
     And  'Make an appointment' butonuna tiklanir
     Then First name kutusuna tiklanir, bos birakilirsa Your Firstname is required. yazisinin ciktigi dogrulanir

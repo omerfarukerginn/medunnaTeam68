@@ -29,8 +29,8 @@ public class US_005_UI_StepDefinition {
     public void first_name_kutusuna_tiklanir() {
         us005.firstNameKutusu.click();
     }
-    @Then("Herhangi bir karakter içeren first name gonderilir")
-    public void herhangi_bir_karakter_içeren_first_name_gonderilir() {
+    @Then("Herhangi bir karakter iceren first name gonderilir")
+    public void herhangi_bir_karakter_iceren_first_name_gonderilir() {
         us005.firstNameKutusu.sendKeys("hastaMahmut");
     }
     @Then("2 saniye beklenir")
@@ -63,7 +63,7 @@ public class US_005_UI_StepDefinition {
         us005.emailKutusu.click();
     }
     @Then("Email kutusuna gecerli e-mail adresi gonderilir")
-    public void email_kutusuna_ve_içeren_e_mail_adresi_gonderilir() {
+    public void email_kutusuna_ve_iceren_e_mail_adresi_gonderilir() {
         us005.emailKutusu.sendKeys("hastaMahmut@gmail.com");
 
     }
@@ -72,10 +72,12 @@ public class US_005_UI_StepDefinition {
     public void phone_kutusuna_tiklanir() {
         us005.phoneKutusu.click();
     }
-    @Then("Phone kutusuna gecerli telefon numarası gonderilir")
-    public void phone_kutusuna_ve_rakamdan_sonra_olan_rakamlı_telefon_numarası_gonderilir() {
+    @And("Phone kutusuna gecerli telefon numarası gonderilir")
+    public void phoneKutusunaGecerliTelefonNumarasıGonderilir() {
         us005.phoneKutusu.sendKeys("123-456-7891");
     }
+
+
 
     @Then("Appointment DateTime kutusuna randevu tarihi gonderilir")
     public void appointment_date_time_kutusuna_randevu_tarihi_gonderilir() {
@@ -202,4 +204,6 @@ public class US_005_UI_StepDefinition {
 
 
     }
+
+
 }

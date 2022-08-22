@@ -61,7 +61,7 @@ public class PatientPage {
     public WebElement bosEmailMesaji;
     @FindBy (xpath = "(//div[@class='invalid-feedback'])[5]")
     public WebElement bosPhoneMesaji;
-    @FindBy (xpath = "(//td[text()='167139'])")
+    @FindBy (xpath = "(//td[text()='211073'])")
     public WebElement id;
 
 

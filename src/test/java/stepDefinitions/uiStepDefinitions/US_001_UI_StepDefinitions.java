@@ -20,8 +20,8 @@ public class US_001_UI_StepDefinitions {
     SoftAssert softAssert = new SoftAssert();
     DoctorPage dr = new DoctorPage();
 
-    @Given("Kullanıci medunna anasayfasina gider")
-    public void kullanıci_medunna_anasayfasina_gider() {
+    @Given("Kullanici medunna anasayfasina gider")
+    public void kullanici_medunna_anasayfasina_gider() {
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
     }
 
@@ -44,8 +44,8 @@ public class US_001_UI_StepDefinitions {
         registerPage.ssnRegisterPage.sendKeys(string);
     }
 
-    @Then("Kullanici uyari mesaji görmemeli {string}")
-    public void kullanici_uyari_mesaji_görmemeli(String string) {
+    @Then("Kullanici uyari mesaji gormemeli {string}")
+    public void kullanici_uyari_mesaji_gormemeli(String string) {
         boolean flag = true;
 
         try {
@@ -69,8 +69,8 @@ public class US_001_UI_StepDefinitions {
         registerPage.firstNameRegisterPage.click();
     }
 
-    @Then("Kullanici Your SSN is invalid mesajini görmeli")
-    public void kullaniciYourSSNIsInvalidMesajiniGörmeli() {
+    @Then("Kullanici Your SSN is invalid mesajini gormeli")
+    public void kullaniciYourSSNIsInvalidMesajiniGormeli() {
         String actualMessages = registerPage.invalidSsnMessageRegisterPage.getText();
         softAssert.assertEquals(actualMessages, "Your SSN is invalid");
         softAssert.assertAll();
@@ -104,8 +104,8 @@ public class US_001_UI_StepDefinitions {
         registerPage.firstNameRegisterPage.sendKeys(firstname);
     }
 
-    @Then("Kullanici uyari mesaji görmemeli")
-    public void kullaniciUyariMesajiGörmemeli() {
+    @Then("Kullanici uyari mesaji gormemeli")
+    public void kullaniciUyariMesajiGormemeli() {
         boolean flag = true;
         try {
             registerPage.invalidFirstNameMessageRegisterPage.isDisplayed();
@@ -118,8 +118,8 @@ public class US_001_UI_StepDefinitions {
     }
 
 
-    @Given("kullanci herhangi bir karakter iceren ve ilkharf yazildiktan ve son harf yazilmadan önce herhangi bir yerde bosluk birakarak first name girmelidir{string}")
-    public void kullanciHerhangiBirKarakterIcerenVeIlkharfYazildiktanVeSonHarfYazilmadanÖnceHerhangiBirYerdeBoslukBirakarakFirstNameGirmelidir(String firstname) {
+    @Given("kullanci herhangi bir karakter iceren ve ilkharf yazildiktan ve son harf yazilmadan once herhangi bir yerde bosluk birakarak first name girmelidir{string}")
+    public void kullanciHerhangiBirKarakterIcerenVeIlkharfYazildiktanVeSonHarfYazilmadanOnceHerhangiBirYerdeBoslukBirakarakFirstNameGirmelidir(String firstname) {
         registerPage.firstNameRegisterPage.sendKeys(firstname);
     }
 
@@ -130,8 +130,8 @@ public class US_001_UI_StepDefinitions {
     }
 
 
-    @Then("Kullanici your firstname is required uyari mesajini görmeli")
-    public void kullaniciYourFirstnameIsRequiredUyariMesajiniGörmeli() {
+    @Then("Kullanici your firstname is required uyari mesajini gormeli")
+    public void kullaniciYourFirstnameIsRequiredUyariMesajiniGormeli() {
         registerPage.lastNameRegisterPage.click();
         softAssert.assertTrue(registerPage.invalidFirstNameMessageRegisterPage.isDisplayed());
         softAssert.assertAll();
@@ -164,8 +164,8 @@ public class US_001_UI_StepDefinitions {
 
     }
 
-    @Then("Kullanici your last name is required mesaji görmemeli")
-    public void kullaniciYourLastNameIsRequiredMesajiGörmemeli() {
+    @Then("Kullanici your last name is required mesaji gormemeli")
+    public void kullaniciYourLastNameIsRequiredMesajiGormemeli() {
         boolean flag = true;
 
         try {
@@ -189,8 +189,8 @@ public class US_001_UI_StepDefinitions {
         registerPage.lastNameRegisterPage.sendKeys(last_name);
     }
 
-    @Then("kullanci your last name is required mesajini görmeli")
-    public void kullanciYourLastNameIsRequiredMesajiniGörmeli() {
+    @Then("kullanci your last name is required mesajini gormeli")
+    public void kullanciYourLastNameIsRequiredMesajiniGormeli() {
         registerPage.userNameRegisterPage.click();
         softAssert.assertTrue(registerPage.invalidLastNameMessageRegisterPage.isDisplayed());
         softAssert.assertAll();

@@ -93,13 +93,14 @@ public class US_012_UI_StepDefinition {
 
     }
 
+    @And("DoktorMy Appointments butonuna tiklar")
+    public void doktormyAppointmentsButonunaTiklar() {
+        drPage.myAppointmentsButonu.click();
+
+    }
 
 
-
-
-
-
-        //if(tabloTestListesi.contains(ReusableMethods.getElementsText(Driver.getDriver().findElements(By.xpath("//tr//td[2][" +istenenTestIsimleri+ "]"))));
+    //if(tabloTestListesi.contains(ReusableMethods.getElementsText(Driver.getDriver().findElements(By.xpath("//tr//td[2][" +istenenTestIsimleri+ "]"))));
 
         //if (ReusableMethods.hooverByJS(tabloTestListesi.contains(Driver.getDriver().findElements(By.xpath("//tr//td[2][" +istenenTestIsimleri+ "]"))));
        // System.out.println("istenen baslik bulundu");

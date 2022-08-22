@@ -20,12 +20,12 @@ public class US_005_UI_StepDefinition {
     public void medunna_com_sayfasina_gidilir() {
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
     }
-    @Given("'Make an appointment' butonuna tiklanir")
+    @Given("Make an appointment butonuna tiklanir")
     public void make_an_appointmentbutonuna_tiklanir() {
         us005.makeAnAppointmentButton.click();
         ReusableMethods.waitFor(2);
     }
-    @Then("'First Name' kutusuna tiklanir")
+    @Then("First Name kutusuna tiklanir")
     public void first_name_kutusuna_tiklanir() {
         us005.firstNameKutusu.click();
     }
@@ -38,17 +38,18 @@ public class US_005_UI_StepDefinition {
         ReusableMethods.waitFor(2);
     }
 
-    @Then("'SSN' kutusuna tiklanir")
+    @Then("SSN kutusuna tiklanir")
     public void SSN_kutusuna_tiklanir() {
         us005.ssnKutusu.click();
 
     }
     @Then("SSN kutusuna kayitli SSN numarasi gonderilir")
     public void ssn_kutusuna_kayitli_ssn_numarasi_gonderilir() {
+
         us005.ssnKutusu.sendKeys("134-56-8697");
     }
 
-    @Then("'Last Name' kutusuna tiklanir")
+    @Then("Last Name kutusuna tiklanir")
     public void last_name_kutusuna_tiklanir() {
         us005.lastNameKutusu.click();
     }
@@ -58,7 +59,7 @@ public class US_005_UI_StepDefinition {
 
     }
 
-    @Then("'Email' kutusuna tiklanir")
+    @Then("Email kutusuna tiklanir")
     public void email_kutusuna_tiklanir() {
         us005.emailKutusu.click();
     }
@@ -68,12 +69,13 @@ public class US_005_UI_StepDefinition {
 
     }
 
-    @Then("'Phone' kutusuna tiklanir")
+    @Then("Phone kutusuna tiklanir")
     public void phone_kutusuna_tiklanir() {
         us005.phoneKutusu.click();
     }
-    @And("Phone kutusuna gecerli telefon numarası gonderilir")
-    public void phoneKutusunaGecerliTelefonNumarasıGonderilir() {
+    @And("Phone kutusuna gecerli telefon numarasi gonderilir")
+    public void phoneKutusunaGecerliTelefonNumarasiGonderilir() {
+
         us005.phoneKutusu.sendKeys("123-456-7891");
     }
 
@@ -82,12 +84,13 @@ public class US_005_UI_StepDefinition {
     @Then("Appointment DateTime kutusuna randevu tarihi gonderilir")
     public void appointment_date_time_kutusuna_randevu_tarihi_gonderilir() {
         us005.appoDateTimeKutusu.click();
-        us005.appoDateTimeKutusu.sendKeys("18.08.2022");
+        us005.appoDateTimeKutusu.sendKeys("31.08.2022");
 
     }
 
-    @Then("'Send an Appointment Request' butonuna tiklanir")
+    @Then("Send an Appointment Request butonuna tiklanir")
     public void send_an_appointment_request_butonuna_tiklanir() {
+
         us005.sendAnAppoRequestButton.click();
     }
 
@@ -108,7 +111,7 @@ public class US_005_UI_StepDefinition {
     @Then("Username kutusuna gecerli username gonderilir")
     public void username_kutusuna_gecerli_username_gonderilir() {
         us005.userNameKutusu.click();
-        us005.userNameKutusu.sendKeys("hastaMahmut");
+        us005.userNameKutusu.sendKeys("hastaolduk");
 
     }
     @Then("Yeni sifre girilir")
@@ -139,7 +142,7 @@ public class US_005_UI_StepDefinition {
     @Then("Gecerli sifre girilir")
     public void gecerli_sifre_girilir() {
         us005.signinPasswordKutusu.click();
-        us005.signinPasswordKutusu.sendKeys("hastaMahmut8");
+        us005.signinPasswordKutusu.sendKeys("227785.o");
 
     }
     @Then("Ikinci sign in butonuna tiklanir")
@@ -147,7 +150,7 @@ public class US_005_UI_StepDefinition {
         us005.ikinciSigninButton.click();
 
     }
-    @Then("MY PAGES\\(PATIENT) butonuna tiklanir")
+    @Then("MY PAGES PATIENT butonuna tiklanir")
     public void my_pages_patient_butonuna_tiklanir() {
         us005.myPagesPatientButton.click();
 
@@ -163,7 +166,7 @@ public class US_005_UI_StepDefinition {
     }
 
 
-    @And("\\(su)Sayfa kapatilir")
+    @And("su Sayfa kapatilir")
     public void suSayfaKapatilir() {
         Driver.closeDriver();
     }

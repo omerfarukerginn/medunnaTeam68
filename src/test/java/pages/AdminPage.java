@@ -150,6 +150,9 @@ public class AdminPage {
 
 
 
+//Dilek
+    @FindBy(xpath = "(//*[text()='Room'])[1]")
+    public WebElement roomButton;
 
 
 
@@ -652,6 +655,24 @@ public class AdminPage {
 
 
 
+    // US_28 location
+
+    @FindBy(xpath = "//a[@aria-haspopup='true']")
+    public WebElement humanButton;
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
+    public WebElement singInButtonu;
+   @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
+    public WebElement itemsTitlesButonu;
+    @FindBy(xpath = "//a[@href='/country']")
+    public WebElement countryButonu;
+    @FindBy(xpath = "//*[text()='Create a new Country']")
+    public WebElement createCountryButonu;
+
+    @FindBy(xpath = "//input[@id='country-name']")
+    public WebElement createCountryNameButonu;
+
+    @FindBy(xpath = "//*[@name='createdDate']")
+    public WebElement tarihSaatButonu;
 
 
 

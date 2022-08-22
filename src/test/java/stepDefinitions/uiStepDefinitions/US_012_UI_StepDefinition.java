@@ -93,10 +93,9 @@ public class US_012_UI_StepDefinition {
 
     }
 
-    @And("DoktorMy Appointments butonuna tıklar")
-    public void doktormyAppointmentsButonunaTıklar() {
+    @And("DoktorMy Appointments butonuna tiklar")
+    public void doktormyAppointmentsButonunaTiklar() {
         drPage.myAppointmentsButonu.click();
-
     }
 
 

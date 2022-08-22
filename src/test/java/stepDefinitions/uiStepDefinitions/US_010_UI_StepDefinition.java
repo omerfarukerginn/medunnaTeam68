@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.DoctorPage;
 import utilities.ConfigReader;
+import utilities.ReusableMethods;
 
 public class US_010_UI_StepDefinition {
 
@@ -36,6 +37,7 @@ public class US_010_UI_StepDefinition {
     }
     @Then("kullanici {int} sn bekler")
     public void kullaniciSnBekler(int istenenSaniye) {
+        ReusableMethods.waitFor(2);
 
     }
 

@@ -27,7 +27,6 @@ public class US_013_UI_StepDefinition {
         istenenTestIsimleri.add("Hemoglobin");
 
         List<String> sutundakiTumTestlerListesi = new ArrayList<>();
-
         for (WebElement each:drPage.testIsimListesi
         ) {
             sutundakiTumTestlerListesi.add(each.getText());

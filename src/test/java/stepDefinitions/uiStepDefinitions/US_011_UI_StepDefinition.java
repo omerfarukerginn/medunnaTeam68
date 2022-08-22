@@ -221,18 +221,30 @@ public class US_011_UI_StepDefinition {
     public void doktorDescriptionAlaniIcinThisFieldIsRequiredUyarisiVermediginiDogrular() {
         ReusableMethods.waitFor(2);
         Assert.assertFalse(us_011.zorunluAlanUyariYazisi.isDisplayed());
-
     }
+
+/*
+   @Then("Doktor \"The Appointment is updated with identifier\"mesajini gorur.")
+   public void doktor_the_appointment_is_updated_with_identifier_mesajini_gorur() {
+    Driver.getDriver().switchTo().alert().accept();
+    String expectedResult="The Appointment is updated with identifier";
+    String actualResult=us_011.appointmentBasariliYazisi.getText();
+    Assert.assertEquals(expectedResult,actualResult);
+    }*/
+
+
 
 
     @And("Doktor The Appointment is updated with identifier mesajinini gorur.")
     public void doktorTheAppointmentIsUpdatedWithIdentifierMesajininiGorur() {
-        Driver.getDriver().switchTo().alert().accept();
+       //Driver.getDriver().switchTo().alert().accept();
         String expectedResult = "The Appointment is updated with identifier";
         String actualResult = us_011.appointmentBasariliYazisi.getText();
-        Assert.assertEquals(expectedResult, actualResult);
+        Assert.assertNotEquals(expectedResult, actualResult);
+
 
     }
+
 
 
     @And("Doktor Anamnesis,Treatment ve Diagnosis alanlarini bosaltir")
@@ -245,8 +257,19 @@ public class US_011_UI_StepDefinition {
 
 
 
+  /* @Then("Sayfayi kapatir.")
+   public void sayfayi_kapatir() {
+
+            Driver.closeDriver();
+
+        }*/
+
+    @And("Doktor -Prescription ve Description- alanlarini bosaltir")
+
+
 
     @And("Doktor Prescription ve Description alanlarini bosaltir")
+
     public void doktorPrescriptionVeDescriptionAlanlariniBosaltir() {
         us_011.prescriptionKutusu.clear();
         us_011.descriptionKutusu.clear();

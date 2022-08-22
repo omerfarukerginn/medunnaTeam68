@@ -9,7 +9,7 @@ Feature: US_012 Doctor test isteyebilmeli
     And Doktor gecerli username ve password girer
     And Doktor basarili giris yapar ve Welcome to Medunna yazisini gorur
     Then Doktor MY PAGES butonuna tiklar
-    And DoktorMy Appointments butonuna tıklar
+    And DoktorMy Appointments butonuna tiklar
     And Doktor Edit butonuna tiklar
     And Request A Test butonuna tiklar
     Given Glucose, urea, creatinine, Sodium, Potassium,Total protein, Albumin, Hemoglobin testlerini gorebilmeli

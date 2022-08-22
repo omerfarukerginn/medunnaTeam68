@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e545217b-f716-4aa0-978a-9ab357244def" name="Changes" comment="" />
+    <list default="true" id="af4086c2-22a5-46dc-8387-8fa3fa4277c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DoctorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DoctorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_012_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_012_UI_StepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_028_UI_StepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/uiStepDefinitions/US_028_UI_StepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_012_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_012_UI.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_028_UI.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_028_UI.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,15 +48,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: akielakik">
-    <configuration name="Feature: LoginScenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestRunner">
+    <configuration name="Feature: US_021_UI" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/LoginScenario.feature" />
-      <option name="GLUE" value="hooks" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_021_UI.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: LoginScenario" />
+      <option name="SUGGESTED_NAME" value="Feature: US_021_UI" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -59,13 +67,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US_021_UI" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Kullanıcı yeni bir ülke oluşturabilmeli" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_021_UI.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/uiFeatures/US_028_UI.feature" />
+      <option name="GLUE" value="stepDefinitions.uiStepDefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="team68Medunna" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US_021_UI" />
+      <option name="NAME_FILTER" value="^Kullanıcı yeni bir ülke oluşturabilmeli$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Kullanıcı yeni bir ülke oluşturabilmeli$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Kullanıcı yeni bir ülke oluşturabilmeli" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -135,10 +145,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Kullanıcı yeni bir ülke oluşturabilmeli" />
         <item itemvalue="Cucumber Java.Scenario: Kullanici giris yapar" />
         <item itemvalue="Cucumber Java.Scenario: akielakik" />
         <item itemvalue="Cucumber Java.Feature: US_021_UI" />
-        <item itemvalue="Cucumber Java.Feature: LoginScenario" />
       </list>
     </recent_temporary>
   </component>

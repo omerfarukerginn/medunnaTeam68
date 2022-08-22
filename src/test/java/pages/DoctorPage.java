@@ -21,7 +21,6 @@ public class DoctorPage {
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
 
-
     @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
     public WebElement singInButtonu;
 

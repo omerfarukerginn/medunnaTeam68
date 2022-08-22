@@ -1,68 +1,45 @@
 package stepDefinitions.uiStepDefinitions;
 
 import io.cucumber.java.en.*;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import pages.AdminPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
+
+import java.util.List;
 
 public class US_018_UI_StepDefinition {
 
 
     AdminPage us018 = new AdminPage();
 
-    @Given("mnk Admin {string} anasayfasina gider")
-    public void mnkAdminAnasayfasinaGider(String istenenUrl) {
-        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
-    }
-
-    @Then("mnk Admin login menusunu secer")
-    public void mnk_admin_login_menusunu_secer() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("mnk Admin Sing in islemini secer")
-    public void mnk_admin_sing_in_islemini_secer() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("mnk Admin username kutusuna admin ismini girer")
-    public void mnk_admin_username_kutusuna_admin_ismini_girer() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("mnk Admin password kutusuna admin sifresini girer")
-    public void mnk_admin_password_kutusuna_admin_sifresini_girer() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("mnk Admin Sing in butonuna tiklar")
-    public void mnk_admin_sing_in_butonuna_tiklar() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
 
     @And("mnk Admin items&Titles bolumunu secer Physician sekmesini tiklar")
     public void mnkAdminItemsTitlesBolumunuSecerPhysicianSekmesiniTiklar() {
-
+       // WebElement dropDownMenu = Driver.getDriver().findElement(By.xpath("//*[text()='Items&Titles']"));
+       // Select select = new Select(dropDownMenu);
+       // select.selectByVisibleText("Country");
+       // Select objSelect = new Select(us018.physicianSekmesi);
+       // objSelect.selectByVisibleText("Physician");
+       //ReusableMethods.waitForVisibility(us018.itemsTitlessButonu,2);
+       //us018.itemsTitlessButonu.click();
+       //ReusableMethods.waitForVisibility(us018.physicianSekmesi,2);
+       //us018.physicianSekmesi.click();
+        Driver.waitAndClick(us018.itemsTitlessButonu);
+        Driver.waitAndClick(us018.physicianSekmesi);
     }
-
-
-    @Then("mnk Admin tum doktorlarin ilk sayfasini gorur")
-    public void mnk_admin_tum_doktorlarin_ilk_sayfasini_gorur() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
     @Then("mnk Admin sayfayi kapatir")
     public void mnk_admin_sayfayi_kapatir() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Driver.closeDriver();
     }
-
-
-
+    @And("mnk Admin tum doktorlarin ilk sayfasini gorur")
+    public void mnkAdminTumDoktorlarinIlkSayfasiniGorur() {
+        Assert.assertTrue(us018.physicianBaslik.isDisplayed());
+        //List<WebElement>tablosu = us018.physicianTablosu;
+        //Assert.assertTrue(tablosu.);
+    }
 }

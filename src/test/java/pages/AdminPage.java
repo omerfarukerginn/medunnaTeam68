@@ -610,41 +610,26 @@ public class AdminPage {
 
 
 
+    // US_28 location
 
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
-
     @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
     public WebElement singInButtonu;
-
-    @FindBy(xpath = "//input[@name='username']")
-    public WebElement userName;
-
-    @FindBy(xpath = "//input[@name='password']")
-    public WebElement password;
-
-    @FindBy(xpath = "//button[@type='submit']")
-    public WebElement girisSonrasiSingIn;
-
-    @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
-    public WebElement welcomeToMedunnaYazisi;
-
-    @FindBy(xpath = "//*[text()='Items&Titles']")
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
     public WebElement itemsTitlesButonu;
-
     @FindBy(xpath = "//a[@href='/country']")
     public WebElement countryButonu;
-
     @FindBy(xpath = "//*[text()='Create a new Country']")
     public WebElement createCountryButonu;
 
     @FindBy(xpath = "//input[@id='country-name']")
     public WebElement createCountryNameButonu;
 
-    @FindBy(xpath = "//input[@class='form-control is-touched is-pristine av-valid form-control']")
+    @FindBy(xpath = "//*[@name='createdDate']")
     public WebElement tarihSaatButonu;
 
-    @FindBy(xpath = "//*[text()='Save']")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveButonu;
 
 

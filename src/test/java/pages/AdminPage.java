@@ -108,6 +108,9 @@ public class AdminPage {
 
 
 
+//Dilek
+    @FindBy(xpath = "(//*[text()='Room'])[1]")
+    public WebElement roomButton;
 
 
 
@@ -616,7 +619,7 @@ public class AdminPage {
     public WebElement humanButton;
     @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
     public WebElement singInButtonu;
-    @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
+   @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
     public WebElement itemsTitlesButonu;
     @FindBy(xpath = "//a[@href='/country']")
     public WebElement countryButonu;

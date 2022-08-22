@@ -308,7 +308,16 @@ public class AdminPage {
 
 
 
+// NAIL BASLAMA NOKTASI
 
+    @FindBy(xpath = "//*[@class='dropdown show nav-item']")
+    public WebElement itemsTitlessButonu;
+    @FindBy(xpath = "(//*[@href='/physician'])[1]")
+    public WebElement physicianSekmesi;
+    @FindBy(xpath = "//(//div[4]//div[1])[2]//h2]")
+    public WebElement physicianBaslik;
+    @FindBy (xpath = "//(//div[4]//div[1])[2]")
+    public List<WebElement> physicianTablosu;
 
 
 
@@ -398,16 +407,7 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
+    // NAIL BITIS NOKTASI
 
 
 

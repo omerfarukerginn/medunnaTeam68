@@ -63,8 +63,8 @@ public class US_001_API_StepDefinition {
 
 
 
-    @Then("kullanci alinan bütün kayitlari dogrulamali")
-    public void kullanciAlinanBütünKayitlariDogrulamali() {
+    @Then("kullanci alinan butun kayitlari dogrulamali")
+    public void kullanciAlinanButunKayitlariDogrulamali() {
 
        softAssert.assertEquals( saveRegistrantDataUI( registrants ),registrants);
 

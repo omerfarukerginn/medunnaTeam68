@@ -37,6 +37,27 @@ public class US_020_UI_StepDefinition {
         Assert.assertTrue(adminPage.email.isDisplayed());
         Assert.assertTrue(adminPage.createdBy.isDisplayed());
 
+    }
+
+    @Then("Kullanici Edit butonuna tiklar")
+    public void kullanici_edit_butonuna_tiklar() {
+        Random rnd = new Random();
+        int rand1 = rnd.nextInt(21);
+
+        for (int i = 0; i <  adminPage.editButonu.size(); i++) {
+            ReusableMethods.hooverByJS( adminPage.editButonu.get(rand1));
+
+        }
+    }
+
+    @Then("Kullanici  kayitli kisiyi active eder")
+    public void kullanici_kayitli_kisiyi_active_eder() {
 
     }
+
+    @Then("Kullanici kayitli kisiyi Admin olarak secer")
+    public void kullanici_kayitli_kisiyi_admin_olarak_secer() {
+
+    }
+
 }

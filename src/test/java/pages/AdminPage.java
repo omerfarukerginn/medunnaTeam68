@@ -418,9 +418,6 @@ public class AdminPage {
     @FindBy (xpath="//a[@class='btn btn-info btn-sm']")// 20 tane var, 19.siradakini alirsin
     public List<WebElement> viewButonu;
 
-    @FindBy (xpath="//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com
-    public List<WebElement> editButonu;
-
     @FindBy (xpath = "//dd[2]") //firstName icin getTest yapilir, assert edilir
     public WebElement firstName;
 
@@ -433,8 +430,11 @@ public class AdminPage {
     @FindBy (xpath = "//dd[6]") //email icin getTest yapilir, assert edilir
     public WebElement createdBy;
 
+    @FindBy (xpath="//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com
+    public List<WebElement> editButonu;
 
-
+    @FindBy (xpath="//input[@name='activated']")
+    public WebElement activeButonu;
 
 
 

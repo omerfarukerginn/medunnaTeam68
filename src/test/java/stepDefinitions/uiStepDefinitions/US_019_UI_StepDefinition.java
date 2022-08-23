@@ -44,13 +44,13 @@ public class US_019_UI_StepDefinition {
 
     @And("Kullanici Sing In sekmesini tiklar")
     public void kullaniciSingInSekmesiniTiklar() {
-        us019.girisSonrasiSingInn.click();
+       us019.girisSonrasiSingInn.click();
     }
 
 
     @And("Kullanici Items&Titles sekmesini tiklar")
     public void kullaniciItemsTitlesSekmesiniTiklar() {
-        us019.itemsTitlesButon.click();
+      //  us019.itemsTitlesButon.click();
     }
 
     @And("Kullanici Staff sekmesini tiklar")

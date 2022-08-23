@@ -117,10 +117,38 @@ public class StaffPage {
 
 
 
+    @FindBy(xpath = "//a[@class='btn btn-warning btn-sm']")
+    public WebElement showAppointmentButton;
 
+    @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/div/table/tbody/tr/td[4]/span")
+    public WebElement statusCheckButton;
 
+    @FindBy(xpath = "//*[text()='Payment / Invoice Process']")
+    public WebElement paymentInvoiceButton;
 
+    @FindBy(xpath = "//*[text()='Exam Fee:']")
+    public WebElement examFreeButton;
 
+    @FindBy(xpath = "//*[text()='Test Item Fee']")
+    public WebElement testItemFreeButton;
+
+    @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/a")
+    public WebElement createInvoiceButton;
+
+    @FindBy(xpath = "//td[@style='font-size: 15px;']")
+    public WebElement random;
+
+    @FindBy(id = "save-entity")
+    public WebElement saveAFButton;
+
+    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
+    public WebElement invoiceSuccessMessage;
+
+    @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/a")
+    public WebElement showInvoiceButton;
+
+    @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/table/thead/tr[1]/th[1]")
+    public WebElement invoiceDogrulama;
 
 
 

@@ -3,7 +3,7 @@ Feature: Fatura (Staff) olusturma ve assert etme
 
   Background: Ortak adimlar
     Given Kullanici ana sayfaya gider
-    And Kullanici staff olarak giris yapar
+    Then Kullanici staff mahmut olarak giris yapar
     And staff my pages menusunu tiklar
     And staff search patient buttonunu tiklar
     And staff arama kutusuna SSN ile hastayi arar
@@ -17,10 +17,11 @@ Feature: Fatura (Staff) olusturma ve assert etme
     And staff hasta icin create inovoice tiklayarak fatura olusturur
     And staff olusturdugu faturayi kaydeder
     Then staff basari ile kaydedildi msj i dogrular
-    And Sayfayi kapatir
+   And Sayfayi kapatir
 
   Scenario: Kullanici olusturdgu faturayi kontrol edebilmeli
     Given staff payment invoice buttonunu tiklar
+    And staff showw Invoice butonuna tiklar
     Then staf fatura sayfasini dogrular
     And Sayfayi kapatir
 

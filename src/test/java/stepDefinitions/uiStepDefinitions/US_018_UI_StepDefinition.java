@@ -92,11 +92,10 @@ public class US_018_UI_StepDefinition {
         ReusableMethods.waitFor(5);
     us018.physicianEdit.click();
     }
-    @Then("mnk Admin kayitli kisilerin ID sini gorur")
-    public void mnk_admin_kayitli_kisilerin_ıd_sini_gorur() {
+
+    @And("mnk Admin kayitli kisilerin id sini gorur")
+    public void mnkAdminKayitliKisilerinIdSiniGorur() {
         ReusableMethods.waitFor(2);
         Assert.assertTrue(us018.physicianIdKutusu.isDisplayed());
     }
-
-
 }

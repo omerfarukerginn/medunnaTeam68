@@ -5,15 +5,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import pages.DoctorPage;
 import pages.PatientPage;
 import pages.SettingsPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
-public class US_024_UI_StepDefination {
+public class US_024_UI_StepDefinition {
     SettingsPage stg24 = new SettingsPage();
-    DoctorPage dr24 = new DoctorPage();
     PatientPage ptnt24 = new PatientPage();
 
     @Given("Kullanici hasta olarak giris yapar")
@@ -25,13 +24,16 @@ public class US_024_UI_StepDefination {
 
     @And("hasta my pages buttonunu tiklar")
     public void hastaMyPagesButtonunuTiklar() {
-        ptnt24.myPagesPatienAFButton.click();
+        ReusableMethods.waitFor(2);
+        ptnt24.myPagesPatienAFButton.sendKeys(Keys.ENTER);
+        ReusableMethods.waitFor(2);
     }
 
     @Given("hasta my appointment buttonunu tiklar")
     public void hasta_my_appointment_buttonunu_tiklar() {
-        ptnt24.myAppointments.click();
 
+        Driver.waitAndClick(ptnt24.myAppointmensAFbutton);
+        ReusableMethods.waitFor(2);
     }
 
     @Given("hasta show tests butonuna tiklar")

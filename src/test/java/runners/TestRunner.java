@@ -14,7 +14,9 @@ import io.cucumber.junit.Cucumber;
         features = "src/test/resources/features/uiFeatures",
         glue = "stepDefinitions/uiStepDefinitions",
 
+
         tags = "@US_016_TC_001",
+
 
 
         dryRun = false

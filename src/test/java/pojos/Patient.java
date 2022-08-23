@@ -17,7 +17,7 @@ public class Patient {
     private String lastName;
     private String birthDate;
     private String phone;
-    private String gender;
+    private String gender;//bu gender array ne yapalim?
     private String bloodGroup;
     private String adress;
     private String email;

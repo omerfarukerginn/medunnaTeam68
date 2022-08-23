@@ -308,75 +308,30 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // NAIL BASLAMA NOKTASI
 
     @FindBy(xpath = "//*[@class='dropdown show nav-item']")
     public WebElement itemsTitlessButonu;
     @FindBy(xpath = "(//*[@href='/physician'])[1]")
     public WebElement physicianSekmesi;
-    @FindBy(xpath = "//(//div[4]//div[1])[2]//h2]")
+    @FindBy(xpath = "//*[text()='Physicians']") //"//(//div[4]//div[1])[2]//h2]")
     public WebElement physicianBaslik;
     @FindBy (xpath = "//(//div[4]//div[1])[2]")
     public List<WebElement> physicianTablosu;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy (xpath = "//*[@href='/physician/new']")
+    public WebElement createPhysicianButonu;
+    @FindBy (xpath = "//*[@name='searchSSN']")
+    public WebElement createSsnKutusu;
+    @FindBy (xpath = "//*[@name='useSSNSearch']")
+    public WebElement createCheckbox;
+    @FindBy (xpath = "//*[@class='btn btn-secondary']")
+    public WebElement createSearch;
+    @FindBy (xpath = "//*[@class='Toastify__toast-body']")
+    public WebElement createOnayKutusu;
+    @FindBy (xpath = "//*[@href='/physician/2051/edit?page=1&sort=id,asc']")
+    public WebElement physicianEdit;
+    @FindBy (xpath = "//*[@id='physician-id']")
+    public WebElement physicianIdKutusu;
 
 
 

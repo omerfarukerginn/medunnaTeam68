@@ -1,18 +1,19 @@
 @US_018
 Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve Sil
 
-  Background: Ortak adimlar
+  Background:Ortak adimlar
     Given Kullanici ilgili test sayfasina gider
     Then Kullanici admin olarak giris yapar
     And mnk Admin items&Titles bolumunu secer Physician sekmesini tiklar
 
-
-  Scenario: TC_001 Admin, doktorlarin bilgilerini gorebilmelidir.
+@US_018_TC_001
+  Scenario:TC_001 Admin, doktorlarin bilgilerini gorebilmelidir.
 
     And mnk Admin tum doktorlarin ilk sayfasini gorur
     And mnk Admin sayfayi kapatir
 
-  Scenario: TC_002 Admin, SSN kimligine gore kayıtlı bir kisiyi secebilir , arayabilir.
+  @US_018_TC_002
+  Scenario:TC_002 Admin, SSN kimligine gore kayıtlı bir kisiyi secebilir , arayabilir.
 
     And mnk Admin Create a new Physician butonuna tiklar
     And mnk Admin SSN kutusuna kayitli bir SSN girer
@@ -21,13 +22,14 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin onay kutusunu gorunur
     And mnk Admin sayfayi kapatir
 
-  Scenario: TC_003 Admin, Doktorların bilgilerini "Edit Butonu" üzerinden düzenleyebilir.
+    @US_018_TC_003
+  Scenario:TC_003 Admin, Doktorların bilgilerini "Edit Butonu" üzerinden düzenleyebilir.
 
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisilerin ID sini gorur
     And mnk Admin sayfayi kapatir
 
-  Scenario: TC_004 Kisilerin "firstname, lastname birth date .." bilgileri doldurulabilmeli.
+  Scenario:TC_004 Kisilerin "firstname, lastname birth date .." bilgileri doldurulabilmeli.
 
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisinin First Name i degistirir
@@ -37,7 +39,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
-  Scenario: TC_005 Admin Doktor icin bir uzmanlık alanı secebilmeli.
+  Scenario:TC_005 Admin Doktor icin bir uzmanlık alanı secebilmeli.
 
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisinin uzmanligini secer
@@ -45,7 +47,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
-  Scenario: TC_006 Admin, doktorun profil resmini saglayabilir.
+  Scenario:TC_006 Admin, doktorun profil resmini saglayabilir.
 
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisinin Profil resmini secer
@@ -53,7 +55,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
-  Scenario: TC_007 Admin, doktorun Muayene ucretini girebilmelidir. (Exam fee)
+  Scenario:TC_007 Admin, doktorun Muayene ucretini girebilmelidir. (Exam fee)
 
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisinin Exam fee lini degistirir
@@ -61,7 +63,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
-  Scenario: TC_008 Admin mevcut kullanıcılar arasından doktoru secmelidir.
+  Scenario:TC_008 Admin mevcut kullanıcılar arasından doktoru secmelidir.
 
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisinin user ini secer

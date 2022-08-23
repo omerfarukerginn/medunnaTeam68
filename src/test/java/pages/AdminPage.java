@@ -415,7 +415,7 @@ public class AdminPage {
     @FindBy (xpath="(//div[@role='menu'])[2]")
     public WebElement userManagement;
 
-    @FindBy (xpath="//a[@class='btn btn-info btn-sm']")// 20 tane var, 19.siradakini alirsin
+   @FindBy (xpath="//a[@class='btn btn-info btn-sm']")// 20 tane var, 19.siradakini alirsin
     public List<WebElement> viewButonu;
 
     @FindBy (xpath="//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com

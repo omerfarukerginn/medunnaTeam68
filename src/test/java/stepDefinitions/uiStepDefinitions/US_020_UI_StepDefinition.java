@@ -13,10 +13,10 @@ public class US_020_UI_StepDefinition {
 
     @Then("Kullanici User management butonuna tiklar")
     public void kullanici_user_management_butonuna_tiklar() {
-        adminPage.administration.click();
-        ReusableMethods.hooverByJS(adminPage.userManagement);
-    }
+        ReusableMethods.waitForVisibility(adminPage.administration, 5).click();
+        ReusableMethods.waitForVisibility(adminPage.userManagement, 5).click();
 
+    }
     @Then("Kullanici View butonuna tiklar")
     public void kullanici_view_butonuna_tiklar() {
 
@@ -24,25 +24,18 @@ public class US_020_UI_StepDefinition {
         Random rnd = new Random();
         int rand1 = rnd.nextInt(21);
 
-        for (int i = 0; i < adminPage.viewButonu.size(); i++) {
-            adminPage.viewButonu.get(rand1).click();
-        }
+       for (int i = 0; i < adminPage.viewButonu.size(); i++) {
+           ReusableMethods.hooverByJS(adminPage.viewButonu.get(rand1));
+
+       }
     }
 
     @Then("Kullanici First name, lastname, email,language, created by seceneklerinin  gorundugunu dogrular")
     public void kullanici_first_name_lastname_email_language_created_by_seceneklerinin_gorundugunu_dogrular() {
-        //daha dinamik sekli dusunulebilinir; Array list yapilabilinir. oraya bilgielr atilip
-        //cekilebilinir.
-
-        String expectedFirstName = "Ciftci";
-        String expectedLastName = "Fidan";
-        String expectedEmail = "fidan@gmail.com";
-        String expectedCreatedBy = "anonymousUser";
-
-        Assert.assertEquals(expectedFirstName, adminPage.firstName.getText());
-        Assert.assertEquals(expectedLastName, adminPage.lastName.getText());
-        Assert.assertEquals(expectedEmail, adminPage.email.getText());
-        Assert.assertEquals(expectedCreatedBy, adminPage.createdBy.getText());
+        Assert.assertTrue(adminPage.firstName.isDisplayed());
+        Assert.assertTrue(adminPage.lastName.isDisplayed());
+        Assert.assertTrue(adminPage.email.isDisplayed());
+        Assert.assertTrue(adminPage.createdBy.isDisplayed());
 
 
     }

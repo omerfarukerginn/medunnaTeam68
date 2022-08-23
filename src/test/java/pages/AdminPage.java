@@ -12,6 +12,48 @@ public class AdminPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    // US_28 location
+    @FindBy(xpath = "//a[@aria-haspopup='true']")
+    public WebElement humanButton;
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
+    public WebElement singInButtonu;
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
+    public WebElement itemsTitlesButonu;
+    @FindBy(xpath = "//a[@href='/country']")
+    public WebElement countryButonu;
+    @FindBy(xpath = "//*[text()='Create a new Country']")
+    public WebElement createCountryButonu;
+
+    @FindBy(xpath = "//input[@id='country-name']")
+    public WebElement createCountryNameButonu;
+
+    @FindBy(xpath = "//*[@name='createdDate']")
+    public WebElement tarihSaatButonu;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement saveButonu;
+
+    @FindBy(xpath = "//*[text()='State/City']")
+    public WebElement stateCityButonu;
+
+    @FindBy(xpath = "//*[text()='Create a new State/City']")
+    public WebElement createStateCityButonu;
+
+    @FindBy(xpath = "//*[@id='c-state-name']")
+    public WebElement createStateCityNameButonu;
+
+    @FindBy(xpath = "//*[@id='c-state-state']")
+    public WebElement stateCitySecmeButonu;
+
+    @FindBy(xpath = "(//*[text()='YeniDunya'])[1]")
+    public WebElement ulkeIsmi;
+
+    @FindBy(xpath = "//tr//td[2]")
+    public List<WebElement> tumUlkeIsimleri;
+
+    @FindBy(xpath = "//*[text()='Delete']")
+    public WebElement deleteButonu;
+
 
 
 
@@ -613,6 +655,7 @@ public class AdminPage {
 
 
 
+
     // US_28 location
 
     @FindBy(xpath = "//a[@aria-haspopup='true']")
@@ -632,8 +675,7 @@ public class AdminPage {
     @FindBy(xpath = "//*[@name='createdDate']")
     public WebElement tarihSaatButonu;
 
-    @FindBy(xpath = "//button[@type='submit']")
-    public WebElement saveButonu;
+
 
 
 

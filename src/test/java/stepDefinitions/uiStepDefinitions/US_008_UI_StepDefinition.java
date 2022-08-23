@@ -29,8 +29,8 @@ public class US_008_UI_StepDefinition {
         loginPage.loginPageSingInUserNameKutusu.sendKeys(userName);
     }
 
-    @And("ofe Kullanici password kısmına {string} girer")
-    public void ofeKullaniciPasswordKısmınaGirer(String currentPassword) {
+    @And("ofe Kullanici password kismina {string} girer")
+    public void ofeKullaniciPasswordKisminaGirer(String currentPassword) {
         loginPage.loginPageSingInPasswordKutusu.sendKeys(currentPassword);
     }
 

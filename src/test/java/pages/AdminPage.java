@@ -436,6 +436,10 @@ public class AdminPage {
     @FindBy (xpath="//input[@name='activated']")
     public WebElement activeButonu;
 
+    @FindBy (xpath="//select[@id='authorities']")
+    public WebElement kullaniciProfilleri;
+
+
 
 
 

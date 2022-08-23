@@ -64,4 +64,3 @@ Feature:US_011 "My Appointments" Physician (Doctor) tarafından düzenlenebilmel
     And Doktor The Appointment is updated with identifier mesajinini gorur.
     Then Sayfayi kapatir.
 
-

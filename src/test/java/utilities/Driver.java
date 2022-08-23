@@ -75,11 +75,11 @@ public class Driver {
         }
         return driver;
     }
-    public static void closeDriver() {
-        if (driver != null) {
-            driver.close();
-            driver=null;
-        }
+   public static void closeDriver() {
+       if (driver != null) {
+           driver.close();
+           driver=null;
+       }
     }
 
 

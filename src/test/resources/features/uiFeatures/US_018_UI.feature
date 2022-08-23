@@ -26,7 +26,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
   Scenario:TC_003 Admin, Doktorların bilgilerini "Edit Butonu" üzerinden düzenleyebilir.
 
     And mnk Admin kayitli kisinin Edit butonuna tiklar
-    And mnk Admin kayitli kisilerin ID sini gorur
+    And mnk Admin kayitli kisilerin id sini gorur
     And mnk Admin sayfayi kapatir
 
   Scenario:TC_004 Kisilerin "firstname, lastname birth date .." bilgileri doldurulabilmeli.

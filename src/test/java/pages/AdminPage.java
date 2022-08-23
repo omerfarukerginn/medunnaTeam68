@@ -12,7 +12,7 @@ public class AdminPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-<<<<<<< HEAD
+
 
 
 
@@ -632,9 +632,9 @@ public class AdminPage {
 
 
 
-=======
+
     // US_28 location
->>>>>>> main
+
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
     @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")

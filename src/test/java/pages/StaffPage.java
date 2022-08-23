@@ -150,6 +150,9 @@ public class StaffPage {
     @FindBy(xpath = "//*[@id=\"app-view-container\"]/div/div/div/div/table/thead/tr[1]/th[1]")
     public WebElement invoiceDogrulama;
 
+    @FindBy(xpath = "(//tr)[8]")
+    public WebElement yaziGet;
+
 
 
 

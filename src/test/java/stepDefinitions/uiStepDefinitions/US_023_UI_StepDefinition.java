@@ -28,7 +28,7 @@ public class US_023_UI_StepDefinition {
 
     @And("staff arama kutusuna SSN ile hastayi arar")
     public void staffAramaKutusunaSSNIleHastayiArar() {
-        stf23.patientSsnSearchTextBox.sendKeys("333-45-5566", Keys.ENTER);
+        stf23.patientSsnSearchTextBox.sendKeys("768-94-0956", Keys.ENTER);
     }
 
     @Given("staff show appointment buttonunu tiklar")
@@ -51,7 +51,7 @@ public class US_023_UI_StepDefinition {
     @Given("staff payment invoice buttonunu tiklar")
     public void staff_payment_invoice_buttonunu_tiklar() {
         ReusableMethods.waitForVisibility(stf23.paymentInvoiceButton, 2).click();
-
+        System.out.println(stf23.yaziGet.getText());
     }
 
     @Then("staf muayene ucreti, test urun fiyatlari, bilgilerini goruntuleyebilir")

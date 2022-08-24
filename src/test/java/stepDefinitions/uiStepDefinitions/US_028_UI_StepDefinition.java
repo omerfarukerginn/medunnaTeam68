@@ -13,8 +13,13 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class US_028_UI_StepDefinition {
 
@@ -40,12 +45,15 @@ public class US_028_UI_StepDefinition {
     }
     @Then("Kullanici tarih ve saat girer.")
     public void kullanici_tarih_ve_saat_girer() {
-        adminPage.tarihSaatButonu.sendKeys("22.08.20220001:20");
+        LocalDateTime tarihSaat = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.YYYY" );
+        DateTimeFormatter formatterSaat=DateTimeFormatter.ofPattern("hh:mm a");
+        adminPage.tarihSaatButonu.sendKeys(formatter.format(tarihSaat), formatterSaat.format(tarihSaat));
+        //tarih saat
 
     }
     @Then("Kullanici Save butonunu tiklar")
     public void kullanici_save_butonunu_tiklar() {
-        ReusableMethods.waitFor(1);
         adminPage.saveButonu.sendKeys(Keys.ENTER);
 
 

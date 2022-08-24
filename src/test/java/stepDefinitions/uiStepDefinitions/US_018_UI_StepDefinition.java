@@ -186,4 +186,5 @@ public class US_018_UI_StepDefinition {
         ReusableMethods.waitFor(2);
         us018.physicianDeleteButonu_2.sendKeys(Keys.ENTER);
     }
+
 }

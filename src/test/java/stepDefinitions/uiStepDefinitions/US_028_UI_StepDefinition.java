@@ -49,7 +49,7 @@ public class US_028_UI_StepDefinition {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.YYYY" );
         DateTimeFormatter formatterSaat=DateTimeFormatter.ofPattern("hh:mm a");
         adminPage.tarihSaatButonu.sendKeys(formatter.format(tarihSaat), formatterSaat.format(tarihSaat));
-
+        //tarih saat
 
     }
     @Then("Kullanici Save butonunu tiklar")

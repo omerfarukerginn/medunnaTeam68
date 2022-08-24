@@ -14,6 +14,7 @@ public class AdminPage {
 
     // US_28 location
 
+
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
     @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
@@ -54,7 +55,6 @@ public class AdminPage {
 
     @FindBy(xpath = "//*[text()='Delete']")
     public WebElement deleteButonu;
-
 
 
 
@@ -725,7 +725,7 @@ public class AdminPage {
 
 
 
-    // US19 location
+// US19 location
 
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement AccountButton;
@@ -756,7 +756,6 @@ public class AdminPage {
 
     @FindBy(xpath = "//*[@name='useSSNSearch']")
     public WebElement userSearchBox;
-
 
 
 

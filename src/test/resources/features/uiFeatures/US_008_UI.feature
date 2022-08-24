@@ -1,5 +1,5 @@
 @US_008
-Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebilir olmalıdır.
+Feature: US_008 Kullanici giris yaptiginda Password sekmesi duzenlenebilir olmalidir.
 
   @US_008_TC_001
   Scenario Outline:US_008_TC_001 "New password confirmation" onaylanabilmelidir.
@@ -7,7 +7,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar
     And ofe Kullanici kullanici ismini "<userName>" girer
-    And ofe Kullanici password kısmına "<currentPassword>" girer
+    And ofe Kullanici password kismina "<currentPassword>" girer
     And ofe Kullanici giris yapmak icin sign in butonuna tiklar
     And ofe Kullanici sayfanin sag ust tarafinda bulunan ismine tiklar
     And ofe Acilan dropdown sekmesinden Password butonuna tiklar
@@ -31,8 +31,8 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
 
 
   @US_008_TC_002
-  Scenario Outline: US_008_TC_002 Daha güçlü şifre için en az 1 küçük harf olmalı ve "Password strength:"
-  seviyesinin değiştiği görülebilmelidir
+  Scenario Outline: US_008_TC_002 Daha guclu sifre icin en az 1 kucuk harf olmali ve "Password strength:"
+  seviyesinin degistigi gorulebilmelidir
 
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar
@@ -56,7 +56,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
 
 
   @US_008_TC_003
-  Scenario Outline: US_008_TC_003 Şifre en az 1 büyük harf içermeli ve "Password strength:" seviyesinin değiştiği görülebilmelidir.
+  Scenario Outline: US_008_TC_003 Sifre en az 1 buyuk harf icermeli ve "Password strength:" seviyesinin degistiği gorulebilmelidir.
 
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar
@@ -80,7 +80,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
 
 
   @US_008_TC_004
-  Scenario Outline: US_008_TC_004 Şifre en az 1 rakam içermeli ve "Password strength:" seviyesinin değiştiği görülebilmelidir.
+  Scenario Outline: US_008_TC_004 Sifre en az 1 rakam icermeli ve "Password strength:" seviyesinin degistigi gorulebilmelidir.
 
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar
@@ -103,7 +103,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
       | staffnecmi  | staffnecmi1     |
 
   @US_008_TC_005
-  Scenario Outline: US_008_TC_005 Şifre en az 1 özel karakter içermeli ve"Password strength:" seviyesinin değiştiği görülebilmelidir.
+  Scenario Outline: US_008_TC_005 Sifre en az 1 ozel karakter icermeli ve"Password strength:" seviyesinin degistigi gorulebilmelidir.
 
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar
@@ -126,7 +126,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
       | staffnecmi  | staffnecmi1     |
 
   @US_008_TC_006
-  Scenario Outline: US_008_TC_006 Güçlü bir parola için şifre en az 7 karakterden oluşmalıdır.
+  Scenario Outline: US_008_TC_006 Guclu bir parola icin sifre en az 7 karakterden olusmalidir.
 
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar
@@ -149,7 +149,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
       | staffnecmi  | staffnecmi1     |
 
   @US_008_TC_007 @US_008_TC_007_Test01
-  Scenario Outline: US_008_TC_007_Test01 Eski şifre kullanılmamalıdır.
+  Scenario Outline: US_008_TC_007_Test01 Eski sifre kullanilmamalidir.
 
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar
@@ -173,7 +173,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
 
 
   @US_008_TC_007 @US_008_TC_007_Test02
-  Scenario Outline: US_008_TC_007_Test02 Eski şifre kullanılmamalıdır.
+  Scenario Outline: US_008_TC_007_Test02 Eski sifre kullanilmamalidir.
 
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar
@@ -197,7 +197,7 @@ Feature: US_008 Kullanıcı giriş yaptığında Password sekmesi düzenlenebili
 
 
   @US_008_TC_007 @US_008_TC_007_Test03
-  Scenario Outline: US_008_TC_007_Test03 Eski şifre kullanılmamalıdır.
+  Scenario Outline: US_008_TC_007_Test03 Eski sifre kullanilmamalidir.
 
     Given ofe Kullanici test sayfasina gider
     And ofe Kullanici Sign in butonuna tiklar

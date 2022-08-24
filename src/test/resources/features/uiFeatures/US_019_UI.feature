@@ -7,11 +7,8 @@ Feature:US_019 Admin olarak;
   Yeni Staff (Personel) Oluşturma / Güncelleme / Görüntüleme ve Silme
 
   Background: Ortak kullanim
-    Given Kullanici Medunna  Adresine erisebilmeli
-    And Kullanici Account  butonu tiklar
-    And Kullanici Sign In registration sekmesine tiklar
-    And Kullanici gecerli bir Username ve Password girer
-    And Kullanici Sing In sekmesini tiklar
+    Given Kullanici ilgili test sayfasina gider
+    Then Kullanici admin olarak giris yapar
     And Kullanici Items&Titles sekmesini tiklar
     And Kullanici Staff sekmesini tiklar
     And Kullanici +Create a new Staff butonunu tiklar
@@ -58,8 +55,8 @@ Feature:US_019 Admin olarak;
   Scenario:Admin kullanıcı bilgilerini silebilir.
 
 
-  And Kullanici Adress kutusunu siler
-  And Kullanici Description kutusunu siler
+    And Kullanici Adress kutusunu siler
+    And Kullanici Description kutusunu siler
     And Kulanici Sayfayi kapatir
 
 

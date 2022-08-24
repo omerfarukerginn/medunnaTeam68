@@ -24,7 +24,7 @@ Feature:Admin olarak; Country oluşturabilmeli / Okumayabilmeli ve Silebilmeli
     Then Kullanici tarih ve saat girer.
     And Kullanici gecerli ulke ismini secer
     And Kullanici Save butonunu tiklar
-    And Kullanici sayfayi kapatir
+    And Kullanici sayfayi kapatirr
 
 
   @US_028_TC_003

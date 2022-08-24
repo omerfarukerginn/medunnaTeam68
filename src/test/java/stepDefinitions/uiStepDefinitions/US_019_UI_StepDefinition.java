@@ -11,12 +11,28 @@ public class US_019_UI_StepDefinition {
 
 
 
+    }
+
+    @And("Kullanici gecerli bir Username ve Password girer")
+    public void kullaniciGecerliBirUsernameVePasswordGirer() {
+        us019.userrName.sendKeys(ConfigReader.getProperty("AdminUserName"));
+        us019.passwordd.sendKeys(ConfigReader.getProperty("AdminPassword"));
+        ReusableMethods.waitFor(3);
+
+    }
+
+    @And("Kullanici Sing In sekmesini tiklar")
+    public void kullaniciSingInSekmesiniTiklar() {
+       us019.girisSonrasiSingInn.click();
+    }
 
 
     @And("Kullanici Items&Titles sekmesini tiklar")
     public void kullaniciItemsTitlesSekmesiniTiklar() {
 
         us019.itemsTitlesButon.click();
+      //  us019.itemsTitlesButon.click();
+
     }
 
     @And("Kullanici Staff sekmesini tiklar")

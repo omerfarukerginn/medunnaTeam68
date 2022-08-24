@@ -405,7 +405,7 @@ public class PatientPage {
     public WebElement myAppointmensAFbutton;
 
 
-    @FindBy(xpath = "//*[text()='Show Tests']")
+    @FindBy(xpath = "(//*[text()='Show Tests'])[2]")
     public WebElement showTestButton;
 
     @FindBy(xpath = "(//*[text()='View Results'])[1]")

@@ -1,36 +1,15 @@
 package stepDefinitions.uiStepDefinitions;
-
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import org.openqa.selenium.interactions.Actions;
 import pages.AdminPage;
-import pages.DoctorPage;
-import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
-
 public class US_019_UI_StepDefinition {
 
 
     AdminPage us019 = new AdminPage();
     Actions actions = new Actions(Driver.getDriver());
 
-    @Given("Kullanici Medunna  Adresine erisebilmeli")
-        public void kullaniciMedunnaAdresineErisebilmeli() {
-        Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
-        }
-        
-        
-    @And("Kullanici Account  butonu tiklar")
-    public void kullaniciAccountButonuTiklar() {
-        us019.humanButton.click();
 
-    }
-
-
-    @And("Kullanici Sign In registration sekmesine tiklar")
-    public void kullaniciSignInRegistrationSekmesineTiklar() {
-        us019.singInButtonu.click();
 
     }
 
@@ -50,11 +29,15 @@ public class US_019_UI_StepDefinition {
 
     @And("Kullanici Items&Titles sekmesini tiklar")
     public void kullaniciItemsTitlesSekmesiniTiklar() {
+
+        us019.itemsTitlesButon.click();
       //  us019.itemsTitlesButon.click();
+
     }
 
     @And("Kullanici Staff sekmesini tiklar")
     public void kullaniciStaffSekmesiniTiklar() {
+
         us019.staffButon.click();
     }
 

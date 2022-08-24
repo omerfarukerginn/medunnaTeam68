@@ -493,4 +493,239 @@ public class StaffPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // NAIL 255-355
+
+    @FindBy(xpath = "(//tr)[2]//td[2]")
+    public WebElement hastaSsnOnayi;
+    @FindBy (xpath = "//*[@href='/patient-appointments/16094']")
+    public WebElement showAppointButonu;
+    @FindBy (xpath = "//*[@href='/tests/appointment/16419']")
+    public WebElement showTestButonu;
+    @FindBy (xpath = "//*[@href='/testresult/test/212461']")
+    public WebElement viewResultsButonu;
+    @FindBy (xpath = "//*[text()='Test Results']")
+    public WebElement testResultBaslikYazisi;
+    @FindBy (xpath = "//*[@href='/c-test-result-update/212831']")
+    public WebElement resultEditButonu;
+    @FindBy (xpath = "(//*[@class='form-group'])[1]")
+    public WebElement resultEditId;
+    @FindBy (xpath ="(//*[@class='form-group'])[2]")
+    public WebElement resultEditDate;
+    @FindBy (xpath ="//*[@name='result']")
+    public WebElement resultEditResultKutusu;
+    @FindBy (xpath ="(//*[@name='description'])[2]")
+    public WebElement resultEditDescriptionKutusu;
+    @FindBy (xpath ="(//*[@class='form-group'])[7]")
+    public WebElement resultEditCreatesDate;
+    @FindBy (xpath ="(//*[@class='form-group'])[9]")
+    public WebElement resultEditTest;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // NAIL 255-355
+
 }

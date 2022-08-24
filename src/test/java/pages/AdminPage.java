@@ -56,8 +56,8 @@ public class AdminPage {
     @FindBy(xpath = "//*[text()='Delete']")
     public WebElement deleteButonu;
 
-
-
+    @FindBy(xpath = "//*[text()='Field translation-not-found[hospitalmsappfrontendApp.CState.country] cannot be empty!'")
+    public WebElement kirmiziUyariYazisi;
 
 
 

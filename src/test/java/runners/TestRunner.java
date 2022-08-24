@@ -15,7 +15,7 @@ import io.cucumber.junit.Cucumber;
         glue = "stepDefinitions/uiStepDefinitions",
 
 
-        tags = "@US_016_TC_001",
+        tags = "@",
 
 
 

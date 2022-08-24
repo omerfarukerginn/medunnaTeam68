@@ -16,10 +16,6 @@ public class US_005_UI_StepDefinition {
     PatientPage us005 = new PatientPage();
     Actions actions = new Actions(Driver.getDriver());
 
-    @Given("medunna.com sayfasina gidilir")
-    public void medunna_com_sayfasina_gidilir() {
-        Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
-    }
     @Given("Make an appointment butonuna tiklanir")
     public void make_an_appointmentbutonuna_tiklanir() {
         us005.makeAnAppointmentButton.click();

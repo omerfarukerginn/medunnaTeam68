@@ -308,10 +308,8 @@ public class AdminPage {
 
 
 
-    // NAIL BASLAMA NOKTASI
+    // NAIL 311-410 - BASLAMA NOKTASI
 
-    @FindBy(xpath = "//*[@class='dropdown show nav-item']")
-    public WebElement itemsTitlessButonu;
     @FindBy(xpath = "(//*[@href='/physician'])[1]")
     public WebElement physicianSekmesi;
     @FindBy(xpath = "//*[text()='Physicians']") //"//(//div[4]//div[1])[2]//h2]")
@@ -320,20 +318,46 @@ public class AdminPage {
     public List<WebElement> physicianTablosu;
     @FindBy (xpath = "//*[@href='/physician/new']")
     public WebElement createPhysicianButonu;
-    @FindBy (xpath = "//*[@name='searchSSN']")
-    public WebElement createSsnKutusu;
+    @FindBy (xpath = "//*[@name='searchSSN']") // PHYSICIAN LOCATE LERI
+    public WebElement createPhysicianSsnKutusu;
     @FindBy (xpath = "//*[@name='useSSNSearch']")
-    public WebElement createCheckbox;
+    public WebElement createPhysicianCheckbox;
     @FindBy (xpath = "//*[@class='btn btn-secondary']")
-    public WebElement createSearch;
-    @FindBy (xpath = "//*[@class='Toastify__toast-body']")
-    public WebElement createOnayKutusu;
+    public WebElement createPhysicianSearch;
+
+
+    @FindBy (xpath = "//*[@class='Toastify__toast-body']") // YESIL ONAY KUTUSU tum ASSERT onay ISLEMI ICIN calisir
+    public WebElement createPhysicianOnayKutusu;
+
+
     @FindBy (xpath = "//*[@href='/physician/2051/edit?page=1&sort=id,asc']")
     public WebElement physicianEdit;
     @FindBy (xpath = "//*[@id='physician-id']")
-    public WebElement physicianIdKutusu;
+    public WebElement physicianEditIdKutusu;
+    @FindBy (xpath = "//*[@name='firstName']")
+    public WebElement physicianEditFirstNameKutusu;
+    @FindBy (xpath = "//*[@name='lastName']")
+    public WebElement physicianEditLastNameKutusu;
+    @FindBy (xpath = "//*[@name='birthDate']")
+    public WebElement physicianEditBirthDateKutusu;
+    @FindBy (xpath = "//*[@class='btn btn-primary']")
+    public WebElement physicianEditSaveButonu;
+    @FindBy (xpath = "//*[@name='speciality']")
+    public WebElement physicianEditSpeKutusu;
+    @FindBy (xpath = "//*[@id='file_image']")
+    public WebElement physicianEditDossyaSecButonu;
 
+    @FindBy (xpath = "///*[@class='Toastify__toast-body']")
+    public WebElement physicianEditImageOnayi;
 
+    @FindBy(xpath = "//*[@name='examFee']")
+    public WebElement physicianEditFeeKutusu;
+    @FindBy (xpath = "//*[@name='user.id']")
+    public WebElement physicianEditUserKutusu;
+    @FindBy (xpath = "//*[@href='/physician/2051/delete?page=1&sort=id,asc']")
+    public WebElement physicianDeleteButonu_1;
+    @FindBy (xpath = "//*[@class='btn btn-danger']")
+    public WebElement physicianDeleteButonu_2;
 
 
 
@@ -400,14 +424,7 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-    // NAIL BITIS NOKTASI
+    // NAIL 311-410 - BITIS NOKTASI
     //Ebru 411-510 arasi
     @FindBy(xpath = "//li[@id='admin-menu']")
     public WebElement administration;

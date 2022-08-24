@@ -106,24 +106,6 @@ public class US_016_UI_StepDefinition {
         ReusableMethods.waitFor(2);
     }
 
-
-    @And("Admin islem yaptigi sayfaya {int} tiklar")
-    public void adminIslemYaptigiSayfayaTiklar(int arg81) {
-        ReusableMethods.waitFor(2);
-       // actions.sendKeys(Keys.).click(us016.sonSayfaninOku).perform();
-        //ReusableMethods.hooverByJS(us016.sonSayfaninOku);
-       // Driver.getDriver().navigate().to("https://medunna.com/room?page=+" + arg81 + "+ &sort=roomType,asc");
-   /*     List<WebElement> roomId = Driver.getDriver().findElements(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[2]"));
-        for (int i = 0; i < roomId.size(); i++) {
-            if (roomId.get(i).equals(Integer.parseInt(roomrandm))) {
-                System.out.println(Driver.getDriver().findElement(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[3]")).getText());
-                System.out.println(Driver.getDriver().findElement(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[4]")).getText());
-
-            }
-        }*/
-    }
-
-
     @Then("Admin  Status butonunu bos birakir")
     public void admin_status_butonunu_bos_birakir() {
         us016.statusKutusu.clear();
@@ -210,5 +192,29 @@ public class US_016_UI_StepDefinition {
     public void adminSayfaninBasinaGelir() {
         actions.sendKeys(Keys.PAGE_UP).perform();
         actions.sendKeys(Keys.PAGE_UP).perform();
+    }
+
+    @Then("Admin olusturdugu odaya tiklar")
+    public void adminOlusturduguOdayaTiklar() {
+        us016.idRoom.click();
+    }
+
+    @Then("Admin islem yaptigi sayfaya tiklar")
+    public void adminIslemYaptigiSayfayaTiklar() {
+        ReusableMethods.waitFor(2);
+        // actions.sendKeys(Keys.).click(us016.sonSayfaninOku).perform();
+        //ReusableMethods.hooverByJS(us016.sonSayfaninOku);
+        Driver.getDriver().navigate().to("https://www.medunna.com/room?page=84&sort=id,asc");
+        //  Driver.getDriver().navigate().to("https://medunna.com/room?page=+" + arg81 + "+ &sort=roomType,asc");
+     /*   List<WebElement> roomId = Driver.getDriver().findElements(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[2]"));
+        for (int i = 0; i < roomId.size(); i++) {
+            if (roomId.get(i).equals(Integer.parseInt(roomrandm))) {
+                System.out.println(Driver.getDriver().findElement(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[3]")).getText());
+                System.out.println(Driver.getDriver().findElement(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[4]")).getText());
+
+            }
+        }*/
+  //actions.sendKeys(Keys.PAGE_UP).perform();
+
     }
 }

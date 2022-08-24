@@ -157,7 +157,8 @@ public class AdminPage {
     @FindBy(xpath = "(//*[text()='Edit'])[9]")
     public WebElement olusturdugumRoomEditButonu;
 
-
+    @FindBy(xpath = "//*[text()='15051987']")
+    public WebElement idRoom;
 
 
 

@@ -102,9 +102,9 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
   @US_016_TC008
 Scenario:US_016_TC_008_Admin mevcut odaları düzenleyebilir ve güncelleyebilir.
 
-   Scenario:US_016_TC_013 Odalar Admin tarafından silinebilir.
-    And Admin  Delete tusuna basar
-    And Confirm Delete Operation uyarisini gorur
-    Then Admin ikinci  Delete butonuna tiklar
-    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur
+
+
+  @US_016_TC009
+  Scenario:US_016_TC_013 Odalar Admin tarafından silinebilir.
+
 

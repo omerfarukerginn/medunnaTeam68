@@ -407,23 +407,6 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // NAIL 311-410 - BITIS NOKTASI
     //Ebru 411-510 arasi
     @FindBy(xpath = "//li[@id='admin-menu']")

@@ -14,6 +14,7 @@ import java.util.Random;
 public class US_020_UI_StepDefinition {
 
     AdminPage adminPage = new AdminPage();
+    Actions actions=new Actions(Driver.getDriver());
 
     @Then("Kullanici User management butonuna tiklar")
     public void kullanici_user_management_butonuna_tiklar() {
@@ -24,8 +25,13 @@ public class US_020_UI_StepDefinition {
 
     @Then("Kullanici View butonuna tiklar")
     public void kullanici_view_butonuna_tiklar() {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.hooverByJS(adminPage.sonSayfayaGoturenOk);
+        ReusableMethods.hooverByJS(adminPage.viewButonu.get(0));
 
-        //yeniden bak bu random olayina, 19. olayina odaklan, oradaki bilgileri assert edersin
+        /*
+        Kodun dinamik hali:
+
         Random rnd = new Random();
         int rand1 = rnd.nextInt(21);
 
@@ -33,6 +39,7 @@ public class US_020_UI_StepDefinition {
             ReusableMethods.hooverByJS(adminPage.viewButonu.get(rand1));
 
         }
+         */
     }
 
     @Then("Kullanici First name, lastname, email,language, created by seceneklerinin  gorundugunu dogrular")
@@ -46,6 +53,10 @@ public class US_020_UI_StepDefinition {
 
     @Then("Kullanici Edit butonuna tiklar")
     public void kullanici_edit_butonuna_tiklar() {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.hooverByJS(adminPage.editButonu.get(0));
+        /*
+        Kodun dinamik hali:
         Random rnd = new Random();
         int rand1 = rnd.nextInt(21);
 
@@ -53,6 +64,7 @@ public class US_020_UI_StepDefinition {
             ReusableMethods.hooverByJS(adminPage.editButonu.get(rand1));
             System.out.println(rand1);
         }
+         */
     }
 
     @Then("Kullanici  kayitli kisiyi active eder")
@@ -69,7 +81,7 @@ public class US_020_UI_StepDefinition {
     @Then("Kullanici kayitli kisiyi Admin olarak secer")
     public void kullanici_kayitli_kisiyi_admin_olarak_secer() {
 
-        Actions actions=new Actions(Driver.getDriver());
+
         actions.sendKeys(Keys.PAGE_DOWN).perform();
 
         ReusableMethods.waitFor(4);
@@ -81,9 +93,6 @@ public class US_020_UI_StepDefinition {
         switch (kullanicilar) {
             case 1:
                 select.selectByValue("ROLE_ADMIN");
-                break;
-            case 2:
-                select.selectByValue("ROLE_USER");
                 break;
             case 3:
                 select.selectByValue("ROLE_PATIENT");

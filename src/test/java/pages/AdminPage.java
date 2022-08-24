@@ -435,15 +435,16 @@ public class AdminPage {
 
     @FindBy (xpath="//input[@name='activated']")
     public WebElement activeButonu;
-
     @FindBy (xpath="//select[@id='authorities']")
     public WebElement kullaniciProfilleri;
+    @FindBy (xpath="(//li[@class='page-item'])[6]")
+    public WebElement sonSayfayaGoturenOk;
 
+    @FindBy (xpath="//a[@class='btn btn-danger btn-sm']")
+    public WebElement silmeButonu;
 
-
-
-
-
+    @FindBy (xpath="//div[@role='alert']")
+    public WebElement olumluAlertBilgisi;
 
 
 

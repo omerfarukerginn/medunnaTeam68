@@ -26,7 +26,6 @@ Feature:Admin olarak; Country oluşturabilmeli / Okumayabilmeli ve Silebilmeli
     And Kullanici Save butonunu tiklar
     And Kullanici sayfayi kapatirr
 
-
   @US_028_TC_003
   Scenario:Kullanıcı ülkeleri silebilmeli
     Given Kullanici Items&Titles butonunu tiklar ve Country secer

@@ -26,10 +26,8 @@ public class US_016_UI_StepDefinition {
     @Then("Admin  Items&Titles butonuna tiklar ve ardindan Room butonuna tiklar")
     public void admin_items_titles_butonuna_tiklar_ve_ardindan_room_butonuna_tiklar() {
         us016.itemsTitlesButon.click();
-<<<<<<< HEAD
         ReusableMethods.waitFor(2);
-=======
->>>>>>> main
+
         us016.roomButton.click();
         ReusableMethods.waitFor(2);
     }

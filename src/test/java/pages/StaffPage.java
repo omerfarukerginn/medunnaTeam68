@@ -390,10 +390,10 @@ public class StaffPage {
 
 //------------------------------------OMER------------------------------------\\
 
-    @FindBy(xpath = "//a[@href='/patient-appointments/1051']")
+    @FindBy(xpath = "//a[@class='btn btn-warning btn-sm'][1]")
     public WebElement ofeOzelIlkSutunShowAppointmentsButton;
 
-    @FindBy(xpath = "//a[@href='/appointment-update/12868']")
+    @FindBy(xpath = "//a[@class='btn btn-warning btn-sm'][1]")
     public WebElement ofeOzelAppointmentsEditButton;
 
     @FindBy(xpath = "//input[@name='startDate']")
@@ -402,13 +402,13 @@ public class StaffPage {
     @FindBy(xpath = "//input[@name='endDate']")
     public WebElement appointmentEditEndDateArea;
 
-    @FindBy(xpath = "//div[text()='The Appointment is updated with identifier 12868']")
+    @FindBy(xpath = "//button[@class='Toastify__close-button Toastify__close-button--success']")
     public WebElement ozelYesilUyariBalonu;
 
     @FindBy(xpath = "//select[@name='status']")
     public WebElement statusDropdownElement;
 
-    @FindBy(xpath = "//div[text()='Appointment status can not be changed with this type of status']")
+    @FindBy(xpath = "//button[@class='Toastify__close-button Toastify__close-button--error']")
     public WebElement kirmiziUyariBalonu;
 
 

@@ -27,8 +27,8 @@ public class US_001_DataBase_StepDefinition {
 
     }
 
-    @When("kullanici daha önce olusturan emailin veri biriminde olup olmadigini dogrular")
-    public void kullanici_daha_önce_olusturan_emailin_veri_biriminde_olup_olmadigini_dogrular() {
+    @When("kullanici daha once olusturan emailin veri biriminde olup olmadigini dogrular")
+    public void kullanici_daha_once_olusturan_emailin_veri_biriminde_olup_olmadigini_dogrular() {
         List<List<Object>> list=DBUtils.getQueryResultList( "SELECT email FROM jhi_user" );
         softAssert.assertTrue( list.contains( "bay@g.k" ));
         softAssert.assertAll();

@@ -63,7 +63,7 @@ public class US_007_ApiAppointment {
         String phone = "05678995678";
         //String snumber = "123456";
         String ssn = "239-19-9883";;
-        String startDate = "2023-01-07T00:00:00Z";
+        String startDate = "2023-01-07T00:00:00Z"; //212419
 
         appointmentRequest.setFirstName(firstName);
         appointmentRequest.setLastName(lastName);

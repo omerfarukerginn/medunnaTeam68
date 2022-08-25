@@ -681,97 +681,97 @@ public class AdminPage {
 
 
 
+    // US_015 Ridvan
 
+    @FindBy(xpath="//*[text()='Patient']")
+    public WebElement patientButonuDDMenu;
 
+    @FindBy (xpath="//a[@id='jh-create-entity']")
+    public WebElement createNewPatientButton;
 
+    @FindBy (xpath="//input[@id='patient-firstName']")
+    public WebElement patientFirstNameBox;
 
+    @FindBy (xpath="//input[@id='patient-lastName']")
+    public WebElement patientLastNameBox;
 
+    @FindBy (xpath="//input[@id='patient-birthDate']")
+    public WebElement patientBirthDateBox;
 
+    @FindBy (xpath="//input[@id='email']")
+    public WebElement patientEmailBox;
 
+    @FindBy (xpath="//input[@id='patient-phone']")
+    public WebElement patientPhoneBox;
 
+    @FindBy (xpath="//select[@id='patient-gender']")
+    public WebElement patientGenderBox;
 
+    @FindBy (xpath="//select[@id='patient-bloodGroup']")
+    public WebElement patientBloodGroupBox;
 
+    @FindBy (xpath="//input[@id='patient-adress']")
+    public WebElement patientAdressBox;
 
+    @FindBy (xpath="//textarea[@id='patient-description']")
+    public WebElement patientDescriptionBox;
 
+    @FindBy (xpath="//select[@id='patient-user']")
+    public WebElement patientUserBox;
 
+    @FindBy (xpath="//select[@id='patient-country']")
+    public WebElement patientCountryBox;
 
+    @FindBy (xpath="//select[@id='patient-cstate']")
+    public WebElement patientStateBox;
 
+    @FindBy (xpath="//button[@type='submit']")
+    public WebElement patientSaveButton;
 
+    @FindBy (xpath="//div[contains(text(),'A new Patient is created')]")
+    public WebElement patientSaveBasariliYazisi;
 
+    @FindBy (xpath="//a[@class='btn btn-info btn-sm']")
+    public WebElement patientViewButton;
 
+    @FindBy (xpath="//div[4]//dd[1]")
+    public WebElement patientViewSSN;
 
+    @FindBy (xpath="//div[4]//dd[2]")
+    public WebElement patientViewFirstName;
 
+    @FindBy (xpath="//div[4]//dd[3]")
+    public WebElement patientViewLastName;
 
+    @FindBy (xpath="//div[4]//dd[4]")
+    public WebElement patientViewBirthDate;
 
+    @FindBy (xpath="//div[4]//dd[5]")
+    public WebElement patientViewPhone;
 
+    @FindBy (xpath="//div[4]//dd[6]")
+    public WebElement patientViewGender;
 
+    @FindBy (xpath="//div[4]//dd[7]")
+    public WebElement patientViewBloodGroup;
 
+    @FindBy (xpath="//div[4]//dd[8]")
+    public WebElement patientViewAdress;
 
+    @FindBy (xpath="//div[4]//dd[9]")
+    public WebElement patientViewDescription;
 
+    @FindBy (xpath="//div[4]//dd[10]")
+    public WebElement patientViewCreatedDate;
 
+    @FindBy (xpath="//div[4]//dd[11]")
+    public WebElement patientViewUser;
 
+    @FindBy (xpath="//div[4]//dd[12]")
+    public WebElement patientViewCountry;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy (xpath="//div[4]//dd[13]")
+    public WebElement patientViewStateCity;
 
 
 

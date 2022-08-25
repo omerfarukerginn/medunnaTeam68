@@ -244,5 +244,15 @@ public class ReusableMethods {
         jse.executeScript("arguments[0].scrollIntoView()", element);
         jse.executeScript("arguments[0].click();", element);
     }
+    /**
+     * Selects a random value from a dropdown list and returns the selected Web Element
+     */
+    public static WebElement selectRandomTextFromDropdown(Select select) {
+        Random random = new Random();
+        List<WebElement> weblist = select.getOptions();
+        int optionIndex = 1 + random.nextInt(weblist.size() - 1);
+        select.selectByIndex(optionIndex);
+        return select.getFirstSelectedOption();
+    }
 
 }

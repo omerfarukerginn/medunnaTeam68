@@ -1,12 +1,9 @@
 package pages;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-
 import java.util.List;
-
 public class AdminPage {
     public AdminPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -14,15 +11,22 @@ public class AdminPage {
 
     // US_28 location
 
+    // US_28 location
+
+
 
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
+
     @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
     public WebElement singInButtonu;
+
     @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
     public WebElement itemsTitlesButonu;
+
     @FindBy(xpath = "//a[@href='/country']")
     public WebElement countryButonu;
+
     @FindBy(xpath = "//*[text()='Create a new Country']")
     public WebElement createCountryButonu;
 
@@ -32,7 +36,7 @@ public class AdminPage {
     @FindBy(xpath = "//*[@name='createdDate']")
     public WebElement tarihSaatButonu;
 
-    @FindBy(xpath = "//button[@type='submit']")
+    @FindBy(xpath = "//button[@id='save-entity']")
     public WebElement saveButonu;
 
     @FindBy(xpath = "//*[text()='State/City']")
@@ -56,12 +60,122 @@ public class AdminPage {
     @FindBy(xpath = "//*[text()='Delete']")
     public WebElement deleteButonu;
 
+    @FindBy(xpath = "//*[text()='Field translation-not-found[hospitalmsappfrontendApp.CState.country] cannot be empty!'")
+    public WebElement kirmiziUyariYazisi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //Dilek
     @FindBy(xpath = "(//*[text()='Room'])[1]")
     public WebElement roomButton;
 
+    @FindBy(xpath = "//a[@class='btn btn-primary float-right jh-create-entity']")
+    public WebElement CreateANewRoomButton;
 
+    @FindBy(xpath = "//input[@name='roomNumber']")
+    public WebElement roomNumberKutusu;
+
+    @FindBy(xpath = "//select[@name='roomType']")
+    public WebElement roomTypeKututsu;
+
+    @FindBy(xpath = "//input[@name='price']")
+    public WebElement priceKutusu;
+
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
+    public WebElement basariliIslemYesilMesajKutusu;
+
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    public WebElement isRequiredUyariYazisi;
+
+    @FindBy(xpath = "//input[@name='status']")
+    public WebElement statusKutusu;
+
+   @FindBy(xpath = "(//li[@class='page-item'])[last()]")
+   public WebElement sonSayfaninOku;
+
+    @FindBy(xpath = "//*[text()='Full']")
+    public WebElement fullYazisi;
+
+    @FindBy(xpath = "//*[text()='Available']")
+    public WebElement availableYazisi;
+
+    @FindBy(xpath = "//input[@name='description']")
+    public WebElement descriptionKutusu;
+
+    @FindBy(xpath = "//input[@name='createdDate']")
+    public WebElement createdDateKutusu;
+
+    @FindBy(xpath="(//th[@class='hand'])[3]")
+    public WebElement kacTurRoomTypeButonu;
+
+    @FindBy(xpath = "//*[text()='TWIN']")
+    public WebElement twinnType;
+
+    @FindBy(xpath = "(//*[text()='Edit'])[9]")
+    public WebElement olusturdugumRoomEditButonu;
+
+    @FindBy(xpath = "//*[text()='15051987']")
+    public WebElement idRoom;
 
 
 
@@ -1113,6 +1227,18 @@ public class AdminPage {
     @FindBy(xpath = "//div[contains(text(),'updated')]")
     public WebElement updatedToastContainer;
 
-}
+
+
+
+
+
+
+
+
+    }
+
+
+
+
 
 

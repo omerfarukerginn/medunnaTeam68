@@ -23,12 +23,15 @@ public class US_019_UI_StepDefinition {
 
 
 
+
     @Given("Hesap Menusu isaretine tiklayin ve Register dugmesine tiklayin")
     public void hesapMenusuIsaretineTiklayinVeRegisterDugmesineTiklayin() {
         Driver.waitAndClick(us019.humanButton,2);
         Driver.wait(1);
         Driver.waitAndClick(us019.accountRegisterButton);
         Driver.wait(1);
+
+
     }
 
 
@@ -56,12 +59,12 @@ public class US_019_UI_StepDefinition {
 
     }
 
+
     @And("Kullanici Items&Titles sekmesini tiklar")
     public void kullaniciItemsTitlesSekmesiniTiklar() {
         ReusableMethods.waitFor(2);
 
         us019.itemsTitlesButon.click();
-        //  us019.itemsTitlesButon.click();
 
     }
 

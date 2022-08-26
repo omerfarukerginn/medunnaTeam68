@@ -1015,8 +1015,6 @@ public class AdminPage {
 
 
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -1076,8 +1074,10 @@ public class AdminPage {
 
 
 
->>>>>>> main
-// US19 location
+
+
+
+    // US19 location
 
 
     @FindBy(xpath = "//*[text()='Items&Titles']")
@@ -1220,21 +1220,6 @@ public class AdminPage {
 
 
 
-
-
-
-
-<<<<<<< HEAD
-=======
-    }
->>>>>>> main
-
-
-
-
-
-
-<<<<<<< HEAD
 
 
 
@@ -1553,5 +1538,3 @@ public class AdminPage {
 }
 
 
-=======
->>>>>>> main

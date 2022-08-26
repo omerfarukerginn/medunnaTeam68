@@ -143,19 +143,22 @@ public class US_015_UI_StepDefinition {
 
     @Given("Admin Appointment edit butonuna basar")
     public void admin_appointment_edit_butonuna_basar() {
+        actions.sendKeys(Keys.ARROW_RIGHT);
         adminPage.appointmentEditButton.click();
     }
 
     @Then("Herhangi bir doktor atamasi yapar")
-    public void herhangi_bir_doktor_atamasi_yapar() {
+    public void herhangi_bir_doktor_atamasi_yapar() throws InterruptedException {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.ARROW_DOWN).perform();
         select = new Select(adminPage.appointmentDoktorAtamaDDM);
+        Thread.sleep(3000);
         ReusableMethods.selectRandomTextFromDropdown(select);
     }
 
     @Then("Appointment sonrasi Save butonuna basar")
     public void appointment_sonrasi_save_butonuna_basar() {
-        adminPage.appointmentSaveButton.click();
+        adminPage.appointmentSaveButton.submit();
     }
 
     @Then("Appointment Guncelleme yapildi yazisinin gorunurlugunu test eder")

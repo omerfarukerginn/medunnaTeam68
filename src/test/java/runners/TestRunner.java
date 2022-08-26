@@ -14,7 +14,7 @@ import io.cucumber.junit.Cucumber;
         features = "src/test/resources/features/uiFeatures",
         glue = "stepDefinitions/uiStepDefinitions",
         tags = "@",
-        dryRun = true
+        dryRun = false
 )
 
 public class TestRunner {

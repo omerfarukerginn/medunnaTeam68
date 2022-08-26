@@ -28,6 +28,7 @@ Feature:US_021 Staff hastalar icin randevuları gorur
     And ofe Staff Show Appointments butonuna tiklar
     And ofe Staff Show Appointments ilk sutundaki edit butonuna tiklar
     And ofe Staff edit appointment sayfasinda status kismini UNAPPROVED yapar
+    And kullanici 4 sn bekler
     And ofe Kullanici sayfayi asagi kaydirir
     And kullanici 2 sn bekler
     And ofe Save butonuna tiklar
@@ -64,6 +65,7 @@ Feature:US_021 Staff hastalar icin randevuları gorur
     And ofe Staff Show Appointments butonuna tiklar
     And ofe Staff Show Appointments ilk sutundaki edit butonuna tiklar
     And ofe Staff edit appointment sayfasinda status kismini CANCELLED yapar
+    And kullanici 4 sn bekler
     And ofe Kullanici sayfayi asagi kaydirir
     And kullanici 2 sn bekler
     And ofe Save butonuna tiklar
@@ -79,7 +81,11 @@ Feature:US_021 Staff hastalar icin randevuları gorur
     Then Kullanici staff mahmut olarak giris yapar
     And ofe Staff My Pages sayfasina tiklar
     And ofe Staff Search Patient butonuna tiklar
+    And kullanici 2 sn bekler
     And ofe Staff Show Appointments butonuna tiklar
+    And kullanici 2 sn bekler
     And ofe Staff Show Appointments ilk sutundaki edit butonuna tiklar
+    And kullanici 2 sn bekler
     And ofe Staff edit appointment sayfasinda status kismini COMPLETED seceneginin secilemedigini onaylar
+    And kullanici 2 sn bekler
     And ofe Sayfayi kapatir

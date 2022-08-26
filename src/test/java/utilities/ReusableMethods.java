@@ -16,7 +16,7 @@ import java.util.*;
 import java.util.function.Function;
 
 
-public class ReusableMethods {
+public class    ReusableMethods {
 
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication

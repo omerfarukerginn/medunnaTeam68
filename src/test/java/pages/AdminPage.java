@@ -463,10 +463,11 @@ public class AdminPage {
     @FindBy (xpath="//div[@role='alert']")
     public WebElement olumluAlertBilgisi;
 
+    @FindBy (xpath="(//li[@class='page-item'])[5]")
+    public WebElement kullanicininOlduguSafya;
 
-
-
-
+    @FindBy (xpath="(//*[text()='Delete'])[12]") //12.user'i silme
+    public WebElement onIkinciUseriSilmeButonu;
 
 
 

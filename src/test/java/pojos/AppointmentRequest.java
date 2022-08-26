@@ -37,4 +37,5 @@ public class AppointmentRequest {
     private String ssn;
     private String startDate;
 
+
 }

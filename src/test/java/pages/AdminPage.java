@@ -171,12 +171,20 @@ public class AdminPage {
     @FindBy(xpath = "//*[text()='TWIN']")
     public WebElement twinnType;
 
-    @FindBy(xpath = "(//*[text()='Edit'])[9]")
-    public WebElement olusturdugumRoomEditButonu;
+ @FindBy(xpath = "//*[text()='DAYCARE']")
+ public WebElement daycareType;
 
-    @FindBy(xpath = "//*[text()='15051987']")
+    @FindBy(xpath = "//tbody//tr[1]//td[1]")
     public WebElement idRoom;
 
+    @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[1]")
+    public WebElement editButonuOnAlti;
+
+    @FindBy(xpath = "//button[@id='jhi-confirm-delete-room']")
+    public WebElement deleteOnAltiUSIkinci;
+
+    @FindBy(xpath = "(//*[text()='Delete'])[6]")
+    public WebElement deleteDilek;
 
 
 

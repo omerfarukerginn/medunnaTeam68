@@ -10,8 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import pages.StaffPage;
 import utilities.Driver;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class US_021_UI_StepDefinition {
 
@@ -63,12 +62,7 @@ public class US_021_UI_StepDefinition {
 
     @Then("ofe The Appointment is updated with identifier uyarisinin goruldugunu onaylar")
     public void ofe_the_appointment_is_updated_with_identifier_uyarisinin_goruldugunu_onaylar() {
-        try {
-            Assert.assertFalse(staffPage.kirmiziUyariBalonu.isDisplayed());
-        }
-        catch(AssertionError e) {
-            System.out.println("FAILED");
-        }
+        assertTrue(staffPage.ozelYesilUyariBalonu.isDisplayed());
     }
 
 
@@ -112,6 +106,10 @@ public class US_021_UI_StepDefinition {
 
     @And("ofe Staff edit appointment sayfasinda status kismini COMPLETED seceneginin secilemedigini onaylar")
     public void ofeStaffEditAppointmentSayfasindaStatusKisminiCOMPLETEDSecenegininSecilemediginiOnaylar() {
+        Select select = new Select(staffPage.statusDropdownElement);
+        select.selectByVisibleText("COMPLETED");
+        staffPage.appointmentEditEndDateArea.click();
+        assertNotEquals(staffPage.statusDropdownElement.getAccessibleName(),"COMPLETED");
 
     }
 }

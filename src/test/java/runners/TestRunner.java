@@ -15,6 +15,7 @@ import io.cucumber.junit.Cucumber;
         glue = "stepDefinitions/uiStepDefinitions",
         tags = "@US_016_TC006",
         dryRun = false
+
 )
 
 public class TestRunner {

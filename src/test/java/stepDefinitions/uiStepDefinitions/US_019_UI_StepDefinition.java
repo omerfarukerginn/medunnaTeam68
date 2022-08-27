@@ -13,8 +13,10 @@ import utilities.ReusableMethods;
 
 
 
+
 import java.util.Arrays;
 import java.util.List;
+
 
 
 public class US_019_UI_StepDefinition {
@@ -23,6 +25,7 @@ public class US_019_UI_StepDefinition {
     AdminPage us019 = new AdminPage();
     Actions action = new Actions(Driver.getDriver());
     static String staffNewID;
+
 
 
 
@@ -40,6 +43,8 @@ public class US_019_UI_StepDefinition {
 
 
     }
+
+
 
 
     @And("Yeni bir kullanici icin tum bilgileri dolduru tiklatin {string},{string},{string},{string},{string},{string},{string}")

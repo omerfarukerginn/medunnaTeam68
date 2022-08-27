@@ -38,10 +38,13 @@ public class US_016_UI_StepDefinition {
 
 
 
+
         ReusableMethods.waitFor(2);
 
 
         ReusableMethods.waitFor(2);
+
+
 
 
         us016.roomButton.click();

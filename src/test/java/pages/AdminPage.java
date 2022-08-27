@@ -10,16 +10,7 @@ public class AdminPage {
     }
 
 
-
-
     // US_28 location
-
-
-
-
-
-
-
 
 
     @FindBy(xpath = "//a[@aria-haspopup='true']")
@@ -126,15 +117,6 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
     //Dilek
     @FindBy(xpath = "(//*[text()='Room'])[1]")
     public WebElement roomButton;
@@ -160,8 +142,8 @@ public class AdminPage {
     @FindBy(xpath = "//input[@name='status']")
     public WebElement statusKutusu;
 
-   @FindBy(xpath = "(//li[@class='page-item'])[last()]")
-   public WebElement sonSayfaninOku;
+    @FindBy(xpath = "(//li[@class='page-item'])[last()]")
+    public WebElement sonSayfaninOku;
 
     @FindBy(xpath = "//*[text()='Full']")
     public WebElement fullYazisi;
@@ -175,7 +157,7 @@ public class AdminPage {
     @FindBy(xpath = "//input[@name='createdDate']")
     public WebElement createdDateKutusu;
 
-    @FindBy(xpath="(//th[@class='hand'])[3]")
+    @FindBy(xpath = "(//th[@class='hand'])[3]")
     public WebElement kacTurRoomTypeButonu;
 
     @FindBy(xpath = "//*[text()='TWIN']")
@@ -189,6 +171,7 @@ public class AdminPage {
 
     @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[1]")
     public WebElement editButonuOnAlti;
+
 
     @FindBy(xpath = "//button[@id='jhi-confirm-delete-room']")
     public WebElement deleteOnAltiUSIkinci;
@@ -434,6 +417,7 @@ public class AdminPage {
 
 
 
+
     // NAIL 311-410 - BASLAMA NOKTASI
 
     @FindBy(xpath = "(//*[@href='/physician'])[1]")
@@ -532,6 +516,8 @@ public class AdminPage {
 
 
 
+
+
     // NAIL 311-410 - BITIS NOKTASI
     //Ebru 411-510 arasi
     @FindBy(xpath = "//li[@id='admin-menu']")
@@ -557,6 +543,7 @@ public class AdminPage {
 
     @FindBy(xpath = "//dd[6]") //email icin getTest yapilir, assert edilir
     public WebElement createdBy;
+
 
 
 
@@ -962,6 +949,9 @@ public class AdminPage {
 
 
 
+// US19 location
+
+
 
 
 
@@ -1270,6 +1260,7 @@ public class AdminPage {
 
     @FindBy(xpath = "//input[@name='searchSSN']")
     public WebElement SSNBox;
+
 
     @FindBy(xpath = "//button[@class='btn btn-secondary']")
     public WebElement SearchUserButton;
@@ -1732,5 +1723,8 @@ public class AdminPage {
 
 
 }
+
+
+
 
 

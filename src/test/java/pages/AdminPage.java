@@ -1522,6 +1522,26 @@ public class AdminPage {
 
 
 
+    // Administration
+
+    @FindBy(xpath = "(//*[text()='Delete'])[17]")
+    public WebElement AdministorDeletedButton;
+
+    @FindBy(xpath = "(//a[@class='page-link'])[6]")
+    public WebElement KayitliStaffSayfasi;
+
+    @FindBy(xpath = "//a[@class='btn btn-info btn-sm']")
+    public WebElement AdministorViewdButton;
+
+    @FindBy(xpath = "(//*[text()='Edit'])[17]")
+    public WebElement AdministorEditdButton;
+
+    @FindBy(xpath = "(//a[@class='page-link'])[9]")
+    public WebElement AdministorSayfaAtlamadButton;
+
+    @FindBy(xpath = "//a[@class='btn btn-danger btn-sm']")
+    public WebElement  AdministorDeletedButton2;
+
 
 
 

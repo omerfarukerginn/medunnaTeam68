@@ -8,14 +8,13 @@ public class AdminPage {
     public AdminPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-<<<<<<< HEAD
-    // US_28 location
-=======
-
     // US_28 location
 
 
->>>>>>> main
+
+
+
+
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
 
@@ -113,11 +112,7 @@ public class AdminPage {
 
 
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> main
     //Dilek
     @FindBy(xpath = "(//*[text()='Room'])[1]")
     public WebElement roomButton;
@@ -213,6 +208,55 @@ public class AdminPage {
 
 
 
+//US_017 baslama
+    @FindBy (xpath = "//span[text()='Test Item']")  //a[@class='dropdown-item active']
+    public WebElement testItemButton;
+    @FindBy (xpath = "//a[@id='jh-create-entity']")
+    public WebElement createANewTestItemButton;
+    @FindBy (xpath = "(//input[@type='text'])[1]")
+    public WebElement testItemNameBox;
+    @FindBy (xpath = "//*[@id='c-test-item-description']")
+    public WebElement testItemDescriptionBox;
+    @FindBy (xpath = "//*[@id='c-test-item-price']")
+    public WebElement testItemPriceBox;
+    @FindBy (xpath = "//*[@id='c-test-item-defaultValMin']']")
+    public WebElement testItemDefaultValMinBox;
+    @FindBy (xpath = "//*[@id='c-test-item-defaultValMax']")
+    public WebElement testItemDefaultValMaxBox;
+    @FindBy (xpath = "//*[@name='createdDate']")
+    public WebElement testItemCreatedDateBox;
+    @FindBy (xpath = "//*[@id='save-entity']")
+    public WebElement testItemSaveButton;
+    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
+    public WebElement onayYazisiCreate;
+    @FindBy(xpath = "(//*[text()='Edit'])[13]")
+    public List<WebElement> testItemEditButton; //(//*[@class='btn btn-primary btn-sm'])[16]
+    @FindBy(xpath = "(//li[@class='page-item'])[5]")
+    public WebElement sayfaGecme49; //(//*[@class='page-link'])[6]  //a[text()='49'] (//li[@class='page-item'])[last()]
+    @FindBy(xpath = "(//*[@class='btn btn-link btn-sm'])[13]")
+    public WebElement testItemId;
+    @FindBy (xpath = "//thead//tr[1]//th[1]") //thead//tr[1]//th[1]  //tr//th[1]
+    public List<WebElement> tumTestItemId;
+    @FindBy(xpath = "//*[text()='Save']")
+    public WebElement testItemSaveButton2;
+    @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[12]")
+    public List<WebElement> testItemViewButton;
+    @FindBy (xpath = "//dl//dt[1]")
+    public WebElement testItemsName;
+    @FindBy(xpath = "//dl//dt[2]")
+    public WebElement testItemsDescription;
+    @FindBy(xpath = "//dl//dt[3]")
+    public WebElement testItemsPrice;
+    @FindBy(xpath = "//dl//dt[4]")
+    public WebElement testItemsDefaultMnValue;
+    @FindBy(xpath = "//dl//dt[5]")
+    public WebElement testItemsDefaultMxValue;
+    @FindBy(xpath = "//dl//dt[6]")
+    public WebElement testItemsCreatedDate;
+    @FindBy(xpath = "(//a[@class='btn btn-danger btn-sm'])[12]")
+    public WebElement testItemsDeleteButton;
+    @FindBy(xpath = "(//button[@type='button'])[4]")
+    public WebElement testItemsDeleteButton2;
 
 
 
@@ -307,12 +351,7 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
+//US_017 bitis
 
 
 
@@ -952,10 +991,8 @@ public class AdminPage {
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> main
+
 
 
 

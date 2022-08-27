@@ -171,131 +171,20 @@ public class AdminPage {
     @FindBy(xpath = "//*[text()='TWIN']")
     public WebElement twinnType;
 
-    @FindBy(xpath = "(//*[text()='Edit'])[9]")
-    public WebElement olusturdugumRoomEditButonu;
+ @FindBy(xpath = "//*[text()='DAYCARE']")
+ public WebElement daycareType;
 
-    @FindBy(xpath = "//*[text()='15051987']")
+    @FindBy(xpath = "//tbody//tr[1]//td[1]")
     public WebElement idRoom;
 
+    @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[1]")
+    public WebElement editButonuOnAlti;
 
+    @FindBy(xpath = "//button[@id='jhi-confirm-delete-room']")
+    public WebElement deleteOnAltiUSIkinci;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "(//*[text()='Delete'])[6]")
+    public WebElement deleteDilek;
 
 
 
@@ -480,6 +369,52 @@ public class AdminPage {
     public WebElement physicianDeleteButonu_2;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // NAIL 311-410 - BITIS NOKTASI
     //Ebru 411-510 arasi
     @FindBy(xpath = "//li[@id='admin-menu']")
@@ -573,19 +508,46 @@ public class AdminPage {
 
 
 
+    //Omer 511-610 arasi
 
+   @FindBy(xpath = "//a[@href='/c-message'][1]")
+   public WebElement itemsTitlesMessagesButton;
 
+   @FindBy(xpath = "//a[@class='btn btn-info btn-sm'][1]")
+   public WebElement messagesPageIlkViewButton;
 
+   @FindBy(xpath = "//span[@id='name']")
+   public WebElement messagesViewNameWebElement;
 
+   @FindBy(xpath = "//span[@id='email']")
+   public WebElement messagesViewEmailWebElement;
 
+   @FindBy(xpath = "//span[@id='message']")
+   public WebElement messagesViewMessageWebElement;
 
+   @FindBy(xpath = "//a[@id='jh-create-entity']")
+   public WebElement createNewMessageButton;
 
+   @FindBy(xpath = "//input[@id='c-message-name']")
+   public WebElement nameForNewMessage;
 
+   @FindBy(xpath = "//input[@id='c-message-email']")
+   public WebElement emailForNewMessage;
 
+   @FindBy(xpath = "//input[@id='c-message-subject']")
+   public WebElement subjectForNewMessage;
 
+   @FindBy(xpath = "//input[@id='c-message-message']")
+   public WebElement messageForNewMessage;
 
+   @FindBy(xpath = "//a[@class='btn btn-primary btn-sm'][1]")
+   public WebElement messagesPageIlkEditButton;
 
+   @FindBy(xpath = "//a[@class='btn btn-danger btn-sm'][1]")
+   public WebElement messagesPageIlkDeleteButton;
 
+   @FindBy(xpath = "//button[@id='jhi-confirm-delete-cMessage']")
+   public WebElement messagesPopUpDeleteButton;
 
 
 
@@ -645,56 +607,157 @@ public class AdminPage {
 
 
 
+   // US_015 Ridvan
 
+    @FindBy(xpath="//*[text()='Patient']")
+    public WebElement patientButonuDDMenu;
 
+    @FindBy (xpath="//a[@id='jh-create-entity']")
+    public WebElement createNewPatientButton;
 
+    @FindBy (xpath="//input[@id='patient-firstName']")
+    public WebElement patientFirstNameBox;
 
+    @FindBy (xpath="//input[@id='patient-lastName']")
+    public WebElement patientLastNameBox;
 
+    @FindBy (xpath="//input[@id='patient-birthDate']")
+    public WebElement patientBirthDateBox;
 
+    @FindBy (xpath="//input[@id='email']")
+    public WebElement patientEmailBox;
 
+    @FindBy (xpath="//input[@id='patient-phone']")
+    public WebElement patientPhoneBox;
 
+    @FindBy (xpath="//select[@id='patient-gender']")
+    public WebElement patientGenderBox;
 
+    @FindBy (xpath="//select[@id='patient-bloodGroup']")
+    public WebElement patientBloodGroupBox;
 
+    @FindBy (xpath="//input[@id='patient-adress']")
+    public WebElement patientAdressBox;
 
+    @FindBy (xpath="//textarea[@id='patient-description']")
+    public WebElement patientDescriptionBox;
 
+    @FindBy (xpath="//select[@id='patient-user']")
+    public WebElement patientUserBox;
 
+    @FindBy (xpath="//select[@id='patient-country']")
+    public WebElement patientCountryBox;
 
+    @FindBy (xpath="//select[@id='patient-cstate']")
+    public WebElement patientStateBox;
 
+    @FindBy (xpath="//button[@type='submit']")
+    public WebElement patientSaveButton;
 
+    @FindBy (xpath="//div[contains(text(),'A new Patient is created')]")
+    public WebElement patientSaveBasariliYazisi;
 
+    @FindBy (xpath="//a[@class='btn btn-info btn-sm']")
+    public WebElement patientViewButton;
 
+    @FindBy (xpath="//div[4]//dd[1]")
+    public WebElement patientViewSSN;
 
+    @FindBy (xpath="//div[4]//dd[2]")
+    public WebElement patientViewFirstName;
 
+    @FindBy (xpath="//div[4]//dd[3]")
+    public WebElement patientViewLastName;
 
+    @FindBy (xpath="//div[4]//dd[4]")
+    public WebElement patientViewBirthDate;
 
+    @FindBy (xpath="//div[4]//dd[5]")
+    public WebElement patientViewPhone;
 
+    @FindBy (xpath="//div[4]//dd[6]")
+    public WebElement patientViewGender;
 
+    @FindBy (xpath="//div[4]//dd[7]")
+    public WebElement patientViewBloodGroup;
 
+    @FindBy (xpath="//div[4]//dd[8]")
+    public WebElement patientViewAdress;
 
+    @FindBy (xpath="//div[4]//dd[9]")
+    public WebElement patientViewDescription;
 
+    @FindBy (xpath="//div[4]//dd[10]")
+    public WebElement patientViewCreatedDate;
 
+    @FindBy (xpath="//div[4]//dd[11]")
+    public WebElement patientViewUser;
 
+    @FindBy (xpath="//div[4]//dd[12]")
+    public WebElement patientViewCountry;
 
+    @FindBy (xpath="//div[4]//dd[13]")
+    public WebElement patientViewStateCity;
 
+    @FindBy (xpath="//a[@class='btn btn-primary btn-sm']")
+    public WebElement patientEditButton;
 
+    @FindBy (xpath="//*[@id=\"patient-firstName\"]")
+    public WebElement patientEditFirstNameBox;
 
+    @FindBy (xpath="//*[@id=\"patient-lastName\"]")
+    public WebElement patientEditLastNameBox;
 
+    @FindBy (xpath="//*[@id=\"patient-birthDate\"]")
+    public WebElement patientEditBirthDateBox;
 
+    @FindBy (xpath="//*[@id=\"email\"]")
+    public WebElement patientEditEmailBox;
 
+    @FindBy (xpath="//*[@id=\"patient-phone\"]")
+    public WebElement patientEditPhoneBox;
 
+    @FindBy (xpath="//*[@id=\"patient-gender\"]")
+    public WebElement patientEditGenderBox;
 
+    @FindBy (xpath="//*[@id=\"patient-bloodGroup\"]")
+    public WebElement patientEditBloodGroupBox;
 
+    @FindBy (xpath="//*[@id=\"patient-adress\"]")
+    public WebElement patientEditAdressBox;
 
+    @FindBy (xpath="//*[@id=\"patient-description\"]")
+    public WebElement patientEditDescriptionBox;
 
+    @FindBy (xpath="//*[@id=\"patient-user\"]")
+    public WebElement patientEditUserBox;
 
+    @FindBy (xpath="//*[@id=\"patient-country\"]")
+    public WebElement patientEditCountryBox;
 
+    @FindBy (xpath="//*[@id=\"patient-cstate\"]")
+    public WebElement patientEditStateBox;
 
+    @FindBy (xpath="//button[@id='save-entity']")
+    public WebElement patientEditSaveButton;
 
+    @FindBy (xpath="//div[@class='Toastify__toast-body']")
+    public WebElement patientEditBasariliYazisi;
 
+    @FindBy (xpath="//span[text()='Appointment']")
+    public WebElement appointmentDDMButton;
 
+    @FindBy (xpath="(//a[@class='btn btn-primary btn-sm'])[1]")
+    public WebElement appointmentEditButton;
 
+    @FindBy (xpath="//*[@id='appointment-physician']")
+    public WebElement appointmentDoktorAtamaDDM;
 
+    @FindBy (xpath="//*[@id='save-entity']")
+    public WebElement appointmentSaveButton;
 
+    @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
+    public WebElement appointmentDoktorAtamasiBasariliYazisi;
 
 
 
@@ -1013,82 +1076,7 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// US19 location
+    // US19 location
 
 
     @FindBy(xpath = "//*[text()='Items&Titles']")
@@ -1227,6 +1215,313 @@ public class AdminPage {
     @FindBy(xpath = "//div[contains(text(),'updated')]")
     public WebElement updatedToastContainer;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Administration
 
     @FindBy(xpath = "(//*[text()='Delete'])[17]")
@@ -1255,10 +1550,10 @@ public class AdminPage {
 
 
 
-    }
 
 
 
 
+}
 
 

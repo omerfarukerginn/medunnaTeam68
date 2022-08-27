@@ -31,7 +31,8 @@ public class Physician {
     private String image;
     private String imageContentType;
 
-
+    public Physician(String kamil, String selm, String male, String s, String s1, String s2, String sarnic_turkey, String s3, String degistirme) {
+    }
 
 
     //        "physician": {

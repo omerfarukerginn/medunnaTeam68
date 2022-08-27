@@ -37,7 +37,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin kayitli kisinin Last Name i degistirir
     And mnk Admin kayitli kisinin Birth Date i degistirir
     And mnk Admin Save butonuna tiklar
-    And mnk Admin onay arbutus gorur
+    And mnk Admin onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
   @US_018_TC_005

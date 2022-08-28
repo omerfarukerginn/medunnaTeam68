@@ -283,5 +283,7 @@ public class US_016_UI_StepDefinition {
     public void adminIknciDeleteUyarisiTusunaBasar() {
         us016.deleteOnAltiUSIkinci.sendKeys(Keys.ENTER);
     }
+
+
 }
 

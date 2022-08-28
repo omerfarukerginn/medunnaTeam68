@@ -2,7 +2,10 @@ package stepDefinitions.uiStepDefinitions;
 import io.cucumber.java.en.And;
 import org.openqa.selenium.interactions.Actions;
 import pages.AdminPage;
+import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
+
 public class US_019_UI_StepDefinition {
 
 
@@ -11,7 +14,7 @@ public class US_019_UI_StepDefinition {
 
 
 
-    }
+
 
     @And("Kullanici gecerli bir Username ve Password girer")
     public void kullaniciGecerliBirUsernameVePasswordGirer() {

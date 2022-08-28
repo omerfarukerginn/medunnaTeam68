@@ -8,19 +8,13 @@ public class AdminPage {
     public AdminPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-<<<<<<< HEAD
-    // US_28 location
-=======
+
 
     // US_28 location
 
 
->>>>>>> main
-    @FindBy(xpath = "//a[@aria-haspopup='true']")
-    public WebElement humanButton;
 
-    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
-    public WebElement singInButtonu;
+
 
     @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
     public WebElement itemsTitlesButonu;
@@ -52,18 +46,20 @@ public class AdminPage {
     @FindBy(xpath = "//*[@id='c-state-state']")
     public WebElement stateCitySecmeButonu;
 
-    @FindBy(xpath = "(//*[text()='YeniDunya'])[1]")
-    public WebElement ulkeIsmi;
-
     @FindBy(xpath = "//tr//td[2]")
     public List<WebElement> tumUlkeIsimleri;
 
     @FindBy(xpath = "//*[text()='Delete']")
     public WebElement deleteButonu;
 
-    @FindBy(xpath = "//*[text()='Field translation-not-found[hospitalmsappfrontendApp.CState.country] cannot be empty!'")
+    @FindBy(xpath = "//*[@id='jhi-confirm-delete-country']")
+    public WebElement ikiciDeleteButonu;
+
+    @FindBy(xpath = "//*[@role='alert']")
     public WebElement kirmiziUyariYazisi;
 
+    @FindBy(xpath = "//*[@class='modal-content']")
+    public WebElement deleteOperationYazisi;
 
 
 
@@ -113,11 +109,6 @@ public class AdminPage {
 
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> main
     //Dilek
     @FindBy(xpath = "(//*[text()='Room'])[1]")
     public WebElement roomButton;
@@ -952,10 +943,8 @@ public class AdminPage {
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> main
+
 
 
 

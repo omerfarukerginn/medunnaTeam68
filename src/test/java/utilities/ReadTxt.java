@@ -1,6 +1,7 @@
 package utilities;
 
 import pojos.Appointment;
+import pojos.Physician;
 import pojos.Registrant;
 import pojos.Room;
 import pojos.Staff;
@@ -241,8 +242,6 @@ public class ReadTxt {
         return all;
     }
 
-
-
     public static List<Object> returnStaffIDsList(String filePath) {
         List<Object> all = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -264,8 +263,32 @@ public class ReadTxt {
         return all;
     }
 
+   
 
-    public static List<Object> returnRoomIDsList(String filePath) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ public static List<Object> returnPhysicianIDsList(String filePath) {
+
         List<Object> all = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             StringBuilder sb = new StringBuilder();
@@ -273,12 +296,11 @@ public class ReadTxt {
             System.out.println(line);
             int i = 0;
             while (line != null) {
-
-                Room room = new Room();
-                room.setId(Integer.parseInt(line.split(",")[0]));
+                Physician physician = new Physician();
+                physician.setId(Integer.parseInt(line.split(",")[0]));
                 sb.append(System.lineSeparator());
                 line = br.readLine();
-                all.add(room.getId());
+                all.add(physician.getId());
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -287,6 +309,3 @@ public class ReadTxt {
     }
 
 }
-
-
-

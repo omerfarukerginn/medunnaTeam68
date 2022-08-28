@@ -139,16 +139,17 @@ public class US_018_UI_StepDefinition {
         us018.physicianEditDossyaSecButonu.sendKeys(path);
     }
 
-    @And("mnk Admin image onay kutusunu gorur")
-    public void mnkAdminImageOnayKutusunuGorur() {
-        ReusableMethods.waitFor(5);
-        Actions actions = new Actions(Driver.getDriver());
-        ReusableMethods.waitFor(5);
-        actions.moveToElement(us018.physicianEditImageOnayi).perform();
-        ReusableMethods.waitFor(5);
-        Assert.assertTrue(us018.physicianEditImageOnayi.isDisplayed());
-        //Assert.assertTrue(Driver.waitForVisibility(us018.physicianEditImageOnayi,5).isDisplayed());
-    }
+         @And("mnk Admin image onay kutusunu gorur")
+         public void mnkAdminImageOnayKutusunuGorur() {
+
+             ReusableMethods.waitFor(3);
+             Actions actionss = new Actions(Driver.getDriver());
+             actionss.moveToElement(us018.StaffBilgilerinKaydedilmeOnayi).perform();
+             ReusableMethods.waitFor(1);
+             Assert.assertTrue(us018.StaffBilgilerinKaydedilmeOnayi.isDisplayed());
+             ReusableMethods.waitFor(3);
+             //Assert.assertTrue(Driver.waitForVisibility(us018.physicianEditImageOnayi,5).isDisplayed());
+         }
 
     @Then("mnk Admin kayitli kisinin Exam fee lini degistirir")
     public void mnk_admin_kayitli_kisinin_exam_fee_lini_degistirir() {
@@ -165,7 +166,10 @@ public class US_018_UI_StepDefinition {
        //ReusableMethods.waitFor(2);
        //Select objSelect = new Select(us018.physicianEditUserKutusu);
        //objSelect.selectByVisibleText("team68:125-98-6788");
-        Assert.assertTrue(us018.physicianEditUserKutusu.getText().contains("physician-test3:635-27-6354"));
+        Driver.waitAndClick(us018.physicianEditUserKutusu);
+        ReusableMethods.waitFor(3);
+        us018.physicianEditUserKutusu.sendKeys("physician-test3:635-27-6354");
+        //Assert.assertTrue(us018.physicianEditUserKutusu.getText().contains("physician-test3:635-27-6354"));
     }
 
 
@@ -187,4 +191,43 @@ public class US_018_UI_StepDefinition {
         us018.physicianDeleteButonu_2.sendKeys(Keys.ENTER);
     }
 
+    @And("mnk Admin yeni bilgilerin onay kutusunu gorur")
+    public void mnkAdminYeniBilgilerinOnayKutusunuGorur() {
+        ReusableMethods.waitFor(3);
+        Actions actionss = new Actions(Driver.getDriver());
+        actionss.moveToElement(us018.StaffBilgilerinKaydedilmeOnayi).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(us018.StaffBilgilerinKaydedilmeOnayi.isDisplayed());
+        ReusableMethods.waitFor(3);
+    }
+
+    @And("mnk Admin uzmanlik bilgisi onay kutusunu gorur")
+    public void mnkAdminUzmanlikBilgisiOnayKutusunuGorur() {
+        ReusableMethods.waitFor(3);
+        Actions actionss = new Actions(Driver.getDriver());
+        actionss.moveToElement(us018.StaffBilgilerinKaydedilmeOnayi).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(us018.StaffBilgilerinKaydedilmeOnayi.isDisplayed());
+        ReusableMethods.waitFor(3);
+    }
+
+    @And("mnk Admin yeni muayene ucreti onay kutusunu gorur")
+    public void mnkAdminYeniMuayeneUcretiOnayKutusunuGorur() {
+        ReusableMethods.waitFor(3);
+        Actions actionss = new Actions(Driver.getDriver());
+        actionss.moveToElement(us018.StaffBilgilerinKaydedilmeOnayi).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(us018.StaffBilgilerinKaydedilmeOnayi.isDisplayed());
+        ReusableMethods.waitFor(3);
+    }
+
+    @And("mnk Admin doktor seceme onay kutusunu gorur")
+    public void mnkAdminDoktorSecemeOnayKutusunuGorur() {
+        ReusableMethods.waitFor(3);
+        Actions actionss = new Actions(Driver.getDriver());
+        actionss.moveToElement(us018.StaffBilgilerinKaydedilmeOnayi).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(us018.StaffBilgilerinKaydedilmeOnayi.isDisplayed());
+        ReusableMethods.waitFor(3);
+    }
 }

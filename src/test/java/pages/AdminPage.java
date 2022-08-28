@@ -398,15 +398,6 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
     // NAIL 311-410 - BASLAMA NOKTASI
 
     @FindBy(xpath = "(//*[@href='/physician'])[1]")
@@ -446,7 +437,7 @@ public class AdminPage {
     @FindBy(xpath = "//*[@id='file_image']")
     public WebElement physicianEditDossyaSecButonu;
 
-    @FindBy(xpath = "///*[@class='Toastify__toast-body']")
+    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
     public WebElement physicianEditImageOnayi;
 
     @FindBy(xpath = "//*[@name='examFee']")
@@ -459,10 +450,11 @@ public class AdminPage {
     public WebElement physicianDeleteButonu_2;
 
 
+    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
+    public WebElement onayYazisiCreate;
 
-
-
-
+    @FindBy(xpath = "//*[text()='A Physician is updated with identifier 2051']") //"//(//div[4]//div[1])[2]//h2]")
+    public WebElement yesilOnay;
 
 
 

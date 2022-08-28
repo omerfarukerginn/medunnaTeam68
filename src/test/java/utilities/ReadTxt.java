@@ -2,6 +2,7 @@ package utilities;
 
 import pojos.Appointment;
 import pojos.Registrant;
+import pojos.Staff;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -238,6 +239,30 @@ public class ReadTxt {
         }
         return all;
     }
+
+
+
+    public static List<Object> returnStaffIDsList(String filePath) {
+        List<Object> all = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            System.out.println(line);
+            int i = 0;
+            while (line != null) {
+
+                Staff staff = new Staff();
+                staff.setId(Integer.parseInt(line.split(",")[0]));
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+                all.add(staff.getId());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return all;
+    }
+
 
 }
 

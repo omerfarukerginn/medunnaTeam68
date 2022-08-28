@@ -31,14 +31,3 @@ Feature:US_022 Hasta Test sonuçları (Staff)
     And mnk Staff Test Result lari gorur ve gunceller
     And mnk Admin sayfayi kapatir
 
-
-
-
-
-
-
-
-
-
-
-

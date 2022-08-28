@@ -253,369 +253,7 @@ public class StaffPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//------------------------------------OMER------------------------------------\\
-
-    @FindBy(xpath = "//a[@href='/patient-appointments/1051']")
-    public WebElement ofeOzelIlkSutunShowAppointmentsButton;
-
-    @FindBy(xpath = "//a[@href='/appointment-update/12868']")
-    public WebElement ofeOzelAppointmentsEditButton;
-
-    @FindBy(xpath = "//input[@name='startDate']")
-    public WebElement appointmentEditStartDateArea;
-
-    @FindBy(xpath = "//input[@name='endDate']")
-    public WebElement appointmentEditEndDateArea;
-
-    @FindBy(xpath = "//div[text()='The Appointment is updated with identifier 12868']")
-    public WebElement ozelYesilUyariBalonu;
-
-    @FindBy(xpath = "//select[@name='status']")
-    public WebElement statusDropdownElement;
-
-    @FindBy(xpath = "//div[text()='Appointment status can not be changed with this type of status']")
-    public WebElement kirmiziUyariBalonu;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // NAIL 255-355
+// NAIL 255-355
 
     @FindBy(xpath = "(//tr)[2]//td[2]")
     public WebElement hastaSsnOnayi;
@@ -713,6 +351,47 @@ public class StaffPage {
 
 
 
+// NAIL 255-355
+
+
+
+
+
+
+//------------------------------------OMER------------------------------------\\
+
+    @FindBy(xpath = "//a[@class='btn btn-warning btn-sm'][1]")
+    public WebElement ofeOzelIlkSutunShowAppointmentsButton;
+
+    @FindBy(xpath = "//a[@class='btn btn-warning btn-sm'][1]")
+    public WebElement ofeOzelAppointmentsEditButton;
+
+    @FindBy(xpath = "//input[@name='startDate']")
+    public WebElement appointmentEditStartDateArea;
+
+    @FindBy(xpath = "//input[@name='endDate']")
+    public WebElement appointmentEditEndDateArea;
+
+    @FindBy(xpath = "//button[@class='Toastify__close-button Toastify__close-button--success']")
+    public WebElement ozelYesilUyariBalonu;
+
+    @FindBy(xpath = "//select[@name='status']")
+    public WebElement statusDropdownElement;
+
+    @FindBy(xpath = "//button[@class='Toastify__close-button Toastify__close-button--error']")
+    public WebElement kirmiziUyariBalonu;
+
+    @FindBy(xpath = "//textarea[@id='appointment-anamnesis']")
+    public WebElement anamnesisTextArea;
+
+    @FindBy(xpath = "//textarea[@id='appointment-treatment']")
+    public WebElement treatmentTextArea;
+
+    @FindBy(xpath = "//textarea[@id='appointment-diagnosis']")
+    public WebElement diagnosisTextArea;
+
+    @FindBy(xpath = "//select[@id='appointment-physician']")
+    public WebElement physicianDropdownElement;
 
 
 
@@ -726,6 +405,61 @@ public class StaffPage {
 
 
 
-    // NAIL 255-355
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

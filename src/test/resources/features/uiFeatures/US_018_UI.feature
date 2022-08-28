@@ -37,7 +37,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin kayitli kisinin Last Name i degistirir
     And mnk Admin kayitli kisinin Birth Date i degistirir
     And mnk Admin Save butonuna tiklar
-    And mnk Admin onay arbutus gorur
+    And mnk Admin yeni bilgilerin onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
   @US_018_TC_005
@@ -46,7 +46,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisinin uzmanligini secer
     And mnk Admin Save butonuna tiklar
-    And mnk Admin onay kutusunu gorur
+    And mnk Admin uzmanlik bilgisi onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
   @US_018_TC_006
@@ -64,7 +64,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisinin Exam fee lini degistirir
     And mnk Admin Save butonuna tiklar
-    And mnk Admin onay kutusunu gorur
+    And mnk Admin yeni muayene ucreti onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
   @US_018_TC_008
@@ -73,7 +73,7 @@ Feature:US_018 Admin olarak; Yeni Physicians Olustur / Guncelle / Goruntule ve S
     And mnk Admin kayitli kisinin Edit butonuna tiklar
     And mnk Admin kayitli kisinin user ini secer
     And mnk Admin Save butonuna tiklar
-    And mnk Admin onay kutusunu gorur
+    And mnk Admin doktor seceme onay kutusunu gorur
     And mnk Admin sayfayi kapatir
 
   @US_018_TC_009

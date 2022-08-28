@@ -210,8 +210,74 @@ public class WriteToTxt {
         }
     }
 
+ public static void saveStaffId(String fileName, List<Object> idList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < idList.size(); i++)
+
+                writer.append(idList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+    public static void saveStaffFirstName(String fileName, List<Object> NameList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < NameList.size(); i++)
+
+                writer.append(NameList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
+
+    public static void saveRoomId(String fileName, List<Object> idList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < idList.size(); i++)
+
+                writer.append(idList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void savePhysicianId(String fileName, List<Object> idList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < idList.size(); i++)
+
+                writer.append(idList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
 }
 
 

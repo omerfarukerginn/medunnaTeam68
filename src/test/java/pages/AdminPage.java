@@ -9,11 +9,14 @@ public class AdminPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+
+
+
     // US_28 location
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
 
-@FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
     public WebElement itemsTitlesButonu;
 
     @FindBy(xpath = "//a[@href='/country']")
@@ -57,9 +60,6 @@ public class AdminPage {
 
     @FindBy(xpath = "//*[@class='modal-content']")
     public WebElement deleteOperationYazisi;
-
-
-
 
 
 
@@ -166,8 +166,8 @@ public class AdminPage {
     @FindBy(xpath = "//button[@id='jhi-confirm-delete-room']")
     public WebElement deleteOnAltiUSIkinci;
 
-
-
+    @FindBy(xpath = "(//*[text()='Delete'])[6]")
+    public WebElement deleteDilek;
 
 
 
@@ -257,105 +257,6 @@ public class AdminPage {
     public WebElement testItemsDeleteButton;
     @FindBy(xpath = "(//button[@type='button'])[4]")
     public WebElement testItemsDeleteButton2;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @FindBy(xpath = "(//*[text()='Delete'])[6]")
-    public WebElement deleteDilek;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//US_017 bitis
 
 
 
@@ -505,6 +406,7 @@ public class AdminPage {
 
 
 
+
     // NAIL 311-410 - BITIS NOKTASI
     //Ebru 411-510 arasi
     @FindBy(xpath = "//li[@id='admin-menu']")
@@ -530,6 +432,14 @@ public class AdminPage {
 
     @FindBy(xpath = "//dd[6]") //email icin getTest yapilir, assert edilir
     public WebElement createdBy;
+
+
+
+
+
+
+
+
 
 
 
@@ -638,6 +548,7 @@ public class AdminPage {
 
    @FindBy(xpath = "//button[@id='jhi-confirm-delete-cMessage']")
    public WebElement messagesPopUpDeleteButton;
+
 
 
 
@@ -845,6 +756,158 @@ public class AdminPage {
 
     @FindBy (xpath="//*[@id='save-entity']")
     public WebElement appointmentSaveButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1494,19 +1557,6 @@ public class AdminPage {
 
 
     // US19 location
-
-
-    @FindBy(xpath = "//*[text()='Items&Titles']")
-    public WebElement itemsTitlesButon;
-
-    @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
-    public WebElement staffButon;
-
-    @FindBy(xpath = "//*[text()='Create a new Staff']")
-    public WebElement CreateANewButonu;
-
-    @FindBy(xpath = "//*[@name='useSSNSearch']")
-    public WebElement userSearchBox;
 
     @FindBy(xpath = "//input[@name='searchSSN']")
     public WebElement SSNBox;

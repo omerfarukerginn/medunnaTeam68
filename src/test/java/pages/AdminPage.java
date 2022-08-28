@@ -1,9 +1,12 @@
 package pages;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+
 import java.util.List;
+
 public class AdminPage {
     public AdminPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -13,7 +16,7 @@ public class AdminPage {
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
 
-@FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
     public WebElement itemsTitlesButonu;
 
     @FindBy(xpath = "//a[@href='/country']")
@@ -49,6 +52,9 @@ public class AdminPage {
     @FindBy(xpath = "//*[text()='Delete']")
     public WebElement deleteButonu;
 
+    //@FindBy(xpath = "//*[text()='Field translation-not-found[hospitalmsappfrontendApp.CState.country] cannot be empty!'")
+    //public WebElement kirmiziUyariYazisi;
+
     @FindBy(xpath = "//*[@id='jhi-confirm-delete-country']")
     public WebElement ikiciDeleteButonu;
 
@@ -57,12 +63,6 @@ public class AdminPage {
 
     @FindBy(xpath = "//*[@class='modal-content']")
     public WebElement deleteOperationYazisi;
-
-
-
-
-
-
 
 
 
@@ -133,8 +133,8 @@ public class AdminPage {
     @FindBy(xpath = "//input[@name='status']")
     public WebElement statusKutusu;
 
-   @FindBy(xpath = "(//li[@class='page-item'])[last()]")
-   public WebElement sonSayfaninOku;
+    @FindBy(xpath = "(//li[@class='page-item'])[last()]")
+    public WebElement sonSayfaninOku;
 
     @FindBy(xpath = "//*[text()='Full']")
     public WebElement fullYazisi;
@@ -148,14 +148,14 @@ public class AdminPage {
     @FindBy(xpath = "//input[@name='createdDate']")
     public WebElement createdDateKutusu;
 
-    @FindBy(xpath="(//th[@class='hand'])[3]")
+    @FindBy(xpath = "(//th[@class='hand'])[3]")
     public WebElement kacTurRoomTypeButonu;
 
     @FindBy(xpath = "//*[text()='TWIN']")
     public WebElement twinnType;
 
- @FindBy(xpath = "//*[text()='DAYCARE']")
- public WebElement daycareType;
+    @FindBy(xpath = "//*[text()='DAYCARE']")
+    public WebElement daycareType;
 
     @FindBy(xpath = "//tbody//tr[1]//td[1]")
     public WebElement idRoom;
@@ -165,117 +165,6 @@ public class AdminPage {
 
     @FindBy(xpath = "//button[@id='jhi-confirm-delete-room']")
     public WebElement deleteOnAltiUSIkinci;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//US_017 baslama
-    @FindBy (xpath = "//span[text()='Test Item']")  //a[@class='dropdown-item active']
-    public WebElement testItemButton;
-    @FindBy (xpath = "//a[@id='jh-create-entity']")
-    public WebElement createANewTestItemButton;
-    @FindBy (xpath = "(//input[@type='text'])[1]")
-    public WebElement testItemNameBox;
-    @FindBy (xpath = "//*[@id='c-test-item-description']")
-    public WebElement testItemDescriptionBox;
-    @FindBy (xpath = "//*[@id='c-test-item-price']")
-    public WebElement testItemPriceBox;
-    @FindBy (xpath = "//*[@id='c-test-item-defaultValMin']']")
-    public WebElement testItemDefaultValMinBox;
-    @FindBy (xpath = "//*[@id='c-test-item-defaultValMax']")
-    public WebElement testItemDefaultValMaxBox;
-    @FindBy (xpath = "//*[@name='createdDate']")
-    public WebElement testItemCreatedDateBox;
-    @FindBy (xpath = "//*[@id='save-entity']")
-    public WebElement testItemSaveButton;
-    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
-    public WebElement onayYazisiCreate;
-    @FindBy(xpath = "(//*[text()='Edit'])[13]")
-    public List<WebElement> testItemEditButton; //(//*[@class='btn btn-primary btn-sm'])[16]
-    @FindBy(xpath = "(//li[@class='page-item'])[5]")
-    public WebElement sayfaGecme49; //(//*[@class='page-link'])[6]  //a[text()='49'] (//li[@class='page-item'])[last()]
-    @FindBy(xpath = "(//*[@class='btn btn-link btn-sm'])[13]")
-    public WebElement testItemId;
-    @FindBy (xpath = "//thead//tr[1]//th[1]") //thead//tr[1]//th[1]  //tr//th[1]
-    public List<WebElement> tumTestItemId;
-    @FindBy(xpath = "//*[text()='Save']")
-    public WebElement testItemSaveButton2;
-    @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[12]")
-    public List<WebElement> testItemViewButton;
-    @FindBy (xpath = "//dl//dt[1]")
-    public WebElement testItemsName;
-    @FindBy(xpath = "//dl//dt[2]")
-    public WebElement testItemsDescription;
-    @FindBy(xpath = "//dl//dt[3]")
-    public WebElement testItemsPrice;
-    @FindBy(xpath = "//dl//dt[4]")
-    public WebElement testItemsDefaultMnValue;
-    @FindBy(xpath = "//dl//dt[5]")
-    public WebElement testItemsDefaultMxValue;
-    @FindBy(xpath = "//dl//dt[6]")
-    public WebElement testItemsCreatedDate;
-    @FindBy(xpath = "(//a[@class='btn btn-danger btn-sm'])[12]")
-    public WebElement testItemsDeleteButton;
-    @FindBy(xpath = "(//button[@type='button'])[4]")
-    public WebElement testItemsDeleteButton2;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     @FindBy(xpath = "(//*[text()='Delete'])[6]")
     public WebElement deleteDilek;
@@ -305,6 +194,69 @@ public class AdminPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //US_017 baslama
+    @FindBy(xpath = "//span[text()='Test Item']")  //a[@class='dropdown-item active']
+    public WebElement testItemButton;
+    @FindBy(xpath = "//a[@id='jh-create-entity']")
+    public WebElement createANewTestItemButton;
+    @FindBy(xpath = "(//input[@type='text'])[1]")
+    public WebElement testItemNameBox;
+    @FindBy(xpath = "//*[@id='c-test-item-description']")
+    public WebElement testItemDescriptionBox;
+    @FindBy(xpath = "//*[@id='c-test-item-price']")
+    public WebElement testItemPriceBox;
+    @FindBy(xpath = "//*[@id='c-test-item-defaultValMin']']")
+    public WebElement testItemDefaultValMinBox;
+    @FindBy(xpath = "//*[@id='c-test-item-defaultValMax']")
+    public WebElement testItemDefaultValMaxBox;
+    @FindBy(xpath = "//*[@name='createdDate']")
+    public WebElement testItemCreatedDateBox;
+    @FindBy(xpath = "//*[@id='save-entity']")
+    public WebElement testItemSaveButton;
+    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
+    public WebElement onayYazisiCreate;
+    @FindBy(xpath = "(//*[text()='Edit'])[13]")
+    public List<WebElement> testItemEditButton; //(//*[@class='btn btn-primary btn-sm'])[16]
+    @FindBy(xpath = "(//li[@class='page-item'])[5]")
+    public WebElement sayfaGecme49; //(//*[@class='page-link'])[6]  //a[text()='49'] (//li[@class='page-item'])[last()]
+    @FindBy(xpath = "(//*[@class='btn btn-link btn-sm'])[13]")
+    public WebElement testItemId;
+    @FindBy(xpath = "//thead//tr[1]//th[1]") //thead//tr[1]//th[1]  //tr//th[1]
+    public List<WebElement> tumTestItemId;
+    @FindBy(xpath = "//*[text()='Save']")
+    public WebElement testItemSaveButton2;
+    @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[12]")
+    public List<WebElement> testItemViewButton;
+    @FindBy(xpath = "//dl//dt[1]")
+    public WebElement testItemsName;
+    @FindBy(xpath = "//dl//dt[2]")
+    public WebElement testItemsDescription;
+    @FindBy(xpath = "//dl//dt[3]")
+    public WebElement testItemsPrice;
+    @FindBy(xpath = "//dl//dt[4]")
+    public WebElement testItemsDefaultMnValue;
+    @FindBy(xpath = "//dl//dt[5]")
+    public WebElement testItemsDefaultMxValue;
+    @FindBy(xpath = "//dl//dt[6]")
+    public WebElement testItemsCreatedDate;
+    @FindBy(xpath = "(//a[@class='btn btn-danger btn-sm'])[12]")
+    public WebElement testItemsDeleteButton;
+    @FindBy(xpath = "(//button[@type='button'])[4]")
+    public WebElement testItemsDeleteButton2;
 
 
 
@@ -356,49 +308,7 @@ public class AdminPage {
 
 
 //US_017 bitis
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // NAIL 311-410 - BASLAMA NOKTASI
+// NAIL 311-410 - BASLAMA NOKTASI
 
     @FindBy(xpath = "(//*[@href='/physician'])[1]")
     public WebElement physicianSekmesi;
@@ -437,7 +347,7 @@ public class AdminPage {
     @FindBy(xpath = "//*[@id='file_image']")
     public WebElement physicianEditDossyaSecButonu;
 
-    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
+    @FindBy(xpath = "///*[@class='Toastify__toast-body']")
     public WebElement physicianEditImageOnayi;
 
     @FindBy(xpath = "//*[@name='examFee']")
@@ -450,11 +360,11 @@ public class AdminPage {
     public WebElement physicianDeleteButonu_2;
 
 
-    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
-    public WebElement onayYazisiCreate;
 
-    @FindBy(xpath = "//*[text()='A Physician is updated with identifier 2051']") //"//(//div[4]//div[1])[2]//h2]")
-    public WebElement yesilOnay;
+
+
+
+
 
 
 
@@ -508,10 +418,8 @@ public class AdminPage {
     @FindBy(xpath = "//a[@class='btn btn-info btn-sm']")// 20 tane var, 19.siradakini alirsin
     public List<WebElement> viewButonu;
 
-    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com
-    public List<WebElement> editButonu;
-
     @FindBy(xpath = "//dd[2]") //firstName icin getTest yapilir, assert edilir
+
     public WebElement firstName;
 
     @FindBy(xpath = "//dd[3]") //lastName icin getTest yapilir, assert edilir
@@ -523,12 +431,22 @@ public class AdminPage {
     @FindBy(xpath = "//dd[6]") //email icin getTest yapilir, assert edilir
     public WebElement createdBy;
 
+    @FindBy (xpath="//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com
+    public List<WebElement> editButonu;
 
+    @FindBy (xpath="//input[@name='activated']")
+    public WebElement activeButonu;
+    @FindBy (xpath="//select[@id='authorities']")
+    public WebElement kullaniciProfilleri;
 
+    @FindBy (xpath="//div[@role='alert']")
+    public WebElement olumluAlertBilgisi;
 
+    @FindBy (xpath="(//li[@class='page-item'])[5]")
+    public WebElement kullanicininOlduguSafya;
 
-
-
+    @FindBy (xpath="(//*[text()='Delete'])[12]") //12.user'i silme
+    public WebElement onIkinciUseriSilmeButonu;
 
 
 
@@ -592,44 +510,44 @@ public class AdminPage {
 
     //Omer 511-610 arasi
 
-   @FindBy(xpath = "//a[@href='/c-message'][1]")
-   public WebElement itemsTitlesMessagesButton;
+    @FindBy(xpath = "//a[@href='/c-message'][1]")
+    public WebElement itemsTitlesMessagesButton;
 
-   @FindBy(xpath = "//a[@class='btn btn-info btn-sm'][1]")
-   public WebElement messagesPageIlkViewButton;
+    @FindBy(xpath = "//a[@class='btn btn-info btn-sm'][1]")
+    public WebElement messagesPageIlkViewButton;
 
-   @FindBy(xpath = "//span[@id='name']")
-   public WebElement messagesViewNameWebElement;
+    @FindBy(xpath = "//span[@id='name']")
+    public WebElement messagesViewNameWebElement;
 
-   @FindBy(xpath = "//span[@id='email']")
-   public WebElement messagesViewEmailWebElement;
+    @FindBy(xpath = "//span[@id='email']")
+    public WebElement messagesViewEmailWebElement;
 
-   @FindBy(xpath = "//span[@id='message']")
-   public WebElement messagesViewMessageWebElement;
+    @FindBy(xpath = "//span[@id='message']")
+    public WebElement messagesViewMessageWebElement;
 
-   @FindBy(xpath = "//a[@id='jh-create-entity']")
-   public WebElement createNewMessageButton;
+    @FindBy(xpath = "//a[@id='jh-create-entity']")
+    public WebElement createNewMessageButton;
 
-   @FindBy(xpath = "//input[@id='c-message-name']")
-   public WebElement nameForNewMessage;
+    @FindBy(xpath = "//input[@id='c-message-name']")
+    public WebElement nameForNewMessage;
 
-   @FindBy(xpath = "//input[@id='c-message-email']")
-   public WebElement emailForNewMessage;
+    @FindBy(xpath = "//input[@id='c-message-email']")
+    public WebElement emailForNewMessage;
 
-   @FindBy(xpath = "//input[@id='c-message-subject']")
-   public WebElement subjectForNewMessage;
+    @FindBy(xpath = "//input[@id='c-message-subject']")
+    public WebElement subjectForNewMessage;
 
-   @FindBy(xpath = "//input[@id='c-message-message']")
-   public WebElement messageForNewMessage;
+    @FindBy(xpath = "//input[@id='c-message-message']")
+    public WebElement messageForNewMessage;
 
-   @FindBy(xpath = "//a[@class='btn btn-primary btn-sm'][1]")
-   public WebElement messagesPageIlkEditButton;
+    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm'][1]")
+    public WebElement messagesPageIlkEditButton;
 
-   @FindBy(xpath = "//a[@class='btn btn-danger btn-sm'][1]")
-   public WebElement messagesPageIlkDeleteButton;
+    @FindBy(xpath = "//a[@class='btn btn-danger btn-sm'][1]")
+    public WebElement messagesPageIlkDeleteButton;
 
-   @FindBy(xpath = "//button[@id='jhi-confirm-delete-cMessage']")
-   public WebElement messagesPopUpDeleteButton;
+    @FindBy(xpath = "//button[@id='jhi-confirm-delete-cMessage']")
+    public WebElement messagesPopUpDeleteButton;
 
 
 
@@ -689,7 +607,8 @@ public class AdminPage {
 
 
 
-   // US_015 Ridvan
+
+    // US_015 Ridvan
 
     @FindBy(xpath="//*[text()='Patient']")
     public WebElement patientButonuDDMenu;
@@ -837,323 +756,6 @@ public class AdminPage {
 
     @FindBy (xpath="//*[@id='save-entity']")
     public WebElement appointmentSaveButton;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// US19 location
-
-    @FindBy(xpath = "//a[@aria-haspopup='true']")
-    public WebElement AccountButton;
-
-    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
-    public WebElement singInButton;
-
-    @FindBy(xpath = "//input[@name='username']")
-    public WebElement userrName;
-
-    @FindBy(xpath = "//input[@name='password']")
-    public WebElement passwordd;
-
-    @FindBy(xpath = "//button[@type='submit']")
-    public WebElement girisSonrasiSingInn;
-
-    @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
-    public WebElement welcomeToMedunnaYazisisi;
-
-    @FindBy(xpath = "//*[text()='Items&Titles']")
-    public WebElement itemsTitlesButon;
-
-    @FindBy(xpath = "//a[@class='dropdown-item active']")
-    public WebElement staffButon;
-
-    @FindBy(xpath = "//*[text()='Create a new Staff']")
-    public WebElement CreateANewButonu;
-
-    @FindBy(xpath = "//*[@name='useSSNSearch']")
-    public WebElement userSearchBox;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
-    public WebElement appointmentDoktorAtamasiBasariliYazisi;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1487,6 +1089,8 @@ public class AdminPage {
 
     // US19 location
 
+    @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
+    public WebElement appointmentDoktorAtamasiBasariliYazisi;
 
     @FindBy(xpath = "//*[text()='Items&Titles']")
     public WebElement itemsTitlesButon;
@@ -1648,321 +1252,4 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Administration
-
-    @FindBy(xpath = "(//*[text()='Delete'])[17]")
-    public WebElement AdministorDeletedButton;
-
-    @FindBy(xpath = "(//a[@class='page-link'])[6]")
-    public WebElement KayitliStaffSayfasi;
-
-    @FindBy(xpath = "//a[@class='btn btn-info btn-sm']")
-    public WebElement AdministorViewdButton;
-
-    @FindBy(xpath = "(//*[text()='Edit'])[17]")
-    public WebElement AdministorEditdButton;
-
-    @FindBy(xpath = "(//a[@class='page-link'])[9]")
-    public WebElement AdministorSayfaAtlamadButton;
-
-    @FindBy(xpath = "//a[@class='btn btn-danger btn-sm']")
-    public WebElement  AdministorDeletedButton2;
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-

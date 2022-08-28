@@ -407,7 +407,13 @@ public class AdminPage {
 
 
 
-    // NAIL 311-410 - BITIS NOKTASI
+
+
+
+
+
+
+// NAIL 311-410 - BITIS NOKTASI
     //Ebru 411-510 arasi
     @FindBy(xpath = "//li[@id='admin-menu']")
     public WebElement administration;
@@ -608,7 +614,8 @@ public class AdminPage {
 
 
 
-    // US_015 Ridvan
+   
+   // US_015 Ridvan
 
     @FindBy(xpath="//*[text()='Patient']")
     public WebElement patientButonuDDMenu;
@@ -1089,7 +1096,9 @@ public class AdminPage {
 
     // US19 location
 
-    @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
+
+   @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
+
     public WebElement appointmentDoktorAtamasiBasariliYazisi;
 
     @FindBy(xpath = "//*[text()='Items&Titles']")

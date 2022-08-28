@@ -28,7 +28,6 @@ Feature:Admin olarak; Country oluşturabilmeli / Okumayabilmeli ve Silebilmeli
     And Kirmizi uyari yazisini goruyorsa kayit yapilmadi uyari yazisini alir
     And Kullanici sayfayi kapatir
 
-
   @US_028_TC_003
   Scenario:Kullanıcı ülkeleri silebilmeli
     Given Kullanici Items&Titles butonunu tiklar ve Country secer

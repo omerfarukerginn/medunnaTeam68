@@ -57,8 +57,6 @@ String filename2="src/test/resources/testData/StaffFristName.txt";
         expectedStaffId.add(159437);
         Assert.assertTrue("ID uyusmuyor",actualStaffId.containsAll(expectedStaffId));
 
-
-
     }
 
 

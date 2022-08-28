@@ -9,26 +9,11 @@ public class AdminPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
-
-
     // US_28 location
-
-
-
-
-
-
-
-
-
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
 
-    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
-    public WebElement singInButtonu;
-
-    @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
+@FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
     public WebElement itemsTitlesButonu;
 
     @FindBy(xpath = "//a[@href='/country']")
@@ -58,32 +43,20 @@ public class AdminPage {
     @FindBy(xpath = "//*[@id='c-state-state']")
     public WebElement stateCitySecmeButonu;
 
-    @FindBy(xpath = "(//*[text()='YeniDunya'])[1]")
-    public WebElement ulkeIsmi;
-
     @FindBy(xpath = "//tr//td[2]")
     public List<WebElement> tumUlkeIsimleri;
 
     @FindBy(xpath = "//*[text()='Delete']")
     public WebElement deleteButonu;
 
-    @FindBy(xpath = "//*[text()='Field translation-not-found[hospitalmsappfrontendApp.CState.country] cannot be empty!'")
+    @FindBy(xpath = "//*[@id='jhi-confirm-delete-country']")
+    public WebElement ikiciDeleteButonu;
+
+    @FindBy(xpath = "//*[@role='alert']")
     public WebElement kirmiziUyariYazisi;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//*[@class='modal-content']")
+    public WebElement deleteOperationYazisi;
 
 
 
@@ -873,8 +846,275 @@ public class AdminPage {
     @FindBy (xpath="//*[@id='save-entity']")
     public WebElement appointmentSaveButton;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// US19 location
+
+    @FindBy(xpath = "//a[@aria-haspopup='true']")
+    public WebElement AccountButton;
+
+    @FindBy(xpath = "(//*[@class='dropdown-item'])[1]")
+    public WebElement singInButton;
+
+    @FindBy(xpath = "//input[@name='username']")
+    public WebElement userrName;
+
+    @FindBy(xpath = "//input[@name='password']")
+    public WebElement passwordd;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement girisSonrasiSingInn;
+
+    @FindBy(xpath = "//*[text()='Welcome to MEDUNNA']")
+    public WebElement welcomeToMedunnaYazisisi;
+
+    @FindBy(xpath = "//*[text()='Items&Titles']")
+    public WebElement itemsTitlesButon;
+
+    @FindBy(xpath = "//a[@class='dropdown-item active']")
+    public WebElement staffButon;
+
+    @FindBy(xpath = "//*[text()='Create a new Staff']")
+    public WebElement CreateANewButonu;
+
+    @FindBy(xpath = "//*[@name='useSSNSearch']")
+    public WebElement userSearchBox;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
     public WebElement appointmentDoktorAtamasiBasariliYazisi;
+
 
 
 

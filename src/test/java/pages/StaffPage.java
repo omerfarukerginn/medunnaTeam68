@@ -381,17 +381,17 @@ public class StaffPage {
     @FindBy(xpath = "//button[@class='Toastify__close-button Toastify__close-button--error']")
     public WebElement kirmiziUyariBalonu;
 
+    @FindBy(xpath = "//textarea[@id='appointment-anamnesis']")
+    public WebElement anamnesisTextArea;
 
+    @FindBy(xpath = "//textarea[@id='appointment-treatment']")
+    public WebElement treatmentTextArea;
 
+    @FindBy(xpath = "//textarea[@id='appointment-diagnosis']")
+    public WebElement diagnosisTextArea;
 
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//select[@id='appointment-physician']")
+    public WebElement physicianDropdownElement;
 
 
 

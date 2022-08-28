@@ -9,10 +9,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.asserts.SoftAssert;
 import pages.AdminPage;
+import pages.LoginPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -22,11 +25,21 @@ public class US_016_UI_StepDefinition {
     Random rand = new Random();
     int rdn = 999999;
     String roomrandm = String.valueOf(rand.nextInt(rdn));
+    String priceRndm= String.valueOf(rand.nextInt(rdn));
+    LoginPage loginPage = new LoginPage();
+    SoftAssert softAssert=new SoftAssert();
+
 
     @Then("Admin  Items&Titles butonuna tiklar ve ardindan Room butonuna tiklar")
     public void admin_items_titles_butonuna_tiklar_ve_ardindan_room_butonuna_tiklar() {
         us016.itemsTitlesButon.click();
+
+
         ReusableMethods.waitFor(2);
+
+
+        ReusableMethods.waitFor(2);
+
         us016.roomButton.click();
         ReusableMethods.waitFor(2);
     }
@@ -41,8 +54,6 @@ public class US_016_UI_StepDefinition {
 
     @Then("Admin  Room Number bolumunu doldurur ve unique olmalidir")
     public void admin_room_number_bolumunu_doldurur_ve_unique_olmalidir() {
-
-
         us016.roomNumberKutusu.sendKeys(roomrandm);
         ReusableMethods.waitFor(2);
 
@@ -67,8 +78,9 @@ public class US_016_UI_StepDefinition {
 
     @Then("Admin  Price kutusuna fiyat bilgisi girer")
     public void admin_price_kutusuna_fiyat_bilgisi_girer() {
-        us016.priceKutusu.sendKeys("150");
+        us016.priceKutusu.sendKeys(priceRndm);
         ReusableMethods.waitFor(2);
+
 
     }
 
@@ -81,7 +93,8 @@ public class US_016_UI_StepDefinition {
 
     @And("Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur")
     public void AdminIsleminBasariliOldugunuGosterenYesilMesajKutusunuGorur() {
-        Assert.assertTrue(us016.basariliIslemYesilMesajKutusu.isDisplayed());
+        softAssert.assertFalse(us016.basariliIslemYesilMesajKutusu.isDisplayed(),"Gecmis tarih girilince basarili kayit kutusunu gormemeliydi");
+        softAssert.assertAll();
         ReusableMethods.waitFor(2);
     }
 
@@ -166,15 +179,20 @@ public class US_016_UI_StepDefinition {
 
     }
 
-    @Then("Admin Room Type olarak ayni secilen odalari gorebilir")
+    @Then("Admin Room Type olarak TWINN secilen odalari gorebilir")
     public void adminRoomTypeOlarakAyniSecilenOdalariGorebilir() {
         Assert.assertTrue(us016.twinnType.isDisplayed());
         ReusableMethods.waitFor(3);
     }
 
+    @Then("Admin Room Type olarak DAYCARE  secilen odalari gorebilir")
+    public void adminRoomTypeOlarakDAYCARESecilenOdalariGorebilir() {
+        Assert.assertTrue(us016.daycareType.isDisplayed());
+    }
+
     @And("Admin Edit butonuna tiklar")
     public void adminEditButonunaTiklarVeBilgileriGuncellerYaDaDegistirir() {
-        us016.olusturdugumRoomEditButonu.click();
+        us016.editButonuOnAlti.click();
         ReusableMethods.waitFor(2);
 
     }
@@ -191,30 +209,83 @@ public class US_016_UI_StepDefinition {
     @And("Admin sayfanin basina gelir")
     public void adminSayfaninBasinaGelir() {
         actions.sendKeys(Keys.PAGE_UP).perform();
+        ReusableMethods.waitFor(2);
         actions.sendKeys(Keys.PAGE_UP).perform();
+        ReusableMethods.waitFor(2);
     }
 
     @Then("Admin olusturdugu odaya tiklar")
     public void adminOlusturduguOdayaTiklar() {
+
         us016.idRoom.click();
+        ReusableMethods.waitFor(2);
     }
 
-    @Then("Admin islem yaptigi sayfaya tiklar")
-    public void adminIslemYaptigiSayfayaTiklar() {
-        ReusableMethods.waitFor(2);
-        // actions.sendKeys(Keys.).click(us016.sonSayfaninOku).perform();
-        //ReusableMethods.hooverByJS(us016.sonSayfaninOku);
-        Driver.getDriver().navigate().to("https://www.medunna.com/room?page=84&sort=id,asc");
-        //  Driver.getDriver().navigate().to("https://medunna.com/room?page=+" + arg81 + "+ &sort=roomType,asc");
-     /*   List<WebElement> roomId = Driver.getDriver().findElements(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[2]"));
-        for (int i = 0; i < roomId.size(); i++) {
-            if (roomId.get(i).equals(Integer.parseInt(roomrandm))) {
-                System.out.println(Driver.getDriver().findElement(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[3]")).getText());
-                System.out.println(Driver.getDriver().findElement(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[4]")).getText());
 
+    @And("Admin Price kutusunu bosaltir")
+    public void adminPriceKutusunuBosaltir() {
+        us016.priceKutusu.clear();
+    }
+
+  /* @And("Admin kaydettigi odaya tiklar")
+    public void adminKaydettigiOdayaTiklar() {
+       Driver.getDriver().navigate().to("https://www.medunna.com/room?page=91&sort=id,asc");
+       loginPage.loginPageSingInUserNameKutusu.sendKeys("team68");
+       loginPage.loginPageSingInPasswordKutusu.sendKeys("HealthTeam68!");
+       loginPage.loginPageSingInSingInButton.click();
+      // Driver.getDriver().get("https://www.medunna.com/room?page=91&sort=id,asc");
+       List<WebElement> deleteText= Driver.getDriver().findElements(By.xpath("(//a[@class='btn btn-danger btn-sm'])"));
+       List<WebElement> roomIdsText= Driver.getDriver().findElements(By.xpath("(//div[@id='app-view-container'])//table//tbody//tr//td//a[@class='btn btn-link btn-sm']"));
+       for (int i = 0; i <roomIdsText.size() ; i++) {
+          if(roomIdsText.get(i).getText().equals("235147")){
+             deleteText.get(i).click();
+          }
+
+       }
+       us016.deleteOnAltiUSIkinci.click();*/
+
+
+
+
+
+
+
+
+
+    @And("Admin {string} de kaydettigi {string} nolu id deki odaya tiklar")
+    public void adminDeKaydettigiNoluIdDekiOdayaTiklar(String url, String id) {
+        Driver.getDriver().navigate().to(url);
+        loginPage.loginPageSingInUserNameKutusu.sendKeys("team68");
+        loginPage.loginPageSingInPasswordKutusu.sendKeys("HealthTeam68!");
+        loginPage.loginPageSingInSingInButton.click();
+         Driver.getDriver().get("https://www.medunna.com/room?page=91&sort=id,asc");
+        loginPage.loginPageSingInUserNameKutusu.sendKeys("team68");
+        loginPage.loginPageSingInPasswordKutusu.sendKeys("HealthTeam68!");
+        loginPage.loginPageSingInSingInButton.click();
+
+
+    /*    List<WebElement> roomIdsText= Driver.getDriver().findElements(By.xpath("(//div[@id='app-view-container'])//table//tbody//tr//td//a[@class='btn btn-link btn-sm']"));
+        for (int i = 0; i <roomIdsText.size() ; i++) {
+            if(roomIdsText.get(i).getText().equals(id)){
+               // ReusableMethods.waitForVisibility(By.xpath("(//a[@class='btn btn-danger btn-sm'])["+i+"]"),10);
+               Driver.getDriver().findElement(By.xpath("((//*[text()='Delete'])[6])["+i+"]")).sendKeys(Keys.ENTER);
             }
-        }*/
-  //actions.sendKeys(Keys.PAGE_UP).perform();
 
+        }*/
+
+
+
+    }
+
+    @And("Admin Delete tusuna basar")
+    public void adminDeleteTusunaBasar() {
+        ReusableMethods.hooverByJS(us016.deleteDilek);
+
+    }
+
+    @And("Admin iknci Delete uyarisi tusuna basar")
+    public void adminIknciDeleteUyarisiTusunaBasar() {
+        us016.deleteOnAltiUSIkinci.sendKeys(Keys.ENTER);
     }
 }
+

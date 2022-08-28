@@ -54,8 +54,8 @@ Feature:US_019 Admin olarak;
   Scenario:Admin kayıtlı kişilerden bir kullanıcı seçebilir.
 
     Then Kullanici admin olarak giris yapar
-    And Kullanici Administor sekmesini tiklar
-    And Kullanici Usermanament sekmesini tiklar
+    And Kullanici Items&Titles sekmesini tiklar
+    And Kullanici Staff sekmesini tiklar
     And Kullanici Kayitli kisi listesinden kayitli bir Staff'in View Butonunu tiklar
     Then Kullanici Sayfayi kapatir
 
@@ -66,10 +66,8 @@ Feature:US_019 Admin olarak;
     Then Kullanici admin olarak giris yapar
     And Kullanici Items&Titles sekmesini tiklar
     And Kullanici Staff sekmesini tiklar
-    And Kullanici +Create a new Staff butonunu tiklar
-    And Kullanici Use Search kutucugunu isaretler
-    And Kullanici SSN kutusuna kayitli Staff SNN numarasi girer
-    And Kullanici Search User butonunu tiklar
+
+    And Kullanici Kayitli kisi listesinden kayitli bir Staff'in Edit Butonunu tiklar
     And Kullanici Phone kutusunda degisiklik yapar
     And Kullanici Adress kutusunda degisiklik yapar
     And Kullanici Description kutusunda degisiklik yapar
@@ -82,8 +80,8 @@ Feature:US_019 Admin olarak;
   @US019_TC005
   Scenario:Admin kullanıcı bilgilerini silebilir.
    When Kullanici admin olarak giris yapar
-    And Kullanici Administor sekmesini tiklar
-    And Kullanici Usermanament sekmesini tiklar
+    And Kullanici Items&Titles sekmesini tiklar
+    And Kullanici Staff sekmesini tiklar
     And Kullanici Staffi bulur ve Staff Sayfasindan delete dugmesini tiklar
     Then Kullanici Sayfayi kapatir
 

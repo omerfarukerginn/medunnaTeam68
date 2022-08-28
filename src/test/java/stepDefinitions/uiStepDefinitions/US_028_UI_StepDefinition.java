@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 import pages.AdminPage;
 import pages.LoginPage;
 import pages.PatientPage;
@@ -29,6 +30,8 @@ public class US_028_UI_StepDefinition {
     AdminPage adminPage = new AdminPage();
     List<String> silinmekIstenenUlkeIsmi = new ArrayList<>();
     String sutundakiTumUlkeler;
+
+    SoftAssert softAssert=new SoftAssert();
 
     @Given("Kullanici Items&Titles butonunu tiklar ve Country secer")
     public void kullaniciItemsTitlesButonunuTiklarVeCountrySecer() {
@@ -66,6 +69,7 @@ public class US_028_UI_StepDefinition {
 
     @And("Create a new Country butonunu gorur")
     public void createANewCountryButonunuGorur() {
+
         Assert.assertTrue(adminPage.createCountryButonu.isDisplayed());
     }
 
@@ -99,10 +103,14 @@ public class US_028_UI_StepDefinition {
     public void kullanici_gecerli_ulke_ismini_secer() {
         Driver.selectAnItemFromDropdown(adminPage.stateCitySecmeButonu, "YeniDunya");
     }
-
-    @And("Kirmizi uyari yazisini gormez")
-    public void kirmiziUyariYazisiniGormez() {
-        Assert.assertFalse(adminPage.kirmiziUyariYazisi.isDisplayed());
+    @And("Kirmizi uyari yazisini goruyorsa kayit yapilmadi uyari yazisini alir")
+    public void kirmiziUyariYazisiniGoruyorsaKayitYapilmadiUyariYazisiniAlir() {
+        ReusableMethods.waitFor(3);
+        String expectedText = "Field translation-not-found[hospitalmsappfrontendApp.CState.country] cannot be empty!";
+        String actualText = adminPage.kirmiziUyariYazisi.getText();
+        softAssert.assertTrue(actualText.contains(expectedText));
+        softAssert.assertAll();
+        System.out.println("Sehir kaydedilemedi");
     }
 
     @Given("Kullanici sectigi ulkenin delete butonuna tiklar")
@@ -118,7 +126,6 @@ public class US_028_UI_StepDefinition {
         }
         System.out.println(sutundakiTumUlkeler);
         ReusableMethods.waitFor(5);
-
         for (int i = 0; i < silinmekIstenenUlkeIsmi.size(); i++) {
             Assert.assertTrue(sutundakiTumUlkeler.contains(silinmekIstenenUlkeIsmi.get(i)));
             ReusableMethods.hooverByJS(adminPage.deleteButonu);
@@ -126,15 +133,13 @@ public class US_028_UI_StepDefinition {
         }
 
     }
-
     @Given("Kullanici Confirm delete operation ekranini gorur ve delete i tiklar")
     public void kullanici_confirm_delete_operation_ekranini_gorur_ve_delete_i_tiklar() {
-        for (int i = 0; i < silinmekIstenenUlkeIsmi.size(); i++) {
-            Assert.assertTrue(sutundakiTumUlkeler.contains(silinmekIstenenUlkeIsmi.get(i)));
-            ReusableMethods.hooverByJS(adminPage.deleteButonu);
+        Assert.assertTrue(adminPage.deleteOperationYazisi.isDisplayed());
+        adminPage.ikiciDeleteButonu.click();
 
 
-        }
 
     }
+
 }

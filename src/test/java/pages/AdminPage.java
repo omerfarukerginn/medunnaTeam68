@@ -52,8 +52,8 @@ public class AdminPage {
     @FindBy(xpath = "//*[text()='Delete']")
     public WebElement deleteButonu;
 
-    @FindBy(xpath = "//*[text()='Field translation-not-found[hospitalmsappfrontendApp.CState.country] cannot be empty!'")
-    public WebElement kirmiziUyariYazisi;
+    //@FindBy(xpath = "//*[text()='Field translation-not-found[hospitalmsappfrontendApp.CState.country] cannot be empty!'")
+    //public WebElement kirmiziUyariYazisi;
 
     @FindBy(xpath = "//*[@id='jhi-confirm-delete-country']")
     public WebElement ikiciDeleteButonu;
@@ -418,10 +418,8 @@ public class AdminPage {
     @FindBy(xpath = "//a[@class='btn btn-info btn-sm']")// 20 tane var, 19.siradakini alirsin
     public List<WebElement> viewButonu;
 
-    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com
-    public List<WebElement> editButonu;
-
     @FindBy(xpath = "//dd[2]") //firstName icin getTest yapilir, assert edilir
+
     public WebElement firstName;
 
     @FindBy(xpath = "//dd[3]") //lastName icin getTest yapilir, assert edilir
@@ -433,11 +431,22 @@ public class AdminPage {
     @FindBy(xpath = "//dd[6]") //email icin getTest yapilir, assert edilir
     public WebElement createdBy;
 
-   
+    @FindBy (xpath="//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com
+    public List<WebElement> editButonu;
 
+    @FindBy (xpath="//input[@name='activated']")
+    public WebElement activeButonu;
+    @FindBy (xpath="//select[@id='authorities']")
+    public WebElement kullaniciProfilleri;
 
+    @FindBy (xpath="//div[@role='alert']")
+    public WebElement olumluAlertBilgisi;
 
+    @FindBy (xpath="(//li[@class='page-item'])[5]")
+    public WebElement kullanicininOlduguSafya;
 
+    @FindBy (xpath="(//*[text()='Delete'])[12]") //12.user'i silme
+    public WebElement onIkinciUseriSilmeButonu;
 
 
 
@@ -499,16 +508,7 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
- //Omer 511-610 arasi
+    //Omer 511-610 arasi
 
    @FindBy(xpath = "//a[@href='/c-message'][1]")
    public WebElement itemsTitlesMessagesButton;
@@ -1087,7 +1087,7 @@ public class AdminPage {
 
 
 
-// US19 location
+    // US19 location
 
    @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
     public WebElement appointmentDoktorAtamasiBasariliYazisi;

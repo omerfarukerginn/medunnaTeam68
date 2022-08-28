@@ -49,7 +49,7 @@ public class US_020_UI_StepDefinition {
     public void kullanici_edit_butonuna_tiklar() {
 
         Random rnd = new Random();
-        int rand1 = rnd.nextInt(21);
+        int rand1 = rnd.nextInt(20);
 
         for (int i = 0; i < adminPage.editButonu.size(); i++) {
             ReusableMethods.hooverByJS(adminPage.editButonu.get(rand1));
@@ -129,6 +129,7 @@ public class US_020_UI_StepDefinition {
     public void kullaniciDeleteButonunaTiklar() {
 
        // ReusableMethods.hooverByJS(adminPage.onIkinciUseriSilmeButonu);
+
         Assert.assertTrue(adminPage.onIkinciUseriSilmeButonu.isEnabled());
     }
 }

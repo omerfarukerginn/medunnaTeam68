@@ -1077,97 +1077,6 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // US19 location
 
 
@@ -1311,26 +1220,6 @@ public class AdminPage {
     public WebElement foundToastContainer;
     @FindBy(xpath = "//div[contains(text(),'updated')]")
     public WebElement updatedToastContainer;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

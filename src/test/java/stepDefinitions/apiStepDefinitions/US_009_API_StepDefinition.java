@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static utilities.Authentication.generateToken;
 
-public class US_009_API_StepDefinitions {
+public class US_009_API_StepDefinition {
 
     Response response;
     RequestSpecification spec;

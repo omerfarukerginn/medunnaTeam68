@@ -288,10 +288,6 @@ public class ReadTxt {
     }
 
 
-
-    
-
-
     public static List<Object> returnTestItemsIDList(String filePath) {
         List<Object> all = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -313,15 +309,11 @@ public class ReadTxt {
         return all;
     }
 
-
-
 }
 
 
 
-
-
-public static List<Object> returnRoomIDsList(String filePath) {
+    public static List<Object> returnRoomIDsList(String filePath) {
 
         List<Object> all = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {

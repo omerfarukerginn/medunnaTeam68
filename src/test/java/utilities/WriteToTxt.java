@@ -239,10 +239,36 @@ public static void saveStaffName(String fileName, List<Object> emailList) {
         }
     }
 
+    public static void saveRoomId(String fileName, List<Object> idList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < idList.size(); i++)
+
+                writer.append(idList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
 
 
 
 
+    public static void savePhysicianId(String fileName, List<Object> idList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < idList.size(); i++)
+
+                writer.append(idList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
 
 }
 

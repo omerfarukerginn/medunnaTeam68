@@ -15,7 +15,6 @@ import utilities.ReusableMethods;
 
 public class US_026_UI_StepDefinition {
 
-    LoginPage loginPage = new LoginPage();
     ContactPage us026 = new ContactPage();
     Faker faker= new Faker();
     Actions actions=new Actions(Driver.getDriver());

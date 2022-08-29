@@ -20,69 +20,90 @@ import static utilities.Authentication.generateToken;
 
 public class US_018_API_StepDefinition {
 
-    static RequestSpecification specMed;
+     RequestSpecification spec;
     //static Staff expectedStaff;
-    static Response response;
-    static Staff actualStaff;
-    static Physician expectedPhysician;
+     Response response;
+    //static Staff actualStaff;
+     Physician actualPhysician;
+    @Given("Admin set Medunna base url {string}")
+    public void admin_set_medunna_base_url(String id) {
+        spec = new RequestSpecBuilder().
+                setBaseUri("https://medunna.com").
+                //setBaseUri(ConfigReader.getProperty("medunna_url")).
+                        build();
+
+        spec.pathParams("1","api","2","physicians","3",id);
+    }
+    @Given("Admin send the GET request and GET the response")
+    public void admin_send_the_get_request_and_get_the_response() {
+        response=given() .spec(spec)
+                .header("Authorization","Bearer "+generateToken("team68","HealthTeam68!"))
+                .contentType(ContentType.JSON)
+                .when().get("/{1}/{2}/{3}/");
+
+        response.prettyPrint();
+        response.then().statusCode(200);
+    }
+    @Given("Admin deserialize data json to java")
+    public void admin_deserialize_data_json_to_java() {
+        ObjectMapper obj=new ObjectMapper();
+
+        //actualPhysician=obj.readValue(response.asString(),Physician.class);
+
+    }
+    @Given("Admin saves the physicians data to correspondent files")
+    public void admin_saves_the_physicians_data_to_correspondent_files() {
+    }
+    @Then("Admin validates expected data with API {string},{string},{string},{string}")
+    public void adminValidatesExpectedDataWithAPI(String createdBy, String phone, String gender, String bloodGroup) {
+        System.out.println(actualPhysician);
+
+        Assert.assertEquals(createdBy,actualPhysician.getCreatedBy());
+        Assert.assertEquals(phone,actualPhysician.getPhone());
+        Assert.assertEquals(gender,actualPhysician.getGender());
+        Assert.assertEquals(bloodGroup,actualPhysician.getBloodGroup());
+
+    }
+
+    /*
 
     public static void main(String[] args) throws JsonProcessingException {
 
-        specMed = new RequestSpecBuilder().
-                setBaseUri(ConfigReader.getProperty("medunna_url")).
-                build();
+      spec = new RequestSpecBuilder().
+              setBaseUri("https://medunna.com").
+              //setBaseUri(ConfigReader.getProperty("medunna_url")).
+              build();
 
-        specMed.pathParams("1","api","2","physician","3",2051);
-
-
-
-        expectedPhysician=new Physician("kamil","selm","male","12.12.1989","5346787890",
-                "B+","sarnic turkey","kamilselm@gmail.com",
-                "degistirme");
-
-
-        response=given() .contentType(ContentType.JSON)
-                .spec(specMed)
-                .header("Authorization","Bearer "+generateToken())
-                .when().get("/{1}/{2}/{3}");
-
-        response.prettyPrint();
-        //  response.then().statusCode(200);
-
-
-        ObjectMapper obj=new ObjectMapper();
-        Physician actualPhysician=obj.readValue(response.asString(),Physician.class);
-
-        System.out.println(actualPhysician);
-
-        //    Assert.assertEquals(expectedStaff.getFirstName(),actualData.getFirstName());
-
-        //  Assert.assertEquals(expectedStaff.getLastName(),actualData.getData().getLastName());
-
-        // Assert.assertEquals(expectedStaff.getGender(),actualData.getData().getGender());
-
-    }
+      spec.pathParams("1","api","2","physicians","3",10511);
 
 
 
-    @Given("Api Personel icin beklenen verileri girin")
-    public void apiPersonelIcinBeklenenVerileriGirin() throws JsonProcessingException {
+     // expectedPhysician=new Physician("kamil","selm","male","12.12.1989","5346787890",
+     //         "B+","sarnic turkey","kamilselm@gmail.com",
+     //         "degistirme");
+      //10522
 
 
+      response=given() .spec(spec)
+              .header("Authorization","Bearer "+generateToken("team68","HealthTeam68!"))
+              .contentType(ContentType.JSON)
+              .when().get("/{1}/{2}/{3}/");
 
-    }
-
-    @Then("Api istegi sonlandirir ve kayit icin yanit alir")
-    public void apiIstegiSonlandirirVeKayitIcinYanitAlir() {
-
-
-    }
-
-
-    @And("Api, kayit icin API kayitlarini dogrular")
-    public void apiKayitIcinAPIKayitlariniDogrular() {
+      response.prettyPrint();
+      response.then().statusCode(200);
 
 
+      ObjectMapper obj=new ObjectMapper();
+      actualPhysician=obj.readValue(response.asString(),Physician.class);
 
-    }
+      System.out.println(actualPhysician);
+
+     //Assert.assertEquals(createdBy,actualPhysician.getCreatedBy());
+     //   Assert.assertEquals(gender,actualPhysician.getGender());
+     //  Assert.assertEquals(bloodGroup,actualPhysician.getBloodGroup());
+     // Assert.assertEquals(phone,actualPhysician.getPhone());
+
+   }
+        */
+
 }

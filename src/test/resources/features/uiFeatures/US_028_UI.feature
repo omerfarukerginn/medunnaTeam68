@@ -25,9 +25,8 @@ Feature:Admin olarak; Country oluşturabilmeli / Okumayabilmeli ve Silebilmeli
     Then Kullanici tarih ve saat girer.
     And Kullanici gecerli ulke ismini secer
     And Kullanici Save butonunu tiklar
-    And Kirmizi uyari yazisini gormez
+    And Kirmizi uyari yazisini goruyorsa kayit yapilmadi uyari yazisini alir
     And Kullanici sayfayi kapatir
-
 
   @US_028_TC_003
   Scenario:Kullanıcı ülkeleri silebilmeli

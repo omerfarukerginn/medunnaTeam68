@@ -34,15 +34,17 @@ public class US_016_UI_StepDefinition {
     public void admin_items_titles_butonuna_tiklar_ve_ardindan_room_butonuna_tiklar() {
         us016.itemsTitlesButon.click();
 
-        ReusableMethods.waitFor(2);
-
-
-
 
         ReusableMethods.waitFor(2);
 
 
+
+
+
         ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(2);
+
+
 
 
 
@@ -294,5 +296,7 @@ public class US_016_UI_StepDefinition {
     public void adminIknciDeleteUyarisiTusunaBasar() {
         us016.deleteOnAltiUSIkinci.sendKeys(Keys.ENTER);
     }
+
+
 }
 

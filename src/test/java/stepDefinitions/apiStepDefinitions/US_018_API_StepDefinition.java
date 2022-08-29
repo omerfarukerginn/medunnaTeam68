@@ -21,16 +21,11 @@ import static utilities.Authentication.generateToken;
 public class US_018_API_StepDefinition {
 
      RequestSpecification spec;
-    //static Staff expectedStaff;
      Response response;
-    //static Staff actualStaff;
      Physician actualPhysician;
     @Given("Admin set Medunna base url {string}")
     public void admin_set_medunna_base_url(String id) {
-        spec = new RequestSpecBuilder().
-                setBaseUri("https://medunna.com").
-                //setBaseUri(ConfigReader.getProperty("medunna_url")).
-                        build();
+        spec = new RequestSpecBuilder().setBaseUri("https://medunna.com").build();
 
         spec.pathParams("1","api","2","physicians","3",id);
     }

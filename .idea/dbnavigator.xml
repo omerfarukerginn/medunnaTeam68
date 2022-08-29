@@ -17,8 +17,8 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="windows-1254" />
-      <charset value="windows-1254" />
+      <charset value="windows-1252" />
+      <charset value="windows-1252" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -27,7 +27,6 @@
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
-
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
       <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
@@ -39,11 +38,6 @@
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
   </component>
-
-  <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
-  </component>
-
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
@@ -72,7 +66,6 @@
     <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
-
     <connections>
       <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" active="true" signed="true">
         <database>
@@ -159,9 +152,6 @@
         </object-filters>
       </connection>
     </connections>
-
-    <connections />
-
     <browser-settings>
       <general>
         <display-mode value="TABBED" />

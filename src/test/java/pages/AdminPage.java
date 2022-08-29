@@ -12,7 +12,14 @@ public class AdminPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+
+
+  
+
+
+
     // US_28 location
+
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
 
@@ -63,15 +70,6 @@ public class AdminPage {
 
     @FindBy(xpath = "//*[@class='modal-content']")
     public WebElement deleteOperationYazisi;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -162,6 +160,7 @@ public class AdminPage {
 
     @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[1]")
     public WebElement editButonuOnAlti;
+
 
     @FindBy(xpath = "//button[@id='jhi-confirm-delete-room']")
     public WebElement deleteOnAltiUSIkinci;
@@ -308,7 +307,63 @@ public class AdminPage {
 
 
 //US_017 bitis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // NAIL 311-410 - BASLAMA NOKTASI
+
 // NAIL 311-410 - BASLAMA NOKTASI
+
 
     @FindBy(xpath = "(//*[@href='/physician'])[1]")
     public WebElement physicianSekmesi;
@@ -413,7 +468,9 @@ public class AdminPage {
 
 
 
+
 // NAIL 311-410 - BITIS NOKTASI
+
     //Ebru 411-510 arasi
     @FindBy(xpath = "//li[@id='admin-menu']")
     public WebElement administration;
@@ -519,8 +576,13 @@ public class AdminPage {
     @FindBy(xpath = "//a[@href='/c-message'][1]")
     public WebElement itemsTitlesMessagesButton;
 
+
+
+    //Omer 511-610 arasi
+
     @FindBy(xpath = "//a[@class='btn btn-info btn-sm'][1]")
     public WebElement messagesPageIlkViewButton;
+
 
     @FindBy(xpath = "//span[@id='name']")
     public WebElement messagesViewNameWebElement;
@@ -804,6 +866,9 @@ public class AdminPage {
 
 
 
+
+
+// US19 location
 
 
 
@@ -1116,6 +1181,7 @@ public class AdminPage {
     @FindBy(xpath = "//input[@name='searchSSN']")
     public WebElement SSNBox;
 
+
     @FindBy(xpath = "//button[@class='btn btn-secondary']")
     public WebElement SearchUserButton;
 
@@ -1418,6 +1484,167 @@ public class AdminPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Administration
+
+    @FindBy(xpath = "(//*[text()='Delete'])[17]")
+    public WebElement AdministorDeletedButton;
+
+    @FindBy(xpath = "(//a[@class='page-link'])[6]")
+    public WebElement KayitliStaffSayfasi;
+
+    @FindBy(xpath = "//a[@class='btn btn-info btn-sm']")
+    public WebElement AdministorViewdButton;
+
+    @FindBy(xpath = "(//*[text()='Edit'])[17]")
+    public WebElement AdministorEditdButton;
+
+    @FindBy(xpath = "(//a[@class='page-link'])[9]")
+    public WebElement AdministorSayfaAtlamadButton;
+
+    @FindBy(xpath = "//a[@class='btn btn-danger btn-sm']")
+    public WebElement  AdministorDeletedButton2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 

@@ -17,8 +17,8 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="windows-1254" />
-      <charset value="windows-1254" />
+      <charset value="windows-1252" />
+      <charset value="windows-1252" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -28,18 +28,27 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
+
+    <connection id="f4801888-00e4-467b-81a6-d0e952018b9d">
+      <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from test]]></console>
+
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
       <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
+
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
+
+    <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" />
+
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
   </component>=
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
+
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -70,7 +79,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" active="true" signed="true">
+      <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -83,7 +92,7 @@
           <url-type value="DATABASE" />
           <host value="medunna.com" />
           <port value="5432" />
-          <database value="medunna_db" />
+          <database value="postgres" />
           <type value="USER_PASSWORD" />
           <user value="medunna_user" />
           <deprecated-pwd value="bWVkdW5uYV9wYXNzXzk4Nw==" />

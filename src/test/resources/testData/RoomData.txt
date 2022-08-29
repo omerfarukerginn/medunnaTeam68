@@ -1,0 +1,1 @@
+Room Room(createdBy=null, createdDate=null, id=null, roomNumber=7878622, roomType=TWIN, status=true, price=157.5, description=Breakfast)

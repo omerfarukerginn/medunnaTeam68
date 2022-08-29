@@ -7,7 +7,9 @@ import pojos.Room;
 import pojos.Staff;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -218,10 +220,6 @@ public class ReadTxt {
     }
 
 
-
-
-
-
     public static List<Object> returnAppointmentNameList(String filePath) {
         List<Object> all = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -263,31 +261,8 @@ public class ReadTxt {
         return all;
     }
 
-   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- public static List<Object> returnPhysicianIDsList(String filePath) {
+    public static List<Object> returnPhysicianIDsList(String filePath) {
 
         List<Object> all = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -307,5 +282,6 @@ public class ReadTxt {
         }
         return all;
     }
+
 
 }

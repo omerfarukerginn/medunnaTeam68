@@ -22,6 +22,7 @@ public class Staff {
     private String email;
     private String description;
     private Integer id;
+    private String Status;
 
 
     public Staff(String firstName, String lastName, String gender, String birthDate, String phone, String bloodGroup, String adress, String email, String description) {

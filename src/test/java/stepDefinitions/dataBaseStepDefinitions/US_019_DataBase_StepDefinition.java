@@ -67,6 +67,7 @@ List<Object> actualStaffEmail= ReadTxt.returnStaffEmailList(filename2);
         expectedStaffEmail.add("ozan11@gmail.com");
         Assert.assertTrue("email uygunluk yok",actualStaffEmail.containsAll(expectedStaffEmail));
 
+
     }
 
 

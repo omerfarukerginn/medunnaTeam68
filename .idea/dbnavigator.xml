@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
-    <record-view-column-sorting-type value="ALPHABETICAL" />
+    <record-view-column-sorting-type value="BY_INDEX" />
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
@@ -17,8 +17,8 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="windows-1254" />
-      <charset value="windows-1254" />
+      <charset value="windows-1252" />
+      <charset value="windows-1252" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -28,31 +28,15 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
-
-
-    <connection id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94">
-      <console name="Connection 1" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from public.jhi_user where id=159437]]></console>
-
-    <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from public.jhi_user where id=159437]]></console>
-
+    <connection id="f4801888-00e4-467b-81a6-d0e952018b9d">
+      <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from test]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
-
-    <connection id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94" dataset="public.personel" active-filter-id="" />
-
-    <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211" />
-
+    <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -83,18 +67,9 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" active="true" signed="true">
+      <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" active="true" signed="true">
         <database>
           <name value="Connection" />
-
-      <connection id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94" active="true" signed="true">
-        <database>
-          <name value="Connection 1" />
-
-      <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211" active="true" signed="true">
-        <database>
-          <name value="Connection" />
-
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -105,7 +80,7 @@
           <url-type value="DATABASE" />
           <host value="medunna.com" />
           <port value="5432" />
-          <database value="medunna_db" />
+          <database value="postgres" />
           <type value="USER_PASSWORD" />
           <user value="medunna_user" />
           <deprecated-pwd value="bWVkdW5uYV9wYXNzXzk4Nw==" />
@@ -214,13 +189,13 @@
       </filters>
       <sorting>
         <object-type name="COLUMN" sorting-type="NAME" />
-        <object-type name="FUNCTION" sorting-type="NAME" />
+        <object-type name="FUNCTİON" sorting-type="NAME" />
         <object-type name="PROCEDURE" sorting-type="NAME" />
         <object-type name="ARGUMENT" sorting-type="POSITION" />
-        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
+        <object-type name="TYPE ATTRİBUTE" sorting-type="POSITION" />
       </sorting>
       <default-editors>
-        <object-type name="VIEW" editor-type="SELECTION" />
+        <object-type name="VİEW" editor-type="SELECTION" />
         <object-type name="PACKAGE" editor-type="SELECTION" />
         <object-type name="TYPE" editor-type="SELECTION" />
       </default-editors>
@@ -231,24 +206,24 @@
           <object-type name="SCHEMA" enabled="true" />
           <object-type name="USER" enabled="false" />
           <object-type name="ROLE" enabled="false" />
-          <object-type name="PRIVILEGE" enabled="false" />
+          <object-type name="PRİVİLEGE" enabled="false" />
           <object-type name="CHARSET" enabled="false" />
           <object-type name="TABLE" enabled="true" />
-          <object-type name="VIEW" enabled="true" />
-          <object-type name="MATERIALIZED VIEW" enabled="true" />
-          <object-type name="INDEX" enabled="true" />
-          <object-type name="CONSTRAINT" enabled="true" />
-          <object-type name="DATASET TRIGGER" enabled="true" />
-          <object-type name="DATABASE TRIGGER" enabled="true" />
+          <object-type name="VİEW" enabled="true" />
+          <object-type name="MATERİALİZED VİEW" enabled="true" />
+          <object-type name="İNDEX" enabled="true" />
+          <object-type name="CONSTRAİNT" enabled="true" />
+          <object-type name="DATASET TRİGGER" enabled="true" />
+          <object-type name="DATABASE TRİGGER" enabled="true" />
           <object-type name="SYNONYM" enabled="false" />
           <object-type name="SEQUENCE" enabled="true" />
           <object-type name="PROCEDURE" enabled="true" />
-          <object-type name="FUNCTION" enabled="true" />
+          <object-type name="FUNCTİON" enabled="true" />
           <object-type name="PACKAGE" enabled="true" />
           <object-type name="TYPE" enabled="true" />
-          <object-type name="DIMENSION" enabled="false" />
+          <object-type name="DİMENSİON" enabled="false" />
           <object-type name="CLUSTER" enabled="false" />
-          <object-type name="DBLINK" enabled="true" />
+          <object-type name="DBLİNK" enabled="true" />
         </lookup-objects>
         <force-database-load value="false" />
         <prompt-connection-selection value="true" />

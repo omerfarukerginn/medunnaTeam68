@@ -1,6 +1,7 @@
 package utilities;
 
 import pojos.Appointment;
+import pojos.CTestItem;
 import pojos.Registrant;
 import pojos.Staff;
 
@@ -262,6 +263,110 @@ public class ReadTxt {
         }
         return all;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static List<Object> returnTestItemsIDList(String filePath) {
+        List<Object> all = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            System.out.println(line);
+            int i = 0;
+            while (line != null) {
+
+                CTestItem ctestItem = new CTestItem();
+                ctestItem.setId(Integer.parseInt(line.split(",")[0]));
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+                all.add(ctestItem.getId());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return all;
+    }
+
 
 
 }

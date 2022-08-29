@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/apiFeatures",
         glue = "stepDefinitions/apiStepDefinitions",
-        tags = "@api018",
-        dryRun = true
+        tags = "@",
+        dryRun = false
 )
 public class ApiRunner {
 }

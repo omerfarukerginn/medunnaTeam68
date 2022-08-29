@@ -31,7 +31,7 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
 
 
   @US_016_TC_003_1
-  Scenario:US_016_TC_003 Oda için "Status" ayarlanabilir olmalı.
+  Scenario:US_016_TC_003_01 Oda için "Status" ayarlanabilir olmalı.
     And Admin  Create a new Room butonuna tiklar
     And Admin  Room Number bolumunu doldurur ve unique olmalidir
     And Admin  Price kutusuna fiyat bilgisi girer
@@ -43,7 +43,7 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
     And Sayfayi kapatir
 
   @US_016_TC_003_2
-  Scenario:US_016_TC_003 Oda için "Status" ayarlanabilir olmalı.
+  Scenario:US_016_TC_003_02 Oda için "Status" ayarlanabilir olmalı.
     And Admin  Create a new Room butonuna tiklar
     And Admin  Room Number bolumunu doldurur ve unique olmalidir
     And Admin  Price kutusuna fiyat bilgisi girer
@@ -62,7 +62,7 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
     And Sayfayi kapatir
 
   @US_016_TC005_01
-  Scenario:US_016_TC_005 "Description" isteğe bağlı olarak doldurulmalı.
+  Scenario:US_016_TC_005_01 "Description" isteğe bağlı olarak doldurulmalı.
     And Admin  Create a new Room butonuna tiklar
     And Admin  Room Number bolumunu doldurur ve unique olmalidir
     And Admin  Price kutusuna fiyat bilgisi girer
@@ -72,7 +72,7 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
     And Sayfayi kapatir
 
   @US_016_TC005_02
-  Scenario:US_016_TC_005 "Description" isteğe bağlı olarak doldurulmalı.
+  Scenario:US_016_TC_005_02  "Description" isteğe bağlı olarak doldurulmalı.
     And Admin  Create a new Room butonuna tiklar
     And Admin  Room Number bolumunu doldurur ve unique olmalidir
     And Admin  Price kutusuna fiyat bilgisi girer
@@ -96,15 +96,35 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
     @US_016_TC007
   Scenario: US_016_TC_007 Admin aynı tür odaları görebilir.
     And Admin Room Type bolumune tiklar
-    Then Admin Room Type olarak ayni secilen odalari gorebilir
+    Then Admin Room Type olarak TWINN secilen odalari gorebilir
+      And Admin islem yaptigi son sayfanin okuna tiklar
+      And Admin sayfanin basina gelir
+      And Admin Room Type bolumune tiklar
+      Then Admin Room Type olarak DAYCARE  secilen odalari gorebilir
       And Sayfayi kapatir
 
   @US_016_TC008
 Scenario:US_016_TC_008_Admin mevcut odaları düzenleyebilir ve güncelleyebilir.
+  Then Admin olusturdugu odaya tiklar
+    And Admin Edit butonuna tiklar
+    And Admin  Room Number kutusunu bos birakir
+    And Admin Price kutusunu bosaltir
+    And Admin  Room Number bolumunu doldurur ve unique olmalidir
+    And Admin  Price kutusuna fiyat bilgisi girer
+    Then Admin  Save butonuna tiklar
+    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur
+    And Sayfayi kapatir
 
 
-
-  @US_016_TC009
+  @US_016_TC013
   Scenario:US_016_TC_013 Odalar Admin tarafından silinebilir.
+    And Admin "https://www.medunna.com/room?page=91&sort=id,asc" de kaydettigi "91" nolu id deki odaya tiklar
+    And Admin Delete tusuna basar
+    And Admin iknci Delete uyarisi tusuna basar
+    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur
+    And Sayfayi kapatir
+
+
+
 
 

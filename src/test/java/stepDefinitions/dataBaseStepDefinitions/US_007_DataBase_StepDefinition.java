@@ -77,7 +77,7 @@ public class US_007_DataBase_StepDefinition {
         Assert.assertTrue("ISIM UYUSMUYOR", actualAppointmentName.contains("hastamahmut"));
 
 
-
-
     }
+
+
 }

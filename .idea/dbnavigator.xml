@@ -28,22 +28,15 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-
     <connection id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94">
       <console name="Connection 1" type="STANDARD" schema="information_schema" session="Main">select * from public.jhi_user where id=159437</console>
 
 
     <connection id="f4801888-00e4-467b-81a6-d0e952018b9d">
       <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from test]]></console>
-
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
-
       <console name="Connection" type="STANDARD" schema="" session="Main" />
-
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
-
-
-
+     <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -58,9 +51,7 @@
   </component>
 
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
-
   </component>
-
     <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" />
 
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
@@ -69,7 +60,6 @@
     <open-files />
 
 </component>
-
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
@@ -99,7 +89,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-
+      <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" active="true" signed="true">
       <connection id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94" active="true" signed="true">
         <database>
           <name value="Connection 1" />
@@ -118,7 +108,7 @@
           <url-type value="DATABASE" />
           <host value="medunna.com" />
           <port value="5432" />
-          <database value="postgres" />
+          <database value="medunna_db" />
           <type value="USER_PASSWORD" />
           <user value="medunna_user" />
           <deprecated-pwd value="bWVkdW5uYV9wYXNzXzk4Nw==" />

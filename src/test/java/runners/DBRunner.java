@@ -15,6 +15,9 @@ import org.junit.runner.RunWith;
         glue = "stepDefinitions/dataBaseStepDefinitions",
         tags = "@",
         dryRun = false
+
+       
+
 )
 public class DBRunner {
 

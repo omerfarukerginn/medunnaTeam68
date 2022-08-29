@@ -31,7 +31,7 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
 
 
   @US_016_TC_003_1
-  Scenario:US_016_TC_003 Oda için "Status" ayarlanabilir olmalı.
+  Scenario:US_016_TC_003_01 Oda için "Status" ayarlanabilir olmalı.
     And Admin  Create a new Room butonuna tiklar
     And Admin  Room Number bolumunu doldurur ve unique olmalidir
     And Admin  Price kutusuna fiyat bilgisi girer
@@ -43,7 +43,7 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
     And Sayfayi kapatir
 
   @US_016_TC_003_2
-  Scenario:US_016_TC_003 Oda için "Status" ayarlanabilir olmalı.
+  Scenario:US_016_TC_003_02 Oda için "Status" ayarlanabilir olmalı.
     And Admin  Create a new Room butonuna tiklar
     And Admin  Room Number bolumunu doldurur ve unique olmalidir
     And Admin  Price kutusuna fiyat bilgisi girer
@@ -62,7 +62,7 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
     And Sayfayi kapatir
 
   @US_016_TC005_01
-  Scenario:US_016_TC_005 "Description" isteğe bağlı olarak doldurulmalı.
+  Scenario:US_016_TC_005_01 "Description" isteğe bağlı olarak doldurulmalı.
     And Admin  Create a new Room butonuna tiklar
     And Admin  Room Number bolumunu doldurur ve unique olmalidir
     And Admin  Price kutusuna fiyat bilgisi girer
@@ -72,7 +72,7 @@ Feature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)
     And Sayfayi kapatir
 
   @US_016_TC005_02
-  Scenario:US_016_TC_005 "Description" isteğe bağlı olarak doldurulmalı.
+  Scenario:US_016_TC_005_02  "Description" isteğe bağlı olarak doldurulmalı.
     And Admin  Create a new Room butonuna tiklar
     And Admin  Room Number bolumunu doldurur ve unique olmalidir
     And Admin  Price kutusuna fiyat bilgisi girer
@@ -116,7 +116,7 @@ Scenario:US_016_TC_008_Admin mevcut odaları düzenleyebilir ve güncelleyebilir
     And Sayfayi kapatir
 
 
-  @US_016_TC009
+  @US_016_TC013
   Scenario:US_016_TC_013 Odalar Admin tarafından silinebilir.
     And Admin "https://www.medunna.com/room?page=91&sort=id,asc" de kaydettigi "91" nolu id deki odaya tiklar
     And Admin Delete tusuna basar

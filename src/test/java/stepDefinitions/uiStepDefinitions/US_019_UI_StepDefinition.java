@@ -12,6 +12,11 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 
+
+
+
+
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,6 +33,13 @@ public class US_019_UI_StepDefinition {
 
 
 
+
+
+
+
+
+
+
     @Given("Hesap Menusu isaretine tiklayin ve Register dugmesine tiklayin")
     public void hesapMenusuIsaretineTiklayinVeRegisterDugmesineTiklayin() {
         Driver.waitAndClick(us019.humanButton,2);
@@ -37,6 +49,8 @@ public class US_019_UI_StepDefinition {
 
 
     }
+
+
 
 
     @And("Yeni bir kullanici icin tum bilgileri dolduru tiklatin {string},{string},{string},{string},{string},{string},{string}")

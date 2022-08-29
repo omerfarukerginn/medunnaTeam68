@@ -8,6 +8,7 @@ Feature: US_016 Validate rooms with API
     And Admin save all API information for room creation
     And Admin verify API records for room creation
 
+    @TC_016_002
   Scenario: TC_016_002 Validate all rooms with API reading(get)
     Given Admin set path params for room read
     And Admin enters expected data for room read
@@ -15,6 +16,7 @@ Feature: US_016 Validate rooms with API
     And Admin save all API information for room read
     And Admin verify API records for room read
 
+      @TC_016_003
   Scenario: TC_016_003 Validate all rooms with API updating
     Given Admin set path params for room update
     And Admin enters expected data for room update
@@ -22,6 +24,7 @@ Feature: US_016 Validate rooms with API
     And Admin save all API information for room update
     And Admin verify API records for room update
 
+  @TC_016_004
   Scenario: TC_016_004 Validate all rooms with API deleting
     Given Admin set path params for room delete
     And Admin sends request and receives response for room delete

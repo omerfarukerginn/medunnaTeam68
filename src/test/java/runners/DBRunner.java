@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/dataBaseFeatures",
         glue = "stepDefinitions/dataBaseStepDefinitions",
-        tags = "@",
-        dryRun = false
+        tags = "@DB_US_016",
+        dryRun = true
 )
 public class DBRunner {
 

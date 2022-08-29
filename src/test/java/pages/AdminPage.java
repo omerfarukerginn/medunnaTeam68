@@ -16,7 +16,7 @@ public class AdminPage {
     @FindBy(xpath = "//a[@aria-haspopup='true']")
     public WebElement humanButton;
 
-@FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-th-list fa-w-16 ']")
     public WebElement itemsTitlesButonu;
 
     @FindBy(xpath = "//a[@href='/country']")
@@ -407,6 +407,12 @@ public class AdminPage {
 
 
 
+
+
+
+
+
+
 // NAIL 311-410 - BITIS NOKTASI
     //Ebru 411-510 arasi
     @FindBy(xpath = "//li[@id='admin-menu']")
@@ -510,44 +516,44 @@ public class AdminPage {
 
     //Omer 511-610 arasi
 
-   @FindBy(xpath = "//a[@href='/c-message'][1]")
-   public WebElement itemsTitlesMessagesButton;
+    @FindBy(xpath = "//a[@href='/c-message'][1]")
+    public WebElement itemsTitlesMessagesButton;
 
-   @FindBy(xpath = "//a[@class='btn btn-info btn-sm'][1]")
-   public WebElement messagesPageIlkViewButton;
+    @FindBy(xpath = "//a[@class='btn btn-info btn-sm'][1]")
+    public WebElement messagesPageIlkViewButton;
 
-   @FindBy(xpath = "//span[@id='name']")
-   public WebElement messagesViewNameWebElement;
+    @FindBy(xpath = "//span[@id='name']")
+    public WebElement messagesViewNameWebElement;
 
-   @FindBy(xpath = "//span[@id='email']")
-   public WebElement messagesViewEmailWebElement;
+    @FindBy(xpath = "//span[@id='email']")
+    public WebElement messagesViewEmailWebElement;
 
-   @FindBy(xpath = "//span[@id='message']")
-   public WebElement messagesViewMessageWebElement;
+    @FindBy(xpath = "//span[@id='message']")
+    public WebElement messagesViewMessageWebElement;
 
-   @FindBy(xpath = "//a[@id='jh-create-entity']")
-   public WebElement createNewMessageButton;
+    @FindBy(xpath = "//a[@id='jh-create-entity']")
+    public WebElement createNewMessageButton;
 
-   @FindBy(xpath = "//input[@id='c-message-name']")
-   public WebElement nameForNewMessage;
+    @FindBy(xpath = "//input[@id='c-message-name']")
+    public WebElement nameForNewMessage;
 
-   @FindBy(xpath = "//input[@id='c-message-email']")
-   public WebElement emailForNewMessage;
+    @FindBy(xpath = "//input[@id='c-message-email']")
+    public WebElement emailForNewMessage;
 
-   @FindBy(xpath = "//input[@id='c-message-subject']")
-   public WebElement subjectForNewMessage;
+    @FindBy(xpath = "//input[@id='c-message-subject']")
+    public WebElement subjectForNewMessage;
 
-   @FindBy(xpath = "//input[@id='c-message-message']")
-   public WebElement messageForNewMessage;
+    @FindBy(xpath = "//input[@id='c-message-message']")
+    public WebElement messageForNewMessage;
 
-   @FindBy(xpath = "//a[@class='btn btn-primary btn-sm'][1]")
-   public WebElement messagesPageIlkEditButton;
+    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm'][1]")
+    public WebElement messagesPageIlkEditButton;
 
-   @FindBy(xpath = "//a[@class='btn btn-danger btn-sm'][1]")
-   public WebElement messagesPageIlkDeleteButton;
+    @FindBy(xpath = "//a[@class='btn btn-danger btn-sm'][1]")
+    public WebElement messagesPageIlkDeleteButton;
 
-   @FindBy(xpath = "//button[@id='jhi-confirm-delete-cMessage']")
-   public WebElement messagesPopUpDeleteButton;
+    @FindBy(xpath = "//button[@id='jhi-confirm-delete-cMessage']")
+    public WebElement messagesPopUpDeleteButton;
 
 
 
@@ -607,7 +613,8 @@ public class AdminPage {
 
 
 
-   
+
+
    // US_015 Ridvan
 
     @FindBy(xpath="//*[text()='Patient']")
@@ -1089,7 +1096,9 @@ public class AdminPage {
 
     // US19 location
 
+
    @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
+
     public WebElement appointmentDoktorAtamasiBasariliYazisi;
 
     @FindBy(xpath = "//*[text()='Items&Titles']")
@@ -1253,5 +1262,166 @@ public class AdminPage {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -284,4 +284,26 @@ public class ReadTxt {
     }
 
 
+
+    public static List<Object> returnRoomIDsList(String filePath) {
+
+        List<Object> all = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            System.out.println(line);
+            int i = 0;
+            while (line != null) {
+                Room room = new Room();
+                room.setId(Integer.parseInt(line.split(",")[0]));
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+                all.add(room.getId());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return all;
+    }
+
 }

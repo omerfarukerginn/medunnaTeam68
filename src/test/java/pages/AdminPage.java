@@ -760,6 +760,15 @@ public class AdminPage {
     @FindBy (xpath="(//a[@class='btn btn-danger btn-sm'])[1]")
     public WebElement appointmentDoktorAtamasiBasariliYazisi;
 
+    @FindBy (xpath="//a[@class='btn btn-danger btn-sm']")
+    public WebElement patientDeleteButton;
+
+    @FindBy (xpath="//button[@id='jhi-confirm-delete-patient']")
+    public WebElement patientDeleteConfirmButton;
+
+    @FindBy (xpath="//div[@class='Toastify__toast-body']")
+    public WebElement patientDeleteBasariliYazisi;
+
 
 
 

@@ -6,7 +6,7 @@ Feature: Admin tarafindan hasta olusturma ve duzenleme
     Then Kullanici admin olarak giris yapar
     Then Admin Items&Titles sekmesini tiklar
 
-  @US_015_TC_001
+  @US_015_TC_001 @smokeTest
   Scenario: Yeni hastalar yalnızca yönetici tarafından oluşturulabilir
     Given Admin Patient secenegini secer
     And Admin Create a new Patient butonuna tiklar
@@ -39,3 +39,21 @@ Feature: Admin tarafindan hasta olusturma ve duzenleme
     And Appointment sonrasi Save butonuna basar
     And Appointment Guncelleme yapildi yazisinin gorunurlugunu test eder
     And Sayfayi kapatir
+
+  @US_015_TC_005 @bug
+  Scenario: "State", "US state" olmali ve bos birakilmamali
+    Given Admin Patient secenegini secer
+    And Admin Create a new Patient butonuna tiklar
+    Then Admin hasta bilgilerini girer, State kismini bos birakir
+    Then Admin save butonuna basar
+    And Hasta olusturuldu mesaji gorulmemeli
+    And Sayfayi kapatir
+
+  @US_015_TC_006 @bug
+  Scenario: Yönetici herhangi bir hastayı silebilir
+    Given Admin Patient secenegini secer
+    And Admin Delete butonuna basar
+    And Delete Confirm butonuna basar
+    Then Delete basarili yazisinin gorunurlugunu test eder
+    And Sayfayi kapatir
+

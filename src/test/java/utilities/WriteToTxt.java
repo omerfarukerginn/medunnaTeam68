@@ -218,13 +218,14 @@ public class WriteToTxt {
         }
     }
 
-    public static void saveStaffFirstName(String fileName, List<Object> NameList) {
+
+public static void saveStaffName(String fileName, List<Object> emailList) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
 
-            for (int i = 0; i < NameList.size(); i++)
+            for (int i = 0; i < emailList.size(); i++)
 
-                writer.append(NameList.get(i).toString() + ",\n");
+                writer.append(emailList.get(i).toString() + ",\n");
 
             writer.close();
 
@@ -297,23 +298,7 @@ public class WriteToTxt {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
     public static void saveTestData(CTestItem test) {
 

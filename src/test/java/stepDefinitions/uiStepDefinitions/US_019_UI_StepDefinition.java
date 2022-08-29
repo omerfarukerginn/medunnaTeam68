@@ -174,18 +174,12 @@ public class US_019_UI_StepDefinition {
 
     @And("Kullanici Kayitli kisi listesinden kayitli bir Staff'in View Butonunu tiklar")
     public void kullaniciKayitliKisiListesindenKayitliBirStaffInViewButonunuTiklar() {
-/*
+
         us019.ViewButton.click();
 
         ReusableMethods.waitFor(4);
 
         Assert.assertTrue(us019.staffGorunurluk.isDisplayed());
-        */ ReusableMethods.waitFor(4);
-
-
-
-       // us019.AdministorViewdButton.click();
-
         ReusableMethods.waitFor(4);
 
 
@@ -250,9 +244,15 @@ public class US_019_UI_StepDefinition {
         Driver.wait(1);
       //  us019.staffCeratedDate.click();
         Driver.wait(1);
+
+     /* action.moveToElement(us019.AdministorDeletedButton2);
+        Driver.wait(1);
+        us019.AdministorDeletedButton2.click();*/
+
     //  action.moveToElement(us019.AdministorDeletedButton2);
         Driver.wait(1);
     //    us019.AdministorDeletedButton2.click();
+
         Driver.wait(1);
         us019.deleteButtonFromAlert.click();
         Driver.wait(1);

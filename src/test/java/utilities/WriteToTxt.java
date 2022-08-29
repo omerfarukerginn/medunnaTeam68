@@ -274,6 +274,26 @@ public class WriteToTxt {
         } catch (IOException e) {
         }
     }
+
+    public static void saveRoomData(Room roomNumber) {
+        try {
+
+            FileWriter fileWriter = new FileWriter("./src/test/resources/testdata/RoomData.txt",
+                    false);
+
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+
+
+            writer.append("Room " + roomNumber + "\n");
+
+            writer.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }
 
 

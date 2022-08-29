@@ -1,1 +1,1 @@
-Room Room(createdBy=teamTeam, createdDate=2022-08-29T15:56:34.246303Z, id=31707, roomNumber=783622, roomType=TWIN, status=true, price=157.5, description=Breakfast)
+Room Room(createdBy=teamTeam, createdDate=2022-08-29T15:56:34.246303Z, id=247796, roomNumber=20, roomType=TWIN, status=true, price=1000, description=Breakfast)

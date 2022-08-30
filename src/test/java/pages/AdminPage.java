@@ -8,7 +8,7 @@ import utilities.Driver;
 import java.util.List;
 
 public class AdminPage {
-    public AdminPage() {
+   public AdminPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -1593,20 +1593,6 @@ public class AdminPage {
 
     @FindBy(xpath = "//a[@class='btn btn-danger btn-sm']")
     public WebElement  AdministorDeletedButton2;
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
 
 
 

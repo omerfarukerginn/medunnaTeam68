@@ -234,9 +234,9 @@ public class AdminPage {
     public WebElement sayfaGecme49; //(//*[@class='page-link'])[6]  //a[text()='49'] (//li[@class='page-item'])[last()]
     @FindBy(xpath = "(//*[@class='btn btn-link btn-sm'])[13]")
     public WebElement testItemId;
-    @FindBy(xpath = "//thead//tr[1]//th[1]") //thead//tr[1]//th[1]  //tr//th[1]
+    @FindBy(xpath = "//thead//tr[1]//th[1]")
     public List<WebElement> tumTestItemId;
-    @FindBy(xpath = "//*[text()='Save']")
+    @FindBy(xpath = "//*[text()='Save']")  //thead//tr[1]//th[1]  //tr//th[1]
     public WebElement testItemSaveButton2;
     @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[12]")
     public List<WebElement> testItemViewButton;

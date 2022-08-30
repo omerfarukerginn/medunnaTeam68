@@ -19,7 +19,7 @@ Feature:US_006 Kullanıcı bilgisi sekmesi (Setting) Ana Sayfada düzenlenebilir
     And Kullanici, bilgiler icin Kullanici ayarlari sayfasina gider
     Then Sayfa icin kullanici ayarlari Ad, soayadi ve E-posta secenekleri gorur
     And Sayfayi kapatir
-
+  @grid
   Scenario: Positive scenario
     And Kullanici, bilgiler icin Kullanici ayarlari sayfasina gider
     And Kullanici first name guncellenebilir olmali

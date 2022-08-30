@@ -677,7 +677,38 @@ public class AdminPage {
 
 
 
-   // US_015 Ridvan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // US_015 Ridvan
 
     @FindBy(xpath="//*[text()='Patient']")
     public WebElement patientButonuDDMenu;
@@ -847,37 +878,6 @@ public class AdminPage {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// US19 location
 
 
 

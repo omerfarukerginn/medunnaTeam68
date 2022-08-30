@@ -22,7 +22,7 @@ public class US_017_DataBase_StepDefinition {
     @Given("SU Admin query tanimlar")
     public void su_admin_query_tanimlar() {
 
-        query="select * from public.jhi_user";
+        query="select * from public.c_test_item";
         System.out.println(DatabaseUtility.getColumnNames(query));
 
     }
@@ -34,11 +34,12 @@ public class US_017_DataBase_StepDefinition {
 
 
     }
+
     @Given("SU Admin DB ile testItems bilgilerini dogrular")
     public void su_admin_db_ile_test_items_bilgilerini_dogrular() {
         List<Object> actualTestItems= ReadTxt.returnTestItemsIDList(filename1);
         List<Object> expectedTestItems= new ArrayList<>();
-        expectedTestItems.add("232887");
+        expectedTestItems.add(232887);
         Assert.assertTrue("id uyusmuyor",actualTestItems.containsAll(expectedTestItems));
 
     }

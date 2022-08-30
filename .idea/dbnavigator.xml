@@ -28,27 +28,15 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-
     <connection id="f4801888-00e4-467b-81a6-d0e952018b9d">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from test]]></console>
-
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
-
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from public.c_test_item]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-
     <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" />
-
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
-  </component>=
-  <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
-
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -92,7 +80,7 @@
           <url-type value="DATABASE" />
           <host value="medunna.com" />
           <port value="5432" />
-          <database value="postgres" />
+          <database value="medunna_db" />
           <type value="USER_PASSWORD" />
           <user value="medunna_user" />
           <deprecated-pwd value="bWVkdW5uYV9wYXNzXzk4Nw==" />
@@ -164,9 +152,6 @@
         </object-filters>
       </connection>
     </connections>
-
-    <connections />
-
     <browser-settings>
       <general>
         <display-mode value="TABBED" />

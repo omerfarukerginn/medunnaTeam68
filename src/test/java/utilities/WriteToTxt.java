@@ -1,10 +1,7 @@
 package utilities;
 
 
-import pojos.Appointment;
-import pojos.CTestItem;
-import pojos.Registrant;
-import pojos.Room;
+import pojos.*;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -309,7 +306,7 @@ public static void saveStaffName(String fileName, List<Object> emailList) {
 
 
 
-}
+
 
     public static void saveTestData(CTestItem test) {
 
@@ -333,6 +330,35 @@ public static void saveStaffName(String fileName, List<Object> emailList) {
         }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void saveTestDataMessage(Messages test) {
+
+        try {
+            FileWriter fileWriter = new FileWriter("./src/test/resources/testdata/Messages.txt",
+                    false);
+
+
+
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+
+
+            writer.append("Messages " + test + "\n");
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 
@@ -380,5 +406,24 @@ public static void saveStaffName(String fileName, List<Object> emailList) {
         }
     }
 
+
+
+
+
+
+
+    public static void saveMessageId(String fileName, List<Object> idList) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, false));
+
+            for (int i = 0; i < idList.size(); i++)
+
+                writer.append(idList.get(i).toString() + ",\n");
+
+            writer.close();
+
+        } catch (IOException e) {
+        }
+    }
 
 }

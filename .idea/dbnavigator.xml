@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
-    <record-view-column-sorting-type value="BY_INDEX" />
+    <record-view-column-sorting-type value="ALPHABETICAL" />
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
@@ -28,48 +28,16 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-
-    <connection id="f4801888-00e4-467b-81a6-d0e952018b9d">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from public.c_test_item]]></console>
-
-    <connection id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94">
-      <console name="Connection 1" type="STANDARD" schema="information_schema" session="Main">select * from public.jhi_user where id=159437</console>
-
-
-    <connection id="f4801888-00e4-467b-81a6-d0e952018b9d">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from test]]></console>
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
-     <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
-
+    <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211">
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from public.cmessage where id=249778]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-
-    <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" />
+    <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211" />
   </component>
-
-
-    <connection id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94" dataset="public.personel" active-filter-id="" />
-  </component>
-
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
-  </component>
-    <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" />
-
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
-  </component>=
-  <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
-
-</component>
-
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
@@ -99,15 +67,9 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" active="true" signed="true">
-      <connection id="ea9e7bf5-5b33-4445-b8fe-4024a2ae4c94" active="true" signed="true">
-        <database>
-          <name value="Connection 1" />
-
-      <connection id="f4801888-00e4-467b-81a6-d0e952018b9d" active="true" signed="true">
+      <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211" active="true" signed="true">
         <database>
           <name value="Connection" />
-
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -230,6 +192,7 @@
         <object-type name="FUNCTION" sorting-type="NAME" />
         <object-type name="PROCEDURE" sorting-type="NAME" />
         <object-type name="ARGUMENT" sorting-type="POSITION" />
+        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
       </sorting>
       <default-editors>
         <object-type name="VIEW" editor-type="SELECTION" />

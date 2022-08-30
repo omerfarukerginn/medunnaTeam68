@@ -6,7 +6,6 @@ import utilities.DBUtils;
 import utilities.ReadTxt;
 import utilities.WriteToTxt;
 
-import java.util.Collections;
 import java.util.List;
 
 import static utilities.DBUtils.getColumnData;

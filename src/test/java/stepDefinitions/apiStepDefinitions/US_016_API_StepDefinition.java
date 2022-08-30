@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.*;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import pojos.Room;
@@ -18,14 +19,16 @@ public class US_016_API_StepDefinition {
 static RequestSpecification spec;
 static Room exceptedRoom= new Room();
 static Response response;
+static int roomNumber=20;
+static Room exceptedUpdatedRoom=new Room();
 public static void main(String[] args) throws JsonProcessingException {
     spec = new RequestSpecBuilder().setBaseUri("https://medunna.com").build();
     spec.pathParams("1","api","2","rooms");
 
-    exceptedRoom.setRoomNumber(78459615);
+    exceptedRoom.setRoomNumber(roomNumber);
     exceptedRoom.setRoomType("TWIN");
     exceptedRoom.setStatus(true);
-    exceptedRoom.setPrice(157.5);
+    exceptedRoom.setPrice(1000);
     exceptedRoom.setDescription("Breakfast");
 
     response= given().spec(spec).contentType(ContentType.JSON).
@@ -44,7 +47,10 @@ public static void main(String[] args) throws JsonProcessingException {
 
 
 
+
 }
+
+
     @Given("Admin set path params for room creation")
     public void admin_set_path_params_for_room_creation() {
         spec = new RequestSpecBuilder().setBaseUri("https://medunna.com").build();
@@ -53,10 +59,12 @@ public static void main(String[] args) throws JsonProcessingException {
 
     @Given("Admin enters expected data for room creation")
     public void admin_enters_expected_data_for_room_creation() {
-        exceptedRoom.setRoomNumber(783622);
+
+        exceptedRoom.setId(null);
+        exceptedRoom.setRoomNumber(roomNumber);
         exceptedRoom.setRoomType("TWIN");
         exceptedRoom.setStatus(true);
-        exceptedRoom.setPrice(157.5);
+        exceptedRoom.setPrice(1000);
         exceptedRoom.setDescription("Breakfast");
 
     }
@@ -93,8 +101,10 @@ public static void main(String[] args) throws JsonProcessingException {
 
     @Given("Admin set path params for room read")
     public void admin_set_path_params_for_room_read() {
+   JsonPath json= response.jsonPath();
+   int myID=json.get("id");
         spec = new RequestSpecBuilder().setBaseUri("https://medunna.com").build();
-        spec.pathParams("1","api","2","rooms","3","130671");
+        spec.pathParams("1","api","2","rooms","3",myID);
 
     }
     @Given("Admin enters expected data for room read")
@@ -112,10 +122,10 @@ public static void main(String[] args) throws JsonProcessingException {
     },
 
      */
-        exceptedRoom.setRoomNumber(34926583);
-        exceptedRoom.setRoomType("SUITE");
+        exceptedRoom.setRoomNumber(roomNumber);
+        exceptedRoom.setRoomType("TWIN");
         exceptedRoom.setStatus(true);
-        exceptedRoom.setPrice(10.00);
+        exceptedRoom.setPrice(1000);
         exceptedRoom.setDescription("wwwww");
 
 
@@ -167,14 +177,16 @@ public static void main(String[] args) throws JsonProcessingException {
     }
     @Given("Admin enters expected data for room update")
     public void admin_enters_expected_data_for_room_update() {
-        exceptedRoom.setCreatedBy("teamTeam");
-        exceptedRoom.setCreatedDate("2022-08-29T15:56:34.246303Z");
-        exceptedRoom.setId(31707);
-         exceptedRoom.setRoomNumber(783622);
-        exceptedRoom.setRoomType("TWIN");
-        exceptedRoom.setStatus(true);
-        exceptedRoom.setPrice(157.5);
-        exceptedRoom.setDescription("Breakfast");
+        JsonPath json= response.jsonPath();
+        int myID=json.get("id");
+        exceptedUpdatedRoom.setCreatedBy("teamTeam");
+        exceptedUpdatedRoom.setCreatedDate("2022-08-29T15:56:34.246303Z");
+        exceptedUpdatedRoom.setId(myID);
+        exceptedUpdatedRoom.setRoomNumber(roomNumber);
+        exceptedUpdatedRoom.setRoomType("TWIN");
+        exceptedUpdatedRoom.setStatus(true);
+        exceptedUpdatedRoom.setPrice(1000);
+        exceptedUpdatedRoom.setDescription("Breakfast");
 
 
 
@@ -184,33 +196,35 @@ public static void main(String[] args) throws JsonProcessingException {
 
         response= given().spec(spec).contentType(ContentType.JSON).
                 header("Authorization","Bearer "+generateToken()).
-                body(exceptedRoom).when().put("/{1}/{2}");
+                body(exceptedUpdatedRoom).when().put("/{1}/{2}");
         response.prettyPrint();
 
     }
     @Given("Admin save all API information for room update")
     public void admin_save_all_api_information_for_room_update() {
-        saveRoomData(exceptedRoom);
+        saveRoomData(exceptedUpdatedRoom);
 
     }
     @Given("Admin verify API records for room update")
     public void admin_verify_api_records_for_room_update() throws JsonProcessingException {
         ObjectMapper obj = new ObjectMapper();
         Room actualRoom=obj.readValue(response.asString(),Room.class);
-        assertEquals(exceptedRoom.getRoomNumber(),actualRoom.getRoomNumber());
-        assertEquals(exceptedRoom.getRoomType(),actualRoom.getRoomType());
-        assertEquals(exceptedRoom.getStatus(),actualRoom.getStatus());
-        assertEquals(exceptedRoom.getPrice(),actualRoom.getPrice());
-        assertEquals(exceptedRoom.getDescription(),actualRoom.getDescription());
+        assertEquals(exceptedUpdatedRoom.getRoomNumber(),actualRoom.getRoomNumber());
+        assertEquals(exceptedUpdatedRoom.getRoomType(),actualRoom.getRoomType());
+        assertEquals(exceptedUpdatedRoom.getStatus(),actualRoom.getStatus());
+        assertEquals(exceptedUpdatedRoom.getPrice(),actualRoom.getPrice());
+        assertEquals(exceptedUpdatedRoom.getDescription(),actualRoom.getDescription());
 
     }
-
     @Given("Admin set path params for room delete")
-    public void admin_set_path_params_for_room_delete() {
+    public void adminSetPathParamsForRoomDelete() {
+        JsonPath json= response.jsonPath();
+        int myID=json.get("id");
         spec = new RequestSpecBuilder().setBaseUri("https://medunna.com").build();
-        spec.pathParams("1","api","2","rooms","3","1452");
-
+        spec.pathParams("1","api","2","rooms","3",myID);
     }
+
+
     @Given("Admin sends request and receives response for room delete")
     public void admin_sends_request_and_receives_response_for_room_delete() {
         response= given().spec(spec).contentType(ContentType.JSON).
@@ -222,7 +236,7 @@ public static void main(String[] args) throws JsonProcessingException {
     }
     @Given("Admin verify API records for room delete")
     public void admin_verify_api_records_for_room_delete() {
-
+assertEquals(response.getStatusCode(),204);
     }
 
 

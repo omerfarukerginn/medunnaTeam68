@@ -234,9 +234,9 @@ public class AdminPage {
     public WebElement sayfaGecme49; //(//*[@class='page-link'])[6]  //a[text()='49'] (//li[@class='page-item'])[last()]
     @FindBy(xpath = "(//*[@class='btn btn-link btn-sm'])[13]")
     public WebElement testItemId;
-    @FindBy(xpath = "//thead//tr[1]//th[1]") //thead//tr[1]//th[1]  //tr//th[1]
+    @FindBy(xpath = "//thead//tr[1]//th[1]")
     public List<WebElement> tumTestItemId;
-    @FindBy(xpath = "//*[text()='Save']")
+    @FindBy(xpath = "//*[text()='Save']")  //thead//tr[1]//th[1]  //tr//th[1]
     public WebElement testItemSaveButton2;
     @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[12]")
     public List<WebElement> testItemViewButton;
@@ -677,7 +677,38 @@ public class AdminPage {
 
 
 
-   // US_015 Ridvan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // US_015 Ridvan
 
     @FindBy(xpath="//*[text()='Patient']")
     public WebElement patientButonuDDMenu;
@@ -827,6 +858,11 @@ public class AdminPage {
     public WebElement appointmentSaveButton;
 
 
+    @FindBy (xpath="//a[@class='btn btn-danger btn-sm']")
+    public WebElement patientDeleteButton;
+
+    @FindBy (xpath="//button[@id='jhi-confirm-delete-patient']")
+    public WebElement patientDeleteConfirmButton;
 
 
 
@@ -886,6 +922,10 @@ public class AdminPage {
 
 
 
+
+
+    @FindBy (xpath="//div[@class='Toastify__toast-body']")
+    public WebElement patientDeleteBasariliYazisi;
 
 
 
@@ -1241,6 +1281,298 @@ public class AdminPage {
     public WebElement foundToastContainer;
     @FindBy(xpath = "//div[contains(text(),'updated')]")
     public WebElement updatedToastContainer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Administration
 

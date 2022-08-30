@@ -53,29 +53,29 @@ public class US_019_API_StepDefinition {
                 // setBaseUri(ConfigReader.getProperty("medunna_url"))
                 .build();
 
-        specMed.pathParams("1","api","2","staff","3","212093");
+        specMed.pathParams("1","api","2","staff","3","245983");
 
     }
 
     @And("Api Staff enters expected data for test items")
     public void apiStaffEntersExpectedDataForTestItems() {
 
-        /*  "createdBy": "dzkkaya",
-                "createdDate": "2022-08-21T21:01:03.198901Z",
-                "id": 212093,
-                "firstName": "enes",
-                "lastName": "umit",
-                "birthDate": "2022-08-21T21:00:00Z",
-                "phone": "1256548562",
-                "gender": "MALE",
-                "bloodGroup": "Opositive",
-                "adress": "halil ibrahim sok. no:2/10",
-                "description": "staff",
+        /*   "createdBy": "team52",
+        "createdDate": "2022-08-30T10:56:29.395725Z",
+        "id": 245983,
+        "firstName": "firstname52",
+        "lastName": "lastname52",
+        "birthDate": "2001-02-01T01:04:00Z",
+        "phone": "555-001-5555",
+        "gender": "FEMALE",
+        "bloodGroup": "Apositive",
+        "adress": "ayyildiz1",
+        "description": "aciklama1",
 */
 
-        expectedStaff.setFirstName("enes");
-        expectedStaff.setDescription("staff");
-        expectedStaff.setLastName("umit");
+        expectedStaff.setFirstName("firstname52");
+        expectedStaff.setDescription("aciklama1");
+        expectedStaff.setLastName("lastname52");
     }
 
     @And("Api Staff sends request and get response for test items")

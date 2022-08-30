@@ -1,13 +1,10 @@
 package stepDefinitions.dataBaseStepDefinitions;
 
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.junit.Test;
 import utilities.DBUtils;
-import utilities.DatabaseUtility;
 import utilities.ReadTxt;
 import utilities.WriteToTxt;
 

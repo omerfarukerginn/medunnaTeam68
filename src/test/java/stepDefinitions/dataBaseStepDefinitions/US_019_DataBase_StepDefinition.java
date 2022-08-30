@@ -2,12 +2,10 @@ package stepDefinitions.dataBaseStepDefinitions;
 
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
-import utilities.DBUtils;
 import utilities.DatabaseUtility;
 import utilities.ReadTxt;
 import utilities.WriteToTxt;
 
-import java.sql.DatabaseMetaData;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,6 +64,7 @@ List<Object> actualStaffEmail= ReadTxt.returnStaffEmailList(filename2);
 
         expectedStaffEmail.add("ozan11@gmail.com");
         Assert.assertTrue("email uygunluk yok",actualStaffEmail.containsAll(expectedStaffEmail));
+
 
     }
 

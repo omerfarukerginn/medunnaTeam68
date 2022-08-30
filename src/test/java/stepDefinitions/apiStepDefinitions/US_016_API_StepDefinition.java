@@ -126,7 +126,7 @@ public static void main(String[] args) throws JsonProcessingException {
         exceptedRoom.setRoomType("TWIN");
         exceptedRoom.setStatus(true);
         exceptedRoom.setPrice(1000);
-        exceptedRoom.setDescription("wwwww");
+        exceptedRoom.setDescription("Breakfast");
 
 
     }
@@ -185,8 +185,8 @@ public static void main(String[] args) throws JsonProcessingException {
         exceptedUpdatedRoom.setRoomNumber(roomNumber);
         exceptedUpdatedRoom.setRoomType("TWIN");
         exceptedUpdatedRoom.setStatus(true);
-        exceptedUpdatedRoom.setPrice(1000);
-        exceptedUpdatedRoom.setDescription("Breakfast");
+        exceptedUpdatedRoom.setPrice(1500);
+        exceptedUpdatedRoom.setDescription("Lunch");
 
 
 

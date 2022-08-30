@@ -7,9 +7,12 @@ Feature: Api_US019 - Create, edit or delete Staff by just Admin and Validate wit
 
 
   @ApiUS019_
-  Scenario: TC010203 - API ile hasta bilgilerini doğrulama
+  Scenario: TC010203 - Validating Staff information with Api
 
 
-    Given  Api Personel icin beklenen verileri girin
-    Then   Api istegi sonlandirir ve kayit icin yanit alir
-    And    Api, kayit icin API kayitlarini dogrular
+
+    Given Api Staff set path params for test items
+    And Api Staff enters expected data for test items
+    And Api Staff sends request and get response for test items
+    And Api Staff save all API information for test items
+    And Api Staff verify API for test items

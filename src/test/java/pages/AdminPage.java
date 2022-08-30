@@ -864,8 +864,69 @@ public class AdminPage {
     @FindBy (xpath="//button[@id='jhi-confirm-delete-patient']")
     public WebElement patientDeleteConfirmButton;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @FindBy (xpath="//div[@class='Toastify__toast-body']")
     public WebElement patientDeleteBasariliYazisi;
+
 
 
 
@@ -1220,6 +1281,9 @@ public class AdminPage {
     public WebElement foundToastContainer;
     @FindBy(xpath = "//div[contains(text(),'updated')]")
     public WebElement updatedToastContainer;
+
+
+
 
 
 

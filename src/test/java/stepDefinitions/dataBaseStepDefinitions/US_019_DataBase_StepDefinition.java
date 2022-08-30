@@ -41,8 +41,10 @@ String filename2="src/test/resources/testData/StaffFristName.txt";
 
         List<Object> idList= DatabaseUtility.getColumnData(query,"id");
         WriteToTxt.saveStaffId(filename1,idList);
-         //  List<Object> NameList= DatabaseUtility.getColumnData(query,"last_name");
-         //  WriteToTxt.saveStaffFirstName(filename2,NameList);
+
+       List<Object> emailList= DatabaseUtility.getColumnData(query,"email");
+        System.out.println(emailList);
+       WriteToTxt.saveStaffName(filename2,emailList);
 
     }
 
@@ -55,7 +57,16 @@ String filename2="src/test/resources/testData/StaffFristName.txt";
         List<Object> expectedStaffId=new ArrayList<>();
 
         expectedStaffId.add(159437);
-        Assert.assertTrue("ID uyusmuyor",actualStaffId.containsAll(expectedStaffId));
+        Assert.assertTrue("ID uygunluk yok",actualStaffId.containsAll(expectedStaffId));
+
+
+List<Object> actualStaffEmail= ReadTxt.returnStaffEmailList(filename2);
+
+        List<Object> expectedStaffEmail=new ArrayList<>();
+
+        expectedStaffEmail.add("ozan11@gmail.com");
+        Assert.assertTrue("email uygunluk yok",actualStaffEmail.containsAll(expectedStaffEmail));
+
 
     }
 

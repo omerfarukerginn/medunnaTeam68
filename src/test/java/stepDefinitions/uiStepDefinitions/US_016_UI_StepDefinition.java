@@ -35,9 +35,15 @@ public class US_016_UI_StepDefinition {
         us016.itemsTitlesButon.click();
 
 
+
         ReusableMethods.waitFor(2);
 
         us016.roomButton.click();
+
+         ReusableMethods.waitFor(2);
+     
+      us016.roomButton.click();
+
         ReusableMethods.waitFor(2);
     }
 

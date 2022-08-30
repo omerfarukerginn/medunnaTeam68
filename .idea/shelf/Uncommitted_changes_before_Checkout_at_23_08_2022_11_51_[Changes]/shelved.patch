@@ -1,0 +1,89 @@
+Index: src/test/resources/features/uiFeatures/US_023_UI.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@US_023\r\nFeature: Fatura (Staff) olusturma ve assert etme\r\n\r\n  Background: Ortak adimlar\r\n    Given Kullanici ana sayfaya gider\r\n    And Kullanici staff olarak giris yapar\r\n    And staff my pages menusunu tiklar\r\n    And staff search patient buttonunu tiklar\r\n    And staff arama kutusuna SSN ile hastayi arar\r\n    And staff show appointment buttonunu tiklar\r\n\r\n\r\n  Scenario: Kullanıcı (Staff) fatura olusturabilmeli ve olusturdugu faturanin icerigini test edebilmeli\r\n    Given staff hastanin durumunun completede veya cancelled oldugunu dogrular\r\n    And staff payment invoice buttonunu tiklar\r\n    Then staf muayene ucreti, test urun fiyatlari, bilgilerini goruntuleyebilir\r\n    And staff hasta icin create inovoice tiklayarak fatura olusturur\r\n    And staff olusturdugu faturayi kaydeder\r\n    Then staff basari ile kaydedildi msj i dogrular\r\n    And Sayfayi kapatir\r\n\r\n  Scenario: Kullanici olusturdgu faturayi kontrol edebilmeli\r\n    Given staff payment invoice buttonunu tiklar\r\n    Then staf fatura sayfasini dogrular\r\n    And Sayfayi kapatir\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+===================================================================
+diff --git a/src/test/resources/features/uiFeatures/US_023_UI.feature b/src/test/resources/features/uiFeatures/US_023_UI.feature
+--- a/src/test/resources/features/uiFeatures/US_023_UI.feature	
++++ b/src/test/resources/features/uiFeatures/US_023_UI.feature	
+@@ -3,10 +3,11 @@
+ 
+   Background: Ortak adimlar
+     Given Kullanici ana sayfaya gider
+-    And Kullanici staff olarak giris yapar
++    Then Kullanici staff mahmut olarak giris yapar
+     And staff my pages menusunu tiklar
+     And staff search patient buttonunu tiklar
+     And staff arama kutusuna SSN ile hastayi arar
++    Then kullanici 3 sn bekler
+     And staff show appointment buttonunu tiklar
+ 
+ 
+@@ -22,7 +23,7 @@
+   Scenario: Kullanici olusturdgu faturayi kontrol edebilmeli
+     Given staff payment invoice buttonunu tiklar
+     Then staf fatura sayfasini dogrular
+-    And Sayfayi kapatir
++    #And Sayfayi kapatir
+ 
+ 
+ 
+Index: src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepDefinitions.uiStepDefinitions;\r\n\r\nimport io.cucumber.java.en.And;\r\nimport io.cucumber.java.en.Given;\r\nimport io.cucumber.java.en.Then;\r\n\r\npublic class US_023_UI_StepDefinition {\r\n\r\n\r\n    @Given(\"Kullanici staff olarak giris yapar\")\r\n    public void kullanici_staff_olarak_giris_yapar() {\r\n\r\n    }\r\n\r\n    @Given(\"staff my pages menusunu tiklar\")\r\n    public void staff_my_pages_menusunu_tiklar() {\r\n\r\n    }\r\n\r\n    @Given(\"staff search patient buttonunu tiklar\")\r\n    public void staff_search_patient_buttonunu_tiklar() {\r\n\r\n    }\r\n\r\n    @And(\"staff arama kutusuna SSN ile hastayi arar\")\r\n    public void staffAramaKutusunaSSNIleHastayiArar() {\r\n        \r\n    }\r\n\r\n    @Given(\"staff show appointment buttonunu tiklar\")\r\n    public void staff_show_appointment_buttonunu_tiklar() {\r\n\r\n    }\r\n\r\n    @Given(\"staff hastanin durumunun completede veya cancelled oldugunu dogrular\")\r\n    public void staff_hastanin_durumunun_completede_veya_cancelled_oldugunu_dogrular() {\r\n\r\n    }\r\n\r\n    @Given(\"staff payment invoice buttonunu tiklar\")\r\n    public void staff_payment_invoice_buttonunu_tiklar() {\r\n\r\n    }\r\n\r\n    @Then(\"staf muayene ucreti, test urun fiyatlari, bilgilerini goruntuleyebilir\")\r\n    public void staf_muayene_ucreti_test_urun_fiyatlari_bilgilerini_goruntuleyebilir() {\r\n\r\n    }\r\n\r\n    @Then(\"staff hasta icin create inovoice tiklayarak fatura olusturur\")\r\n    public void staff_hasta_icin_create_inovoice_tiklayarak_fatura_olusturur() {\r\n        ;\r\n    }\r\n\r\n    @Then(\"staff olusturdugu faturayi kaydeder\")\r\n    public void staff_olusturdugu_faturayi_kaydeder() {\r\n\r\n    }\r\n\r\n    @Then(\"staff basari ile kaydedildi msj i dogrular\")\r\n    public void staff_basari_ile_kaydedildi_msj_i_dogrular() {\r\n\r\n    }\r\n\r\n\r\n\r\n    @Then(\"staf fatura sayfasini dogrular\")\r\n    public void staf_fatura_sayfasini_dogrular() {\r\n\r\n\r\n    }\r\n\r\n\r\n}
+===================================================================
+diff --git a/src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java b/src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java
+--- a/src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java	
++++ b/src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java	
+@@ -3,38 +3,41 @@
+ import io.cucumber.java.en.And;
+ import io.cucumber.java.en.Given;
+ import io.cucumber.java.en.Then;
++import org.junit.Assert;
++import pages.StaffPage;
++import utilities.Driver;
++import utilities.ReusableMethods;
+ 
+ public class US_023_UI_StepDefinition {
+-
+-
+-    @Given("Kullanici staff olarak giris yapar")
+-    public void kullanici_staff_olarak_giris_yapar() {
+-
+-    }
++StaffPage stf23=new StaffPage();
+ 
+     @Given("staff my pages menusunu tiklar")
+     public void staff_my_pages_menusunu_tiklar() {
+ 
++        stf23.myPagesButton.click();
+     }
+ 
+     @Given("staff search patient buttonunu tiklar")
+     public void staff_search_patient_buttonunu_tiklar() {
+-
++stf23.dropDownSearchPatientButton.click();
+     }
+ 
+     @And("staff arama kutusuna SSN ile hastayi arar")
+     public void staffAramaKutusunaSSNIleHastayiArar() {
+-        
++        ReusableMethods.waitForVisibility(stf23.patientSsnSearchTextBox, 3).sendKeys("765-76-8991");
++
+     }
+ 
+     @Given("staff show appointment buttonunu tiklar")
+     public void staff_show_appointment_buttonunu_tiklar() {
++        Driver.waitAndClick(stf23.showAppointmentButton);
++
+ 
+     }
+ 
+     @Given("staff hastanin durumunun completede veya cancelled oldugunu dogrular")
+     public void staff_hastanin_durumunun_completede_veya_cancelled_oldugunu_dogrular() {
+-
++        Assert.assertEquals("COMPLETED",stf23.statusCheckButton.getText());
+     }
+ 
+     @Given("staff payment invoice buttonunu tiklar")

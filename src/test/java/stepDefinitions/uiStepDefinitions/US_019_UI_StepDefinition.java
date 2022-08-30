@@ -4,7 +4,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import pages.AdminPage;
 import utilities.ConfigReader;
@@ -256,6 +255,7 @@ public class US_019_UI_StepDefinition {
       action.moveToElement(us019.staffDeleteButton);
         Driver.wait(1);
         us019.staffDeleteButton.click();
+
 
      /* action.moveToElement(us019.AdministorDeletedButton2);
         Driver.wait(1);

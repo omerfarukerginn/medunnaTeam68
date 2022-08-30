@@ -1,0 +1,32 @@
+Index: src/test/java/stepDefinitions/dataBaseStepDefinitions/set_DataBase_StepDefinition.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepDefinitions.dataBaseStepDefinitions;\r\n\r\nimport utilities.DBUtils;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.sql.ResultSet;\r\nimport java.sql.SQLException;\r\nimport java.sql.Statement;\r\n\r\npublic class set_DataBase_StepDefinition {\r\n\r\n\r\n\r\n\r\n    static final String DB_URL = \"jdbc:postgresql://medunna.com:5432/medunna_db\";\r\n    static final String USER = \"medunna_user\";\r\n    static final String PASS = \"medunna_pass_987\";\r\n    static final String QUERY = \"select email from public.jhi_user\";\r\n\r\n    public static void main(String[] args) {\r\n        System.out.println(DBUtils.getColumnData(QUERY,\"email\"));\r\n        // Open a connection\r\n        try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);\r\n            Statement stmt = conn.createStatement();\r\n        ) {\r\n            String sql = \"UPDATE  public.jhi_user \" +\r\n                    \"SET email = mtatis@gmail.com WHERE id=159437 \";\r\n            stmt.executeUpdate(sql);\r\n            ResultSet rs = stmt.executeQuery(QUERY);\r\n            while(rs.next()){\r\n                //Display values\r\n                System.out.print(\"ID: \" + rs.getInt(\"id\"));\r\n                System.out.print(\", email: \" + rs.getInt(\"email\"));\r\n\r\n            }\r\n            rs.close();\r\n        } catch (SQLException e) {\r\n            e.printStackTrace();\r\n        }\r\n    }\r\n}\r\n\r\n
+===================================================================
+diff --git a/src/test/java/stepDefinitions/dataBaseStepDefinitions/set_DataBase_StepDefinition.java b/src/test/java/stepDefinitions/dataBaseStepDefinitions/set_DataBase_StepDefinition.java
+--- a/src/test/java/stepDefinitions/dataBaseStepDefinitions/set_DataBase_StepDefinition.java	
++++ b/src/test/java/stepDefinitions/dataBaseStepDefinitions/set_DataBase_StepDefinition.java	
+@@ -11,8 +11,6 @@
+ public class set_DataBase_StepDefinition {
+ 
+ 
+-
+-
+     static final String DB_URL = "jdbc:postgresql://medunna.com:5432/medunna_db";
+     static final String USER = "medunna_user";
+     static final String PASS = "medunna_pass_987";
+@@ -24,9 +22,13 @@
+         try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+             Statement stmt = conn.createStatement();
+         ) {
++            String abc="update public.jhi_user set email 'merhaba@gamil.com' where id='159437'";
++
++            /*
+             String sql = "UPDATE  public.jhi_user " +
+                     "SET email = mtatis@gmail.com WHERE id=159437 ";
+-            stmt.executeUpdate(sql);
++             */
++            stmt.executeUpdate(abc);
+             ResultSet rs = stmt.executeQuery(QUERY);
+             while(rs.next()){
+                 //Display values

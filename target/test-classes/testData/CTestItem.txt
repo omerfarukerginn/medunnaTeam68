@@ -1,0 +1,1 @@
+CTestItem CTestItem(createdBy=null, createdDate=null, defaultValMax=502, defaultValMin=355, description=description1, id=null, name=kullanici1, price=302.0)

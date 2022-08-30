@@ -14,7 +14,14 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import pojos.Appointment;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import static io.restassured.RestAssured.given;
 import static utilities.Authentication.generateToken;
 
@@ -26,7 +33,8 @@ public class US_010_API_StepDefination{
     RequestSpecification spec;
 
     @When("Doctor set Medunna base url {string}")
-    public void doctorSetMedunnaBaseUrl(String id) {
+    public void doctorSetMedunnaBaseUrl(String id) throws MalformedURLException {
+
         spec = new RequestSpecBuilder().setBaseUri("https://medunna.com").build();
         spec.pathParams("1", "api", "2", "appointments", "3", id); //hasta id
 

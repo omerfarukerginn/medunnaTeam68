@@ -5,21 +5,29 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import pages.SettingsPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class US_006_UI_StepDefinition {
 
     SettingsPage us006 = new SettingsPage();
     Actions actions = new Actions(Driver.getDriver());
 
-
+WebDriver driver;
     @Given("Kullanici dr ana sayfaya gider")
-    public void kullaniciDrAnaSayfayaGider() {
-        Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
+    public void kullaniciDrAnaSayfayaGider() throws MalformedURLException {
+        driver = new RemoteWebDriver(new URL(" http://192.168.0.14:4444"), new ChromeOptions());
+        driver.manage().window().maximize();
+        driver.get("https://www.medunna.com/");
     }
 
     @And("Kullanici sign in butonuna basar")

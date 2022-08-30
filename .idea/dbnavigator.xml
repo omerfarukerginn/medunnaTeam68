@@ -27,6 +27,11 @@
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
+
+  <component name="DBNavigator.Project.DatabaseFileManager">
+    <open-files />
+  </component>
+
   <component name="DBNavigator.Project.DatabaseConsoleManager">
 
 <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211">
@@ -50,6 +55,7 @@
     <filter-actions connection-id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" dataset="public.staff" active-filter-id="" />
 
 </component>
+
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>

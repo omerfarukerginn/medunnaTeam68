@@ -46,10 +46,17 @@ public class US_016_DataBase_StepDefinition {
     public void adminDBIleRoomBilgileriniDogrular() {
        // List<Object> actualRoomId= ReadTxt.returnRoomIDsList(filename1);
 
+       List<Object> actualRoomId= ReadTxt.returnRoomIDsList(filename1);
+
+
         List<Object> expectedRoomId=new ArrayList<>();
 
         expectedRoomId.add(130660);
+
       //  Assert.assertTrue("ID uyusmuyor",actualRoomId.containsAll(expectedRoomId));
+
+       Assert.assertTrue("ID uyusmuyor",actualRoomId.containsAll(expectedRoomId));
+
 
     }
 }

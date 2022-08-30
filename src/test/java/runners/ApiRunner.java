@@ -14,7 +14,8 @@ import org.junit.runner.RunWith;
         glue = "stepDefinitions/apiStepDefinitions",
 
         tags = "@API_US019",
-        dryRun = true
+        dryRun = false
+
 
 )
 public class ApiRunner {

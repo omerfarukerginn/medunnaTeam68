@@ -256,6 +256,7 @@ public class US_019_UI_StepDefinition {
         Driver.wait(1);
         us019.staffDeleteButton.click();
 
+
      /* action.moveToElement(us019.AdministorDeletedButton2);
         Driver.wait(1);
         us019.AdministorDeletedButton2.click();*/

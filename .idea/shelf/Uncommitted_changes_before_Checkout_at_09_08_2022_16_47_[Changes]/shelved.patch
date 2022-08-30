@@ -1,0 +1,26 @@
+Index: src/test/java/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepDefinitions.uiStepDefinitions;\r\n\r\nimport io.cucumber.java.en.And;\r\nimport io.cucumber.java.en.Given;\r\nimport org.openqa.selenium.Keys;\r\nimport org.openqa.selenium.interactions.Actions;\r\nimport pages.DoctorPage;\r\n\r\nimport utilities.ConfigReader;\r\nimport utilities.Driver;\r\nimport utilities.ReusableMethods;\r\n\r\npublic class US_014_UI_StepDefinition {\r\n\r\n    DoctorPage us014 = new DoctorPage();\r\n    Actions actions = new Actions(Driver.getDriver());\r\n\r\n    @Given(\"Kullanıci Ana Sayfaya gider\")\r\n    public void kullanıci_Ana_Sayfaya_gider() {\r\n        Driver.getDriver().get(ConfigReader.getProperty(\"medunna_url\"));\r\n\r\n    }\r\n\r\n    @Given(\"Kullanıcı Sign In butonuna basar\")\r\n    public void kullanıcı_Sign_In_butonuna_basar() {\r\n        us014.humanButton.click();\r\n        us014.singInButtonu.click();\r\n    }\r\n\r\n    @Given(\"Kullanıcı Username kutusuna gecerli bir username bilgilerini girer\")\r\n    public void kullanıcı_Username_kutusuna_gecerli_bir_username_bilgilerini_girer() {\r\n        us014.userName.sendKeys(\"doktorMahmut\");\r\n    }\r\n\r\n    @Given(\"Kullanıcı Password kutusuna gecerli Password bilgilerini girer\")\r\n    public void kullanıcı_Password_kutusuna_gecerli_Password_bilgilerini_girer() {\r\n        us014.password.sendKeys(\"doktorMahmut8\");\r\n\r\n    }\r\n\r\n\r\n    @And(\"Kullanıcı, sağ altta bulunan Sign In düğmesine tıklamalıdır\")\r\n    public void kullanıcıSağAlttaBulunanSignInDüğmesineTıklamalıdır() {\r\n        ReusableMethods.waitFor(3);\r\n        us014.girisSonrasiSingIn.sendKeys(Keys.ENTER);\r\n\r\n\r\n    }\r\n\r\n    @And(\"Kullanici Sayfayi kapatir\")\r\n    public void kullaniciSayfayiKapatir() {\r\n        Driver.closeDriver();\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/test/java/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.java b/src/test/java/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.java
+--- a/src/test/java/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.java	
++++ b/src/test/java/stepDefinitions/uiStepDefinitions/US_014_UI_StepDefinition.java	
+@@ -28,13 +28,13 @@
+     }
+ 
+     @Given("Kullanıcı Username kutusuna gecerli bir username bilgilerini girer")
+-    public void kullanıcı_Username_kutusuna_gecerli_bir_username_bilgilerini_girer() {
+-        us014.userName.sendKeys("doktorMahmut");
++    public void kullanıcı_Username_kutusuna_gecerli_bir_username_bilgilerini_girer(String doktorUserName) {
++        us014.userName.sendKeys(doktorUserName);
+     }
+ 
+     @Given("Kullanıcı Password kutusuna gecerli Password bilgilerini girer")
+-    public void kullanıcı_Password_kutusuna_gecerli_Password_bilgilerini_girer() {
+-        us014.password.sendKeys("doktorMahmut8");
++    public void kullanıcı_Password_kutusuna_gecerli_Password_bilgilerini_girer(String doktorPassword) {
++        us014.password.sendKeys(doktorPassword);
+ 
+     }
+ 

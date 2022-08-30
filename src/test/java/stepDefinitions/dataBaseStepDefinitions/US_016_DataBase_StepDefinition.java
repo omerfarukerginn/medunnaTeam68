@@ -3,13 +3,10 @@ package stepDefinitions.dataBaseStepDefinitions;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import utilities.DatabaseUtility;
-import utilities.ReadTxt;
-import utilities.WriteToTxt;
 
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;

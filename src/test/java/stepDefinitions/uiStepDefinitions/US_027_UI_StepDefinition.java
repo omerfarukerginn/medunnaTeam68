@@ -3,7 +3,6 @@ package stepDefinitions.uiStepDefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebElement;
-import pages.AdminPage;
 
 import static org.junit.Assert.assertTrue;
 

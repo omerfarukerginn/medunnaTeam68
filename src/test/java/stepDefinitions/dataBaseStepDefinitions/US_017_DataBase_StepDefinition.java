@@ -3,8 +3,6 @@ package stepDefinitions.dataBaseStepDefinitions;
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import utilities.DatabaseUtility;
-import utilities.ReadTxt;
-import utilities.WriteToTxt;
 
 import java.util.ArrayList;
 import java.util.List;

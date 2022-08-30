@@ -1,14 +1,6 @@
 package utilities;
 
-import pojos.Appointment;
-
-import pojos.CTestItem;
-
-import pojos.Physician;
-
-import pojos.Registrant;
-import pojos.Room;
-import pojos.Staff;
+import pojos.*;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -266,7 +258,7 @@ public class ReadTxt {
     }
 
 
-    public static List<Object> returnPhysicianIDsList(String filePath) {
+    public static List<Object> returnStaffEmailList(String filePath) {
 
         List<Object> all = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -275,21 +267,47 @@ public class ReadTxt {
             System.out.println(line);
             int i = 0;
             while (line != null) {
-                Physician physician = new Physician();
-                physician.setId(Integer.parseInt(line.split(",")[0]));
+
+
+                Staff staff = new Staff();
+                staff.setStatus((line.split(",")[0]));
                 sb.append(System.lineSeparator());
                 line = br.readLine();
-                all.add(physician.getId());
+                all.add(staff.getStatus());
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         return all;
+
+
     }
 
 
+    public static List<Object> returnPhysicianIDsList(String filePath) {
 
-    
+
+        List<Object> all = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            System.out.println(line);
+            int i = 0;
+            while (line != null) {
+
+                Physician physician = new Physician();
+                physician.setId(Integer.parseInt(line.split(",")[0]));
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+                all.add(physician.getId());
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return all;
+
+    }
 
 
     public static List<Object> returnTestItemsIDList(String filePath) {
@@ -314,14 +332,8 @@ public class ReadTxt {
     }
 
 
+    public static List<Object> returnRoomIDsList(String filePath) {
 
-
-
-
-
-
-
-public static List<Object> returnRoomIDsList(String filePath) {
 
         List<Object> all = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -341,5 +353,32 @@ public static List<Object> returnRoomIDsList(String filePath) {
         }
         return all;
     }
+
+
+
+
+
+
+    public static List<Object> returnMessageIDList(String filePath) {
+        List<Object> all = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            System.out.println(line);
+            int i = 0;
+            while (line != null) {
+
+                Messages messages = new Messages();
+                messages.setId(Integer.parseInt(line.split(",")[0]));
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+                all.add(messages.getId());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return all;
+    }
+
 
 }

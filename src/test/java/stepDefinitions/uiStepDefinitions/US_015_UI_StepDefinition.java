@@ -167,4 +167,44 @@ public class US_015_UI_StepDefinition {
 
     }
 
+    @Then("Admin hasta bilgilerini girer, State kismini bos birakir")
+    public void adminHastaBilgileriniGirerStateOlarakUSStateSecer() {
+        adminPage.patientFirstNameBox.sendKeys(faker.name().firstName());
+        adminPage.patientLastNameBox.sendKeys(faker.name().lastName());
+        adminPage.patientBirthDateBox.sendKeys("00" + faker.date().birthday().getTime());
+        adminPage.patientEmailBox.sendKeys(faker.internet().emailAddress());
+        adminPage.patientPhoneBox.sendKeys(faker.phoneNumber().subscriberNumber(10));
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        select = new Select(adminPage.patientGenderBox);
+        ReusableMethods.selectRandomTextFromDropdown(select);
+        select = new Select(adminPage.patientBloodGroupBox);
+        ReusableMethods.selectRandomTextFromDropdown(select);
+        adminPage.patientAdressBox.sendKeys(faker.address().streetAddress());
+        adminPage.patientDescriptionBox.sendKeys(faker.lorem().word());
+        select = new Select(adminPage.patientUserBox);
+        ReusableMethods.selectRandomTextFromDropdown(select);
+//        select = new Select(adminPage.patientCountryBox);
+//        select.selectByVisibleText("USA");
+    }
+
+    @And("Hasta olusturuldu mesaji gorulmemeli")
+    public void hastaOlusturulduMesajiniGorulmemeli() {
+        Assert.assertFalse(ReusableMethods.waitForVisibility(adminPage.patientSaveBasariliYazisi, 5).isDisplayed());
+    }
+
+    @And("Admin Delete butonuna basar")
+    public void adminDeleteButonunaBasar() {
+        actions.sendKeys(Keys.ARROW_RIGHT).perform();
+        adminPage.patientDeleteButton.click();
+    }
+
+    @And("Delete Confirm butonuna basar")
+    public void deleteConfirmButonunaBasar() {
+        adminPage.patientDeleteConfirmButton.click();
+    }
+
+    @Then("Delete basarili yazisinin gorunurlugunu test eder")
+    public void deleteBasariliYazisininGorunurlugunuTestEder() {
+        Assert.assertTrue(adminPage.patientDeleteBasariliYazisi.isDisplayed());
+    }
 }

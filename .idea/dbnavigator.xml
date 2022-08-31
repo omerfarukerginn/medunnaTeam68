@@ -30,8 +30,8 @@
   <component name="DBNavigator.Project.DatabaseConsoleManager">
 
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from public.country]]></console>
       <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
-
     <connection id="3dd9565b-c20c-4a6a-8e84-ce6419bc84d6">
       <console name="medunna" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from public.patient where id=159071]]></console>
 
@@ -44,7 +44,9 @@
 
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
 
+
     <connection id="3dd9565b-c20c-4a6a-8e84-ce6419bc84d6" />
+
 
   </component>
   <component name="DBNavigator.Project.EditorStateManager">

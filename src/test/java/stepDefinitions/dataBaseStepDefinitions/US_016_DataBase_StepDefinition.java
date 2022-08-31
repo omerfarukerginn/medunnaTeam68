@@ -41,7 +41,7 @@ public class US_016_DataBase_StepDefinition {
         WriteToTxt.saveRoomId(filename1,idList);
     }
 
-    @And("Admin DB ile Room  bilgilerini dogrular")
+   /* @And("Admin DB ile Room  bilgilerini dogrular")
     public void adminDBIleRoomBilgileriniDogrular() {
 <<<<<<< HEAD
        // List<Object> actualRoomId= ReadTxt.returnRoomIDsList(filename1);
@@ -66,5 +66,5 @@ public class US_016_DataBase_StepDefinition {
 
 >>>>>>> main
 
-    }
+    }*/
 }

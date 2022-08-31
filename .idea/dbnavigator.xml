@@ -29,7 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from public.country]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -37,9 +37,6 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
-  </component>=
-  <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -155,9 +152,6 @@
         </object-filters>
       </connection>
     </connections>
-
-    <connections />
-
     <browser-settings>
       <general>
         <display-mode value="TABBED" />

@@ -42,7 +42,7 @@ public class US_016_DataBase_StepDefinition {
         WriteToTxt.saveRoomId(filename1,idList);
     }
 
-    @And("Admin DB ile Room  bilgilerini dogrular")
+   /* @And("Admin DB ile Room  bilgilerini dogrular")
     public void adminDBIleRoomBilgileriniDogrular() {
         List<Object> actualRoomId= ReadTxt.returnRoomIDsList(filename1);
 
@@ -51,5 +51,5 @@ public class US_016_DataBase_StepDefinition {
         expectedRoomId.add(130660);
         Assert.assertTrue("ID uyusmuyor",actualRoomId.containsAll(expectedRoomId));
 
-    }
+    }*/
 }

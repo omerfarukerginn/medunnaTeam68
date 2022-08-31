@@ -1,0 +1,60 @@
+Index: src/test/java/stepDefinitions/uiStepDefinitions/US_020_UI_StepDefinition.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepDefinitions.uiStepDefinitions;\r\n\r\nimport io.cucumber.java.en.*;\r\nimport org.junit.Assert;\r\nimport pages.AdminPage;\r\nimport utilities.ReusableMethods;\r\n\r\nimport java.util.Random;\r\n\r\npublic class US_020_UI_StepDefinition {\r\n\r\n    AdminPage adminPage = new AdminPage();\r\n\r\n    @Then(\"Kullanici User management butonuna tiklar\")\r\n    public void kullanici_user_management_butonuna_tiklar() {\r\n        ReusableMethods.waitForVisibility(adminPage.administration, 5).click();\r\n        ReusableMethods.waitForVisibility(adminPage.userManagement, 5).click();\r\n\r\n    }\r\n    @Then(\"Kullanici View butonuna tiklar\")\r\n    public void kullanici_view_butonuna_tiklar() {\r\n\r\n        //yeniden bak bu random olayina, 19. olayina odaklan, oradaki bilgileri assert edersin\r\n        Random rnd = new Random();\r\n        int rand1 = rnd.nextInt(21);\r\n\r\n       for (int i = 0; i < adminPage.viewButonu.size(); i++) {\r\n           ReusableMethods.hooverByJS(adminPage.viewButonu.get(rand1));\r\n\r\n       }\r\n    }\r\n\r\n    @Then(\"Kullanici First name, lastname, email,language, created by seceneklerinin  gorundugunu dogrular\")\r\n    public void kullanici_first_name_lastname_email_language_created_by_seceneklerinin_gorundugunu_dogrular() {\r\n        Assert.assertTrue(adminPage.firstName.isDisplayed());\r\n        Assert.assertTrue(adminPage.lastName.isDisplayed());\r\n        Assert.assertTrue(adminPage.email.isDisplayed());\r\n        Assert.assertTrue(adminPage.createdBy.isDisplayed());\r\n\r\n\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/test/java/stepDefinitions/uiStepDefinitions/US_020_UI_StepDefinition.java b/src/test/java/stepDefinitions/uiStepDefinitions/US_020_UI_StepDefinition.java
+--- a/src/test/java/stepDefinitions/uiStepDefinitions/US_020_UI_StepDefinition.java	
++++ b/src/test/java/stepDefinitions/uiStepDefinitions/US_020_UI_StepDefinition.java	
+@@ -37,6 +37,21 @@
+         Assert.assertTrue(adminPage.email.isDisplayed());
+         Assert.assertTrue(adminPage.createdBy.isDisplayed());
+ 
++    }
++
++    @Then("Kullanici Edit butonuna tiklar")
++    public void kullanici_edit_butonuna_tiklar() {
+ 
+     }
++
++    @Then("Kullanici  kayitli kisiyi active eder")
++    public void kullanici_kayitli_kisiyi_active_eder() {
++
++    }
++
++    @Then("Kullanici kayitli kisiyi Admin olarak secer")
++    public void kullanici_kayitli_kisiyi_admin_olarak_secer() {
++        
++    }
++
+ }
+Index: src/test/resources/features/uiFeatures/US_020_UI.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@US_020\r\nFeature: Admin, kayıtlı kişilerin \"firstname, lastname, email... Gibi bilgilerini gorebilmeli.\r\n\r\n\r\n  Scenario:\r\n    Given Kullanici ilgili test sayfasina gider\r\n    Then Kullanici admin olarak giris yapar\r\n    And Kullanici User management butonuna tiklar\r\n    And Kullanici View butonuna tiklar\r\n    And Kullanici First name, lastname, email,language, created by seceneklerinin  gorundugunu dogrular\r\n    And Kullanici sayfayi kapatir\r\n
+===================================================================
+diff --git a/src/test/resources/features/uiFeatures/US_020_UI.feature b/src/test/resources/features/uiFeatures/US_020_UI.feature
+--- a/src/test/resources/features/uiFeatures/US_020_UI.feature	
++++ b/src/test/resources/features/uiFeatures/US_020_UI.feature	
+@@ -1,11 +1,18 @@
+ @US_020
+ Feature: Admin, kayıtlı kişilerin "firstname, lastname, email... Gibi bilgilerini gorebilmeli.
+ 
+-
+-  Scenario:
++  Background:
+     Given Kullanici ilgili test sayfasina gider
+     Then Kullanici admin olarak giris yapar
+     And Kullanici User management butonuna tiklar
++
++  Scenario:
+     And Kullanici View butonuna tiklar
+     And Kullanici First name, lastname, email,language, created by seceneklerinin  gorundugunu dogrular
+     And Kullanici sayfayi kapatir
++
++  Scenario:
++    And Kullanici Edit butonuna tiklar
++    And Kullanici  kayitli kisiyi active eder
++    And Kullanici kayitli kisiyi Admin olarak secer
++    And Kullanici sayfayi kapatir
+\ No newline at end of file

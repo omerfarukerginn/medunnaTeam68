@@ -4,12 +4,16 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import pages.AdminPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+
+
+
+
 
 
 import java.util.Arrays;
@@ -28,6 +32,13 @@ public class US_019_UI_StepDefinition {
 
 
 
+
+
+
+
+
+
+
     @Given("Hesap Menusu isaretine tiklayin ve Register dugmesine tiklayin")
     public void hesapMenusuIsaretineTiklayinVeRegisterDugmesineTiklayin() {
         Driver.waitAndClick(us019.humanButton,2);
@@ -37,6 +48,8 @@ public class US_019_UI_StepDefinition {
 
 
     }
+
+
 
 
     @And("Yeni bir kullanici icin tum bilgileri dolduru tiklatin {string},{string},{string},{string},{string},{string},{string}")
@@ -149,7 +162,7 @@ public class US_019_UI_StepDefinition {
     }
     @And("Kullanici kaydedildigini onaylar")
     public void kullaniciKaydedildiginiOnaylar() {
-     ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(3);
         Actions actionss = new Actions(Driver.getDriver());
         actionss.moveToElement(us019.StaffBilgilerinKaydedilmeOnayi).perform();
         ReusableMethods.waitFor(1);
@@ -160,17 +173,21 @@ public class US_019_UI_StepDefinition {
 
     @And("Kullanici Kayitli kisi listesinden kayitli bir Staff'in View Butonunu tiklar")
     public void kullaniciKayitliKisiListesindenKayitliBirStaffInViewButonunuTiklar() {
-/*
+
         us019.ViewButton.click();
 
         ReusableMethods.waitFor(4);
 
         Assert.assertTrue(us019.staffGorunurluk.isDisplayed());
-        */ ReusableMethods.waitFor(4);
+
+        ReusableMethods.waitFor(4);
 
 
 
-        //us019.AdministorViewdButton.click();
+
+        //   us019.AdministorViewdButton.click();
+
+
 
         ReusableMethods.waitFor(4);
 
@@ -218,15 +235,15 @@ public class US_019_UI_StepDefinition {
     @And("Kullanici Save butonu tiklar ve dogrular")
     public void kullaniciSaveButonuTiklarVeDogrular() {
         us019.SaveButton2.click();
-      ReusableMethods.waitFor(1);
-        //Assert.assertTrue(us019.StaffBilgilerinDegistirilmeOnayi.isDisplayed());
-
-
-        /*Actions actions = new Actions(Driver.getDriver());
-        actions.moveToElement(us019.StaffBilgilerinDegistirilmeOnayi).perform();
         ReusableMethods.waitFor(1);
-        Assert.assertTrue(us019.StaffBilgilerinDegistirilmeOnayi.isDisplayed());
-        ReusableMethods.waitFor(3);*/
+        //  Assert.assertTrue(us019.StaffBilgilerinDegistirilmeOnayi.isDisplayed());
+
+
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(us019.StaffBilgilerinKaydedilmeOnayi).perform();
+        ReusableMethods.waitFor(1);
+        Assert.assertTrue(us019.StaffBilgilerinKaydedilmeOnayi.isDisplayed());
+        ReusableMethods.waitFor(3);
 
     }
 
@@ -234,23 +251,37 @@ public class US_019_UI_StepDefinition {
     public void kullaniciStaffiBulurVeStaffSayfasindanDeleteDugmesiniTiklar() {
 
         Driver.wait(1);
-      //  us019.staffCeratedDate.click();
+        us019.staffCeratedDate.click();
         Driver.wait(1);
-    //  action.moveToElement(us019.AdministorDeletedButton2);
+
+        action.moveToElement(us019.staffDeleteButton);
         Driver.wait(1);
-      //  us019.AdministorDeletedButton2.click();
+        us019.staffDeleteButton.click();
+
+
+     /* action.moveToElement(us019.AdministorDeletedButton2);
+        Driver.wait(1);
+        
+
+        us019.AdministorDeletedButton2.click();*/
+
+        //  action.moveToElement(us019.AdministorDeletedButton2);
+        Driver.wait(1);
+        //    us019.AdministorDeletedButton2.click();
+
+
         Driver.wait(1);
         us019.deleteButtonFromAlert.click();
         Driver.wait(1);
-       /* String deletedToast=us019.deletedToastContainer.getText();
+        String deletedToast=us019.deletedToastContainer.getText();
         System.out.println("locator.deletedToastContainer.getText() = "+deletedToast);
-        Assert.assertTrue(deletedToast.contains("deleted"));*/
+        Assert.assertTrue(deletedToast.contains("deleted"));
 
-      /*  List<String> deletedToastList= Arrays.asList(us019.deletedToastContainer.getText().split("\\s"));
+        List<String> deletedToastList= Arrays.asList(us019.deletedToastContainer.getText().split("\\s"));
         System.out.println("deletedToastList = " + deletedToastList);
         System.out.println("idkeep " + staffNewID+"  deleted staff id  " +deletedToastList.get(6));
-       // Assert.assertEquals(staffNewID,deletedToastList.get(6));
-        Driver.wait(1);*/
+        // Assert.assertEquals(staffNewID,deletedToastList.get(6));
+        Driver.wait(1);
 
     /*    Driver.wait(1);
         us019.KayitliStaffSayfasi.click();
@@ -276,5 +307,12 @@ public class US_019_UI_StepDefinition {
 
 
     }
-}
 
+    @And("Kullanici Kayitli kisi listesinden kayitli bir Staff'in Edit Butonunu tiklar")
+    public void kullaniciKayitliKisiListesindenKayitliBirStaffInEditButonunuTiklar() {
+
+        Driver.wait(1);
+        us019.staffEditButton.click();
+
+    }
+}

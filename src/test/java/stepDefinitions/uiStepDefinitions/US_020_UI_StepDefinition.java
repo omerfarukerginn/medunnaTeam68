@@ -2,11 +2,8 @@ package stepDefinitions.uiStepDefinitions;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import pages.AdminPage;
-import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.util.Random;

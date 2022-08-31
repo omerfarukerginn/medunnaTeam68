@@ -6,7 +6,6 @@ import utilities.DBUtils;
 import utilities.ReadTxt;
 import utilities.WriteToTxt;
 
-import java.util.Collections;
 import java.util.List;
 
 import static utilities.DBUtils.getColumnData;
@@ -24,7 +23,7 @@ public class US_007_DataBase_StepDefinition {
 
     @Given("Eb Kullanici query tanimlar")
     public void eb_kullanici_query_tanimlar() {
-        query= "select * from public.appointment where patient_id=159071;";
+        query= "select * from public.appointment where patient_id=159071";
         System.out.println("28.satir"+DBUtils.getColumnNames(query) + "\n");
     }
 

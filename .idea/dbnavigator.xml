@@ -17,8 +17,8 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="windows-1254" />
-      <charset value="windows-1254" />
+      <charset value="windows-1252" />
+      <charset value="windows-1252" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -28,15 +28,24 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
+
+    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
+      <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
+
     <connection id="3dd9565b-c20c-4a6a-8e84-ce6419bc84d6">
       <console name="medunna" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from public.patient where id=159071]]></console>
+
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
+
+    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
+
     <connection id="3dd9565b-c20c-4a6a-8e84-ce6419bc84d6" />
+
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -67,7 +76,11 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
+
+      <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" active="true" signed="true">
+
       <connection id="3dd9565b-c20c-4a6a-8e84-ce6419bc84d6" active="true" signed="true">
+
         <database>
           <name value="medunna" />
           <description value="" />

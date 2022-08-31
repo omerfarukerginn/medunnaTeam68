@@ -274,6 +274,7 @@ public class ReadTxt {
                 sb.append(System.lineSeparator());
                 line = br.readLine();
                 all.add(staff.getStatus());
+
             }
         } catch (Exception e) {
             e.printStackTrace();

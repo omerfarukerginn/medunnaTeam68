@@ -1,0 +1,1088 @@
+Index: src/test/resources/features/uiFeatures/US_016_UI.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@US_016\r\nFeature:US_016_Oda Oluşturma / Görüntüleme / Güncelleme /Silme (Admin)\r\n\r\n\r\n  Background:Ortak adimlar\r\n\r\n    Given Kullanici ilgili test sayfasina gider\r\n    Then Kullanici admin olarak giris yapar\r\n    And Admin  Items&Titles butonuna tiklar ve ardindan Room butonuna tiklar\r\n\r\n  @US_016_TC_001\r\n  Scenario:US_016_TC_001 Admin, yatan hastalar için yeni oda oluşturabilir.\r\n    And Admin  Create a new Room butonuna tiklar\r\n    And Admin  Room Number bolumunu doldurur ve unique olmalidir\r\n    And Admin  Typi'ni TWIN,DELUXE,PREMIUM_DELUXE,SUIT ve DAYCARE olarak secebilir\r\n    And Admin  Price kutusuna fiyat bilgisi girer\r\n    Then Admin  Save butonuna tiklar\r\n    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur\r\n    And Sayfayi kapatir\r\n\r\n  @Us_016_TC_002\r\n  Scenario:US_016_TC_002 Oda oluşturulurken \"Room Number\" mutlaka olmalı, \"Room Type\"; TWIN, DELUXE, PREMIUM_DELUXE, SUIT ve DAYCARE olmalı\r\n    And Admin  Create a new Room butonuna tiklar\r\n    And Admin  Room Number bolumunu doldurur ve unique olmalidir\r\n    And Admin  Typi'ni TWIN,DELUXE,PREMIUM_DELUXE,SUIT ve DAYCARE olarak secebilir\r\n    And Admin  Price kutusuna fiyat bilgisi girer\r\n    And Admin  Room Number kutusunu bos birakir\r\n    Then Admin  Save butonuna tiklar\r\n    Then Admin This field is required uyari yazisini gorur\r\n    And Sayfayi kapatir\r\n\r\n\r\n  @US_016_TC_003_1\r\n  Scenario:US_016_TC_003 Oda için \"Status\" ayarlanabilir olmalı.\r\n    And Admin  Create a new Room butonuna tiklar\r\n    And Admin  Room Number bolumunu doldurur ve unique olmalidir\r\n    And Admin  Price kutusuna fiyat bilgisi girer\r\n    And Admin  Status butonuna tiklar\r\n    Then Admin  Save butonuna tiklar\r\n    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur\r\n    And Admin islem yaptigi son sayfanin okuna tiklar\r\n    And Admin status'un Full olarak belirlendigini gorur\r\n    And Sayfayi kapatir\r\n\r\n  @US_016_TC_003_2\r\n  Scenario:US_016_TC_003 Oda için \"Status\" ayarlanabilir olmalı.\r\n    And Admin  Create a new Room butonuna tiklar\r\n    And Admin  Room Number bolumunu doldurur ve unique olmalidir\r\n    And Admin  Price kutusuna fiyat bilgisi girer\r\n    Then Admin  Save butonuna tiklar\r\n    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur\r\n    And Admin islem yaptigi son sayfanin okuna tiklar\r\n    And Admin  Status'un Available olarak belirlendigini gorur\r\n    And Sayfayi kapatir\r\n\r\n  @US_016_TC_004\r\n  Scenario:US016_TC_004 Fiyat eklenebilir olmalı ve boş bırakılamamalı.\r\n    And Admin  Create a new Room butonuna tiklar\r\n    And Admin  Room Number bolumunu doldurur ve unique olmalidir\r\n    Then Admin  Save butonuna tiklar\r\n    And Admin  This field is required uyari yazisini gorur.\r\n    And Sayfayi kapatir\r\n\r\n  @US_016_TC005_01\r\n  Scenario:US_016_TC_005 \"Description\" isteğe bağlı olarak doldurulmalı.\r\n    And Admin  Create a new Room butonuna tiklar\r\n    And Admin  Room Number bolumunu doldurur ve unique olmalidir\r\n    And Admin  Price kutusuna fiyat bilgisi girer\r\n    And Admin  Description kutusuna bilgi girer\r\n    Then Admin  Save butonuna tiklar\r\n    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur\r\n    And Sayfayi kapatir\r\n\r\n  @US_016_TC005_02\r\n  Scenario:US_016_TC_005 \"Description\" isteğe bağlı olarak doldurulmalı.\r\n    And Admin  Create a new Room butonuna tiklar\r\n    And Admin  Room Number bolumunu doldurur ve unique olmalidir\r\n    And Admin  Price kutusuna fiyat bilgisi girer\r\n    And Admin  Description kutusunu bos birakir\r\n    Then Admin  Save butonuna tiklar\r\n    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur\r\n    And Sayfayi kapatir\r\n\r\n\r\n  @US_016_TC006\r\n  Scenario: US_016_TC_006 \"Created Date\" Gün/Ay/Yıl şeklinde olmalı ve geçmiş tarih seçilememeli.\r\n    And Admin  Create a new Room butonuna tiklar\r\n    And Admin  Room Number bolumunu doldurur ve unique olmalidir\r\n    And Admin  Price kutusuna fiyat bilgisi girer\r\n    And Admin Created Data bolumune Gun Ay Yil  olarak gecmis bir tarih girer\r\n    Then Admin  Save butonuna tiklar\r\n    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur\r\n    And Sayfayi kapatir\r\n\r\n\r\n    @US_016_TC007\r\n  Scenario: US_016_TC_007 Admin aynı tür odaları görebilir.\r\n    And Admin Room Type bolumune tiklar\r\n    Then Admin Room Type olarak ayni secilen odalari gorebilir\r\n      And Sayfayi kapatir\r\n\r\n  @US_016_TC008\r\nScenario:US_016_TC_008_Admin mevcut odaları düzenleyebilir ve güncelleyebilir.\r\n\r\n\r\n\r\n  @US_016_TC009\r\n  Scenario:US_016_TC_013 Odalar Admin tarafından silinebilir.\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/uiFeatures/US_016_UI.feature b/src/test/resources/features/uiFeatures/US_016_UI.feature
+--- a/src/test/resources/features/uiFeatures/US_016_UI.feature	(revision 5ba0642569d1c1ddf58bee62d9a14d56b01c887d)
++++ b/src/test/resources/features/uiFeatures/US_016_UI.feature	(date 1661521072689)
+@@ -93,18 +93,36 @@
+     And Sayfayi kapatir
+ 
+ 
+-    @US_016_TC007
++  @US_016_TC007
+   Scenario: US_016_TC_007 Admin aynı tür odaları görebilir.
+     And Admin Room Type bolumune tiklar
+-    Then Admin Room Type olarak ayni secilen odalari gorebilir
+-      And Sayfayi kapatir
++  Then Admin Room Type olarak TWINN secildigini gorur
++    And Admin islem yaptigi son sayfanin okuna tiklar
++    And Admin sayfanin basina cikar
++    And Admin Room Type bolumune tiklar
++    Then Admin Room Type olarak DAYCARE secildigini gorur
++    And Sayfayi kapatir
+ 
+   @US_016_TC008
+-Scenario:US_016_TC_008_Admin mevcut odaları düzenleyebilir ve güncelleyebilir.
+-
++  Scenario:US_016_TC_008_Admin mevcut odaları düzenleyebilir ve güncelleyebilir.
++    And Admin olusturdugu odaya tiklar
++    And Admin olusturdugu odanin Edit butonuna tiklar
++    And Admin Room number kutusunundaki bilgileri siler
++    And Admin Price kutusundaki bilgileri siler
++    And Admin  Room Number bolumunu doldurur ve unique olmalidir
++    And Admin  Price kutusuna fiyat bilgisi girer
++    Then Admin  Save butonuna tiklar
++    And Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur
++    And Sayfayi kapatir
+ 
+ 
+   @US_016_TC009
+   Scenario:US_016_TC_013 Odalar Admin tarafından silinebilir.
++    And Admin olusturdugu odaya tiklar
++    And Admin Delete butonua tiklar
++    And Admin Confirm kutusunu gorur
++  And Admin Delete butonun etkin oldugunu gorur
++    And Sayfayi kapatir
++
+ 
+ 
+Index: src/test/java/pages/AdminPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pages;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.support.FindBy;\r\nimport org.openqa.selenium.support.PageFactory;\r\nimport utilities.Driver;\r\nimport java.util.List;\r\npublic class AdminPage {\r\n    public AdminPage() {\r\n        PageFactory.initElements(Driver.getDriver(), this);\r\n    }\r\n<<<<<<< HEAD\r\n    // US_28 location\r\n=======\r\n\r\n    // US_28 location\r\n\r\n\r\n>>>>>>> main\r\n    @FindBy(xpath = \"//a[@aria-haspopup='true']\")\r\n    public WebElement humanButton;\r\n\r\n    @FindBy(xpath = \"(//*[@class='dropdown-item'])[1]\")\r\n    public WebElement singInButtonu;\r\n\r\n    @FindBy(xpath = \"//*[@class='svg-inline--fa fa-th-list fa-w-16 ']\")\r\n    public WebElement itemsTitlesButonu;\r\n\r\n    @FindBy(xpath = \"//a[@href='/country']\")\r\n    public WebElement countryButonu;\r\n\r\n    @FindBy(xpath = \"//*[text()='Create a new Country']\")\r\n    public WebElement createCountryButonu;\r\n\r\n    @FindBy(xpath = \"//input[@id='country-name']\")\r\n    public WebElement createCountryNameButonu;\r\n\r\n    @FindBy(xpath = \"//*[@name='createdDate']\")\r\n    public WebElement tarihSaatButonu;\r\n\r\n    @FindBy(xpath = \"//button[@id='save-entity']\")\r\n    public WebElement saveButonu;\r\n\r\n    @FindBy(xpath = \"//*[text()='State/City']\")\r\n    public WebElement stateCityButonu;\r\n\r\n    @FindBy(xpath = \"//*[text()='Create a new State/City']\")\r\n    public WebElement createStateCityButonu;\r\n\r\n    @FindBy(xpath = \"//*[@id='c-state-name']\")\r\n    public WebElement createStateCityNameButonu;\r\n\r\n    @FindBy(xpath = \"//*[@id='c-state-state']\")\r\n    public WebElement stateCitySecmeButonu;\r\n\r\n    @FindBy(xpath = \"(//*[text()='YeniDunya'])[1]\")\r\n    public WebElement ulkeIsmi;\r\n\r\n    @FindBy(xpath = \"//tr//td[2]\")\r\n    public List<WebElement> tumUlkeIsimleri;\r\n\r\n    @FindBy(xpath = \"//*[text()='Delete']\")\r\n    public WebElement deleteButonu;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<<<<<<< HEAD\r\n\r\n\r\n=======\r\n>>>>>>> main\r\n    //Dilek\r\n    @FindBy(xpath = \"(//*[text()='Room'])[1]\")\r\n    public WebElement roomButton;\r\n\r\n    @FindBy(xpath = \"//a[@class='btn btn-primary float-right jh-create-entity']\")\r\n    public WebElement CreateANewRoomButton;\r\n\r\n    @FindBy(xpath = \"//input[@name='roomNumber']\")\r\n    public WebElement roomNumberKutusu;\r\n\r\n    @FindBy(xpath = \"//select[@name='roomType']\")\r\n    public WebElement roomTypeKututsu;\r\n\r\n    @FindBy(xpath = \"//input[@name='price']\")\r\n    public WebElement priceKutusu;\r\n\r\n    @FindBy(xpath = \"//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']\")\r\n    public WebElement basariliIslemYesilMesajKutusu;\r\n\r\n    @FindBy(xpath = \"//div[@class='invalid-feedback']\")\r\n    public WebElement isRequiredUyariYazisi;\r\n\r\n    @FindBy(xpath = \"//input[@name='status']\")\r\n    public WebElement statusKutusu;\r\n\r\n   @FindBy(xpath = \"(//li[@class='page-item'])[last()]\")\r\n   public WebElement sonSayfaninOku;\r\n\r\n    @FindBy(xpath = \"//*[text()='Full']\")\r\n    public WebElement fullYazisi;\r\n\r\n    @FindBy(xpath = \"//*[text()='Available']\")\r\n    public WebElement availableYazisi;\r\n\r\n    @FindBy(xpath = \"//input[@name='description']\")\r\n    public WebElement descriptionKutusu;\r\n\r\n    @FindBy(xpath = \"//input[@name='createdDate']\")\r\n    public WebElement createdDateKutusu;\r\n\r\n    @FindBy(xpath=\"(//th[@class='hand'])[3]\")\r\n    public WebElement kacTurRoomTypeButonu;\r\n\r\n    @FindBy(xpath = \"//*[text()='TWIN']\")\r\n    public WebElement twinnType;\r\n\r\n    @FindBy(xpath = \"(//*[text()='Edit'])[9]\")\r\n    public WebElement olusturdugumRoomEditButonu;\r\n\r\n    @FindBy(xpath = \"//*[text()='15051987']\")\r\n    public WebElement idRoom;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    // NAIL 311-410 - BASLAMA NOKTASI\r\n\r\n    @FindBy(xpath = \"(//*[@href='/physician'])[1]\")\r\n    public WebElement physicianSekmesi;\r\n    @FindBy(xpath = \"//*[text()='Physicians']\") //\"//(//div[4]//div[1])[2]//h2]\")\r\n    public WebElement physicianBaslik;\r\n    @FindBy (xpath = \"//(//div[4]//div[1])[2]\")\r\n    public List<WebElement> physicianTablosu;\r\n    @FindBy (xpath = \"//*[@href='/physician/new']\")\r\n    public WebElement createPhysicianButonu;\r\n    @FindBy (xpath = \"//*[@name='searchSSN']\") // PHYSICIAN LOCATE LERI\r\n    public WebElement createPhysicianSsnKutusu;\r\n    @FindBy (xpath = \"//*[@name='useSSNSearch']\")\r\n    public WebElement createPhysicianCheckbox;\r\n    @FindBy (xpath = \"//*[@class='btn btn-secondary']\")\r\n    public WebElement createPhysicianSearch;\r\n\r\n\r\n    @FindBy (xpath = \"//*[@class='Toastify__toast-body']\") // YESIL ONAY KUTUSU tum ASSERT onay ISLEMI ICIN calisir\r\n    public WebElement createPhysicianOnayKutusu;\r\n\r\n\r\n    @FindBy (xpath = \"//*[@href='/physician/2051/edit?page=1&sort=id,asc']\")\r\n    public WebElement physicianEdit;\r\n    @FindBy (xpath = \"//*[@id='physician-id']\")\r\n    public WebElement physicianEditIdKutusu;\r\n    @FindBy (xpath = \"//*[@name='firstName']\")\r\n    public WebElement physicianEditFirstNameKutusu;\r\n    @FindBy (xpath = \"//*[@name='lastName']\")\r\n    public WebElement physicianEditLastNameKutusu;\r\n    @FindBy (xpath = \"//*[@name='birthDate']\")\r\n    public WebElement physicianEditBirthDateKutusu;\r\n    @FindBy (xpath = \"//*[@class='btn btn-primary']\")\r\n    public WebElement physicianEditSaveButonu;\r\n    @FindBy (xpath = \"//*[@name='speciality']\")\r\n    public WebElement physicianEditSpeKutusu;\r\n    @FindBy (xpath = \"//*[@id='file_image']\")\r\n    public WebElement physicianEditDossyaSecButonu;\r\n\r\n    @FindBy (xpath = \"///*[@class='Toastify__toast-body']\")\r\n    public WebElement physicianEditImageOnayi;\r\n\r\n    @FindBy(xpath = \"//*[@name='examFee']\")\r\n    public WebElement physicianEditFeeKutusu;\r\n    @FindBy (xpath = \"//*[@name='user.id']\")\r\n    public WebElement physicianEditUserKutusu;\r\n    @FindBy (xpath = \"//*[@href='/physician/2051/delete?page=1&sort=id,asc']\")\r\n    public WebElement physicianDeleteButonu_1;\r\n    @FindBy (xpath = \"//*[@class='btn btn-danger']\")\r\n    public WebElement physicianDeleteButonu_2;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    // NAIL 311-410 - BITIS NOKTASI\r\n    //Ebru 411-510 arasi\r\n    @FindBy(xpath = \"//li[@id='admin-menu']\")\r\n    public WebElement administration;\r\n\r\n    @FindBy (xpath=\"(//div[@role='menu'])[2]\")\r\n    public WebElement userManagement;\r\n\r\n    @FindBy (xpath=\"//a[@class='btn btn-info btn-sm']\")// 20 tane var, 19.siradakini alirsin\r\n    public List<WebElement> viewButonu;\r\n\r\n    @FindBy (xpath=\"//a[@class='btn btn-primary btn-sm']\") //fidan@gmail.com\r\n    public List<WebElement> editButonu;\r\n\r\n    @FindBy (xpath = \"//dd[2]\") //firstName icin getTest yapilir, assert edilir\r\n    public WebElement firstName;\r\n\r\n    @FindBy (xpath = \"//dd[3]\") //lastName icin getTest yapilir, assert edilir\r\n    public WebElement lastName;\r\n\r\n    @FindBy (xpath = \"//dd[4]\") //email icin getTest yapilir, assert edilir\r\n    public WebElement email;\r\n\r\n    @FindBy (xpath = \"//dd[6]\") //email icin getTest yapilir, assert edilir\r\n    public WebElement createdBy;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n// US19 location\r\n\r\n    @FindBy(xpath = \"//a[@aria-haspopup='true']\")\r\n    public WebElement AccountButton;\r\n\r\n    @FindBy(xpath = \"(//*[@class='dropdown-item'])[1]\")\r\n    public WebElement singInButton;\r\n\r\n    @FindBy(xpath = \"//input[@name='username']\")\r\n    public WebElement userrName;\r\n\r\n    @FindBy(xpath = \"//input[@name='password']\")\r\n    public WebElement passwordd;\r\n\r\n    @FindBy(xpath = \"//button[@type='submit']\")\r\n    public WebElement girisSonrasiSingInn;\r\n\r\n    @FindBy(xpath = \"//*[text()='Welcome to MEDUNNA']\")\r\n    public WebElement welcomeToMedunnaYazisisi;\r\n\r\n    @FindBy(xpath = \"//*[text()='Items&Titles']\")\r\n    public WebElement itemsTitlesButon;\r\n\r\n    @FindBy(xpath = \"//a[@class='dropdown-item active']\")\r\n    public WebElement staffButon;\r\n\r\n    @FindBy(xpath = \"//*[text()='Create a new Staff']\")\r\n    public WebElement CreateANewButonu;\r\n\r\n    @FindBy(xpath = \"//*[@name='useSSNSearch']\")\r\n    public WebElement userSearchBox;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<<<<<<< HEAD\r\n\r\n=======\r\n>>>>>>> main\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/pages/AdminPage.java b/src/test/java/pages/AdminPage.java
+--- a/src/test/java/pages/AdminPage.java	(revision 5ba0642569d1c1ddf58bee62d9a14d56b01c887d)
++++ b/src/test/java/pages/AdminPage.java	(date 1661521466118)
+@@ -8,14 +8,14 @@
+     public AdminPage() {
+         PageFactory.initElements(Driver.getDriver(), this);
+     }
+-<<<<<<< HEAD
++
+     // US_28 location
+-=======
++
+ 
+-    // US_28 location
++        // US_28 location
+ 
+ 
+->>>>>>> main
++
+     @FindBy(xpath = "//a[@aria-haspopup='true']")
+     public WebElement humanButton;
+ 
+@@ -113,11 +113,10 @@
+ 
+ 
+ 
+-<<<<<<< HEAD
++
+ 
+ 
+-=======
+->>>>>>> main
++
+     //Dilek
+     @FindBy(xpath = "(//*[text()='Room'])[1]")
+     public WebElement roomButton;
+@@ -143,8 +142,8 @@
+     @FindBy(xpath = "//input[@name='status']")
+     public WebElement statusKutusu;
+ 
+-   @FindBy(xpath = "(//li[@class='page-item'])[last()]")
+-   public WebElement sonSayfaninOku;
++    @FindBy(xpath = "(//li[@class='page-item'])[last()]")
++    public WebElement sonSayfaninOku;
+ 
+     @FindBy(xpath = "//*[text()='Full']")
+     public WebElement fullYazisi;
+@@ -158,208 +157,27 @@
+     @FindBy(xpath = "//input[@name='createdDate']")
+     public WebElement createdDateKutusu;
+ 
+-    @FindBy(xpath="(//th[@class='hand'])[3]")
++    @FindBy(xpath = "(//th[@class='hand'])[3]")
+     public WebElement kacTurRoomTypeButonu;
+ 
+     @FindBy(xpath = "//*[text()='TWIN']")
+     public WebElement twinnType;
+ 
++    @FindBy(xpath = "//*[text()='DAYCARE']")
++    public WebElement daycareType;
++
++
+     @FindBy(xpath = "(//*[text()='Edit'])[9]")
+     public WebElement olusturdugumRoomEditButonu;
+ 
+-    @FindBy(xpath = "//*[text()='15051987']")
++    @FindBy(xpath = "//tbody//td[1]")
+     public WebElement idRoom;
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
++    @FindBy(xpath = "//*[text()='Delete']z)
++    public WebElement delete;
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
++    @FindBy(xpath = "//tbody//tr[20]//td[1]")
++    public WebElement olusturulanSonOdaId;
+ 
+ 
+ 
+@@ -370,417 +188,79 @@
+     public WebElement physicianSekmesi;
+     @FindBy(xpath = "//*[text()='Physicians']") //"//(//div[4]//div[1])[2]//h2]")
+     public WebElement physicianBaslik;
+-    @FindBy (xpath = "//(//div[4]//div[1])[2]")
++    @FindBy(xpath = "//(//div[4]//div[1])[2]")
+     public List<WebElement> physicianTablosu;
+-    @FindBy (xpath = "//*[@href='/physician/new']")
++    @FindBy(xpath = "//*[@href='/physician/new']")
+     public WebElement createPhysicianButonu;
+-    @FindBy (xpath = "//*[@name='searchSSN']") // PHYSICIAN LOCATE LERI
++    @FindBy(xpath = "//*[@name='searchSSN']") // PHYSICIAN LOCATE LERI
+     public WebElement createPhysicianSsnKutusu;
+-    @FindBy (xpath = "//*[@name='useSSNSearch']")
++    @FindBy(xpath = "//*[@name='useSSNSearch']")
+     public WebElement createPhysicianCheckbox;
+-    @FindBy (xpath = "//*[@class='btn btn-secondary']")
++    @FindBy(xpath = "//*[@class='btn btn-secondary']")
+     public WebElement createPhysicianSearch;
+ 
+ 
+-    @FindBy (xpath = "//*[@class='Toastify__toast-body']") // YESIL ONAY KUTUSU tum ASSERT onay ISLEMI ICIN calisir
++    @FindBy(xpath = "//*[@class='Toastify__toast-body']") // YESIL ONAY KUTUSU tum ASSERT onay ISLEMI ICIN calisir
+     public WebElement createPhysicianOnayKutusu;
+ 
+ 
+-    @FindBy (xpath = "//*[@href='/physician/2051/edit?page=1&sort=id,asc']")
++    @FindBy(xpath = "//*[@href='/physician/2051/edit?page=1&sort=id,asc']")
+     public WebElement physicianEdit;
+-    @FindBy (xpath = "//*[@id='physician-id']")
++    @FindBy(xpath = "//*[@id='physician-id']")
+     public WebElement physicianEditIdKutusu;
+-    @FindBy (xpath = "//*[@name='firstName']")
++    @FindBy(xpath = "//*[@name='firstName']")
+     public WebElement physicianEditFirstNameKutusu;
+-    @FindBy (xpath = "//*[@name='lastName']")
++    @FindBy(xpath = "//*[@name='lastName']")
+     public WebElement physicianEditLastNameKutusu;
+-    @FindBy (xpath = "//*[@name='birthDate']")
++    @FindBy(xpath = "//*[@name='birthDate']")
+     public WebElement physicianEditBirthDateKutusu;
+-    @FindBy (xpath = "//*[@class='btn btn-primary']")
++    @FindBy(xpath = "//*[@class='btn btn-primary']")
+     public WebElement physicianEditSaveButonu;
+-    @FindBy (xpath = "//*[@name='speciality']")
++    @FindBy(xpath = "//*[@name='speciality']")
+     public WebElement physicianEditSpeKutusu;
+-    @FindBy (xpath = "//*[@id='file_image']")
++    @FindBy(xpath = "//*[@id='file_image']")
+     public WebElement physicianEditDossyaSecButonu;
+ 
+-    @FindBy (xpath = "///*[@class='Toastify__toast-body']")
++    @FindBy(xpath = "///*[@class='Toastify__toast-body']")
+     public WebElement physicianEditImageOnayi;
+ 
+     @FindBy(xpath = "//*[@name='examFee']")
+     public WebElement physicianEditFeeKutusu;
+-    @FindBy (xpath = "//*[@name='user.id']")
++    @FindBy(xpath = "//*[@name='user.id']")
+     public WebElement physicianEditUserKutusu;
+-    @FindBy (xpath = "//*[@href='/physician/2051/delete?page=1&sort=id,asc']")
++    @FindBy(xpath = "//*[@href='/physician/2051/delete?page=1&sort=id,asc']")
+     public WebElement physicianDeleteButonu_1;
+-    @FindBy (xpath = "//*[@class='btn btn-danger']")
++    @FindBy(xpath = "//*[@class='btn btn-danger']")
+     public WebElement physicianDeleteButonu_2;
+ 
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+     // NAIL 311-410 - BITIS NOKTASI
+     //Ebru 411-510 arasi
+     @FindBy(xpath = "//li[@id='admin-menu']")
+     public WebElement administration;
+ 
+-    @FindBy (xpath="(//div[@role='menu'])[2]")
++    @FindBy(xpath = "(//div[@role='menu'])[2]")
+     public WebElement userManagement;
+ 
+-    @FindBy (xpath="//a[@class='btn btn-info btn-sm']")// 20 tane var, 19.siradakini alirsin
++    @FindBy(xpath = "//a[@class='btn btn-info btn-sm']")// 20 tane var, 19.siradakini alirsin
+     public List<WebElement> viewButonu;
+ 
+-    @FindBy (xpath="//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com
++    @FindBy(xpath = "//a[@class='btn btn-primary btn-sm']") //fidan@gmail.com
+     public List<WebElement> editButonu;
+ 
+-    @FindBy (xpath = "//dd[2]") //firstName icin getTest yapilir, assert edilir
++    @FindBy(xpath = "//dd[2]") //firstName icin getTest yapilir, assert edilir
+     public WebElement firstName;
+ 
+-    @FindBy (xpath = "//dd[3]") //lastName icin getTest yapilir, assert edilir
++    @FindBy(xpath = "//dd[3]") //lastName icin getTest yapilir, assert edilir
+     public WebElement lastName;
+ 
+-    @FindBy (xpath = "//dd[4]") //email icin getTest yapilir, assert edilir
++    @FindBy(xpath = "//dd[4]") //email icin getTest yapilir, assert edilir
+     public WebElement email;
+ 
+-    @FindBy (xpath = "//dd[6]") //email icin getTest yapilir, assert edilir
++    @FindBy(xpath = "//dd[6]") //email icin getTest yapilir, assert edilir
+     public WebElement createdBy;
+ 
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+ // US19 location
+ 
+     @FindBy(xpath = "//a[@aria-haspopup='true']")
+@@ -952,147 +432,6 @@
+ 
+ 
+ 
+-<<<<<<< HEAD
+-
+-=======
+->>>>>>> main
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+ 
+ 
+ 
+Index: src/test/java/stepDefinitions/uiStepDefinitions/US_016_UI_StepDefinition.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepDefinitions.uiStepDefinitions;\r\n\r\nimport io.cucumber.java.en.And;\r\nimport io.cucumber.java.en.Given;\r\nimport io.cucumber.java.en.Then;\r\nimport io.cucumber.java.en.When;\r\nimport org.junit.Assert;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.Keys;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.interactions.Actions;\r\nimport pages.AdminPage;\r\nimport utilities.Driver;\r\nimport utilities.ReusableMethods;\r\n\r\nimport java.util.List;\r\nimport java.util.Random;\r\n\r\npublic class US_016_UI_StepDefinition {\r\n    AdminPage us016 = new AdminPage();\r\n    Actions actions = new Actions(Driver.getDriver());\r\n    Random rand = new Random();\r\n    int rdn = 999999;\r\n    String roomrandm = String.valueOf(rand.nextInt(rdn));\r\n\r\n    @Then(\"Admin  Items&Titles butonuna tiklar ve ardindan Room butonuna tiklar\")\r\n    public void admin_items_titles_butonuna_tiklar_ve_ardindan_room_butonuna_tiklar() {\r\n        us016.itemsTitlesButon.click();\r\n<<<<<<< HEAD\r\n        ReusableMethods.waitFor(2);\r\n=======\r\n>>>>>>> main\r\n        us016.roomButton.click();\r\n        ReusableMethods.waitFor(2);\r\n    }\r\n\r\n    @Then(\"Admin  Create a new Room butonuna tiklar\")\r\n    public void admin_create_a_new_room_butonuna_tiklar() {\r\n        us016.CreateANewRoomButton.click();\r\n        ReusableMethods.waitFor(2);\r\n\r\n\r\n    }\r\n\r\n    @Then(\"Admin  Room Number bolumunu doldurur ve unique olmalidir\")\r\n    public void admin_room_number_bolumunu_doldurur_ve_unique_olmalidir() {\r\n\r\n\r\n        us016.roomNumberKutusu.sendKeys(roomrandm);\r\n        ReusableMethods.waitFor(2);\r\n\r\n\r\n    }\r\n\r\n    @Then(\"Admin  Typi'ni TWIN,DELUXE,PREMIUM_DELUXE,SUIT ve DAYCARE olarak secebilir\")\r\n    public void admin_typi_ni_twin_deluxe_premium_deluxe_suit_ve_daycare_olarak_secebilir() {\r\n        us016.roomTypeKututsu.click();\r\n        Driver.selectAnItemFromDropdown(us016.roomTypeKututsu, \"TWIN\");\r\n        us016.roomTypeKututsu.click();\r\n        Driver.selectAnItemFromDropdown(us016.roomTypeKututsu, \"DELUXE\");\r\n        us016.roomTypeKututsu.click();\r\n        Driver.selectAnItemFromDropdown(us016.roomTypeKututsu, \"PREMIUM_DELUXE\");\r\n        us016.roomTypeKututsu.click();\r\n        Driver.selectAnItemFromDropdown(us016.roomTypeKututsu, \"SUIT\");\r\n        us016.roomTypeKututsu.click();\r\n        Driver.selectAnItemFromDropdown(us016.roomTypeKututsu, \"DAYCARE\");\r\n        ReusableMethods.waitFor(1);\r\n\r\n    }\r\n\r\n    @Then(\"Admin  Price kutusuna fiyat bilgisi girer\")\r\n    public void admin_price_kutusuna_fiyat_bilgisi_girer() {\r\n        us016.priceKutusu.sendKeys(\"150\");\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n    @Then(\"Admin  Save butonuna tiklar\")\r\n    public void admin_save_butonuna_tiklar() {\r\n        us016.saveButonu.sendKeys(Keys.ENTER);\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n    @And(\"Admin islemin basarili oldugunu gosteren yesil mesaj kutusunu gorur\")\r\n    public void AdminIsleminBasariliOldugunuGosterenYesilMesajKutusunuGorur() {\r\n        Assert.assertTrue(us016.basariliIslemYesilMesajKutusu.isDisplayed());\r\n        ReusableMethods.waitFor(2);\r\n    }\r\n\r\n\r\n    @And(\"Admin  Room Number kutusunu bos birakir\")\r\n    public void adminRoomNumberKutusunuBosBirakir() {\r\n        us016.roomNumberKutusu.clear();\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n    @Then(\"Admin This field is required uyari yazisini gorur\")\r\n    public void adminThisFieldIsRequiredUyariYazisiniGorur() {\r\n        Assert.assertTrue(us016.isRequiredUyariYazisi.isDisplayed());\r\n        ReusableMethods.waitFor(2);\r\n    }\r\n\r\n\r\n    @Then(\"Admin  Status butonuna tiklar\")\r\n    public void admin_status_butonuna_tiklar() {\r\n        us016.statusKutusu.click();\r\n        ReusableMethods.waitFor(2);\r\n    }\r\n\r\n    @Then(\"Admin  Status butonunu bos birakir\")\r\n    public void admin_status_butonunu_bos_birakir() {\r\n        us016.statusKutusu.clear();\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n    @Then(\"Admin  Status'un Available olarak belirlendigini gorur\")\r\n    public void admin_status_un_available_olarak_belirlendigini_gorur() {\r\n        Assert.assertTrue(us016.availableYazisi.isDisplayed());\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n\r\n    @And(\"Admin status'un Full olarak belirlendigini gorur\")\r\n    public void adminStatusUnFullOlarakBelirlendiginiGorur() {\r\n        Assert.assertTrue(us016.fullYazisi.isDisplayed());\r\n        ReusableMethods.waitFor(2);\r\n    }\r\n\r\n    @Then(\"Admin  This field is required uyari yazisini gorur.\")\r\n    public void admin_this_field_is_required_uyari_yazisini_gorur() {\r\n        Assert.assertTrue(us016.isRequiredUyariYazisi.isDisplayed());\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n\r\n    @And(\"Admin  Description kutusuna bilgi girer\")\r\n    public void adminDescriptionKutusunaBilgiGirer() {\r\n        us016.descriptionKutusu.sendKeys(\"son gunlerini yasiyor\");\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n    @And(\"Admin  Description kutusunu bos birakir\")\r\n    public void adminDescriptionKutusunuBosBirakir() {\r\n        us016.descriptionKutusu.clear();\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n\r\n    @Then(\"Admin Created Data bolumune Gun Ay Yil  olarak gecmis bir tarih girer\")\r\n    public void admin_created_data_bolumune_gun_ay_yil_olarak_gecmis_bir_tarih_girer() {\r\n        us016.createdDateKutusu.sendKeys(\"20/08/2022\");\r\n        ReusableMethods.waitFor(2);\r\n\r\n\r\n    }\r\n\r\n\r\n    @And(\"Admin Room Type bolumune tiklar\")\r\n    public void adminRoomTypeBolumuneTiklar() {\r\n        us016.kacTurRoomTypeButonu.click();\r\n        ReusableMethods.waitFor(3);\r\n\r\n    }\r\n\r\n    @Then(\"Admin Room Type olarak ayni secilen odalari gorebilir\")\r\n    public void adminRoomTypeOlarakAyniSecilenOdalariGorebilir() {\r\n        Assert.assertTrue(us016.twinnType.isDisplayed());\r\n        ReusableMethods.waitFor(3);\r\n    }\r\n\r\n    @And(\"Admin Edit butonuna tiklar\")\r\n    public void adminEditButonunaTiklarVeBilgileriGuncellerYaDaDegistirir() {\r\n        us016.olusturdugumRoomEditButonu.click();\r\n        ReusableMethods.waitFor(2);\r\n\r\n    }\r\n\r\n\r\n    @And(\"Admin islem yaptigi son sayfanin okuna tiklar\")\r\n    public void adminIslemYaptigiSonSayfaninOkunaTiklar() {\r\n        ReusableMethods.hooverByJS(us016.sonSayfaninOku);\r\n        ReusableMethods.waitFor(2);\r\n\r\n\r\n    }\r\n\r\n    @And(\"Admin sayfanin basina gelir\")\r\n    public void adminSayfaninBasinaGelir() {\r\n        actions.sendKeys(Keys.PAGE_UP).perform();\r\n        actions.sendKeys(Keys.PAGE_UP).perform();\r\n    }\r\n\r\n    @Then(\"Admin olusturdugu odaya tiklar\")\r\n    public void adminOlusturduguOdayaTiklar() {\r\n        us016.idRoom.click();\r\n    }\r\n\r\n    @Then(\"Admin islem yaptigi sayfaya tiklar\")\r\n    public void adminIslemYaptigiSayfayaTiklar() {\r\n        ReusableMethods.waitFor(2);\r\n        // actions.sendKeys(Keys.).click(us016.sonSayfaninOku).perform();\r\n        //ReusableMethods.hooverByJS(us016.sonSayfaninOku);\r\n        Driver.getDriver().navigate().to(\"https://www.medunna.com/room?page=84&sort=id,asc\");\r\n        //  Driver.getDriver().navigate().to(\"https://medunna.com/room?page=+\" + arg81 + \"+ &sort=roomType,asc\");\r\n     /*   List<WebElement> roomId = Driver.getDriver().findElements(By.xpath(\"//div[@class='table-responsive']//tbody//tr[1]//td[2]\"));\r\n        for (int i = 0; i < roomId.size(); i++) {\r\n            if (roomId.get(i).equals(Integer.parseInt(roomrandm))) {\r\n                System.out.println(Driver.getDriver().findElement(By.xpath(\"//div[@class='table-responsive']//tbody//tr[1]//td[3]\")).getText());\r\n                System.out.println(Driver.getDriver().findElement(By.xpath(\"//div[@class='table-responsive']//tbody//tr[1]//td[4]\")).getText());\r\n\r\n            }\r\n        }*/\r\n  //actions.sendKeys(Keys.PAGE_UP).perform();\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepDefinitions/uiStepDefinitions/US_016_UI_StepDefinition.java b/src/test/java/stepDefinitions/uiStepDefinitions/US_016_UI_StepDefinition.java
+--- a/src/test/java/stepDefinitions/uiStepDefinitions/US_016_UI_StepDefinition.java	(revision 5ba0642569d1c1ddf58bee62d9a14d56b01c887d)
++++ b/src/test/java/stepDefinitions/uiStepDefinitions/US_016_UI_StepDefinition.java	(date 1661521072708)
+@@ -22,14 +22,15 @@
+     Random rand = new Random();
+     int rdn = 999999;
+     String roomrandm = String.valueOf(rand.nextInt(rdn));
++    String rndPrice= String.valueOf(rand.nextInt(rdn));
+ 
+     @Then("Admin  Items&Titles butonuna tiklar ve ardindan Room butonuna tiklar")
+     public void admin_items_titles_butonuna_tiklar_ve_ardindan_room_butonuna_tiklar() {
+         us016.itemsTitlesButon.click();
+-<<<<<<< HEAD
++
+         ReusableMethods.waitFor(2);
+-=======
+->>>>>>> main
++
++
+         us016.roomButton.click();
+         ReusableMethods.waitFor(2);
+     }
+@@ -70,9 +71,10 @@
+ 
+     @Then("Admin  Price kutusuna fiyat bilgisi girer")
+     public void admin_price_kutusuna_fiyat_bilgisi_girer() {
+-        us016.priceKutusu.sendKeys("150");
++        us016.priceKutusu.sendKeys(rndPrice);
+         ReusableMethods.waitFor(2);
+ 
++
+     }
+ 
+     @Then("Admin  Save butonuna tiklar")
+@@ -169,55 +171,82 @@
+ 
+     }
+ 
+-    @Then("Admin Room Type olarak ayni secilen odalari gorebilir")
++    @Then("Admin Room Type olarak TWINN secildigini gorur")
+     public void adminRoomTypeOlarakAyniSecilenOdalariGorebilir() {
+         Assert.assertTrue(us016.twinnType.isDisplayed());
+         ReusableMethods.waitFor(3);
+     }
+ 
+-    @And("Admin Edit butonuna tiklar")
++    @And("Admin olusturdugu odanin Edit butonuna tiklar")
+     public void adminEditButonunaTiklarVeBilgileriGuncellerYaDaDegistirir() {
+         us016.olusturdugumRoomEditButonu.click();
+         ReusableMethods.waitFor(2);
+ 
+     }
+ 
++
++    @Then("Admin olusturdugu odaya tiklar")
++    public void adminOlusturduguOdayaTiklar() {
++        us016.idRoom.click();
++        ReusableMethods.waitFor(2);
++
++    }
++
++    @And("Admin Room number kutusunundaki bilgileri siler")
++    public void adminRoomNumberKutusunundakiBilgileriSiler() {
++        us016.roomNumberKutusu.clear();
++        ReusableMethods.waitFor(2);
++    }
++
++    @And("Admin Price kutusundaki bilgileri siler")
++    public void adminPriceKutusundakiBilgileriSiler() {
++        us016.priceKutusu.clear();
++        ReusableMethods.waitFor(2);
++
++    }
++
+ 
+     @And("Admin islem yaptigi son sayfanin okuna tiklar")
+     public void adminIslemYaptigiSonSayfaninOkunaTiklar() {
+         ReusableMethods.hooverByJS(us016.sonSayfaninOku);
+-        ReusableMethods.waitFor(2);
+-
++        ReusableMethods.waitFor(4);
+ 
+     }
+ 
+-    @And("Admin sayfanin basina gelir")
+-    public void adminSayfaninBasinaGelir() {
++
++    @And("Admin sayfanin basina cikar")
++    public void adminSayfaninBasinaCikar() {
+         actions.sendKeys(Keys.PAGE_UP).perform();
++        ReusableMethods.waitFor(4);
+         actions.sendKeys(Keys.PAGE_UP).perform();
++        ReusableMethods.waitFor(4);
+     }
+ 
+-    @Then("Admin olusturdugu odaya tiklar")
+-    public void adminOlusturduguOdayaTiklar() {
+-        us016.idRoom.click();
++    @Then("Admin Room Type olarak DAYCARE secildigini gorur")
++    public void adminRoomTypeOlarakDAYCARESecildiginiGorur() {
++        Assert.assertTrue(us016.daycareType.isDisplayed());
++        ReusableMethods.waitFor(3);
++
+     }
+ 
+-    @Then("Admin islem yaptigi sayfaya tiklar")
+-    public void adminIslemYaptigiSayfayaTiklar() {
+-        ReusableMethods.waitFor(2);
+-        // actions.sendKeys(Keys.).click(us016.sonSayfaninOku).perform();
+-        //ReusableMethods.hooverByJS(us016.sonSayfaninOku);
+-        Driver.getDriver().navigate().to("https://www.medunna.com/room?page=84&sort=id,asc");
+-        //  Driver.getDriver().navigate().to("https://medunna.com/room?page=+" + arg81 + "+ &sort=roomType,asc");
+-     /*   List<WebElement> roomId = Driver.getDriver().findElements(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[2]"));
+-        for (int i = 0; i < roomId.size(); i++) {
+-            if (roomId.get(i).equals(Integer.parseInt(roomrandm))) {
+-                System.out.println(Driver.getDriver().findElement(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[3]")).getText());
+-                System.out.println(Driver.getDriver().findElement(By.xpath("//div[@class='table-responsive']//tbody//tr[1]//td[4]")).getText());
++    @And("Admin Delete butonua tiklar")
++    public void adminDeleteButonuaTiklar() {
++        us016.delete.click();
++    }
++
++    @And("Admin Confirm kutusunu gorur")
++    public void adminConfirmKutusunuGorur() {
+ 
+-            }
+-        }*/
+-  //actions.sendKeys(Keys.PAGE_UP).perform();
++    }
+ 
++    @And("Admin Delete butonun etkin oldugunu gorur")
++    public void adminDeleteButonunEtkinOldugunuGorur() {
++        Assert.assertTrue(us016.delete.isEnabled());
+     }
++
++
++
++
++
++
+ }
+\ No newline at end of file
+Index: src/test/java/runners/TestRunner.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package runners;\r\n\r\nimport io.cucumber.junit.Cucumber;\r\n import io.cucumber.junit.CucumberOptions;\r\n import org.junit.runner.RunWith;\r\n\r\n@RunWith(Cucumber.class)\r\n@CucumberOptions(\r\n        plugin={\"html:target/cucumber-reports.html\",\r\n                \"json:target/json-reports/cucumber.json\",\r\n                \"junit:target/xml-report/cucumber.xml\"\r\n        },\r\n\r\n        features = \"src/test/resources/features/uiFeatures\",\r\n        glue = \"stepDefinitions/uiStepDefinitions\",\r\n<<<<<<< HEAD\r\n        tags =  \"@US_016_TC006\",\r\n=======\r\n        tags = \"@US_022_TC_001\",\r\n>>>>>>> main\r\n        dryRun = false\r\n)\r\n\r\npublic class TestRunner {\r\n    /*\r\n    Bir framework'de bir tek Runner class'i yeterli olabilir\r\n    Runner class'indan class bodysinde hic bir sey olmaz\r\n    Runner class'imizi onemli yapan iki adet annotation vardir\r\n    @RunWith(Cucumber.class) notasyonu Runner class'ina calisma ozelligi katar\r\n    Bu notasyon oldugu icin Cucumber framework'umuzde JUnit kullanmayi tercih ediyoruz\r\n\r\n    features : Runner dosyasinin feature dosyalarini nereden bulacagini tarif eder\r\n    glue : stepdefinitions dosyalarini nerede bulacagimizi gosterir\r\n    tags : o an hangi tag'i calistirmak istiyorsak onu belli eder\r\n\r\n    dryRun : iki secenek var\r\n    dryRun=true; yazdigimiz Testimizi calistirmadan sadece eksik adimlari bize verir\r\n    dryRun=false; yazdigimizda testlerimizi calistirir\r\n\r\n     */\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/runners/TestRunner.java b/src/test/java/runners/TestRunner.java
+--- a/src/test/java/runners/TestRunner.java	(revision 5ba0642569d1c1ddf58bee62d9a14d56b01c887d)
++++ b/src/test/java/runners/TestRunner.java	(date 1661519352775)
+@@ -13,11 +13,7 @@
+ 
+         features = "src/test/resources/features/uiFeatures",
+         glue = "stepDefinitions/uiStepDefinitions",
+-<<<<<<< HEAD
+-        tags =  "@US_016_TC006",
+-=======
+-        tags = "@US_022_TC_001",
+->>>>>>> main
++        tags =   "@US_016_TC009",
+         dryRun = false
+ )
+ 

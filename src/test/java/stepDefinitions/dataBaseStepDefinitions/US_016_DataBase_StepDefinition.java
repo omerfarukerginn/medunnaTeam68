@@ -9,7 +9,6 @@ import utilities.WriteToTxt;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
@@ -44,12 +43,28 @@ public class US_016_DataBase_StepDefinition {
 
     @And("Admin DB ile Room  bilgilerini dogrular")
     public void adminDBIleRoomBilgileriniDogrular() {
+<<<<<<< HEAD
        // List<Object> actualRoomId= ReadTxt.returnRoomIDsList(filename1);
+=======
+
+       // List<Object> actualRoomId= ReadTxt.returnRoomIDsList(filename1);
+
+       List<Object> actualRoomId= ReadTxt.returnRoomIDsList(filename1);
+
+>>>>>>> main
 
         List<Object> expectedRoomId=new ArrayList<>();
 
         expectedRoomId.add(130660);
+<<<<<<< HEAD
       //  Assert.assertTrue("ID uyusmuyor",actualRoomId.containsAll(expectedRoomId));
+=======
+
+      //  Assert.assertTrue("ID uyusmuyor",actualRoomId.containsAll(expectedRoomId));
+
+       Assert.assertTrue("ID uyusmuyor",actualRoomId.containsAll(expectedRoomId));
+
+>>>>>>> main
 
     }
 }

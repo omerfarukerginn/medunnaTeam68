@@ -1,0 +1,281 @@
+Index: .idea/dbnavigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DBNavigator.Project.DataEditorManager\">\r\n    <record-view-column-sorting-type value=\"BY_INDEX\" />\r\n    <value-preview-text-wrapping value=\"false\" />\r\n    <value-preview-pinned value=\"false\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DataExportManager\">\r\n    <export-instructions>\r\n      <create-header value=\"true\" />\r\n      <friendly-headers value=\"false\" />\r\n      <quote-values-containing-separator value=\"true\" />\r\n      <quote-all-values value=\"false\" />\r\n      <value-separator value=\"\" />\r\n      <file-name value=\"\" />\r\n      <file-location value=\"\" />\r\n      <scope value=\"GLOBAL\" />\r\n      <destination value=\"FILE\" />\r\n      <format value=\"EXCEL\" />\r\n      <charset value=\"windows-1252\" />\r\n      <charset value=\"windows-1252\" />\r\n    </export-instructions>\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseBrowserManager\">\r\n    <autoscroll-to-editor value=\"false\" />\r\n    <autoscroll-from-editor value=\"true\" />\r\n    <show-object-properties value=\"true\" />\r\n    <loaded-nodes />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseFileManager\">\r\n    <open-files />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.EditorStateManager\">\r\n    <last-used-providers />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ExecutionManager\">\r\n    <retain-sticky-names value=\"false\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.MethodExecutionManager\">\r\n    <method-browser />\r\n    <execution-history>\r\n      <group-entries value=\"true\" />\r\n      <execution-inputs />\r\n    </execution-history>\r\n    <argument-values-cache />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ObjectDependencyManager\">\r\n    <last-used-dependency-type value=\"INCOMING\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ObjectQuickFilterManager\">\r\n    <last-used-operator value=\"EQUAL\" />\r\n    <filters />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ParserDiagnosticsManager\">\r\n    <diagnostics-history />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ScriptExecutionManager\" clear-outputs=\"true\">\r\n    <recently-used-interfaces />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.Settings\">\r\n    <connections />\r\n    <browser-settings>\r\n      <general>\r\n        <display-mode value=\"TABBED\" />\r\n        <navigation-history-size value=\"100\" />\r\n        <show-object-details value=\"false\" />\r\n      </general>\r\n      <filters>\r\n        <object-type-filter>\r\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n          <object-type name=\"USER\" enabled=\"true\" />\r\n          <object-type name=\"ROLE\" enabled=\"true\" />\r\n          <object-type name=\"PRIVILEGE\" enabled=\"true\" />\r\n          <object-type name=\"CHARSET\" enabled=\"true\" />\r\n          <object-type name=\"TABLE\" enabled=\"true\" />\r\n          <object-type name=\"VIEW\" enabled=\"true\" />\r\n          <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\r\n          <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\r\n          <object-type name=\"COLUMN\" enabled=\"true\" />\r\n          <object-type name=\"INDEX\" enabled=\"true\" />\r\n          <object-type name=\"CONSTRAINT\" enabled=\"true\" />\r\n          <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"SYNONYM\" enabled=\"true\" />\r\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n          <object-type name=\"FUNCTION\" enabled=\"true\" />\r\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\r\n          <object-type name=\"ARGUMENT\" enabled=\"true\" />\r\n          <object-type name=\"DIMENSION\" enabled=\"true\" />\r\n          <object-type name=\"CLUSTER\" enabled=\"true\" />\r\n          <object-type name=\"DBLINK\" enabled=\"true\" />\r\n        </object-type-filter>\r\n      </filters>\r\n      <sorting>\r\n        <object-type name=\"COLUMN\" sorting-type=\"NAME\" />\r\n        <object-type name=\"FUNCTİON\" sorting-type=\"NAME\" />\r\n        <object-type name=\"PROCEDURE\" sorting-type=\"NAME\" />\r\n        <object-type name=\"ARGUMENT\" sorting-type=\"POSITION\" />\r\n        <object-type name=\"TYPE ATTRİBUTE\" sorting-type=\"POSITION\" />\r\n      </sorting>\r\n      <default-editors>\r\n        <object-type name=\"VİEW\" editor-type=\"SELECTION\" />\r\n        <object-type name=\"PACKAGE\" editor-type=\"SELECTION\" />\r\n        <object-type name=\"TYPE\" editor-type=\"SELECTION\" />\r\n      </default-editors>\r\n    </browser-settings>\r\n    <navigation-settings>\r\n      <lookup-filters>\r\n        <lookup-objects>\r\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n          <object-type name=\"USER\" enabled=\"false\" />\r\n          <object-type name=\"ROLE\" enabled=\"false\" />\r\n          <object-type name=\"PRİVİLEGE\" enabled=\"false\" />\r\n          <object-type name=\"CHARSET\" enabled=\"false\" />\r\n          <object-type name=\"TABLE\" enabled=\"true\" />\r\n          <object-type name=\"VİEW\" enabled=\"true\" />\r\n          <object-type name=\"MATERİALİZED VİEW\" enabled=\"true\" />\r\n          <object-type name=\"İNDEX\" enabled=\"true\" />\r\n          <object-type name=\"CONSTRAİNT\" enabled=\"true\" />\r\n          <object-type name=\"DATASET TRİGGER\" enabled=\"true\" />\r\n          <object-type name=\"DATABASE TRİGGER\" enabled=\"true\" />\r\n          <object-type name=\"SYNONYM\" enabled=\"false\" />\r\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n          <object-type name=\"FUNCTİON\" enabled=\"true\" />\r\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE\" enabled=\"true\" />\r\n          <object-type name=\"DİMENSİON\" enabled=\"false\" />\r\n          <object-type name=\"CLUSTER\" enabled=\"false\" />\r\n          <object-type name=\"DBLİNK\" enabled=\"true\" />\r\n        </lookup-objects>\r\n        <force-database-load value=\"false\" />\r\n        <prompt-connection-selection value=\"true\" />\r\n        <prompt-schema-selection value=\"true\" />\r\n      </lookup-filters>\r\n    </navigation-settings>\r\n    <dataset-grid-settings>\r\n      <general>\r\n        <enable-zooming value=\"true\" />\r\n        <enable-column-tooltip value=\"true\" />\r\n      </general>\r\n      <sorting>\r\n        <nulls-first value=\"true\" />\r\n        <max-sorting-columns value=\"4\" />\r\n      </sorting>\r\n      <audit-columns>\r\n        <column-names value=\"\" />\r\n        <visible value=\"true\" />\r\n        <editable value=\"false\" />\r\n      </audit-columns>\r\n    </dataset-grid-settings>\r\n    <dataset-editor-settings>\r\n      <text-editor-popup>\r\n        <active value=\"false\" />\r\n        <active-if-empty value=\"false\" />\r\n        <data-length-threshold value=\"100\" />\r\n        <popup-delay value=\"1000\" />\r\n      </text-editor-popup>\r\n      <values-actions-popup>\r\n        <show-popup-button value=\"true\" />\r\n        <element-count-threshold value=\"1000\" />\r\n        <data-length-threshold value=\"250\" />\r\n      </values-actions-popup>\r\n      <general>\r\n        <fetch-block-size value=\"100\" />\r\n        <fetch-timeout value=\"30\" />\r\n        <trim-whitespaces value=\"true\" />\r\n        <convert-empty-strings-to-null value=\"true\" />\r\n        <select-content-on-cell-edit value=\"true\" />\r\n        <large-value-preview-active value=\"true\" />\r\n      </general>\r\n      <filters>\r\n        <prompt-filter-dialog value=\"true\" />\r\n        <default-filter-type value=\"BASIC\" />\r\n      </filters>\r\n      <qualified-text-editor text-length-threshold=\"300\">\r\n        <content-types>\r\n          <content-type name=\"Text\" enabled=\"true\" />\r\n          <content-type name=\"Properties\" enabled=\"true\" />\r\n          <content-type name=\"XML\" enabled=\"true\" />\r\n          <content-type name=\"DTD\" enabled=\"true\" />\r\n          <content-type name=\"HTML\" enabled=\"true\" />\r\n          <content-type name=\"XHTML\" enabled=\"true\" />\r\n          <content-type name=\"Java\" enabled=\"true\" />\r\n          <content-type name=\"SQL\" enabled=\"true\" />\r\n          <content-type name=\"PL/SQL\" enabled=\"true\" />\r\n          <content-type name=\"JSON\" enabled=\"true\" />\r\n          <content-type name=\"JSON5\" enabled=\"true\" />\r\n          <content-type name=\"Groovy\" enabled=\"true\" />\r\n          <content-type name=\"AIDL\" enabled=\"true\" />\r\n          <content-type name=\"YAML\" enabled=\"true\" />\r\n          <content-type name=\"Manifest\" enabled=\"true\" />\r\n        </content-types>\r\n      </qualified-text-editor>\r\n      <record-navigation>\r\n        <navigation-target value=\"VIEWER\" />\r\n      </record-navigation>\r\n    </dataset-editor-settings>\r\n    <code-editor-settings>\r\n      <general>\r\n        <show-object-navigation-gutter value=\"false\" />\r\n        <show-spec-declaration-navigation-gutter value=\"true\" />\r\n        <enable-spellchecking value=\"true\" />\r\n        <enable-reference-spellchecking value=\"false\" />\r\n      </general>\r\n      <confirmations>\r\n        <save-changes value=\"false\" />\r\n        <revert-changes value=\"true\" />\r\n      </confirmations>\r\n    </code-editor-settings>\r\n    <code-completion-settings>\r\n      <filters>\r\n        <basic-filter>\r\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\r\n          <user-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </user-schema>\r\n          <public-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"false\" />\r\n          </public-schema>\r\n          <any-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </any-schema>\r\n        </basic-filter>\r\n        <extended-filter>\r\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\r\n          <user-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </user-schema>\r\n          <public-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </public-schema>\r\n          <any-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </any-schema>\r\n        </extended-filter>\r\n      </filters>\r\n      <sorting enabled=\"true\">\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"keyword\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"datatype\" />\r\n        <sorting-element type=\"OBJECT\" id=\"column\" />\r\n        <sorting-element type=\"OBJECT\" id=\"table\" />\r\n        <sorting-element type=\"OBJECT\" id=\"view\" />\r\n        <sorting-element type=\"OBJECT\" id=\"materialized view\" />\r\n        <sorting-element type=\"OBJECT\" id=\"index\" />\r\n        <sorting-element type=\"OBJECT\" id=\"constraint\" />\r\n        <sorting-element type=\"OBJECT\" id=\"trigger\" />\r\n        <sorting-element type=\"OBJECT\" id=\"synonym\" />\r\n        <sorting-element type=\"OBJECT\" id=\"sequence\" />\r\n        <sorting-element type=\"OBJECT\" id=\"procedure\" />\r\n        <sorting-element type=\"OBJECT\" id=\"function\" />\r\n        <sorting-element type=\"OBJECT\" id=\"package\" />\r\n        <sorting-element type=\"OBJECT\" id=\"type\" />\r\n        <sorting-element type=\"OBJECT\" id=\"dimension\" />\r\n        <sorting-element type=\"OBJECT\" id=\"cluster\" />\r\n        <sorting-element type=\"OBJECT\" id=\"dblink\" />\r\n        <sorting-element type=\"OBJECT\" id=\"schema\" />\r\n        <sorting-element type=\"OBJECT\" id=\"role\" />\r\n        <sorting-element type=\"OBJECT\" id=\"user\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"function\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"parameter\" />\r\n      </sorting>\r\n      <format>\r\n        <enforce-code-style-case value=\"true\" />\r\n      </format>\r\n    </code-completion-settings>\r\n    <execution-engine-settings>\r\n      <statement-execution>\r\n        <fetch-block-size value=\"100\" />\r\n        <execution-timeout value=\"20\" />\r\n        <debug-execution-timeout value=\"600\" />\r\n        <focus-result value=\"false\" />\r\n        <prompt-execution value=\"false\" />\r\n      </statement-execution>\r\n      <script-execution>\r\n        <command-line-interfaces />\r\n        <execution-timeout value=\"300\" />\r\n      </script-execution>\r\n      <method-execution>\r\n        <execution-timeout value=\"30\" />\r\n        <debug-execution-timeout value=\"600\" />\r\n        <parameter-history-size value=\"10\" />\r\n      </method-execution>\r\n    </execution-engine-settings>\r\n    <operation-settings>\r\n      <transactions>\r\n        <uncommitted-changes>\r\n          <on-project-close value=\"ASK\" />\r\n          <on-disconnect value=\"ASK\" />\r\n          <on-autocommit-toggle value=\"ASK\" />\r\n        </uncommitted-changes>\r\n        <multiple-uncommitted-changes>\r\n          <on-commit value=\"ASK\" />\r\n          <on-rollback value=\"ASK\" />\r\n        </multiple-uncommitted-changes>\r\n      </transactions>\r\n      <session-browser>\r\n        <disconnect-session value=\"ASK\" />\r\n        <kill-session value=\"ASK\" />\r\n        <reload-on-filter-change value=\"false\" />\r\n      </session-browser>\r\n      <compiler>\r\n        <compile-type value=\"KEEP\" />\r\n        <compile-dependencies value=\"ASK\" />\r\n        <always-show-controls value=\"false\" />\r\n      </compiler>\r\n      <debugger>\r\n        <debugger-type value=\"ASK\" />\r\n        <use-generic-runners value=\"true\" />\r\n      </debugger>\r\n    </operation-settings>\r\n    <ddl-file-settings>\r\n      <extensions>\r\n        <mapping file-type-id=\"VIEW\" extensions=\"vw\" />\r\n        <mapping file-type-id=\"TRIGGER\" extensions=\"trg\" />\r\n        <mapping file-type-id=\"PROCEDURE\" extensions=\"prc\" />\r\n        <mapping file-type-id=\"FUNCTION\" extensions=\"fnc\" />\r\n        <mapping file-type-id=\"PACKAGE\" extensions=\"pkg\" />\r\n        <mapping file-type-id=\"PACKAGE_SPEC\" extensions=\"pks\" />\r\n        <mapping file-type-id=\"PACKAGE_BODY\" extensions=\"pkb\" />\r\n        <mapping file-type-id=\"TYPE\" extensions=\"tpe\" />\r\n        <mapping file-type-id=\"TYPE_SPEC\" extensions=\"tps\" />\r\n        <mapping file-type-id=\"TYPE_BODY\" extensions=\"tpb\" />\r\n      </extensions>\r\n      <general>\r\n        <lookup-ddl-files value=\"true\" />\r\n        <create-ddl-files value=\"false\" />\r\n        <synchronize-ddl-files value=\"true\" />\r\n        <use-qualified-names value=\"false\" />\r\n        <make-scripts-rerunnable value=\"true\" />\r\n      </general>\r\n    </ddl-file-settings>\r\n    <general-settings>\r\n      <regional-settings>\r\n        <date-format value=\"MEDIUM\" />\r\n        <number-format value=\"UNGROUPED\" />\r\n        <locale value=\"SYSTEM_DEFAULT\" />\r\n        <use-custom-formats value=\"false\" />\r\n      </regional-settings>\r\n      <environment>\r\n        <environment-types>\r\n          <environment-type id=\"development\" name=\"Development\" description=\"Development environment\" color=\"-2430209/-12296320\" readonly-code=\"false\" readonly-data=\"false\" />\r\n          <environment-type id=\"integration\" name=\"Integration\" description=\"Integration environment\" color=\"-2621494/-12163514\" readonly-code=\"true\" readonly-data=\"false\" />\r\n          <environment-type id=\"production\" name=\"Production\" description=\"Productive environment\" color=\"-11574/-10271420\" readonly-code=\"true\" readonly-data=\"true\" />\r\n          <environment-type id=\"other\" name=\"Other\" description=\"\" color=\"-1576/-10724543\" readonly-code=\"false\" readonly-data=\"false\" />\r\n        </environment-types>\r\n        <visibility-settings>\r\n          <connection-tabs value=\"true\" />\r\n          <dialog-headers value=\"true\" />\r\n          <object-editor-tabs value=\"true\" />\r\n          <script-editor-tabs value=\"false\" />\r\n          <execution-result-tabs value=\"true\" />\r\n        </visibility-settings>\r\n      </environment>\r\n    </general-settings>\r\n  </component>\r\n  <component name=\"DBNavigator.Project.StatementExecutionManager\">\r\n    <execution-variables />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dbnavigator.xml b/.idea/dbnavigator.xml
+--- a/.idea/dbnavigator.xml	(revision bb89debb17c0d8b34ae37580ac8159d89fe976f7)
++++ b/.idea/dbnavigator.xml	(date 1661449950825)
+@@ -27,9 +27,26 @@
+     <show-object-properties value="true" />
+     <loaded-nodes />
+   </component>
++  <component name="DBNavigator.Project.DatabaseConsoleManager">
++    <connection id="ee1f5688-f6bc-4a9c-86f5-539890490201">
++      <console name="Connection" type="STANDARD" schema="" session="Main" />
++    </connection>
++    <connection id="7ee0866e-71b4-428d-8830-3834536b18e6">
++      <console name="Connection 1" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from "public".jhi_user where first_name='staffMahmut'
++
++select * from "public".staff where first_name='staffMahmut']]></console>
++    </connection>
++  </component>
+   <component name="DBNavigator.Project.DatabaseFileManager">
+     <open-files />
+   </component>
++  <component name="DBNavigator.Project.DatabaseSessionManager">
++    <connection id="ee1f5688-f6bc-4a9c-86f5-539890490201" />
++    <connection id="7ee0866e-71b4-428d-8830-3834536b18e6" />
++  </component>
++  <component name="DBNavigator.Project.DatasetFilterManager">
++    <filter-actions connection-id="7ee0866e-71b4-428d-8830-3834536b18e6" dataset="public.staff" active-filter-id="" />
++  </component>
+   <component name="DBNavigator.Project.EditorStateManager">
+     <last-used-providers />
+   </component>
+@@ -58,7 +75,176 @@
+     <recently-used-interfaces />
+   </component>
+   <component name="DBNavigator.Project.Settings">
+-    <connections />
++    <connections>
++      <connection id="ee1f5688-f6bc-4a9c-86f5-539890490201" active="true" signed="true">
++        <database>
++          <name value="Connection" />
++          <description value="" />
++          <database-type value="POSTGRES" />
++          <config-type value="BASIC" />
++          <database-version value="9999.0" />
++          <driver-source value="BUILTIN" />
++          <driver-library value="" />
++          <driver value="" />
++          <url-type value="DATABASE" />
++          <host value="localhost" />
++          <port value="5432" />
++          <database value="postgres" />
++          <type value="USER_PASSWORD" />
++          <user value="" />
++          <deprecated-pwd value="" />
++        </database>
++        <properties>
++          <auto-commit value="false" />
++        </properties>
++        <ssh-settings>
++          <active value="false" />
++          <proxy-host value="" />
++          <proxy-port value="22" />
++          <proxy-user value="" />
++          <deprecated-proxy-pwd value="" />
++          <auth-type value="PASSWORD" />
++          <key-file value="" />
++          <key-passphrase value="" />
++        </ssh-settings>
++        <ssl-settings>
++          <active value="false" />
++          <certificate-authority-file value="" />
++          <client-certificate-file value="" />
++          <client-key-file value="" />
++        </ssl-settings>
++        <details>
++          <charset value="UTF-8" />
++          <session-management value="true" />
++          <ddl-file-binding value="true" />
++          <database-logging value="true" />
++          <connect-automatically value="true" />
++          <restore-workspace value="true" />
++          <restore-workspace-deep value="false" />
++          <environment-type value="default" />
++          <connectivity-timeout value="5" />
++          <idle-time-to-disconnect value="30" />
++          <idle-time-to-disconnect-pool value="5" />
++          <credential-expiry-time value="10" />
++          <max-connection-pool-size value="7" />
++          <alternative-statement-delimiter value="" />
++        </details>
++        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
++          <object-type-filter>
++            <object-type name="SCHEMA" enabled="true" />
++            <object-type name="USER" enabled="true" />
++            <object-type name="ROLE" enabled="true" />
++            <object-type name="PRIVILEGE" enabled="true" />
++            <object-type name="CHARSET" enabled="true" />
++            <object-type name="TABLE" enabled="true" />
++            <object-type name="VIEW" enabled="true" />
++            <object-type name="MATERIALIZED_VIEW" enabled="true" />
++            <object-type name="NESTED_TABLE" enabled="true" />
++            <object-type name="COLUMN" enabled="true" />
++            <object-type name="INDEX" enabled="true" />
++            <object-type name="CONSTRAINT" enabled="true" />
++            <object-type name="DATASET_TRIGGER" enabled="true" />
++            <object-type name="DATABASE_TRIGGER" enabled="true" />
++            <object-type name="SYNONYM" enabled="true" />
++            <object-type name="SEQUENCE" enabled="true" />
++            <object-type name="PROCEDURE" enabled="true" />
++            <object-type name="FUNCTION" enabled="true" />
++            <object-type name="PACKAGE" enabled="true" />
++            <object-type name="TYPE" enabled="true" />
++            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
++            <object-type name="ARGUMENT" enabled="true" />
++            <object-type name="DIMENSION" enabled="true" />
++            <object-type name="CLUSTER" enabled="true" />
++            <object-type name="DBLINK" enabled="true" />
++          </object-type-filter>
++          <object-name-filters />
++        </object-filters>
++      </connection>
++      <connection id="7ee0866e-71b4-428d-8830-3834536b18e6" active="true" signed="true">
++        <database>
++          <name value="Connection 1" />
++          <description value="" />
++          <database-type value="POSTGRES" />
++          <config-type value="BASIC" />
++          <database-version value="10.15" />
++          <driver-source value="BUILTIN" />
++          <driver-library value="" />
++          <driver value="" />
++          <url-type value="DATABASE" />
++          <host value="medunna.com" />
++          <port value="5432" />
++          <database value="medunna_db" />
++          <type value="USER_PASSWORD" />
++          <user value="medunnadb_user" />
++          <deprecated-pwd value="TWVkdW5uYWRiX0AxMjk=" />
++        </database>
++        <properties>
++          <auto-commit value="false" />
++        </properties>
++        <ssh-settings>
++          <active value="false" />
++          <proxy-host value="" />
++          <proxy-port value="22" />
++          <proxy-user value="" />
++          <deprecated-proxy-pwd value="" />
++          <auth-type value="PASSWORD" />
++          <key-file value="" />
++          <key-passphrase value="" />
++        </ssh-settings>
++        <ssl-settings>
++          <active value="false" />
++          <certificate-authority-file value="" />
++          <client-certificate-file value="" />
++          <client-key-file value="" />
++        </ssl-settings>
++        <details>
++          <charset value="UTF-8" />
++          <session-management value="true" />
++          <ddl-file-binding value="true" />
++          <database-logging value="true" />
++          <connect-automatically value="true" />
++          <restore-workspace value="true" />
++          <restore-workspace-deep value="false" />
++          <environment-type value="default" />
++          <connectivity-timeout value="5" />
++          <idle-time-to-disconnect value="30" />
++          <idle-time-to-disconnect-pool value="5" />
++          <credential-expiry-time value="10" />
++          <max-connection-pool-size value="7" />
++          <alternative-statement-delimiter value="" />
++        </details>
++        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
++          <object-type-filter>
++            <object-type name="SCHEMA" enabled="true" />
++            <object-type name="USER" enabled="true" />
++            <object-type name="ROLE" enabled="true" />
++            <object-type name="PRIVILEGE" enabled="true" />
++            <object-type name="CHARSET" enabled="true" />
++            <object-type name="TABLE" enabled="true" />
++            <object-type name="VIEW" enabled="true" />
++            <object-type name="MATERIALIZED_VIEW" enabled="true" />
++            <object-type name="NESTED_TABLE" enabled="true" />
++            <object-type name="COLUMN" enabled="true" />
++            <object-type name="INDEX" enabled="true" />
++            <object-type name="CONSTRAINT" enabled="true" />
++            <object-type name="DATASET_TRIGGER" enabled="true" />
++            <object-type name="DATABASE_TRIGGER" enabled="true" />
++            <object-type name="SYNONYM" enabled="true" />
++            <object-type name="SEQUENCE" enabled="true" />
++            <object-type name="PROCEDURE" enabled="true" />
++            <object-type name="FUNCTION" enabled="true" />
++            <object-type name="PACKAGE" enabled="true" />
++            <object-type name="TYPE" enabled="true" />
++            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
++            <object-type name="ARGUMENT" enabled="true" />
++            <object-type name="DIMENSION" enabled="true" />
++            <object-type name="CLUSTER" enabled="true" />
++            <object-type name="DBLINK" enabled="true" />
++          </object-type-filter>
++          <object-name-filters />
++        </object-filters>
++      </connection>
++    </connections>
+     <browser-settings>
+       <general>
+         <display-mode value="TABBED" />
+Index: src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepDefinitions.uiStepDefinitions;\r\n\r\nimport io.cucumber.java.en.And;\r\nimport io.cucumber.java.en.Given;\r\nimport io.cucumber.java.en.Then;\r\nimport org.junit.Assert;\r\nimport org.openqa.selenium.Keys;\r\nimport pages.StaffPage;\r\nimport utilities.Driver;\r\nimport utilities.ReusableMethods;\r\n\r\nimport java.util.Random;\r\n\r\npublic class US_023_UI_StepDefinition {\r\n    StaffPage stf23 = new StaffPage();\r\n\r\n    @Given(\"staff my pages menusunu tiklar\")\r\n    public void staff_my_pages_menusunu_tiklar() {\r\n        ReusableMethods.waitForVisibility(stf23.myPagesButton, 3).click();\r\n\r\n    }\r\n\r\n    @Given(\"staff search patient buttonunu tiklar\")\r\n    public void staff_search_patient_buttonunu_tiklar() {\r\n        Driver.waitAndClick(stf23.dropDownSearchPatientButton);\r\n\r\n    }\r\n\r\n    @And(\"staff arama kutusuna SSN ile hastayi arar\")\r\n    public void staffAramaKutusunaSSNIleHastayiArar() {\r\n        stf23.patientSsnSearchTextBox.sendKeys(\"768-94-0956\", Keys.ENTER);\r\n    }\r\n\r\n    @Given(\"staff show appointment buttonunu tiklar\")\r\n    public void staff_show_appointment_buttonunu_tiklar() {\r\n        stf23.showAppointmentButton.click();\r\n    }\r\n\r\n    @Given(\"staff hastanin durumunun completede veya cancelled oldugunu dogrular\")\r\n    public void staff_hastanin_durumunun_completede_veya_cancelled_oldugunu_dogrular() {\r\n\r\n        if (stf23.statusCheckButton.getText().equalsIgnoreCase(\"Cancelled\") ||\r\n                stf23.statusCheckButton.getText().equalsIgnoreCase(\"completede\")) {\r\n            Assert.assertTrue(stf23.statusCheckButton.isDisplayed());\r\n        }\r\n\r\n\r\n    }\r\n\r\n\r\n    @Given(\"staff payment invoice buttonunu tiklar\")\r\n    public void staff_payment_invoice_buttonunu_tiklar() {\r\n        ReusableMethods.waitForVisibility(stf23.paymentInvoiceButton, 2).click();\r\n        System.out.println(stf23.yaziGet.getText());\r\n    }\r\n\r\n    @Then(\"staf muayene ucreti, test urun fiyatlari, bilgilerini goruntuleyebilir\")\r\n    public void staf_muayene_ucreti_test_urun_fiyatlari_bilgilerini_goruntuleyebilir() {\r\n        Assert.assertTrue(stf23.examFreeButton.isDisplayed());\r\n        Assert.assertTrue(stf23.testItemFreeButton.isDisplayed());\r\n\r\n        /*\r\n        Random rnd = new Random();\r\n        int rand1 = rnd.nextInt(21);\r\n\r\n        for (int i = 0; i < stf23.random.size(); i++) {\r\n            ReusableMethods.hooverByJS(adminPage.viewButonu.get(rand1));\r\n\r\n        }\r\n         */\r\n    }\r\n\r\n    @Then(\"staff hasta icin create inovoice tiklayarak fatura olusturur\")\r\n    public void staff_hasta_icin_create_inovoice_tiklayarak_fatura_olusturur() {\r\n        stf23.createInvoiceButton.sendKeys(Keys.ENTER);\r\n\r\n    }\r\n\r\n    @Then(\"staff olusturdugu faturayi kaydeder\")\r\n    public void staff_olusturdugu_faturayi_kaydeder() {\r\n       ReusableMethods.waitFor(2);\r\n        stf23.saveAFButton.sendKeys(Keys.ENTER);\r\n\r\n    }\r\n\r\n    @Then(\"staff basari ile kaydedildi msj i dogrular\")\r\n    public void staff_basari_ile_kaydedildi_msj_i_dogrular() {\r\n        Assert.assertTrue(Driver.waitForVisibility(stf23.invoiceSuccessMessage, 5).isDisplayed());\r\n\r\n\r\n    }\r\n\r\n    @And(\"staff showw Invoice butonuna tiklar\")\r\n    public void staffShowwInvoiceButonunaTiklar() {\r\n        stf23.showInvoiceButton.sendKeys(Keys.ENTER);\r\n    }\r\n\r\n    @Then(\"staf fatura sayfasini dogrular\")\r\n    public void staf_fatura_sayfasini_dogrular() {\r\nAssert.assertTrue(stf23.invoiceDogrulama.isDisplayed());\r\n\r\n    }\r\n\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java b/src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java
+--- a/src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java	(revision bb89debb17c0d8b34ae37580ac8159d89fe976f7)
++++ b/src/test/java/stepDefinitions/uiStepDefinitions/US_023_UI_StepDefinition.java	(date 1661450558269)
+@@ -59,15 +59,6 @@
+         Assert.assertTrue(stf23.examFreeButton.isDisplayed());
+         Assert.assertTrue(stf23.testItemFreeButton.isDisplayed());
+ 
+-        /*
+-        Random rnd = new Random();
+-        int rand1 = rnd.nextInt(21);
+-
+-        for (int i = 0; i < stf23.random.size(); i++) {
+-            ReusableMethods.hooverByJS(adminPage.viewButonu.get(rand1));
+-
+-        }
+-         */
+     }
+ 
+     @Then("staff hasta icin create inovoice tiklayarak fatura olusturur")
+Index: configuration.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>!-- Test datalari icerir, key=value seklinde calisir\r\n!-- key/value seklinde calistigindan ayni key 2 kere kullanilamaz\r\n\r\nmedunna_url=https://medunna.com/\r\nbrowser=chrome\r\n\r\nAdminSSN=125-98-6788\r\nAdminUserName=team68\r\nAdminPassword=HealthTeam68!\r\nAdminFirstName=team68\r\nAdminLastName=team68\r\n\r\nhastaSSN=134-56-8697\r\nhastaFirstName=hastaMahmut\r\nhastaLastName=hastaMahmut\r\nhastaUserName=hastaMahmut\r\nhastaEmail=hastaMahmut@gmail.com\r\nhastaPassword=hastaMahmut8\r\nhastaID=157288\r\n\r\ndoktorSSN=134-56-8698\r\ndoktorFirstName=doktorMahmut\r\ndoktorLastName=doktorMahmut\r\ndoktorUserName=doktorMahmut\r\ndoktorEmail=doktorMahmut@gmail.com\r\ndoktorPassword=doktorMahmut8\r\ndoktorID=157290\r\n\r\nstaffSSN=134-56-8699\r\nsatffFirstName=staffMahmut\r\nstaffLastName=staffMahmut\r\nstaffUserName=staffMahmut\r\nstaffEmail=staffMahmut@gmail.com\r\nstaffPassword=staffMahmut8\r\nstaffID=157291\r\n\r\n\r\n\r\nbase_url=https://medunna.com\r\n\r\nus_24hastaUserName=alivelican\r\nus_24hastaPassword=227785.o\r\n\r\n\r\nUS_010_appointmentsListApi=https://medunna.com/api/appointments?=size=10000\r\napigetallUsers=https://medunna.com/api/users\r\napigetallUsers_token:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNjgiLCJhdXRoIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY2MDM4NzAxMH0.ZPuAnjPa9snnZpBRdwTKCxmVvMQiJbtdeJp_TWt-nrxZxQzFOz0diXqut8K5Qnes_5pgVrlYy45qykTI4fDJDA\r\napi_all_registrant_data=/Users/bayram/IdeaProjects/medunnaTeam68/src/test/resources/testData/RegistrantUIData.txt\r\napi_post_users=https://medunna.com/api/users\r\napi_allusername_get\r\n\r\n\r\n\r\ndb_url=jdbc:postgresql://medunna.com:5432/medunna_db\r\ndb_user=medunnadb_user\r\ndb_password=Medunnadb_@129\r\npatients_endpoint=https://medunna.com/api/patients/159071\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n#Ebru icin gerekli hasta bilgileri\r\nyeniHastaSSN=234-67-8909\r\nyeniHastaUserName=griGandalf\r\nyeniHastaFirstName=gri\r\nyeniHastaLastName=Gandalf\r\nyeniHastapassword=hastaMahmut8\r\nyeniHastaId=183376\r\nyeniHastaemail=griGandalf@gmail.com\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/configuration.properties b/configuration.properties
+--- a/configuration.properties	(revision bb89debb17c0d8b34ae37580ac8159d89fe976f7)
++++ b/configuration.properties	(date 1661448823108)
+@@ -32,7 +32,7 @@
+ staffUserName=staffMahmut
+ staffEmail=staffMahmut@gmail.com
+ staffPassword=staffMahmut8
+-staffID=157291
++staffID=159437
+ 
+ 
+ 
+Index: src/test/java/runners/TestRunner.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package runners;\r\n\r\nimport io.cucumber.junit.Cucumber;\r\n import io.cucumber.junit.CucumberOptions;\r\n import org.junit.runner.RunWith;\r\n\r\n@RunWith(Cucumber.class)\r\n@CucumberOptions(\r\n        plugin={\"html:target/cucumber-reports.html\",\r\n                \"json:target/json-reports/cucumber.json\",\r\n                \"junit:target/xml-report/cucumber.xml\"\r\n        },\r\n\r\n        features = \"src/test/resources/features/uiFeatures\",\r\n        glue = \"stepDefinitions/uiStepDefinitions\",\r\n        tags = \"@\",\r\n        dryRun = false\r\n)\r\n\r\npublic class TestRunner {\r\n    /*\r\n    Bir framework'de bir tek Runner class'i yeterli olabilir\r\n    Runner class'indan class bodysinde hic bir sey olmaz\r\n    Runner class'imizi onemli yapan iki adet annotation vardir\r\n    @RunWith(Cucumber.class) notasyonu Runner class'ina calisma ozelligi katar\r\n    Bu notasyon oldugu icin Cucumber framework'umuzde JUnit kullanmayi tercih ediyoruz\r\n\r\n    features : Runner dosyasinin feature dosyalarini nereden bulacagini tarif eder\r\n    glue : stepdefinitions dosyalarini nerede bulacagimizi gosterir\r\n    tags : o an hangi tag'i calistirmak istiyorsak onu belli eder\r\n\r\n    dryRun : iki secenek var\r\n    dryRun=true; yazdigimiz Testimizi calistirmadan sadece eksik adimlari bize verir\r\n    dryRun=false; yazdigimizda testlerimizi calistirir\r\n\r\n     */\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/runners/TestRunner.java b/src/test/java/runners/TestRunner.java
+--- a/src/test/java/runners/TestRunner.java	(revision bb89debb17c0d8b34ae37580ac8159d89fe976f7)
++++ b/src/test/java/runners/TestRunner.java	(date 1661442399809)
+@@ -8,9 +8,8 @@
+ @CucumberOptions(
+         plugin={"html:target/cucumber-reports.html",
+                 "json:target/json-reports/cucumber.json",
+-                "junit:target/xml-report/cucumber.xml"
++                "junit:target/xml-report/cucumber.xml",
+         },
+-
+         features = "src/test/resources/features/uiFeatures",
+         glue = "stepDefinitions/uiStepDefinitions",
+         tags = "@",

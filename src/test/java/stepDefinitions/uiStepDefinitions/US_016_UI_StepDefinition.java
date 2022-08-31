@@ -1,13 +1,9 @@
 package stepDefinitions.uiStepDefinitions;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
 import pages.AdminPage;
@@ -15,8 +11,6 @@ import pages.LoginPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class US_016_UI_StepDefinition {
@@ -33,10 +27,17 @@ public class US_016_UI_StepDefinition {
     @Then("Admin  Items&Titles butonuna tiklar ve ardindan Room butonuna tiklar")
     public void admin_items_titles_butonuna_tiklar_ve_ardindan_room_butonuna_tiklar() {
         us016.itemsTitlesButon.click();
-        ReusableMethods.waitFor(2);
+
+
+
         ReusableMethods.waitFor(2);
 
         us016.roomButton.click();
+
+         ReusableMethods.waitFor(2);
+     
+      us016.roomButton.click();
+
         ReusableMethods.waitFor(2);
     }
 

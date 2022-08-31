@@ -6,7 +6,6 @@ import utilities.DBUtils;
 import utilities.ReadTxt;
 import utilities.WriteToTxt;
 
-import java.util.Collections;
 import java.util.List;
 
 import static utilities.DBUtils.getColumnData;
@@ -77,7 +76,7 @@ public class US_007_DataBase_StepDefinition {
         Assert.assertTrue("ISIM UYUSMUYOR", actualAppointmentName.contains("hastamahmut"));
 
 
-
-
     }
+
+
 }

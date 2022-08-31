@@ -1,0 +1,1 @@
+Room Room(createdBy=teamTeam, createdDate=2022-08-29T15:56:34.246303Z, id=249745, roomNumber=20, roomType=TWIN, status=true, price=1500, description=Lunch)

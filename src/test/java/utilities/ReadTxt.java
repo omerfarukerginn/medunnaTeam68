@@ -270,10 +270,11 @@ public class ReadTxt {
 
 
                 Staff staff = new Staff();
-                //staff.setStatus((line.split(",")[0]));
+                staff.setStatus((line.split(",")[0]));
                 sb.append(System.lineSeparator());
                 line = br.readLine();
-                //all.add(staff.getStatus());
+                all.add(staff.getStatus());
+
             }
         } catch (Exception e) {
             e.printStackTrace();

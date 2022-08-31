@@ -11,6 +11,7 @@ public class LoginPageStepDefinition {
 
     @Given("Kullanici ilgili test sayfasina gider")
     public void kullaniciIlgiliTestSayfasinaGider() {
+
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
     }
 

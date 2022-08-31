@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/apiFeatures",
         glue = "stepDefinitions/apiStepDefinitions",
-        tags = "@",
+        tags = "@", //burasi "@" seklinde kalmali
         dryRun = true
 
 )

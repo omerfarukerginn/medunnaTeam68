@@ -162,7 +162,7 @@ public class US_019_UI_StepDefinition {
     }
     @And("Kullanici kaydedildigini onaylar")
     public void kullaniciKaydedildiginiOnaylar() {
-     ReusableMethods.waitFor(3);
+        ReusableMethods.waitFor(3);
         Actions actionss = new Actions(Driver.getDriver());
         actionss.moveToElement(us019.StaffBilgilerinKaydedilmeOnayi).perform();
         ReusableMethods.waitFor(1);
@@ -180,11 +180,11 @@ public class US_019_UI_StepDefinition {
 
         Assert.assertTrue(us019.staffGorunurluk.isDisplayed());
 
-         ReusableMethods.waitFor(4);
+        ReusableMethods.waitFor(4);
 
 
 
-     //   us019.AdministorViewdButton.click();
+        //   us019.AdministorViewdButton.click();
 
 
         ReusableMethods.waitFor(4);
@@ -233,8 +233,8 @@ public class US_019_UI_StepDefinition {
     @And("Kullanici Save butonu tiklar ve dogrular")
     public void kullaniciSaveButonuTiklarVeDogrular() {
         us019.SaveButton2.click();
-      ReusableMethods.waitFor(1);
-      //  Assert.assertTrue(us019.StaffBilgilerinDegistirilmeOnayi.isDisplayed());
+        ReusableMethods.waitFor(1);
+        //  Assert.assertTrue(us019.StaffBilgilerinDegistirilmeOnayi.isDisplayed());
 
 
         Actions actions = new Actions(Driver.getDriver());
@@ -252,7 +252,7 @@ public class US_019_UI_StepDefinition {
         us019.staffCeratedDate.click();
         Driver.wait(1);
 
-      action.moveToElement(us019.staffDeleteButton);
+        action.moveToElement(us019.staffDeleteButton);
         Driver.wait(1);
         us019.staffDeleteButton.click();
 
@@ -261,22 +261,22 @@ public class US_019_UI_StepDefinition {
         Driver.wait(1);
         us019.AdministorDeletedButton2.click();*/
 
-    //  action.moveToElement(us019.AdministorDeletedButton2);
+        //  action.moveToElement(us019.AdministorDeletedButton2);
         Driver.wait(1);
-    //    us019.AdministorDeletedButton2.click();
+        //    us019.AdministorDeletedButton2.click();
 
 
         Driver.wait(1);
         us019.deleteButtonFromAlert.click();
         Driver.wait(1);
-       String deletedToast=us019.deletedToastContainer.getText();
+        String deletedToast=us019.deletedToastContainer.getText();
         System.out.println("locator.deletedToastContainer.getText() = "+deletedToast);
         Assert.assertTrue(deletedToast.contains("deleted"));
 
         List<String> deletedToastList= Arrays.asList(us019.deletedToastContainer.getText().split("\\s"));
         System.out.println("deletedToastList = " + deletedToastList);
         System.out.println("idkeep " + staffNewID+"  deleted staff id  " +deletedToastList.get(6));
-       // Assert.assertEquals(staffNewID,deletedToastList.get(6));
+        // Assert.assertEquals(staffNewID,deletedToastList.get(6));
         Driver.wait(1);
 
     /*    Driver.wait(1);
@@ -312,4 +312,3 @@ public class US_019_UI_StepDefinition {
 
     }
 }
-

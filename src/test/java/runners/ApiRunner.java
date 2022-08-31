@@ -12,15 +12,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/apiFeatures",
         glue = "stepDefinitions/apiStepDefinitions",
-<<<<<<< HEAD
-        tags = "@US_016",
-=======
-
-
-        tags = "@",
->>>>>>> main
-        dryRun = false
-
+        tags = "@", //burasi "@" seklinde kalmali
+        dryRun = true
 
 )
 public class ApiRunner {

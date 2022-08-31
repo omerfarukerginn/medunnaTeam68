@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
-    <record-view-column-sorting-type value="ALPHABETICAL" />
+    <record-view-column-sorting-type value="BY_INDEX" />
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
@@ -27,41 +27,17 @@
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
-
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
-      <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
-  <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
-  </component>
-
-  <component name="DBNavigator.Project.DatabaseConsoleManager">
-
-<connection id="873e3fec-2cf0-4201-90bc-c614f9a80211">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from public.cmessage where id=249778]]></console>
-
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9">
-      <console name="Connection" type="STANDARD" schema="" session="Main">select * from &quot;public&quot;.staff where id=212093</console>
-
-
+    <connection id="3dd9565b-c20c-4a6a-8e84-ce6419bc84d6">
+      <console name="medunna" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from public.patient where id=159071]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
+    <connection id="3dd9565b-c20c-4a6a-8e84-ce6419bc84d6" />
   </component>
-
-    <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211" />
-
-    <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" dataset="public.staff" active-filter-id="" />
-
-</component>
-
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
@@ -91,11 +67,9 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" active="true" signed="true">
-      <connection id="873e3fec-2cf0-4201-90bc-c614f9a80211" active="true" signed="true">
-      <connection id="b1b0ebd2-79ca-4036-95c7-b92bfe8bd3b9" active="true" signed="true">
+      <connection id="3dd9565b-c20c-4a6a-8e84-ce6419bc84d6" active="true" signed="true">
         <database>
-          <name value="Connection" />
+          <name value="medunna" />
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -218,12 +192,7 @@
         <object-type name="FUNCTİON" sorting-type="NAME" />
         <object-type name="PROCEDURE" sorting-type="NAME" />
         <object-type name="ARGUMENT" sorting-type="POSITION" />
-
-
         <object-type name="TYPE ATTRİBUTE" sorting-type="POSITION" />
-
-        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
-
       </sorting>
       <default-editors>
         <object-type name="VİEW" editor-type="SELECTION" />

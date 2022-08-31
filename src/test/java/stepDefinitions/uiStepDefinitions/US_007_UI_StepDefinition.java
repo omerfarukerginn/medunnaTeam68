@@ -101,7 +101,7 @@ public class US_007_UI_StepDefinition {
     @Then("Eb Kullanici Phone bolumune gecerli bir tel nosu girer")
     public void eb_kullanici_phone_bolumune_gecerli_bir_tel_nosu_girer() {
         patient.phoneKutusu.clear();
-        String phoneNumber = "076-958-0054";
+        String phoneNumber = "076-958-0050";
         patient.phoneKutusu.sendKeys(phoneNumber);
     }
 
@@ -112,12 +112,12 @@ public class US_007_UI_StepDefinition {
         Date = "12.12.2022";
         Driver.waitAndSendText(aP.AppointmentDateTimeTextBox, Date);
          */
-        patient.appointmentDateSection.sendKeys("15.08.2022");
+        patient.appointmentDateSection.sendKeys("30.08.2022");
     }
 
     @Then("Eb Kullanici date bolumunde gelecek tarihli bir gun secer")
     public void eb_kullanici_date_bolumunde_gelecek_tarihli_bir_gun_secer() {
-        patient.appointmentDateSection.sendKeys("20.08.2022");
+        patient.appointmentDateSection.sendKeys("01.09.2022");
     }
 
 
@@ -149,8 +149,8 @@ public class US_007_UI_StepDefinition {
             action.sendKeys(Keys.PAGE_DOWN);
         }
 
-        String guncelDate = "15/08/22";
-        String gelecekDate = "20/08/22";
+        String guncelDate = "30/08/22";
+        String gelecekDate = "01/09/22";
 
         List<String> gecerlitarihlerinListesi = new ArrayList<>();
 

@@ -1,4 +1,4 @@
-@US_024
+@US_024 @SmokeTestt
 Feature: Hasta kendi raporlarini gorebilmeli
 
   Background:Ortak adimlar

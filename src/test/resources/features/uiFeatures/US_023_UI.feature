@@ -1,4 +1,4 @@
-@US_023 
+@US_023 @SmokeTestt
 Feature: Fatura (Staff) olusturma ve assert etme
 
 

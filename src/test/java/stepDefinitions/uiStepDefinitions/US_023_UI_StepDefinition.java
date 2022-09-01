@@ -28,7 +28,7 @@ public class US_023_UI_StepDefinition {
 
     @And("staff arama kutusuna SSN ile hastayi arar")
     public void staffAramaKutusunaSSNIleHastayiArar() {
-        stf23.patientSsnSearchTextBox.sendKeys("768-94-0956", Keys.ENTER);
+        stf23.patientSsnSearchTextBox.sendKeys("765-76-8991", Keys.ENTER);
     }
 
     @Given("staff show appointment buttonunu tiklar")

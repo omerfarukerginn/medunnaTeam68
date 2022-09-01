@@ -1,4 +1,4 @@
-@US_004 @SmokeTestt
+@US_004 
 Feature: US_004 Giris sayfasi yalnızca gecerli kimlik bilgileriyle erisilebilir olmalidir.
 
   Background: ortak adimlar

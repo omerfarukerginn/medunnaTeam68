@@ -1,4 +1,4 @@
-@US_007 @SmokeTestt
+@US_007 
 Feature: US_007_TC_001 Kullanıcı geçerli tarih girmelidir ve randevusunu gormelidir.
 
   Background: Eb Kullanici hasta bolumunde randevu sayfasina gider

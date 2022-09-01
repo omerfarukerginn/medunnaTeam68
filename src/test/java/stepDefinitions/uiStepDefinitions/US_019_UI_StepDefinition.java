@@ -184,7 +184,9 @@ public class US_019_UI_StepDefinition {
 
 
 
+
         //   us019.AdministorViewdButton.click();
+
 
 
         ReusableMethods.waitFor(4);
@@ -259,6 +261,8 @@ public class US_019_UI_StepDefinition {
 
      /* action.moveToElement(us019.AdministorDeletedButton2);
         Driver.wait(1);
+        
+
         us019.AdministorDeletedButton2.click();*/
 
         //  action.moveToElement(us019.AdministorDeletedButton2);
